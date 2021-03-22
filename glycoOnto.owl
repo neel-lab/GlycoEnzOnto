@@ -24,6 +24,9 @@
         <Class IRI="#Elongation_Branching"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Epimerase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Fuc_Transport"/>
     </Declaration>
     <Declaration>
@@ -39,10 +42,28 @@
         <Class IRI="#Gal_Transport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Galactosyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GlcNAc_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Glc_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glucosidase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glucuronyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glycogene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glycosidase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hyl_Gal"/>
@@ -51,7 +72,19 @@
         <Class IRI="#Mann_Transport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Mannosidase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mannosyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#N-linked"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NAcetylgalactosaminyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NAcetylglucosaminyltransferase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nlinked_Glycan_Branching"/>
@@ -87,16 +120,28 @@
         <Class IRI="#SialicAcid_Transport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Sialidase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sialyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TMTC_Type"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Transferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transport"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#in_pathway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_of_class"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#C_Mannose"/>
@@ -115,6 +160,10 @@
         <Class IRI="#Pathway_nonSpecific"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Epimerase"/>
+        <Class IRI="#Glycogene"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Fuc_Transport"/>
         <Class IRI="#Transport"/>
     </SubClassOf>
@@ -135,12 +184,32 @@
         <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Galactosyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GlcNAc_Transport"/>
         <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Glc_Transport"/>
         <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glucosidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glucosyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glucuronyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycosidase"/>
+        <Class IRI="#Glycogene"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hyl_Gal"/>
@@ -151,8 +220,24 @@
         <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Mannosidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mannosyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#N-linked"/>
         <Class IRI="#Pathway_Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NAcetylgalactosaminyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NAcetylglucosaminyltransferase"/>
+        <Class IRI="#Transferase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Nlinked_Glycan_Branching"/>
@@ -199,9 +284,43 @@
         <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sialidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sialyltransferase"/>
+        <Class IRI="#Transferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TMTC_Type"/>
         <Class IRI="#O_Mannose"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transferase"/>
+        <Class IRI="#Glycogene"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#in_pathway"/>
+        <Class IRI="#Glycogene"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#in_pathway"/>
+        <Class IRI="#Synthesis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#in_pathway"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#in_pathway</IRI>
+        <Literal>Associates a glycogene with a glycosylation pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#is_of_class</IRI>
+        <Literal>Specifies a glycogene&apos;s class, pertaining to its function and substrate specificity.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
