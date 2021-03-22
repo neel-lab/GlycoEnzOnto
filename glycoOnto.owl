@@ -135,7 +135,7 @@
         <Class IRI="#Transferase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#in_pathway"/>
@@ -165,7 +165,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fuc_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GPI"/>
@@ -177,11 +177,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GalNAc_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gal_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Galactosyltransferase"/>
@@ -189,11 +189,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GlcNAc_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Glc_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Glucosidase"/>
@@ -217,7 +217,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mann_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mannosidase"/>
@@ -281,7 +281,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SialicAcid_Transport"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sialidase"/>
@@ -299,6 +299,10 @@
         <Class IRI="#Transferase"/>
         <Class IRI="#Glycogene"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transporter"/>
+        <Class IRI="#Glycogene"/>
+    </SubClassOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_pathway"/>
         <Class IRI="#Glycogene"/>
@@ -309,7 +313,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#in_pathway"/>
-        <Class IRI="#Transport"/>
+        <Class IRI="#Transporter"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
