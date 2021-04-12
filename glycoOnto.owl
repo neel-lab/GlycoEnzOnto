@@ -13,6 +13,12 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#Acetylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acetyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Anabolism"/>
     </Declaration>
     <Declaration>
@@ -26,6 +32,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate_Modification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Core1"/>
@@ -49,6 +61,9 @@
         <Class IRI="#CoreM3"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Deacetylase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dolichol_Pathway"/>
     </Declaration>
     <Declaration>
@@ -61,6 +76,12 @@
         <Class IRI="#Fuc_Transport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Fucosidase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GPI"/>
     </Declaration>
     <Declaration>
@@ -71,6 +92,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Gal_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Galactosidase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Galactosyltransferase"/>
@@ -94,6 +118,9 @@
         <Class IRI="#Glucosyltransferase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Glucuronidase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Glucuronyltransferase"/>
     </Declaration>
     <Declaration>
@@ -109,16 +136,34 @@
         <Class IRI="#Glycosylation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Glycosylation_Enhancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glycosylation_Inhibitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glycosylation_Regulator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Glycosyltransferase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Heparan_Sulfate"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Heparan_Sulfate_Modification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heparan_Sulfate_Synthesis"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Hyl_Gal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Kinase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LacdiNAc"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lactoside"/>
@@ -145,7 +190,13 @@
         <Class IRI="#N-linked"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#NAcetylgalactosaminidase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NAcetylgalactosaminyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NAcetylglucosaminidase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NAcetylglucosaminyltransferase"/>
@@ -173,6 +224,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#O_Xyl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PAPS_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#POMT_Type"/>
@@ -227,6 +281,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Transporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type_II_Chain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type_I_Chain"/>
     </Declaration>
     <Declaration>
         <Class IRI="#abc_Ganglioside"/>
@@ -238,6 +298,14 @@
         <ObjectProperty IRI="#is_of_class"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Acetylation"/>
+        <Class IRI="#Modifying_Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acetyltransferase"/>
+        <Class IRI="#Acetylation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Anabolism"/>
         <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
@@ -256,6 +324,14 @@
     <SubClassOf>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
         <Class IRI="#O_Xyl"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate_Modification"/>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate_Synthesis"/>
+        <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Core1"/>
@@ -286,6 +362,10 @@
         <Class IRI="#POMT_Type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Deacetylase"/>
+        <Class IRI="#Acetylation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Dolichol_Pathway"/>
         <Class IRI="#N-linked"/>
     </SubClassOf>
@@ -302,6 +382,14 @@
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Fucosidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fucosyltransferase"/>
+        <Class IRI="#Glycosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#GPI"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
@@ -316,6 +404,10 @@
     <SubClassOf>
         <Class IRI="#Gal_Transport"/>
         <Class IRI="#Transporter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Galactosidase"/>
+        <Class IRI="#Glycosidase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Galactosyltransferase"/>
@@ -346,6 +438,10 @@
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Glucuronidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Glucuronyltransferase"/>
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
@@ -362,6 +458,18 @@
         <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Glycosylation_Enhancer"/>
+        <Class IRI="#Glycosylation_Regulator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycosylation_Inhibitor"/>
+        <Class IRI="#Glycosylation_Regulator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycosylation_Regulator"/>
+        <Class IRI="#Glycogene"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Glycosyltransferase"/>
         <Class IRI="#Glycogene"/>
     </SubClassOf>
@@ -370,12 +478,24 @@
         <Class IRI="#O_Xyl"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Heparan_Sulfate_Modification"/>
+        <Class IRI="#Heparan_Sulfate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heparan_Sulfate_Synthesis"/>
+        <Class IRI="#Heparan_Sulfate"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Hyl_Gal"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kinase"/>
         <Class IRI="#Phosphorylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LacdiNAc"/>
+        <Class IRI="#Elongation_Branching"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lactoside"/>
@@ -410,8 +530,16 @@
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#NAcetylgalactosaminidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#NAcetylgalactosaminyltransferase"/>
         <Class IRI="#Glycosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NAcetylglucosaminidase"/>
+        <Class IRI="#Glycosidase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NAcetylglucosaminyltransferase"/>
@@ -448,6 +576,10 @@
     <SubClassOf>
         <Class IRI="#O_Xyl"/>
         <Class IRI="#Pathway_Specific"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PAPS_Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#POMT_Type"/>
@@ -516,6 +648,14 @@
     <SubClassOf>
         <Class IRI="#Transporter"/>
         <Class IRI="#Glycogene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type_II_Chain"/>
+        <Class IRI="#Elongation_Branching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type_I_Chain"/>
+        <Class IRI="#Elongation_Branching"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#abc_Ganglioside"/>
