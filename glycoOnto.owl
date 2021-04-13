@@ -61,6 +61,9 @@
         <Class IRI="#CoreM3"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Cytosol_Degradation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Deacetylase"/>
     </Declaration>
     <Declaration>
@@ -70,7 +73,13 @@
         <Class IRI="#Elongation_Branching"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Endoglycosidase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Epimerase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extracellular_Degradation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fuc_Transport"/>
@@ -121,6 +130,9 @@
         <Class IRI="#Glucuronidase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Glucuronidation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Glucuronyltransferase"/>
     </Declaration>
     <Declaration>
@@ -142,6 +154,9 @@
         <Class IRI="#Glycosylation_Inhibitor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Glycosylation_Regulation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Glycosylation_Regulator"/>
     </Declaration>
     <Declaration>
@@ -160,6 +175,9 @@
         <Class IRI="#Hyl_Gal"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Intermediate_Transport"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Kinase"/>
     </Declaration>
     <Declaration>
@@ -172,9 +190,6 @@
         <Class IRI="#Lysosome_Degradation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Lysosome_Transport"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Mann_Transport"/>
     </Declaration>
     <Declaration>
@@ -182,6 +197,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Mannosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modification_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Modifying_Enzyme"/>
@@ -206,6 +224,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Nlinked_Glycan_Branching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nutrient_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#O_Fucose"/>
@@ -247,6 +268,9 @@
         <Class IRI="#Phosphorylation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Ribitol_Transferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SialicAcid_Transport"/>
     </Declaration>
     <Declaration>
@@ -265,10 +289,13 @@
         <Class IRI="#Sugar_Nucleotide_Transport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sugar_Nucleotides"/>
+        <Class IRI="#Sugar_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sulfatase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sulfate_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sulfation"/>
@@ -280,6 +307,9 @@
         <Class IRI="#TMTC_Type"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Transporter"/>
     </Declaration>
     <Declaration>
@@ -287,6 +317,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Type_I_Chain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncertain_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Xylosyltransferase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#abc_Ganglioside"/>
@@ -362,6 +398,10 @@
         <Class IRI="#POMT_Type"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cytosol_Degradation"/>
+        <Class IRI="#Glycan_Degradation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Deacetylase"/>
         <Class IRI="#Acetylation"/>
     </SubClassOf>
@@ -374,8 +414,16 @@
         <Class IRI="#Pathway_nonSpecific"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Endoglycosidase"/>
+        <Class IRI="#Glycosidase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Epimerase"/>
         <Class IRI="#Glycogene"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extracellular_Degradation"/>
+        <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fuc_Transport"/>
@@ -442,6 +490,10 @@
         <Class IRI="#Glycosidase"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Glucuronidation"/>
+        <Class IRI="#Pathway"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Glucuronyltransferase"/>
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
@@ -464,6 +516,10 @@
     <SubClassOf>
         <Class IRI="#Glycosylation_Inhibitor"/>
         <Class IRI="#Glycosylation_Regulator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glycosylation_Regulation"/>
+        <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Glycosylation_Regulator"/>
@@ -490,6 +546,10 @@
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Intermediate_Transport"/>
+        <Class IRI="#Transporter"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Kinase"/>
         <Class IRI="#Phosphorylation"/>
     </SubClassOf>
@@ -506,10 +566,6 @@
         <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Lysosome_Transport"/>
-        <Class IRI="#Glycan_Degradation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Mann_Transport"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
@@ -520,6 +576,10 @@
     <SubClassOf>
         <Class IRI="#Mannosyltransferase"/>
         <Class IRI="#Glycosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modification_Transport"/>
+        <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Modifying_Enzyme"/>
@@ -552,6 +612,10 @@
     <SubClassOf>
         <Class IRI="#Nlinked_Glycan_Branching"/>
         <Class IRI="#N-linked"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nutrient_Transport"/>
+        <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#O_Fucose"/>
@@ -602,6 +666,10 @@
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Ribitol_Transferase"/>
+        <Class IRI="#Glycosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SialicAcid_Transport"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
@@ -619,19 +687,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sugar_Nucleotide_Synthesis"/>
-        <Class IRI="#Sugar_Nucleotides"/>
+        <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sugar_Nucleotide_Transport"/>
-        <Class IRI="#Sugar_Nucleotides"/>
+        <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sugar_Nucleotides"/>
-        <Class IRI="#Pathway"/>
+        <Class IRI="#Sugar_Transport"/>
+        <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfatase"/>
         <Class IRI="#Sulfation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulfate_Transport"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfation"/>
@@ -646,6 +718,10 @@
         <Class IRI="#O_Mannose"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Transport"/>
+        <Class IRI="#Pathway"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Transporter"/>
         <Class IRI="#Glycogene"/>
     </SubClassOf>
@@ -656,6 +732,14 @@
     <SubClassOf>
         <Class IRI="#Type_I_Chain"/>
         <Class IRI="#Elongation_Branching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncertain_Transport"/>
+        <Class IRI="#Transporter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Xylosyltransferase"/>
+        <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#abc_Ganglioside"/>
