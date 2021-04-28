@@ -13,22 +13,22 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Acetylation"/>
+        <Class IRI="#Acetylation_Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Acetyltransferase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Anabolism"/>
+        <Class IRI="#Acetyltransferase_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CMP_SialicAcid_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#C_Mannose"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Capping"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Catabolism"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
@@ -67,6 +67,9 @@
         <Class IRI="#Deacetylase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Deacetylase_Activity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dolichol_Pathway"/>
     </Declaration>
     <Declaration>
@@ -79,6 +82,9 @@
         <Class IRI="#Epimerase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Epimerase_Activity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Extracellular_Degradation"/>
     </Declaration>
     <Declaration>
@@ -89,6 +95,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDP_Fuc_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GPI"/>
@@ -181,6 +190,9 @@
         <Class IRI="#Kinase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Kinase_Activity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LacdiNAc"/>
     </Declaration>
     <Declaration>
@@ -200,6 +212,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Modification_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modifiers"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Modifying_Enzyme"/>
@@ -224,6 +239,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Nlinked_Glycan_Branching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nutrient_Transport"/>
@@ -265,7 +283,10 @@
         <Class IRI="#Phosphatase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Phosphorylation"/>
+        <Class IRI="#Phosphatase_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phosphorylation_Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ribitol_Transferase"/>
@@ -283,10 +304,13 @@
         <Class IRI="#Sugar_Metabolism"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sugar_Nucleotide_Synthesis"/>
+        <Class IRI="#Sugar_Modification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sugar_Nucleotide_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sugar_Phosphorylation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sugar_Transport"/>
@@ -295,13 +319,22 @@
         <Class IRI="#Sulfatase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Sulfatase_Activity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sulfate_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sulfation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Sulfation_Activity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Sulfotransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sulfotransferase_Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TMTC_Type"/>
@@ -317,6 +350,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Type_I_Chain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_GalNAc_Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_Gal_Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_GlcA_Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_GlcNAc_Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_Glc_Synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UDP_Xyl_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Uncertain_Transport"/>
@@ -334,16 +385,20 @@
         <ObjectProperty IRI="#is_of_class"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Acetylation"/>
+        <Class IRI="#Acetylation_Activity"/>
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Acetyltransferase"/>
-        <Class IRI="#Acetylation"/>
+        <Class IRI="#Modifiers"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Anabolism"/>
-        <Class IRI="#Sugar_Metabolism"/>
+        <Class IRI="#Acetyltransferase_Activity"/>
+        <Class IRI="#Acetylation_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CMP_SialicAcid_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C_Mannose"/>
@@ -352,10 +407,6 @@
     <SubClassOf>
         <Class IRI="#Capping"/>
         <Class IRI="#Pathway_nonSpecific"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Catabolism"/>
-        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
@@ -403,7 +454,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deacetylase"/>
-        <Class IRI="#Acetylation"/>
+        <Class IRI="#Modifiers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deacetylase_Activity"/>
+        <Class IRI="#Acetylation_Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dolichol_Pathway"/>
@@ -419,6 +474,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Epimerase"/>
+        <Class IRI="#Modifiers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epimerase_Activity"/>
         <Class IRI="#Glycogene"/>
     </SubClassOf>
     <SubClassOf>
@@ -436,6 +495,10 @@
     <SubClassOf>
         <Class IRI="#Fucosyltransferase"/>
         <Class IRI="#Glycosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDP_Fuc_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GPI"/>
@@ -551,7 +614,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kinase"/>
-        <Class IRI="#Phosphorylation"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kinase_Activity"/>
+        <Class IRI="#Phosphorylation_Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LacdiNAc"/>
@@ -580,6 +647,10 @@
     <SubClassOf>
         <Class IRI="#Modification_Transport"/>
         <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modifiers"/>
+        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Modifying_Enzyme"/>
@@ -612,6 +683,10 @@
     <SubClassOf>
         <Class IRI="#Nlinked_Glycan_Branching"/>
         <Class IRI="#N-linked"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Nutrient_Transport"/>
@@ -659,10 +734,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Phosphatase"/>
-        <Class IRI="#Phosphorylation"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Phosphorylation"/>
+        <Class IRI="#Phosphatase_Activity"/>
+        <Class IRI="#Phosphorylation_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phosphorylation_Activity"/>
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
@@ -686,12 +765,16 @@
         <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sugar_Nucleotide_Synthesis"/>
-        <Class IRI="#Pathway"/>
+        <Class IRI="#Sugar_Modification"/>
+        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sugar_Nucleotide_Transport"/>
         <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sugar_Phosphorylation"/>
+        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sugar_Transport"/>
@@ -702,16 +785,28 @@
         <Class IRI="#Sulfation"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sulfatase_Activity"/>
+        <Class IRI="#Sulfation_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Sulfate_Transport"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfation"/>
+        <Class IRI="#Sugar_Metabolism"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulfation_Activity"/>
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfotransferase"/>
         <Class IRI="#Sulfation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulfotransferase_Activity"/>
+        <Class IRI="#Sulfation_Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TMTC_Type"/>
@@ -732,6 +827,30 @@
     <SubClassOf>
         <Class IRI="#Type_I_Chain"/>
         <Class IRI="#Elongation_Branching"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_GalNAc_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_Gal_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_GlcA_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_GlcNAc_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_Glc_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UDP_Xyl_Synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Uncertain_Transport"/>
