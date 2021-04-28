@@ -202,6 +202,9 @@
         <Class IRI="#Lactoside"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Lysosomal_Targeting"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Lysosome_Degradation"/>
     </Declaration>
     <Declaration>
@@ -634,6 +637,10 @@
     <SubClassOf>
         <Class IRI="#Lactoside"/>
         <Class IRI="#GSL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lysosomal_Targeting"/>
+        <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lysosome_Degradation"/>
