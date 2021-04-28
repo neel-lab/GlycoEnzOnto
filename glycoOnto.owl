@@ -70,6 +70,9 @@
         <Class IRI="#Deacetylase_Activity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Decarboxylase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dolichol_Pathway"/>
     </Declaration>
     <Declaration>
@@ -459,6 +462,10 @@
     <SubClassOf>
         <Class IRI="#Deacetylase_Activity"/>
         <Class IRI="#Acetylation_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decarboxylase"/>
+        <Class IRI="#Modifiers"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dolichol_Pathway"/>
