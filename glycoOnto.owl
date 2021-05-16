@@ -22,10 +22,10 @@
         <Class IRI="#Acetyltransferase_Activity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CMP_SialicAcid_Synthesis"/>
+        <Class IRI="#C-Mannose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#C_Mannose"/>
+        <Class IRI="#CMP_SialicAcid_Synthesis"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Capping"/>
@@ -184,7 +184,7 @@
         <Class IRI="#Heparan_Sulfate_Synthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Hyl_Gal"/>
+        <Class IRI="#Hyl-Gal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Intermediate_Transport"/>
@@ -202,7 +202,7 @@
         <Class IRI="#Lactoside"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Lysosomal_Targeting"/>
+        <Class IRI="#Lysosomal-Targeting"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lysosome_Degradation"/>
@@ -253,22 +253,22 @@
         <Class IRI="#Nutrient_Transport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_Fucose"/>
+        <Class IRI="#O-Fucose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_Glc"/>
+        <Class IRI="#O-Glc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_GlcNAc"/>
+        <Class IRI="#O-GlcNAc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_Mannose"/>
+        <Class IRI="#O-Mannose"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#O_Xyl"/>
+        <Class IRI="#O-Xyl"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PAPS_Transport"/>
@@ -281,9 +281,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Pathway_Specific"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Pathway_nonSpecific"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Phosphatase"/>
@@ -403,20 +400,20 @@
         <Class IRI="#Acetylation_Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#C-Mannose"/>
+        <Class IRI="#Pathway_Specific"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CMP_SialicAcid_Synthesis"/>
         <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#C_Mannose"/>
-        <Class IRI="#Pathway_Specific"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Capping"/>
-        <Class IRI="#Pathway_nonSpecific"/>
+        <Class IRI="#Glycosylation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate"/>
-        <Class IRI="#O_Xyl"/>
+        <Class IRI="#O-Xyl"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Chondroitin_and_Dermatan_Sulfate_Modification"/>
@@ -428,19 +425,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Core1"/>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Core2"/>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Core3"/>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Core4"/>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CoreM1"/>
@@ -476,7 +473,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Elongation_Branching"/>
-        <Class IRI="#Pathway_nonSpecific"/>
+        <Class IRI="#Glycosylation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Endoglycosidase"/>
@@ -604,7 +601,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Heparan_Sulfate"/>
-        <Class IRI="#O_Xyl"/>
+        <Class IRI="#O-Xyl"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Heparan_Sulfate_Modification"/>
@@ -615,7 +612,7 @@
         <Class IRI="#Heparan_Sulfate"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Hyl_Gal"/>
+        <Class IRI="#Hyl-Gal"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
@@ -639,7 +636,7 @@
         <Class IRI="#GSL"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Lysosomal_Targeting"/>
+        <Class IRI="#Lysosomal-Targeting"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
@@ -707,27 +704,27 @@
         <Class IRI="#Transport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_Fucose"/>
+        <Class IRI="#O-Fucose"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_GalNAc"/>
+        <Class IRI="#O-GalNAc"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_Glc"/>
+        <Class IRI="#O-Glc"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_GlcNAc"/>
+        <Class IRI="#O-GlcNAc"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_Mannose"/>
+        <Class IRI="#O-Mannose"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#O_Xyl"/>
+        <Class IRI="#O-Xyl"/>
         <Class IRI="#Pathway_Specific"/>
     </SubClassOf>
     <SubClassOf>
@@ -736,14 +733,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#POMT_Type"/>
-        <Class IRI="#O_Mannose"/>
+        <Class IRI="#O-Mannose"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pathway_Specific"/>
-        <Class IRI="#Glycosylation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Pathway_nonSpecific"/>
         <Class IRI="#Glycosylation"/>
     </SubClassOf>
     <SubClassOf>
@@ -824,7 +817,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TMTC_Type"/>
-        <Class IRI="#O_Mannose"/>
+        <Class IRI="#O-Mannose"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transport"/>
