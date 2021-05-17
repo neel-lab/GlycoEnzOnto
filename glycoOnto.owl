@@ -112,6 +112,12 @@
         <Class IRI="#GDP-Fuc_transport"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GDP-Man_synthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GDP-Man_transport"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#GPI"/>
     </Declaration>
     <Declaration>
@@ -643,6 +649,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GDP-Fuc_transport"/>
+        <Class IRI="#Nucleotide_Sugar_Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDP-Man_synthesis"/>
+        <Class IRI="#Nucleotide_Sugar_Synthesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GDP-Man_transport"/>
         <Class IRI="#Nucleotide_Sugar_Transport"/>
     </SubClassOf>
     <SubClassOf>
