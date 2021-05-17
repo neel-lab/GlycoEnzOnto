@@ -313,6 +313,9 @@
         <Class IRI="#Phosphorylation_Activity"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Protein_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Ribitol_Transferase"/>
     </Declaration>
     <Declaration>
@@ -418,13 +421,67 @@
         <Class IRI="#uridylyltransferase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#α1-2_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#α1-4_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#α1-6_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#O-Glc[POGLUT1]"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Putative/Inactive_Enzymes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#in_pathway"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is_of_class"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FUT9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POFUT1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POFUT2"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Acetylation_Activity"/>
@@ -819,6 +876,10 @@
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Protein_Fucosyltransferase"/>
+        <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Ribitol_Transferase"/>
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
@@ -959,9 +1020,89 @@
         <Class IRI="#Other_Transferases"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#α1-2_Fucosyltransferase"/>
+        <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#α1-4_Fucosyltransferase"/>
+        <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#α1-6_Fucosyltransferase"/>
+        <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#O-Glc[POGLUT1]"/>
         <Class IRI="#O-linked"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Putative/Inactive_Enzymes"/>
+        <Class IRI="#Other_Transferases"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#α1-2_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Putative/Inactive_Enzymes"/>
+        <NamedIndividual IRI="#FUT10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Putative/Inactive_Enzymes"/>
+        <NamedIndividual IRI="#FUT11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-2_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-4_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-4_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-6_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#α1-3_Fucosyltransferase"/>
+        <NamedIndividual IRI="#FUT9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protein_Fucosyltransferase"/>
+        <NamedIndividual IRI="#POFUT1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Protein_Fucosyltransferase"/>
+        <NamedIndividual IRI="#POFUT2"/>
+    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_pathway"/>
         <Class IRI="#Glycogene"/>
