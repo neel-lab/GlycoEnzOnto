@@ -454,6 +454,9 @@
         <Class IRI="#kinase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#poly-Sia"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#uridylyltransferase"/>
     </Declaration>
     <Declaration>
@@ -1104,6 +1107,10 @@
     <SubClassOf>
         <Class IRI="#kinase"/>
         <Class IRI="#Other_Transferases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#poly-Sia"/>
+        <Class IRI="#Sialyltransferase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#uridylyltransferase"/>
