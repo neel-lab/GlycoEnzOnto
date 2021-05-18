@@ -469,6 +469,12 @@
         <Class IRI="#α1-6_Fucosyltransferase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#α2-3_Sialyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#α2-6_Sialyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#O-Glc[POGLUT1]"/>
     </Declaration>
     <Declaration>
@@ -1118,6 +1124,14 @@
     <SubClassOf>
         <Class IRI="#α1-6_Fucosyltransferase"/>
         <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#α2-3_Sialyltransferase"/>
+        <Class IRI="#Sialyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#α2-6_Sialyltransferase"/>
+        <Class IRI="#Sialyltransferase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#O-Glc[POGLUT1]"/>
