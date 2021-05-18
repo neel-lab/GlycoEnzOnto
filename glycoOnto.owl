@@ -13,10 +13,10 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Acetylation_Activity"/>
+        <Class IRI="#Acetylase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Acetyltransferase"/>
+        <Class IRI="#Acetylation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Acetyltransferase_Activity"/>
@@ -25,10 +25,10 @@
         <Class IRI="#C-Man"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CMP-SialicAcid_synthesis"/>
+        <Class IRI="#CMP-Neu5Ac_synthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CMP-SialicAcid_transport"/>
+        <Class IRI="#CMP-Neu5Ac_transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Capping"/>
@@ -58,16 +58,25 @@
         <Class IRI="#Cytosol_Degradation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Deacetylase"/>
+        <Class IRI="#Deacetylase_Activity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Deacetylase_Activity"/>
+        <Class IRI="#Deacetylation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Decarboxylase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Decarboxylation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dehydrogenase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dephosphorylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Desulfation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Dolichol_Pathway"/>
@@ -85,16 +94,13 @@
         <Class IRI="#Endoglycosidase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Epimerase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Epimerase_Activity"/>
+        <Class IRI="#Epimerization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Extracellular_Degradation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Fuc_Transport"/>
+        <Class IRI="#Fuc_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Fucosidase"/>
@@ -124,10 +130,10 @@
         <Class IRI="#GalCer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GalNAc_Transport"/>
+        <Class IRI="#GalNAc_Transporter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Gal_Transport"/>
+        <Class IRI="#Gal_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Galactosidase"/>
@@ -142,10 +148,10 @@
         <Class IRI="#GlcCer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GlcNAc_Transport"/>
+        <Class IRI="#GlcNAc_Transporter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Glc_Transport"/>
+        <Class IRI="#Glc_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Globoside"/>
@@ -202,13 +208,10 @@
         <Class IRI="#Heparan_Sulfate_Synthesis"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Intermediate_Transport"/>
+        <Class IRI="#Intermediate_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Kinase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Kinase_Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LacdiNAc"/>
@@ -226,7 +229,7 @@
         <Class IRI="#Lysosome_Degradation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Mann_Transport"/>
+        <Class IRI="#Man_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mannosidase"/>
@@ -235,10 +238,10 @@
         <Class IRI="#Mannosyltransferase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Modification_Transport"/>
+        <Class IRI="#Modification"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Modifiers"/>
+        <Class IRI="#Modification_Transport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Modifying_Enzyme"/>
@@ -260,6 +263,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Neolactoside"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neu5Ac_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Nlinked_Glycan_Branching"/>
@@ -301,7 +307,7 @@
         <Class IRI="#Other_Transport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PAPS_Transport"/>
+        <Class IRI="#PAPS_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#POFUT1"/>
@@ -328,7 +334,7 @@
         <Class IRI="#Phosphatase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Phosphatase_Activity"/>
+        <Class IRI="#Phosphorylation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Phosphorylation_Activity"/>
@@ -340,9 +346,6 @@
         <Class IRI="#Ribitol_Transferase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SialicAcid_Transport"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Sialidase"/>
     </Declaration>
     <Declaration>
@@ -352,10 +355,10 @@
         <Class IRI="#Sugar_Metabolism"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sugar_Modification"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sugar_Phosphorylation"/>
+        <Class IRI="#Sugar_Sulfation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sugar_Transport"/>
@@ -364,10 +367,7 @@
         <Class IRI="#Sulfatase"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Sulfatase_Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sulfate_Transport"/>
+        <Class IRI="#Sulfate_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sulfation"/>
@@ -377,9 +377,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Sulfotransferase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Sulfotransferase_Activity"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TMTC"/>
@@ -433,7 +430,7 @@
         <Class IRI="#UDP-Xyl_transport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Uncertain_Transport"/>
+        <Class IRI="#Uncertain_Transporter"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Xylosyltransferase"/>
@@ -523,27 +520,27 @@
         <NamedIndividual IRI="#POFUT2"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#Acetylation_Activity"/>
+        <Class IRI="#Acetylase"/>
         <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Acetyltransferase"/>
-        <Class IRI="#Modifiers"/>
+        <Class IRI="#Acetylation"/>
+        <Class IRI="#Modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Acetyltransferase_Activity"/>
-        <Class IRI="#Acetylation_Activity"/>
+        <Class IRI="#Acetylase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C-Man"/>
         <Class IRI="#PathwayType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CMP-SialicAcid_synthesis"/>
+        <Class IRI="#CMP-Neu5Ac_synthesis"/>
         <Class IRI="#Nucleotide_Sugar_Synthesis"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CMP-SialicAcid_transport"/>
+        <Class IRI="#CMP-Neu5Ac_transport"/>
         <Class IRI="#Nucleotide_Sugar_Transport"/>
     </SubClassOf>
     <SubClassOf>
@@ -583,20 +580,32 @@
         <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Deacetylase"/>
-        <Class IRI="#Modifiers"/>
+        <Class IRI="#Deacetylase_Activity"/>
+        <Class IRI="#Acetylase"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Deacetylase_Activity"/>
-        <Class IRI="#Acetylation_Activity"/>
+        <Class IRI="#Deacetylation"/>
+        <Class IRI="#Modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Decarboxylase"/>
-        <Class IRI="#Modifiers"/>
+        <Class IRI="#Modifying_Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Decarboxylation"/>
+        <Class IRI="#Modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dehydrogenase"/>
         <Class IRI="#Modifying_Enzyme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dephosphorylation"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Desulfation"/>
+        <Class IRI="#Sugar_Sulfation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dolichol_Pathway"/>
@@ -619,19 +628,15 @@
         <Class IRI="#Glycosidase"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Epimerase"/>
-        <Class IRI="#Modifiers"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Epimerase_Activity"/>
-        <Class IRI="#Glycogene"/>
+        <Class IRI="#Epimerization"/>
+        <Class IRI="#Modification"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Extracellular_Degradation"/>
         <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Fuc_Transport"/>
+        <Class IRI="#Fuc_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
@@ -671,11 +676,11 @@
         <Class IRI="#Lipid-linked"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GalNAc_Transport"/>
+        <Class IRI="#GalNAc_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Gal_Transport"/>
+        <Class IRI="#Gal_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
@@ -695,11 +700,11 @@
         <Class IRI="#Lipid-linked"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GlcNAc_Transport"/>
+        <Class IRI="#GlcNAc_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Glc_Transport"/>
+        <Class IRI="#Glc_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
@@ -771,15 +776,11 @@
         <Class IRI="#Heparan_Sulfate"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Intermediate_Transport"/>
+        <Class IRI="#Intermediate_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Kinase"/>
-        <Class IRI="#Sugar_Phosphorylation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Kinase_Activity"/>
         <Class IRI="#Phosphorylation_Activity"/>
     </SubClassOf>
     <SubClassOf>
@@ -803,7 +804,7 @@
         <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Mann_Transport"/>
+        <Class IRI="#Man_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
@@ -815,12 +816,12 @@
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Modification_Transport"/>
-        <Class IRI="#Other_Transport"/>
+        <Class IRI="#Modification"/>
+        <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Modifiers"/>
-        <Class IRI="#Sugar_Metabolism"/>
+        <Class IRI="#Modification_Transport"/>
+        <Class IRI="#Other_Transport"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Modifying_Enzyme"/>
@@ -849,6 +850,10 @@
     <SubClassOf>
         <Class IRI="#Neolactoside"/>
         <Class IRI="#GlcCer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neu5Ac_Transporter"/>
+        <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Nlinked_Glycan_Branching"/>
@@ -903,7 +908,7 @@
         <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#PAPS_Transport"/>
+        <Class IRI="#PAPS_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
@@ -932,11 +937,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Phosphatase"/>
-        <Class IRI="#Sugar_Phosphorylation"/>
+        <Class IRI="#Phosphorylation_Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Phosphatase_Activity"/>
-        <Class IRI="#Phosphorylation_Activity"/>
+        <Class IRI="#Phosphorylation"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Phosphorylation_Activity"/>
@@ -951,10 +956,6 @@
         <Class IRI="#Glycosyltransferase"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#SialicAcid_Transport"/>
-        <Class IRI="#Transporter"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Sialidase"/>
         <Class IRI="#Glycosidase"/>
     </SubClassOf>
@@ -967,11 +968,11 @@
         <Class IRI="#Pathway"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sugar_Modification"/>
+        <Class IRI="#Sugar_Phosphorylation"/>
         <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sugar_Phosphorylation"/>
+        <Class IRI="#Sugar_Sulfation"/>
         <Class IRI="#Sugar_Metabolism"/>
     </SubClassOf>
     <SubClassOf>
@@ -980,19 +981,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfatase"/>
-        <Class IRI="#Sulfation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sulfatase_Activity"/>
         <Class IRI="#Sulfation_Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Sulfate_Transport"/>
+        <Class IRI="#Sulfate_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfation"/>
-        <Class IRI="#Sugar_Metabolism"/>
+        <Class IRI="#Sugar_Sulfation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfation_Activity"/>
@@ -1000,10 +997,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sulfotransferase"/>
-        <Class IRI="#Sulfation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Sulfotransferase_Activity"/>
         <Class IRI="#Sulfation_Activity"/>
     </SubClassOf>
     <SubClassOf>
@@ -1075,7 +1068,7 @@
         <Class IRI="#Nucleotide_Sugar_Transport"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Uncertain_Transport"/>
+        <Class IRI="#Uncertain_Transporter"/>
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
