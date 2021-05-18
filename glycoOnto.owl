@@ -448,6 +448,9 @@
         <Class IRI="#aminotransferase"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#cytidylyltransferase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#guanylyltransferase"/>
     </Declaration>
     <Declaration>
@@ -1089,6 +1092,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#aminotransferase"/>
+        <Class IRI="#Other_Transferases"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cytidylyltransferase"/>
         <Class IRI="#Other_Transferases"/>
     </SubClassOf>
     <SubClassOf>
