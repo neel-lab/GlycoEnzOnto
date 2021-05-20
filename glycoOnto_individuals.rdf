@@ -1,0 +1,1145 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"
+         xmlns="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"/>
+
+<owl:ObjectProperty rdf:about="#in_pathway">
+  <rdfs:domain rdf:resource="#Glycogene"/>
+  <rdfs:range rdf:resource="#Pathway"/>
+  <rdfs:comment>Associates a glycogene with a glycosylation pathway.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_of_class">
+  <rdfs:comment>Specifies a glycogene's class, pertaining to its function and substrate specificity.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Acetylase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Acetylation">
+  <rdfs:subClassOf rdf:resource="#Modification"/>
+</owl:Class>
+
+<owl:Class rdf:about="#C-Man">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CMP-Neu5Ac_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#CMP-Neu5Ac_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Capping">
+  <rdfs:subClassOf rdf:resource="#Glycosylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Chondroitin_and_Dermatan_Sulfate">
+  <rdfs:subClassOf rdf:resource="#O-Xyl"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Chondroitin_and_Dermatan_Sulfate_Modification">
+  <rdfs:subClassOf rdf:resource="#Chondroitin_and_Dermatan_Sulfate"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Chondroitin_and_Dermatan_Sulfate_Synthesis">
+  <rdfs:subClassOf rdf:resource="#Chondroitin_and_Dermatan_Sulfate"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Core1">
+  <rdfs:subClassOf rdf:resource="#O-GalNAc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Core2">
+  <rdfs:subClassOf rdf:resource="#O-GalNAc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Core3">
+  <rdfs:subClassOf rdf:resource="#O-GalNAc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Core4">
+  <rdfs:subClassOf rdf:resource="#O-GalNAc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Cytosol_Degradation">
+  <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Deacetylase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Deacetylation">
+  <rdfs:subClassOf rdf:resource="#Modification"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Decarboxylase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Decarboxylation">
+  <rdfs:subClassOf rdf:resource="#Modification"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dehydratase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dehydrogenase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dephosphorylation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Phosphorylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Desulfation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Sulfation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dolichol_Pathway">
+  <rdfs:subClassOf rdf:resource="#N-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dystro">
+  <rdfs:subClassOf rdf:resource="#O-Man"/>
+</owl:Class>
+
+<owl:Class rdf:about="#EOGT">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Elongation_and_Branching">
+  <rdfs:subClassOf rdf:resource="#Glycosylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Endoglycosidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Epimerization">
+  <rdfs:subClassOf rdf:resource="#Modification"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Extracellular_Degradation">
+  <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fuc_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fucosidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GAG">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GDP-Fuc_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GDP-Fuc_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GDP-Man_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GDP-Man_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GPI">
+  <rdfs:subClassOf rdf:resource="#Lipid-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GalCer">
+  <rdfs:subClassOf rdf:resource="#Lipid-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GalNAc_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Gal_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Galactosidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Galactosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ganglioside">
+  <rdfs:subClassOf rdf:resource="#GlcCer"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcCer">
+  <rdfs:subClassOf rdf:resource="#Lipid-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcNAc_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glc_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Globoside">
+  <rdfs:subClassOf rdf:resource="#GlcCer"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glucosidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glucuronidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glucuronidation">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glucuronyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycan_Degradation">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycogene"/>
+
+<owl:Class rdf:about="#Glycosidase">
+  <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosylation">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosylation_Enhancer">
+  <rdfs:subClassOf rdf:resource="#Glycosylation_Regulator"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosylation_Inhibitor">
+  <rdfs:subClassOf rdf:resource="#Glycosylation_Regulator"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosylation_Regulation">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosylation_Regulator">
+  <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Glycosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Transferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Heparan_Sulfate">
+  <rdfs:subClassOf rdf:resource="#O-Xyl"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Heparan_Sulfate_Modification">
+  <rdfs:subClassOf rdf:resource="#Heparan_Sulfate"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Heparan_Sulfate_Synthesis">
+  <rdfs:subClassOf rdf:resource="#Heparan_Sulfate"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Intermediate_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Kinase">
+  <rdfs:subClassOf rdf:resource="#Phosphorylation_Activity"/>
+</owl:Class>
+
+<owl:Class rdf:about="#LacdiNAc">
+  <rdfs:subClassOf rdf:resource="#Elongation_and_Branching"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lactoside">
+  <rdfs:subClassOf rdf:resource="#GlcCer"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lipid-linked">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lysosomal-Targeting">
+  <rdfs:subClassOf rdf:resource="#Pathway_Specific"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Man_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mannosidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Mannosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Modification">
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Modification_Transport">
+  <rdfs:subClassOf rdf:resource="#Other_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Modifying_Enzyme">
+  <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#N-linked">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NAcetylgalactosaminidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NAcetylgalactosaminyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NAcetylglucosaminidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#NAcetylglucosaminyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neolactoside">
+  <rdfs:subClassOf rdf:resource="#GlcCer"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neu5Ac_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nlinked_Glycan_Branching">
+  <rdfs:subClassOf rdf:resource="#N-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nucleotide_Sugar">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nucleotide_Sugar_Synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nucleotide_Sugar_Transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nutrient_Transport">
+  <rdfs:subClassOf rdf:resource="#Other_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-Fuc">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-GalNAc">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-GlcNAc">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-Man">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-Xyl">
+  <rdfs:subClassOf rdf:resource="#GAG"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-linked">
+  <rdfs:subClassOf rdf:resource="#PathwayType"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Other_Transferases">
+  <rdfs:subClassOf rdf:resource="#Transferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Other_Transport">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PAPS_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#POFUT1_O-Fucosylation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Protein_Fucosyltransferase"/>
+  <rdfs:subClassOf rdf:resource="#O-Fuc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#POFUT2_O-Fucosylation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Protein_Fucosyltransferase"/>
+  <rdfs:subClassOf rdf:resource="#O-Fuc"/>
+</owl:Class>
+
+<owl:Class rdf:about="#POMGNT1">
+  <rdfs:subClassOf rdf:resource="#O-Man"/>
+</owl:Class>
+
+<owl:Class rdf:about="#POMGNT2">
+  <rdfs:subClassOf rdf:resource="#O-Man"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pathway"/>
+
+<owl:Class rdf:about="#PathwayType">
+  <rdfs:subClassOf rdf:resource="#Glycosylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pathway_Specific">
+  <rdfs:subClassOf rdf:resource="#Glycosylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Phosphatase">
+  <rdfs:subClassOf rdf:resource="#Phosphorylation_Activity"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Phosphorylation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Phosphorylation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Phosphorylation_Activity">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Protein_Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Fucosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Putative_or_Inactive_Enzymes">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Ribitol_Transferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sialidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sialyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sugar_Metabolism">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sugar_Phosphorylation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sugar_Sulfation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sugar_Transport">
+  <rdfs:subClassOf rdf:resource="#Other_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Sulfation_Activity"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfate_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfation">
+  <rdfs:subClassOf rdf:resource="#Sugar_Sulfation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfation_Activity">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfotransferase">
+  <rdfs:subClassOf rdf:resource="#Sulfation_Activity"/>
+</owl:Class>
+
+<owl:Class rdf:about="#TMTC">
+  <rdfs:subClassOf rdf:resource="#O-Man"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Transferase">
+  <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Transporter">
+  <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Type_II_Chain">
+  <rdfs:subClassOf rdf:resource="#Elongation_and_Branching"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Type_I_Chain">
+  <rdfs:subClassOf rdf:resource="#Elongation_and_Branching"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GalNAc_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GalNAc_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Gal_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Gal_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GlcA_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GlcA_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GlcNAc_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-GlcNAc_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Glc_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Glc_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Xyl_synthesis">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#UDP-Xyl_transport">
+  <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Transport"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Uncertain_Transporter">
+  <rdfs:subClassOf rdf:resource="#Transporter"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Xylosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#abc_Ganglioside">
+  <rdfs:subClassOf rdf:resource="#Ganglioside"/>
+</owl:Class>
+
+<owl:Class rdf:about="#acetyltransferase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#aminotransferase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cytidylyltransferase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#guanylyltransferase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#kinase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#poly-Sia">
+  <rdfs:subClassOf rdf:resource="#Sialyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#uridylyltransferase">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α1-2_Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Fucosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α1-3_Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Fucosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α1-4_Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Fucosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α1-6_Fucosyltransferase">
+  <rdfs:subClassOf rdf:resource="#Fucosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α2-3_Sialyltransferase">
+  <rdfs:subClassOf rdf:resource="#Sialyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α2-6_Sialyltransferase">
+  <rdfs:subClassOf rdf:resource="#Sialyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-Glc[POGLUT1]">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<α1-2_Fucosyltransferase rdf:about="#FUT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-2_Fucosyltransferase>
+
+<Putative_or_Inactive_Enzymes rdf:about="#FUT10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+</Putative_or_Inactive_Enzymes>
+
+<Putative_or_Inactive_Enzymes rdf:about="#FUT11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+</Putative_or_Inactive_Enzymes>
+
+<α1-2_Fucosyltransferase rdf:about="#FUT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-2_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α1-4_Fucosyltransferase"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α1-4_Fucosyltransferase"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<α1-6_Fucosyltransferase rdf:about="#FUT8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Nlinked_Glycan_Branching"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-6_Fucosyltransferase>
+
+<α1-3_Fucosyltransferase rdf:about="#FUT9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Capping"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</α1-3_Fucosyltransferase>
+
+<Glucuronidation rdf:about="#UGT1A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT1A9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2A3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT2B7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT3A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Glucuronidation rdf:about="#UGT3A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glucuronyltransferase"/>
+</Glucuronidation>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GALK1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GALK2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GALE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#TSTA3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GMPPB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#UAP1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#FCSK">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#CMAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#FPGT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GMPPA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GALT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#UGP2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#UGDH">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Dehydrogenase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#UXS1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#G6PC1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Phosphatase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GNPNAT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GNE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GNPDA1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#PGM2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#PGM3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GFPT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GFPT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#NAGK">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#HK2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#HK1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#HK3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GCK">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#GMDS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Dehydratase"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#NANS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#PMM2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#PGM1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Synthesis rdf:about="#PMM1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Synthesis>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35C1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35D1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35A3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35D2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Modification_Transport rdf:about="#SLC35B2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Modification_Transport>
+
+<Modification_Transport rdf:about="#SLC35B3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Modification_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Nucleotide_Sugar_Transport rdf:about="#SLC35B4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Nucleotide_Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<Sugar_Transport rdf:about="#SLC2A8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Sugar_Transport>
+
+<O-Fuc rdf:about="#POFUT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</O-Fuc>
+
+<O-Fuc rdf:about="#POFUT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Fucosyltransferase"/>
+</O-Fuc>
+
+<Capping rdf:about="#ST3GAL1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST3GAL2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST3GAL3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST3GAL4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST3GAL5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST3GAL6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GAL1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GAL2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST6GALNAC6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+<Capping rdf:about="#ST8SIA6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialyltransferase"/>
+  <rdf:type rdf:resource="#poly-Sia"/>
+</Capping>
+
+
+</rdf:RDF>

@@ -19,9 +19,6 @@
         <Class IRI="#Acetylation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Acetyltransferase_Activity"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#C-Man"/>
     </Declaration>
     <Declaration>
@@ -58,7 +55,7 @@
         <Class IRI="#Cytosol_Degradation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Deacetylase_Activity"/>
+        <Class IRI="#Deacetylase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Deacetylation"/>
@@ -68,6 +65,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Decarboxylation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dehydratase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Dehydrogenase"/>
@@ -310,10 +310,10 @@
         <Class IRI="#PAPS_Transporter"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#POFUT1"/>
+        <Class IRI="#POFUT1_O-Fucosylation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#POFUT2"/>
+        <Class IRI="#POFUT2_O-Fucosylation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#POMGNT1"/>
@@ -341,6 +341,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Protein_Fucosyltransferase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Putative_or_Inactive_Enzymes"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ribitol_Transferase"/>
@@ -479,9 +482,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#O-Glc[POGLUT1]"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Putative/Inactive_Enzymes"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#in_pathway"/>
@@ -523,10 +523,10 @@
         <NamedIndividual IRI="#FUT9"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#POFUT1"/>
+        <NamedIndividual IRI="#POFUT1_O-Fucosylation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#POFUT2"/>
+        <NamedIndividual IRI="#POFUT2_O-Fucosylation"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Acetylase"/>
@@ -535,10 +535,6 @@
     <SubClassOf>
         <Class IRI="#Acetylation"/>
         <Class IRI="#Modification"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Acetyltransferase_Activity"/>
-        <Class IRI="#Acetylase"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#C-Man"/>
@@ -589,8 +585,8 @@
         <Class IRI="#Glycan_Degradation"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Deacetylase_Activity"/>
-        <Class IRI="#Acetylase"/>
+        <Class IRI="#Deacetylase"/>
+        <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Deacetylation"/>
@@ -603,6 +599,10 @@
     <SubClassOf>
         <Class IRI="#Decarboxylation"/>
         <Class IRI="#Modification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dehydratase"/>
+        <Class IRI="#Modifying_Enzyme"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dehydrogenase"/>
@@ -921,11 +921,11 @@
         <Class IRI="#Transporter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#POFUT1"/>
+        <Class IRI="#POFUT1_O-Fucosylation"/>
         <Class IRI="#O-Fuc"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#POFUT2"/>
+        <Class IRI="#POFUT2_O-Fucosylation"/>
         <Class IRI="#O-Fuc"/>
     </SubClassOf>
     <SubClassOf>
@@ -959,6 +959,10 @@
     <SubClassOf>
         <Class IRI="#Protein_Fucosyltransferase"/>
         <Class IRI="#Fucosyltransferase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Putative_or_Inactive_Enzymes"/>
+        <Class IRI="#Other_Transferases"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ribitol_Transferase"/>
@@ -1144,20 +1148,16 @@
         <Class IRI="#O-Glc[POGLUT1]"/>
         <Class IRI="#O-linked"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Putative/Inactive_Enzymes"/>
-        <Class IRI="#Other_Transferases"/>
-    </SubClassOf>
     <ClassAssertion>
         <Class IRI="#α1-2_Fucosyltransferase"/>
         <NamedIndividual IRI="#FUT1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Putative/Inactive_Enzymes"/>
+        <Class IRI="#Putative_or_Inactive_Enzymes"/>
         <NamedIndividual IRI="#FUT10"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Putative/Inactive_Enzymes"/>
+        <Class IRI="#Putative_or_Inactive_Enzymes"/>
         <NamedIndividual IRI="#FUT11"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1202,11 +1202,11 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Protein_Fucosyltransferase"/>
-        <NamedIndividual IRI="#POFUT1"/>
+        <NamedIndividual IRI="#POFUT1_O-Fucosylation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Protein_Fucosyltransferase"/>
-        <NamedIndividual IRI="#POFUT2"/>
+        <NamedIndividual IRI="#POFUT2_O-Fucosylation"/>
     </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#in_pathway"/>
