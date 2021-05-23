@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"
+     xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3">
+     ontologyIRI="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto">
     <Prefix name="" IRI="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
