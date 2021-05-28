@@ -144,19 +144,24 @@ def add_classes(geneInst,classDict,classList):
     # Adds classes to existing instance:
     [geneInst.is_a.append(classDict[x]) for x in classList]
 
-#def add_instance(geneName,classList,classDict,onto):
-#    # Adds instance to ontology provided a list of classes:
-#    #If gene is new instantiate it:
-#    print(classList[0])
-#    inst=classDict[classList[0]](geneName)
-#    # If more than one class, add to ontology
-#    if len(classList)>1: add_classes(inst,classDict,classList[1:])
-
-def add_instance(geneName,firstClass):
+def add_instance(geneName,cl,classDict):
     # Adds instance to ontology provided a list of classes:
     #If gene is new instantiate it:
-    inst=firstClass(geneName)
+    print(cl)
+    inst=classDict[cl](geneName)
     return(inst)
+
+#def add_instance(geneName,firstClass):
+#    # Adds instance to ontology provided a list of classes:
+#    #If gene is new instantiate it:
+#    inst=firstClass(geneName)
+#    return(inst)
+
+#def add_instance(geneName,firstClass):
+#    # Adds instance to ontology provided a list of classes:
+#    #If gene is new instantiate it:
+#    inst=firstClass(geneName)
+#    return(inst)
 
 
 # Main iteration:
@@ -165,32 +170,27 @@ def procInstance(row,classDict,ontoDict,annotDict,onto):
     # 1. Create processing classes from procDict
     rowDta=row.to_dict()
     print(rowDta['geneName'])
-    # Check if instance present in ontology:
-    inst=get_inst(rowDta['geneName'],onto) 
-    #Add class information:
-    for k,v in ontoDict.items():
-        #Parse valid classes:
-        classList=rowDta[k].split(',')
-        classList,invalid_classList=class_process(classList,onto)
-        if len(invalid_classList)>0:
-            print('Found invalid classes associated with {0}: {1}'.format(geneName,invalid_classList))
-        if len(classList)==0:
-            print('No valid classes for {0}'.format(rowDta['geneName']))
-            continue
-        for c in classList:
-            print(c)
-            obj=classDict[c]
-            if inst is None:
-                #If gene is new instantiate it:
-                inst=add_instance(rowDta['geneName'],obj)
-            else:
-                cls=v(inst,obj)
-                cls.associate()
+    # Create instance in ontology, use the "Function" class to instantiate it:
+    funList=rowDta['Function'].split(',')
+    inst=classDict[funList[0]](rowDta['geneName'])
+    if len(funList)>1:
+        for fun in funList[1:]:
+            cls=isa_A(inst,classDict[fun])
+            cls.associate()
+    # Associate pathways with instance:
+    pathList=rowDta['Pathway'].split(',')
+    pathList,invalid_pathList=class_process(pathList,onto)
+    if len(pathList)>0:
+        for pth in pathList:
+            cls=inPathway_A(inst,classDict[pth])
+            cls.associate()
     #Add annotation information: 
     for k,v in annotDict.items():
         cls=v(inst,rowDta[k])
         cls.associate()
 
+#Blow up all instances, start with clean slate:
+[destroy_entity(x) for x in glycoOnto.individuals()]
 # Add Glycogene instances to ontology:
 with glycoOnto:
     for _,row in glycoEnzDB_finished.iterrows():

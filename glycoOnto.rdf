@@ -71,9 +71,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
     </owl:Class>
     
@@ -91,6 +91,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Aminotransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Aminotransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
     </owl:Class>
     
 
@@ -179,6 +195,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytidylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytidylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
     </owl:Class>
     
 
@@ -291,6 +315,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Endoglycosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
     </owl:Class>
     
 
@@ -495,6 +527,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosidase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosidase">
@@ -585,6 +625,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Guanylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Guanylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
     </owl:Class>
     
 
@@ -829,6 +877,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Oligosaccharyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Oligosaccharyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GalNAcTs -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GalNAcTs">
@@ -1051,6 +1107,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Synthase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Synthase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type">
@@ -1163,6 +1227,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_transport">
@@ -1227,6 +1299,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_transport">
@@ -1243,50 +1323,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Uridylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Uridylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#acetyltransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#acetyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#aminotransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#aminotransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#cytidylyltransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#cytidylyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#guanylyltransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#guanylyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#oligosaccharyltransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#oligosaccharyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
     </owl:Class>
     
 
@@ -1299,17 +1347,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#uridylyltransferase -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosylT -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#uridylyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosyT -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosyT">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
     </owl:Class>
     
@@ -1508,7 +1548,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosyT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -1536,7 +1576,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosyT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α1-2_FucosylT"/>
     </owl:NamedIndividual>
     
 
