@@ -239,6 +239,10 @@
   <rdfs:subClassOf rdf:resource="#CorePathways"/>
 </owl:Class>
 
+<owl:Class rdf:about="#GAG_Degradation">
+  <rdfs:subClassOf rdf:resource="#Extracellular_Degradation"/>
+</owl:Class>
+
 <owl:Class rdf:about="#GDP-Fuc_Synthesis">
   <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar_Synthesis"/>
 </owl:Class>
@@ -408,6 +412,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="#O-Xyl">
+  <rdfs:subClassOf rdf:resource="#GAG"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hyaluronan">
   <rdfs:subClassOf rdf:resource="#GAG"/>
 </owl:Class>
 
@@ -2651,6 +2659,7 @@
   <rdf:type rdf:resource="#β4GlcNAcT"/>
   <rdf:type rdf:resource="#GlcAT"/>
   <rdf:type rdf:resource="#β3GlcAT"/>
+  <inPathway rdf:resource="#Hyaluronan"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
@@ -2661,6 +2670,7 @@
   <rdf:type rdf:resource="#β4GlcNAcT"/>
   <rdf:type rdf:resource="#GlcAT"/>
   <rdf:type rdf:resource="#β3GlcAT"/>
+  <inPathway rdf:resource="#Hyaluronan"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
@@ -2671,6 +2681,7 @@
   <rdf:type rdf:resource="#β4GlcNAcT"/>
   <rdf:type rdf:resource="#GlcAT"/>
   <rdf:type rdf:resource="#β3GlcAT"/>
+  <inPathway rdf:resource="#Hyaluronan"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
