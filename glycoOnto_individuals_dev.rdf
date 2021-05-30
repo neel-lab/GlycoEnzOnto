@@ -1,0 +1,2241 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#in_pathway -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#in_pathway">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+        <rdfs:comment>Associates a glycogene with a glycosylation pathway.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#is_of_class -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#is_of_class">
+        <rdfs:comment>Specifies a glycogene&apos;s class, pertaining to its function and substrate specificity.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Acetylase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Acetylase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Acetylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Acetylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#C-Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#C-Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMP-Neu5Ac_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMP-Neu5Ac_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMP-Neu5Ac_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMP-Neu5Ac_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Xyl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate_Modification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate_Modification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Chondroitin_and_Dermatan_Sulfate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Core4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Cytosol_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycan_Degradation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Deacetylase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Deacetylase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Deacetylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Deacetylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Decarboxylase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Decarboxylase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Decarboxylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Decarboxylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydratase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydratase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydrogenase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydrogenase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dephosphorylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dephosphorylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Phosphorylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Desulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Desulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Sulfation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dolichol_Pathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dolichol_Pathway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#N-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dystro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dystro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#EOGT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#EOGT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Elongation_and_Branching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Elongation_and_Branching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Endoglycosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Endoglycosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Epimerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Epimerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Extracellular_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Extracellular_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycan_Degradation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fuc_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fuc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GAG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GAG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Fuc_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Fuc_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Fuc_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Fuc_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Man_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Man_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Man_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GDP-Man_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GPI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GPI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lipid-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GalCer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GalCer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lipid-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GalNAc_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GalNAc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Gal_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Gal_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Galactosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Galactosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Galactosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Galactosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Ganglioside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Ganglioside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lipid-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcNAc_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcNAc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glc_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Globoside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Globoside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Enhancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Enhancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Inhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Inhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation_Regulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Xyl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate_Modification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate_Modification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Heparan_Sulfate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Intermediate_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Intermediate_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#LacdiNAc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#LacdiNAc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Elongation_and_Branching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lactoside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lactoside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lipid-linked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lipid-linked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lysosomal-Targeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lysosomal-Targeting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway_Specific"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Lysosome_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycan_Degradation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Man_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Man_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Mannosidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Mannosidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Mannosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Mannosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Metabolism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#N-linked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#N-linked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylgalactosaminidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylgalactosaminidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylgalactosaminyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylgalactosaminyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylglucosaminidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylglucosaminidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylglucosaminyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAcetylglucosaminyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Neolactoside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Neolactoside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GlcCer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Neu5Ac_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Neu5Ac_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nlinked_Glycan_Branching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nlinked_Glycan_Branching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#N-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nutrient_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nutrient_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GalNAc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GlcNAc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-GlcNAc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Xyl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Xyl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GAG"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PAPS_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PAPS_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1_O-Fucosylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1_O-Fucosylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2_O-Fucosylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2_O-Fucosylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POMGNT1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POMGNT1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POMGNT2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POMGNT2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PathwayType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway_Specific -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway_Specific">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Phosphorylation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphorylation_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Protein_Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Protein_Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Putative_or_Inactive_Enzymes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Putative_or_Inactive_Enzymes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Ribitol_Transferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Ribitol_Transferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosidase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Metabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Metabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Phosphorylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Phosphorylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Metabolism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Sulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Metabolism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfate_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfate_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Sulfation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modifying_Enzyme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfotransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfotransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sulfation_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#TMTC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#TMTC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Man"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycogene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Type_II_Chain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Type_II_Chain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Elongation_and_Branching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Type_I_Chain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Type_I_Chain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Elongation_and_Branching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GalNAc_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GalNAc_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GalNAc_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GalNAc_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Gal_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Gal_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Gal_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Gal_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcA_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcA_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcA_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcA_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcNAc_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcNAc_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcNAc_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-GlcNAc_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Glc_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Glc_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Glc_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Glc_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Xyl_synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Xyl_synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Xyl_transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UDP-Xyl_transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Uncertain_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Uncertain_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Transporter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Xylosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Xylosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glycosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#abc_Ganglioside -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#abc_Ganglioside">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Ganglioside"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#acetyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#acetyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#aminotransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#aminotransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#cytidylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#cytidylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#guanylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#guanylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#kinase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#kinase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#uridylyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#uridylyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-2_Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-2_Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-4_Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-4_Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-6_Fucosyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-6_Fucosyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α2-3_Sialyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α2-3_Sialyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α2-6_Sialyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α2-6_Sialyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Glc[POGLUT1] -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Glc[POGLUT1]">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#CMAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FCSK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FCSK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FPGT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FPGT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-2_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Putative_or_Inactive_Enzymes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Putative_or_Inactive_Enzymes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-2_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-4_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-4_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nlinked_Glycan_Branching"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-6_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#FUT9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#α1-3_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#G6PC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#G6PC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Phosphatase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALK1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALK1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALK2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALK2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GALT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GCK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GCK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GFPT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GFPT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GFPT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GFPT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydratase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMPPA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMPPA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMPPB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GMPPB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNPDA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNPDA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNPNAT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#GNPNAT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#HK3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAGK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NAGK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Kinase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NANS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#NANS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PGM3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PMM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PMM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PMM2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#PMM2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1_O-Fucosylation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT1_O-Fucosylation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Protein_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Fucosyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#O-Fuc"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2_O-Fucosylation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#POFUT2_O-Fucosylation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Protein_Fucosyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC2A8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35A3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Modification_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35B4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35C1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35D1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35D1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35D2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#SLC35D2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Transport"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST3GAL6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GAL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GAL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GAL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GAL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST6GALNAC6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#ST8SIA6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Sialyltransferase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#poly-Sia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#TSTA3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#TSTA3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UAP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UAP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGDH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGDH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Dehydrogenase"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGP2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGP2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT1A9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2A3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT2B7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT3A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT3A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT3A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UGT3A2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronidation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Glucuronyltransferase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UXS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#UXS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#Nucleotide_Sugar_Synthesis"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
