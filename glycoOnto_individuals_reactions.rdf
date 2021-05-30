@@ -99,6 +99,14 @@
   <rdfs:subClassOf rdf:resource="#Nucleotide_Sugar"/>
 </owl:Class>
 
+<owl:Class rdf:about="#CS4ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfotransferase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Glycosylation">
   <rdfs:subClassOf rdf:resource="#Pathway"/>
 </owl:Class>
@@ -263,8 +271,20 @@
   <rdfs:subClassOf rdf:resource="#CorePathways"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Gal6ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
+</owl:Class>
+
 <owl:Class rdf:about="#GalCer">
   <rdfs:subClassOf rdf:resource="#Lipid-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GalNAc4ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GalNAc6ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
 </owl:Class>
 
 <owl:Class rdf:about="#GalNAcT">
@@ -293,6 +313,18 @@
 
 <owl:Class rdf:about="#GlcAT">
   <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcAT3ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcA_IdoA2ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcNAc6ST">
+  <rdfs:subClassOf rdf:resource="#Sulfotransferase"/>
 </owl:Class>
 
 <owl:Class rdf:about="#GlcNAcT">
@@ -353,6 +385,14 @@
 
 <owl:Class rdf:about="#Guanylyltransferase">
   <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+</owl:Class>
+
+<owl:Class rdf:about="#HA_Degradation">
+  <rdfs:subClassOf rdf:resource="#Extracellular_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#HNK-1">
+  <rdfs:subClassOf rdf:resource="#Capping"/>
 </owl:Class>
 
 <owl:Class rdf:about="#HS_Polymerization">
@@ -417,6 +457,10 @@
 
 <owl:Class rdf:about="#Transporters">
   <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#N-sulfation">
+  <rdfs:subClassOf rdf:resource="#HS_Sulfation"/>
 </owl:Class>
 
 <owl:Class rdf:about="#NAcetylgalactosaminidase">
@@ -541,10 +585,6 @@
 
 <owl:Class rdf:about="#Sulfation">
   <rdfs:subClassOf rdf:resource="#Modification"/>
-</owl:Class>
-
-<owl:Class rdf:about="#Sulfotransferase">
-  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Synthase">
@@ -683,31 +723,39 @@
   <rdfs:subClassOf rdf:resource="#SialylT"/>
 </owl:Class>
 
-<owl:Class rdf:about="#β1-3_GalNAcT">
-  <rdfs:subClassOf rdf:resource="#GalNAcT"/>
-</owl:Class>
-
-<owl:Class rdf:about="#β1-3_GalT">
-  <rdfs:subClassOf rdf:resource="#GalT"/>
-</owl:Class>
-
-<owl:Class rdf:about="#β1-3_GlcAT">
-  <rdfs:subClassOf rdf:resource="#GlcAT"/>
-</owl:Class>
-
-<owl:Class rdf:about="#β1-3_GlcNAcT">
+<owl:Class rdf:about="#α4GlcNAcT">
   <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
 </owl:Class>
 
-<owl:Class rdf:about="#β1-4_GalNAcT">
+<owl:Class rdf:about="#β3GalNAcT">
   <rdfs:subClassOf rdf:resource="#GalNAcT"/>
 </owl:Class>
 
-<owl:Class rdf:about="#β1-4_GalT">
+<owl:Class rdf:about="#β3GalT">
   <rdfs:subClassOf rdf:resource="#GalT"/>
 </owl:Class>
 
-<owl:Class rdf:about="#β1-4_GlcNAcT">
+<owl:Class rdf:about="#β3GlcAT">
+  <rdfs:subClassOf rdf:resource="#GlcAT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β3GlcNAcT">
+  <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β4GalNAcT">
+  <rdfs:subClassOf rdf:resource="#GalNAcT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β4GalT">
+  <rdfs:subClassOf rdf:resource="#GalT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β4GlcAT">
+  <rdfs:subClassOf rdf:resource="#GlcAT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β4GlcNAcT">
   <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
 </owl:Class>
 
@@ -725,10 +773,6 @@
 
 <owl:Class rdf:about="#CS&amp;DS_Sulfation">
   <rdfs:subClassOf rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
-</owl:Class>
-
-<owl:Class rdf:about="#PSA_&amp;_HNK1">
-  <rdfs:subClassOf rdf:resource="#Capping"/>
 </owl:Class>
 
 <owl:Class rdf:about="#SdaAntigen_&amp;_GM2">
@@ -1389,6 +1433,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#α1-2_FucosylT"/>
   <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#ABO_BloodGroups"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(a1-2)Gal(b1-?)GalNAc(b1-?) or Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?)GalNAc(b1-?) or Gal(b1-?)GlcNAc(b1-?)</hasSubstrate>
@@ -1398,6 +1443,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#α1-2_FucosylT"/>
   <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#ABO_BloodGroups"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(a1-2)Gal(b1-?)GalNAc(b1-?) or Fuc(a1-2)Gal(b1-?)GlcNAc(b1-?)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?)GalNAc(b1-?) or Gal(b1-?)GlcNAc(b1-?)</hasSubstrate>
@@ -2071,7 +2117,7 @@
 
 <GalT rdf:about="#B3GALT1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#β1-3_GalT"/>
+  <rdf:type rdf:resource="#β3GalT"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-4)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)GlcNAc(b1-?)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?)</hasSubstrate>
@@ -2079,7 +2125,7 @@
 
 <GalT rdf:about="#B3GALT2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#β1-3_GalT"/>
+  <rdf:type rdf:resource="#β3GalT"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-4)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)GlcNAc(b1-?)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?)</hasSubstrate>
@@ -2087,7 +2133,7 @@
 
 <GalT rdf:about="#B3GALT4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#β1-3_GalT"/>
+  <rdf:type rdf:resource="#β3GalT"/>
   <inPathway rdf:resource="#Lipid-linked"/>
   <inPathway rdf:resource="#Ganglioside"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nNeuAc(a2-?)&lt;4&amp;GalNAc(b1-4)&lt;3</hasConstraint>
@@ -2097,7 +2143,7 @@
 
 <GalT rdf:about="#B3GALT5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#β1-3_GalT"/>
+  <rdf:type rdf:resource="#β3GalT"/>
   <inPathway rdf:resource="#Lipid-linked"/>
   <inPathway rdf:resource="#Lactoside"/>
   <inPathway rdf:resource="#Globoside"/>
@@ -2109,18 +2155,24 @@
 
 <GalT rdf:about="#B3GALT6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#β1-3_GalT"/>
+  <rdf:type rdf:resource="#β3GalT"/>
   <inPathway rdf:resource="#O-Xyl"/>
   <inPathway rdf:resource="#Heparan_Sulfate"/>
   <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
-  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)Gal(b1-4)Xyl(b1-?)</hasProduct>
-  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-?)</hasSubstrate>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)Gal(b1-4)Xyl(b1-?)Ser</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-?)Ser</hasSubstrate>
 </GalT>
 
 <GalT rdf:about="#A4GALT">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GlcCer"/>
+  <inPathway rdf:resource="#Ganglioside"/>
+  <inPathway rdf:resource="#Globoside"/>
   <inPathway rdf:resource="#Lactoside"/>
+  <inPathway rdf:resource="#Neolactoside"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(a1-4)Gal(b1-4)Glc(b1-?)Cer or Gal(a1-4)Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Glc(b1-?)Cer or Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)Cer</hasSubstrate>
@@ -2136,6 +2188,7 @@
 
 <GalT rdf:about="#B4GALT1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Type_II_LacNAc"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-3)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?) or Gal(b1-4)Glc(b1-?)</hasProduct>
@@ -2144,6 +2197,7 @@
 
 <GalT rdf:about="#B4GALT2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Type_II_LacNAc"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-3)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasProduct>
@@ -2152,6 +2206,7 @@
 
 <GalT rdf:about="#B4GALT3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Type_II_LacNAc"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-3)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasProduct>
@@ -2160,6 +2215,7 @@
 
 <GalT rdf:about="#B4GALT4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Type_II_LacNAc"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-3)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasProduct>
@@ -2168,6 +2224,7 @@
 
 <GalT rdf:about="#B4GALT5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Type_II_LacNAc"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-3)GlcNAc(b1-?)&amp;!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasProduct>
@@ -2176,6 +2233,7 @@
 
 <GalT rdf:about="#B4GALT6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#Lactoside"/>
   <inPathway rdf:resource="#Neolactoside"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
@@ -2185,8 +2243,11 @@
 
 <GalT rdf:about="#B4GALT7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalT"/>
   <inPathway rdf:resource="#GAG"/>
   <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-?)Ser</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl(b1-?)Ser</hasSubstrate>
@@ -2338,6 +2399,556 @@
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(??-?)WXXW or ...Man(??-?)WXXW</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WXXW or ...WXXW</hasSubstrate>
 </ManT>
+
+<GalNAcT rdf:about="#B4GALNT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nNeuAc(a2-?)&lt;=3</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...[GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Gal(b1-4)Glc(b1-?)Cer</hasSubstrate>
+</GalNAcT>
+
+<GalNAcT rdf:about="#B4GALNT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nNeuAc(a2-?)&lt;=3</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...[GalNAc(b1-4)]Gal(b1-4)Glc(b1-?)Cer</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Gal(b1-4)Glc(b1-?)Cer</hasSubstrate>
+</GalNAcT>
+
+<Glycosidase rdf:about="#NEU1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialidase"/>
+  <inPathway rdf:resource="#Glycan_Degradation"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?) or NeuAc(a2-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuAc(a2-?)Gal(b1-?) or NeuAc(a2-?)NeuAc(a2-?)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#NEU2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialidase"/>
+  <inPathway rdf:resource="#Glycan_Degradation"/>
+  <inPathway rdf:resource="#Cytosol_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?) or NeuAc(a2-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuAc(a2-?)Gal(b1-?) or NeuAc(a2-?)NeuAc(a2-?)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#NEU3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialidase"/>
+  <inPathway rdf:resource="#Glycan_Degradation"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?) or NeuAc(a2-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuAc(a2-?)Gal(b1-?) or NeuAc(a2-?)NeuAc(a2-?)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#NEU4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sialidase"/>
+  <inPathway rdf:resource="#Glycan_Degradation"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?) or NeuAc(a2-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuAc(a2-?)Gal(b1-?) or NeuAc(a2-?)NeuAc(a2-?)</hasSubstrate>
+</Glycosidase>
+
+<XylT rdf:about="#XYLT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl(b1-?)Ser</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser</hasSubstrate>
+</XylT>
+
+<XylT rdf:about="#XYLT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl(b1-?)Ser</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser</hasSubstrate>
+</XylT>
+
+<Modifying_Enzyme rdf:about="#FAM20B">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Kinase"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-? [2P])Ser</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-?)Ser</hasSubstrate>
+</Modifying_Enzyme>
+
+<GlcAT rdf:about="#B3GAT3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-3)Gal(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)Gal(b1-4)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#CHSY3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <rdf:type rdf:resource="#GalNAcT"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl&amp;!IdoA(a1-3)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)  or GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)  or GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#CHPF">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <rdf:type rdf:resource="#GalNAcT"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl&amp;!IdoA(a1-3)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)  or GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)  or GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#CHPF2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl&amp;!IdoA(a1-3)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#CHSY1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <rdf:type rdf:resource="#GalNAcT"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl&amp;!IdoA(a1-3)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)  or GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)  or GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</GlcAT>
+
+<GalNAcT rdf:about="#CSGALNACT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-3)Gal(b1-4)</hasSubstrate>
+</GalNAcT>
+
+<GalNAcT rdf:about="#CSGALNACT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Chondroitin&amp;Dermatan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4) or GalNAc(b1-4)GlcA(b1-3)GalNAc(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-3)Gal(b1-4) or GlcA(b1-3)GalNAc(b1-4)</hasSubstrate>
+</GalNAcT>
+
+<Epimerase rdf:about="#DSEL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(b1-3)</hasSubstrate>
+</Epimerase>
+
+<Epimerase rdf:about="#DSE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(b1-3)</hasSubstrate>
+</Epimerase>
+
+<Epimerase rdf:about="#GLCE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Xyl"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-4)GlcN</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(b1-4)GlcN</hasSubstrate>
+</Epimerase>
+
+<GlcAT rdf:about="#EXT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcAT"/>
+  <rdf:type rdf:resource="#GlcNAcT"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!IdoA(a1-4)&amp;!GlcN(a1-4 [NS])</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-3) or GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)GlcA(b1-3) or GlcA(b1-4)GlcNAc(a1-4)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#EXT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcAT"/>
+  <rdf:type rdf:resource="#GlcNAcT"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!IdoA(a1-4)&amp;!GlcN(a1-4 [NS])</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-3) or GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)GlcA(b1-3) or GlcA(b1-4)GlcNAc(a1-4)</hasSubstrate>
+</GlcAT>
+
+<GlcNAcT rdf:about="#EXTL1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!IdoA(a1-4)&amp;!GlcN(a1-4 [NS])</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#EXTL2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4) or GlcNAc(a1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4) or GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#EXTL3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#Heparan_Sulfate"/>
+  <inPathway rdf:resource="#HS_Polymerization"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl or GlcNAc(a1-4)GlcA(b1-4)GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl or GlcA(b1-4)GlcNAc(a1-4)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#HAS1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcNAcT"/>
+  <rdf:type rdf:resource="#GlcAT"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#HAS2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcNAcT"/>
+  <rdf:type rdf:resource="#GlcAT"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#HAS3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcNAcT"/>
+  <rdf:type rdf:resource="#GlcAT"/>
+  <rdf:type rdf:resource="#β3GlcAT"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3) or GlcNAc(b1-4)</hasSubstrate>
+</GlcNAcT>
+
+<Glycosidase rdf:about="#HYAL1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#HA_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#HYAL2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#HA_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#HYAL3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#HA_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#HYAL4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#HA_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
+</Glycosidase>
+
+<ManT rdf:about="#TMTC1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser[O-Man] or Thr[O-Man]</hasSubstrate>
+</ManT>
+
+<ManT rdf:about="#TMTC2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser[O-Man] or Thr[O-Man]</hasSubstrate>
+</ManT>
+
+<ManT rdf:about="#TMTC3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser[O-Man] or Thr[O-Man]</hasSubstrate>
+</ManT>
+
+<ManT rdf:about="#TMTC4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser[O-Man] or Thr[O-Man]</hasSubstrate>
+</ManT>
+
+<Modifying_Enzyme rdf:about="#NDST1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Deacetylase"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <inPathway rdf:resource="#HS_Sulfation"/>
+  <inPathway rdf:resource="#N-sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcN(a1-4 [NS])GlcA(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#NDST2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Deacetylase"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <inPathway rdf:resource="#HS_Sulfation"/>
+  <inPathway rdf:resource="#N-sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcN(a1-4 [NS])GlcA(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#NDST3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Deacetylase"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <inPathway rdf:resource="#HS_Sulfation"/>
+  <inPathway rdf:resource="#N-sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcN(a1-4 [NS])GlcA(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#NDST4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Deacetylase"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <inPathway rdf:resource="#HS_Sulfation"/>
+  <inPathway rdf:resource="#N-sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcN(a1-4 [NS])GlcA(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)GlcNAc(a1-4)GlcA(b1-4)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#UST">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GlcA_IdoA2ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3 [2S])GalNAc or GalNAc(b1-4)IdoA(a1-3 [2S])GalNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcA(b1-3)GalNAc or GalNAc(b1-4)IdoA(a1-3)GalNAc</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#Gal6ST"/>
+  <inPathway rdf:resource="#GAG"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4 [6S])GlcNAc(b1-3 [6S]) or NeuAc(a2-3)Gal(b1-4 [6S])GlcNAc(b1-? [6S]) or NeuAc(a2-3)Gal(b1-4 [6S])GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-3 [6S]) or NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-? [6S]) or NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GlcAT3ST"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#HNK-1"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3 [3S]])Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#CS4ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [4S])GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#CS4ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [4S])GlcA(b1-3) or GlcA(b1-3)GalNAc(b1-4 [4S])IdoA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GalNAc(b1-4)IdoA(a1-3)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#CS4ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [4S])GlcA(b1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)GlcA(b1-3)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GalNAc4ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IdoA(a1-3)GalNAc(b1-4 [4S])IdoA(a1-3) or IdoA(a1-3 [2S])GalNAc(b1-4 [4S])IdoA(a1-3) or IdoA(a1-3)GalNAc(b1-4 [4S])IdoA(a1-3 [2S]) or IdoA(a1-3 [2S])GalNAc(b1-4 [4S])IdoA(a1-3 [2S])</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IdoA(a1-3)GalNAc(b1-4)IdoA(a1-3) or IdoA(a1-3 [2S])GalNAc(b1-4)IdoA(a1-3) or IdoA(a1-3)GalNAc(b1-4)IdoA(a1-3 [2S]) or IdoA(a1-3 [2S])GalNAc(b1-4)IdoA(a1-3 [2S])</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GalNAc4ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [4,6S]) or IdoA(a1-3)GalNAc(b1-4 [4,6S])</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [6S]) or IdoA(a1-3)GalNAc(b1-4 [6S])</hasSubstrate>
+</Modifying_Enzyme>
+
+<Sulfotransferase rdf:about="#CHST2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc6ST"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3 [6S])Gal or GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6 [6S])]GalNAc or Gal(b1-4)GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6 [6S])]GalNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3)Gal or GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6)]GalNAc or Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6)]GalNAc</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#CHST3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GalNAc6ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [6S])GlcA or NeuAc(a2-3)Gal(b1-4 [6S])GlcNAc(b1-3 [6S])</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)GlcA or NeuAc(a2-3)Gal(b1-4)GlcNAc(b1-3 [6S])</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#CHST4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc6ST"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6 [6S])]GalNAc or Gal(b1-4)GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6 [6S])]GalNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6)]GalNAc or Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6)]GalNAc</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#CHST5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc6ST"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6 [6S])]GalNAc or Gal(b1-4)GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6 [6S])]GalNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6)]GalNAc or Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6)]GalNAc</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#CHST6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc6ST"/>
+  <inPathway rdf:resource="#Keratan_Sulfate"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3 [6S])Gal or GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6 [6S])]GalNAc or Gal(b1-4)GlcNAc(b1-6 [6S])[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6 [6S])]GalNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3)Gal or GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[GlcNAc(b1-6)]GalNAc or Gal(b1-4)GlcNAc(b1-6)[Gal(b1-3)]GalNAc or Gal(b1-3)[Gal(b1-4)GlcNAc(b1-6)]GalNAc</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#CHST7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GalNAc6ST"/>
+  <inPathway rdf:resource="#CS&amp;DS_Sulfation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">var=50%</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4 [6S])GlcA</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)GalNAc(b1-4)GlcA</hasSubstrate>
+</Sulfotransferase>
+
+<Modifying_Enzyme rdf:about="#CHST8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GalNAc4ST"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#LacdiNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-?) or GlcNAc(b1-4)GlcNAc</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4 [4S])GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#CHST9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Sulfotransferase"/>
+  <rdf:type rdf:resource="#GalNAc4ST"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#LacdiNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-?) or GlcNAc(b1-4)GlcNAc</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4 [4S])GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</Modifying_Enzyme>
 
 
 </rdf:RDF>
