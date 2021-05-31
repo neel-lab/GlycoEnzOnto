@@ -135,18 +135,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -399,18 +399,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -423,6 +423,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transporter">
@@ -431,18 +439,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_transport -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
     </owl:Class>
     
 
@@ -949,6 +957,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc">
@@ -1283,18 +1299,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -1307,18 +1323,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -1331,18 +1347,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -1355,18 +1371,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -1379,18 +1395,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
@@ -1403,18 +1419,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_transport -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
     </owl:Class>
     
 
