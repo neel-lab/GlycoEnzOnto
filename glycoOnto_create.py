@@ -21,13 +21,13 @@ classDict={x.name:x for x in glycoOnto.classes()}
 glycoEnzDB_finished=pd.read_csv('./finishedGlycogenes.tsv',sep='\t',header=0)
 
 ### Define ontology terms to parse: ###
-ontoTerms=['Pathway','Function']
+ontoTerms=['Pathway','Glycogene']
 annotationTerms=['Reactant','Product','Constraint']
 ### Reparse the table to only contain relevant fields ###
 glycoEnzDB_finished=glycoEnzDB_finished[['geneName']+ontoTerms+annotationTerms]
-#Fix "Pathway" and "Functions" to match with strings:
+#Fix "Pathway" and "Glycogenes" to match with strings:
 glycoEnzDB_finished['Pathway']=[re.sub('\ ','_',x) for x in glycoEnzDB_finished['Pathway']]
-glycoEnzDB_finished['Function']=[re.sub('\ ','_',x) for x in glycoEnzDB_finished['Function']]
+glycoEnzDB_finished['Glycogene']=[re.sub('\ ','_',x) for x in glycoEnzDB_finished['Glycogene']]
 
 ### Check for missing/incorrect classes in ontology:
 for i,row in glycoEnzDB_finished.iterrows():
@@ -41,8 +41,8 @@ def procInstance(row,classDict,ontoDict,annotDict,onto):
     # 1. Create processing classes from procDict
     rowDta=row.to_dict()
     print(rowDta['geneName'])
-    # Create instance in ontology, use the "Function" class to instantiate it:
-    funList=rowDta['Function'].split(',')
+    # Create instance in ontology, use the "Glycogene" class to instantiate it:
+    funList=rowDta['Glycogene'].split(',')
     inst=classDict[funList[0]](rowDta['geneName'])
     if len(funList)>1:
         for fun in funList[1:]:

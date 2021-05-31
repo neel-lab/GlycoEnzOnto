@@ -17,6 +17,14 @@ def get_inst(geneName,onto):
     else:
         return(ind[0])
 
+def get_class(nme,onto):
+    #Retrieves class object if name exists:
+    classList=[x.name for x in onto.classes()]
+    if nme in classList:
+        return([x for x in onto.classes() if x.name==nme][0])
+    else:
+        return(None)
+
 def check_if_class(cl,onto):
     # Determines if class is valid based on ontology
     return(cl in [x.name for x in onto.classes()])
