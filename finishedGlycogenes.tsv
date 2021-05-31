@@ -1,4 +1,4 @@
-Status	FigStatus	geneNotes	geneName	UniProt	Description	Pathway	Glycogene	Reactant	Product	Constraint	Compartment	
+Status	FigStatus	Notes	geneName	UniProt	Description	Pathway	Glycogene	Reactant	Product	Constraint	Compartment	
 done	add fig		UGT1A1	P22309	UDP-glucuronosyltransferase 1-1	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
 done	add fig		UGT1A10	Q9HAW8	UDP-glucuronosyltransferase 1-10	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
 done	add fig		UGT1A3	P35503	UDP-glucuronosyltransferase 1-3	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
