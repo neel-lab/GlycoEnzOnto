@@ -7,6 +7,19 @@ import re
 import pathlib
 from pathlib import Path
 
+def format_field(txt):
+    #Formats incoming fields of text and returns lists of classes:
+    #Remove any non-standard delimiters
+    txt=re.sub(r'\|',',',txt)
+    txtList=txt.split(',')
+    #First remove trailing spaces:
+    txtList=[re.sub(r'^\ ','',x) for x in txtList]
+    txtList=[re.sub(r'\ $','',x) for x in txtList]
+    #Then replace all spaces in names with underscores:
+    txtList=[re.sub('\ ','_',x) for x in txtList]
+    return(txtList)
+
+
 def get_inst(geneName,onto):
     # Checks if instance is already present in the ontology
     # Returns object corresponding to instance if present, 
