@@ -1,4 +1,4 @@
-Status	FigStatus	geneNotes	geneName	UniProt	Description	Pathway	Glycogene	Reactant	Product	Constraint	Compartment	
+Status	FigStatus	Notes	geneName	UniProt	Description	Pathway	Glycogene	Reactant	Product	Constraint	Compartment	
 done	add fig		UGT1A1	P22309	UDP-glucuronosyltransferase 1-1	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
 done	add fig		UGT1A10	Q9HAW8	UDP-glucuronosyltransferase 1-10	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
 done	add fig		UGT1A3	P35503	UDP-glucuronosyltransferase 1-3	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
@@ -176,9 +176,9 @@ done			RPN1	P04843	Dolichyldiphosphooligosaccharideprotein glycosyltransferase s
 done			RPN2	P04844	Dolichyldiphosphooligosaccharideprotein glycosyltransferase subunit 2	Dolichol_Pathway	Glycosylation Regulator,Glycosylation Enhancer	no reaction			ER	
 done			STT3A	P46977	Dolichyldiphosphooligosaccharideprotein glycosyltransferase subunit STT3A	Dolichol_Pathway	Oligosaccharyltransferase	Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?):Dol-PP	Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)Asn	None	ER	
 done			STT3B	Q8TCJ2	Dolichyldiphosphooligosaccharideprotein glycosyltransferase subunit STT3B	Dolichol_Pathway	Oligosaccharyltransferase	Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?):Dol-PP	Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)Asn	None	ER	
-done			MOGS	Q13724	Mannosyloligosaccharide glucosidase	N-linked,Processing	Glucosidase	Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)	Glc(a1-3)Glc(a1-3)Man(a1-2)	None	ER	
-done			PRKCSH	P14314	Glucosidase 2 subunit beta	N-linked,Processing	Glycosylation Regulator,Glycosylation Enhancer	no reaction			ER	
-done			GANAB	Q14697	Neutral alphaglucosidase AB	N-linked,Processing	Glucosidase	Glc(a1-3)Man(a1-2) or Glc(a1-3)Glc(a1-3)Man(a1-2)	Man(a1-2) or Glc(a1-3)Man(a1-2)	None	ER,Golgi	
+done			MOGS	Q13724	Mannosyloligosaccharide glucosidase	Processing	Glucosidase	Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)	Glc(a1-3)Glc(a1-3)Man(a1-2)	None	ER	
+done			PRKCSH	P14314	Glucosidase 2 subunit beta	Processing	Glycosylation Regulator,Glycosylation Enhancer	no reaction			ER	
+done			GANAB	Q14697	Neutral alphaglucosidase AB	Processing	Glucosidase	Glc(a1-3)Man(a1-2) or Glc(a1-3)Glc(a1-3)Man(a1-2)	Man(a1-2) or Glc(a1-3)Man(a1-2)	None	ER,Golgi	
 done			DPY19L1	Q2PZI1	Probable C-mannosyltransferase DPY19L1;DPY19L1;ortholog	C-Man	ManT	WXXW or ...WXXW	Man(??-?)WXXW or ...Man(??-?)WXXW			
 done			DPY19L2	Q6NUT2	Probable C-mannosyltransferase DPY19L2;DPY19L2;ortholog	C-Man	ManT	WXXW or ...WXXW	Man(??-?)WXXW or ...Man(??-?)WXXW			
 done			DPY19L3	Q6ZPD9	Probable C-mannosyltransferase DPY19L3;DPY19L3;ortholog	C-Man	ManT	WXXW or ...WXXW	Man(??-?)WXXW or ...Man(??-?)WXXW			
@@ -260,3 +260,54 @@ need to fix reaction rule, rest is done			MGAT4A	Q9UM21	Alpha1_3mannosylglycopro
 need to fix reaction rule, rest is done			MGAT4B	Q9UQ53	Alpha1_3mannosylglycoprotein 4betaNacetylglucosaminyltransferase B	N-linked,Branching	GlcNAcT	GlcNAc(b1-2)Man(a1-3)	GlcNAc(b1-2)[GlcNAc(b1-4)]Man(a1-3)	!GlcNAc(b1-4)...Man(b1-4)&!Gal(b1-?)	Golgi	
 need to fix reaction rule, rest is done			MGAT5	Q09328	Alpha1_6mannosylglycoprotein 6betaNacetylglucosaminyltransferase A	N-linked,Branching	GlcNAcT	GlcNAc(b1-2)Man(a1-6)	GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-6)	!GlcNAc(b1-4)...Man(b1-4)&!Gal(b1-?)	Golgi	
 need to fix reaction rule, rest is done			MGAT5B	Q3V5L5	Alpha1_6mannosylglycoprotein 6betaNacetylglucosaminyltransferase B	N-linked,Branching	GlcNAcT	GlcNAc(b1-2)Man(a1-r)	GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-r)	None	Golgi	
+done			A4GNT	Q9UNA3	Alpha1_4Nacetylglucosaminyltransferase	O-GalNAc, Core2	GlcNAcT, α4GlcNAcT	Gal(b1-?)	GlcNAc(a1-4)Gal(b1-?)	GlcNAc(b1-6)GalNAc(a1-?)	Golgi	
+need to fix reaction rule, rest is done			B3GNT3	Q9Y2A9	Nacetyllactosaminide beta1_3Nacetylglucosaminyltransferase 3	O-GalNAc, Core1	GlcNAcT, β3GlcNAcT	Gal(b1-3)...GalNAc(a1-r) or Gal(b1-?)GlcNAc(b1-?)	GlcNAc(b1-3)Gal(b1-3)...GalNAc(a1-r) or GlcNAc(b1-3)Gal(b1-?)GlcNAc(b1-?)	None	Golgi	
+done			GCNT1	Q02742	Beta1_3galactosylOglycosylglycoprotein beta1_6Nacetylglucosaminyltransferase	O-GalNAc, Core2	GlcNAcT, β6GlcNAcT	Gal(b1-3)GalNAc(a1-?)Ser/Thr	Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr	!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-?)&!Gal(b1-3 3S])GalNAc(a1-?)	Golgi	
+done			B3GNT6	O43505	AcetylgalactosaminylOglycosylglycoprotein beta1_3Nacetylglucosaminyltransferase	O-GalNAc, Core3	GlcNAcT, β3GlcNAcT	GalNAc(a1-?)Ser/Thr	GlcNAc(b1-3)GalNAc(a1-?)Ser/Thr	None	Golgi	
+done			GCNT3	O95395	Beta1_3galactosylOglycosylglycoprotein beta1_6Nacetylglucosaminyltransferase 3	O-GalNAc, Core4	GlcNAcT, β6GlcNAcT	GlcNAc(b1-3)GalNAc(a1-?)Ser/Thr or Gal(b1-3)GalNAc(a1-?)Ser/Thr or ...GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)	GlcNAc(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr or Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr or ...GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)	!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-r)&!Gal(b1-3 S-3)GalNAc(a1-r)	Golgi	
+need to fix reaction rule, rest is done			GCNT2	Q8N0V5	Nacetyllactosaminide beta1_6Nacetylglucosaminyltransferase	Elongation_and_Branching, Type I LacNAc	GlcNAcT, β6GlcNAcT	Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)	Gal(b1-4)GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)	None	Golgi	
+onto done, need to fix rest			MAN1A1	P33908	Mannosyloligosaccharide 1_2alphamannosidase IA	N-linked, Processing	Mannosidase	Man(a1-2)Man(a1-?)	Man(a1-?)	None	Golgi	
+onto done, need to fix rest			MAN1A2	O60476	Mannosyloligosaccharide 1_2alphamannosidase IB	N-linked, Processing	Mannosidase	Man(a1-2)Man(a1-?)	Man(a1-?)	nMan(a1-?)>=5&nMan(a1-?)<=7&!Man(a1-2)Man(a1-3)...Man(a1-6)	Golgi	
+onto done, need to fix rest			MAN1B1	Q9UKM7	Endoplasmic reticulum mannosyloligosaccharide 1_2alphamannosidase	N-linked, Processing	Mannosidase	Man(a1-2)Man(a1-3)...Man(a1-6)	Man(a1-3)...Man(a1-6)	None	ER	
+onto done, need to fix rest			MAN1C1	Q9NR34	Mannosyloligosaccharide 1_2alphamannosidase IC	N-linked, Processing	Mannosidase	Man(a1-2)Man(a1-?)	Man(a1-?)	nMan(a1-?)>=5&nMan(a1-?)<=7&!Man(a1-2)Man(a1-3)...Man(a1-6)	Golgi	
+onto done, need to fix rest			MAN2A1	Q16706	Alphamannosidase 2	N-linked, Processing	Mannosidase	Man(a1-6)...Man(a1-6) or Man(a1-3)...Man(a1-6)	...Man(a1-6) or ...Man(a1-6)	!Gal(b1-?)&nGlcNAc(b1-2)Man(a1-3)>=1&nGlcNAc(b1-?)=3	Golgi	
+onto done, need to fix rest			MAN2A2	P49641	Alphamannosidase 2x	N-linked, Processing	Mannosidase	Man(a1-6)...Man(a1-6) or Man(a1-3)...Man(a1-6)	...Man(a1-6) or ...Man(a1-6)	!Gal(b1-?)&nGlcNAc(b1-2)Man(a1-3)>=1&nGlcNAc(b1-?)=3	Golgi	
+onto done, need to fix rest			MAN2B1	O00754	Lysosomal alpha-mannosidase	N-linked, Processing	Mannosidase				Lysosome	
+onto done, need to fix rest			MAN2B2	Q9Y2E5	Epididymis-specific alpha-mannosidase;MAN2B2;ortholog	N-linked, Processing	Mannosidase				Secreted	
+onto done, need to fix rest			MAN2C1	Q9NTJ4	Alpha-mannosidase 2C1;MAN2C1;ortholog	N-linked, Processing	Mannosidase				Cytoplasm	
+onto done, need to fix rest			LFNG	Q8NES3	Beta1_3Nacetylglucosaminyltransferase lunatic fringe	O-Fuc	GlcNAcT	Fuc(a1-r)	GlcNAc(b1-3)Fuc(a1-r)	None	Golgi	
+onto done, need to fix rest			MFNG	O00587	Beta1_3Nacetylglucosaminyltransferase manic fringe	O-Fuc	GlcNAcT	Fuc(a1-r)	GlcNAc(b1-3)Fuc(a1-r)	None	Golgi	
+onto done, need to fix rest			RFNG	Q9Y644	Beta1_3Nacetylglucosaminyltransferase radical fringe	O-Fuc	GlcNAcT	Fuc(a1-r)	GlcNAc(b1-3)Fuc(a1-r)	None	Golgi	
+onto done, need to fix rest		POMT1/POMT2 enzymes initiate O-Man biosynthesis at unfolded regions (mucin-like domain) of alpha-dystroglycan. Protein context appears to be important for directing coreM1-3 biosynthesis.	POMT1	Q9Y6A1	Protein Omannosyltransferase 1	O-Man,POMGNT1_Type|O-Man,POMGNT2_Type	ManT	Ser or Thr	Man(a1-r):Ser or Man(a1-r):Thr	None	ER	
+onto done, need to fix rest			POMT2	Q9UKY4	Protein Omannosyltransferase 2	O-Man,POMGNT1_Type|O-Man,POMGNT2_Type	ManT	Ser or Thr	Man(a1-r):Ser or Man(a1-r):Thr	None	ER	
+done			GCNT4	Q9P109	Beta1_3galactosylOglycosylglycoprotein beta1_6Nacetylglucosaminyltransferase 4	O-GalNAc, Core2	GlcNAcT, β6GlcNAcT	Gal(b1-3)GalNAc(a1-?)Ser/Thr	Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr	!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-?)&!Gal(b1-3 3S])GalNAc(a1-?)	Golgi	
+onto done, need to fix rest			POMGNT1	Q8WZA1	Protein Olinkedmannose beta1_2Nacetylglucosaminyltransferase 1	O-Man,POMGNT1_Type	GlcNAcT, β2GlcNAcT	Man(a1-r)	GlcNAc(b1-2)Man(a1-r)	None	ER	
+onto done, need to fix rest			POMGNT2	Q8NAT1	Protein Olinkedmannose beta1_4Nacetylglucosaminyltransferase 2	O-Man,POMGNT2_Type	GlcNAcT, β4GlcNAcT	...Man(a1-r)	...[GlcNAc(b1-4)]Man(a1-r)	None	ER	
+onto done, need to fix rest	no figure		TPST1	O60507	Protein-tyrosine sulfotransferase 1	Glycosylation_Regulator	Sulfotransferase				Golgi	
+onto done, need to fix rest	no figure		TPST2	O60704	Protein-tyrosine sulfotransferase 2	Glycosylation_Regulator	Sulfotransferase				Golgi	
+done		Releases N-glycans from glycoproteins by cleaving the beta-1,4-glycosidic bond in the N,N'-diacetylchitobiose core.	ENGASE	Q8NFI3	Cytosolic endo-beta-N-acetylglucosaminidase;ENGASE;ortholog	Cytosol_Degradation	Endoglycosidase|NAcetylglucosaminidase	...GlcNAc(b1-4)GlcNAc(b1-?)Asn	...GlcNAc(b1-4)GlcNAc(b1-?)	None	Cytoplasm	
+done			EDEM1	Q92611	ER degradation-enhancing alpha-mannosidase-like protein 1;EDEM1;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
+done			EDEM2	Q9BV94	ER degradation-enhancing alpha-mannosidase-like protein 2;EDEM2;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
+done			EDEM3	Q9BZQ6	ER degradation-enhancing alpha-mannosidase-like protein 3;EDEM3;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
+done			MANEA	Q5SRI9	Glycoprotein endo-alpha-1,2-mannosidase;MANEA;ortholog	Dolichol_Pathway	Mannosidase	Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)	Man(a1-2)Man(a1-2)Man(a1-3) or Man(a1-2)Man(a1-2)Man(a1-3)  or Man(a1-2)Man(a1-2)Man(a1-3) 	None	Golgi	
+check reaction rule	already present		GNPTAB	Q3T906	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta;GNPTAB;ortholog	N-linked, Lysosomal_Targeting	GlcNAcT	Man(a1-2)Man(a1-?)	GlcNAc(a1-?)-P-Man(a1-2)Man(a1-?)	None	Golgi	
+done	already present		GNPTG	Q9UJJ9	N-acetylglucosamine-1-phosphotransferase subunit gamma;GNPTG;ortholog	N-linked, Lysosomal_Targeting	Glycosylation_Regulator, Glycosylation_Enhancer	no reaction rule	no reaction rule	None	Golgi, extracellular	
+check reaction rule	already present		NAGPA	Q9UK23	N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase;NAGPA;ortholog	N-linked, Lysosomal_Targeting	NAcetylglucosaminidase	GlcNAc(a1-?)-P-Man(a1-2)Man(a1-?)	no reaction ruleP-Man(a1-2)Man(a1-?)	None	Golgi	
+onto only done		Catalyzes the transfer of CDP-ribitol to ribitol 5-phosphate previously attached by FKTN/fukutin to the phosphorylated O-mannosyl trisaccharide [GalNAcβ3GlcNAcβ4Man6Pα-dystroglycan] of DAG1	FKRP	Q9H9S5	Fukutin-related protein;FKRP;ortholog	O-Man, Dystro	RibitolT				Golgi,Secreted,Cell Membrane	
+onto only done			FKTN	O75072	Fukutin;FKTN;ortholog	O-Man, Dystro	RibitolT				Golgi,Cytoplasm,Nucleus	
+done	not in fig		PAPSS1	O43252	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 1	donor_synthesis, PAPS	Synthase	ATP	PAPS	None	Cytoplasm	
+done	not in fig		PAPSS2	O95340	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 2	donor_synthesis, PAPS	Synthase	ATP	PAPS	None	Cytoplasm	
+done			B3GAT1	Q9P2W7	Galactosylgalactosylxylosylprotein 3betaglucuronosyltransferase 1	Capping, HNK-1	GlcAT	Gal(b1-4)GlcNAc(b1-?)	GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)	!GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)	Golgi	
+done			B3GAT2	Q9NPZ5	Galactosylgalactosylxylosylprotein 3betaglucuronosyltransferase 2	Capping, HNK-1	GlcAT	Gal(b1-4)GlcNAc(b1-?)	GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)	!GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)	Golgi	
+Need to add comments on webpage			PIGA	P37287	Phosphatidylinositol Nacetylglucosaminyltransferase subunit A	Lipid-linked, GPI_Linked	GlcNAcT	PI	GlcNAc(a1-?)PI	None	ER	
+Need to add comments on webpage			PIGC	Q92535	Phosphatidylinositol Nacetylglucosaminyltransferase subunit C	Lipid-linked, GPI_Linked	GlcNAcT	PI	GlcNAc(a1-?)PI	None	ER	
+Need to add comments on webpage			PIGH	Q14442	Phosphatidylinositol Nacetylglucosaminyltransferase subunit H	Lipid-linked, GPI_Linked	GlcNAcT	PI	GlcNAc(a1-?)PI	None	Cytoplasm	
+Need to add comments on webpage			PIGP	P57054	Phosphatidylinositol Nacetylglucosaminyltransferase subunit P	Lipid-linked, GPI_Linked	GlcNAcT	PI	GlcNAc(a1-?)PI	None	Membrane	
+Need to add comments on webpage			PIGQ	Q9BRB3	Phosphatidylinositol Nacetylglucosaminyltransferase subunit Q	Lipid-linked, GPI_Linked	GlcNAcT	PI	GlcNAc(a1-?)PI	None	Membrane	
+only onto done			PIGB	Q92521	GPI mannosyltransferase 3	Lipid-linked, GPI_Linked	ManT	Man(a1-6)Man(a1-4)GlcNAc(a1-r)	Man(a1-2)Man(a1-6)Man(a1-4)GlcNAc(a1-r)	None	ER	
+only onto done			PIGM	Q9H3S5	GPI mannosyltransferase 1	Lipid-linked, GPI_Linked	ManT	GlcN(a1-r)	Man(a1-4)GlcN(a1-r)	None	ER	
+only onto done	not in figure	Involved in inositol deacylation of GPI-anchored proteins. GPI inositol deacylation may important for efficient transport of GPI-anchored proteins from the endoplasmic reticulum to the Golgi	PGAP1	Q75T13	GPI inositol-deacylase;PGAP1;ortholog	Lipid-linked, GPI_Linked	Modifying_Enzyme	no reaction rule	no reaction rule		ER	
+only onto done	not in figure	Involved in the lipid remodeling steps of GPI-anchor maturation. Required for stable expression of GPI-anchored proteins at the cell surface	PGAP2	Q9UHJ9	Post-GPI attachment to proteins factor 2;PGAP2;ortholog	Lipid-linked, GPI_Linked	Modifying_Enzyme	no reaction rule	no reaction rule		Golgi,ER	
+only onto done	not in figure	Involved in the lipid remodeling steps of GPI-anchor maturation. 	PGAP3	Q96FM1	Post-GPI attachment to proteins factor 3;PGAP3;ortholog	Lipid-linked, GPI_Linked	Modifying_Enzyme	no reaction rule	no reaction rule		Golgi,ER	
+done			B4GALNT3	Q6L9W6	Beta1_4Nacetylgalactosaminyltransferase 3	Capping,LacdiNAc	GalNAcT, β4GalNAcT	GlcNAc(b1-?)	GalNAc(b1-4)GlcNAc(b1-?)	None	Golgi	
+done			B4GALNT4	Q76KP1	Nacetylbetaglucosaminylglycoprotein 4betaNacetylgalactosaminyltransferase 1	Capping,LacdiNAc	GalNAcT, β4GalNAcT	GlcNAc(b1-?)	GalNAc(b1-4)GlcNAc(b1-?)	None	Golgi	
