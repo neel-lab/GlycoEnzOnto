@@ -447,6 +447,10 @@
   <rdfs:subClassOf rdf:resource="#GlcCer"/>
 </owl:Class>
 
+<owl:Class rdf:about="#Lysosomal_Targeting">
+  <rdfs:subClassOf rdf:resource="#N-linked"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Lysosome_Degradation">
   <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
 </owl:Class>
@@ -492,6 +496,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Nucleotide_Sugar">
+  <rdfs:subClassOf rdf:resource="#donor_synthesis"/>
+</owl:Class>
+
+<owl:Class rdf:about="#donor_synthesis">
   <rdfs:subClassOf rdf:resource="#Pathway"/>
 </owl:Class>
 
@@ -529,6 +537,10 @@
 
 <owl:Class rdf:about="#Other_GlcNAcT">
   <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PAPS">
+  <rdfs:subClassOf rdf:resource="#donor_synthesis"/>
 </owl:Class>
 
 <owl:Class rdf:about="#PAPS_Transport">
@@ -747,6 +759,10 @@
   <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
 </owl:Class>
 
+<owl:Class rdf:about="#β2GlcNAcT">
+  <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
+</owl:Class>
+
 <owl:Class rdf:about="#β3GalNAcT">
   <rdfs:subClassOf rdf:resource="#GalNAcT"/>
 </owl:Class>
@@ -776,6 +792,10 @@
 </owl:Class>
 
 <owl:Class rdf:about="#β4GlcNAcT">
+  <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#β6GlcNAcT">
   <rdfs:subClassOf rdf:resource="#GlcNAcT"/>
 </owl:Class>
 
@@ -2386,7 +2406,6 @@
 
 <Glucosidase rdf:about="#MOGS">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <inPathway rdf:resource="#N-linked"/>
   <inPathway rdf:resource="#Processing"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glc(a1-3)Glc(a1-3)Man(a1-2)</hasProduct>
@@ -2396,7 +2415,6 @@
 <Glycosylation_Regulator rdf:about="#PRKCSH">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#Glycosylation_Enhancer"/>
-  <inPathway rdf:resource="#N-linked"/>
   <inPathway rdf:resource="#Processing"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
@@ -2405,7 +2423,6 @@
 
 <Glucosidase rdf:about="#GANAB">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <inPathway rdf:resource="#N-linked"/>
   <inPathway rdf:resource="#Processing"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2) or Glc(a1-3)Man(a1-2)</hasProduct>
@@ -3244,6 +3261,473 @@
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-2)[GlcNAc(b1-6)]Man(a1-r)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-2)Man(a1-r)</hasSubstrate>
 </GlcNAcT>
+
+<GlcNAcT rdf:about="#A4GNT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α4GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-6)GalNAc(a1-?)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)Gal(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#B3GNT3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core1"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-3)...GalNAc(a1-r) or GlcNAc(b1-3)Gal(b1-?)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)...GalNAc(a1-r) or Gal(b1-?)GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#GCNT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β6GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-?)&amp;!Gal(b1-3 3S])GalNAc(a1-?)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)GalNAc(a1-?)Ser/Thr</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#B3GNT6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core3"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)GalNAc(a1-?)Ser/Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-?)Ser/Thr</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#GCNT3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β6GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core4"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-r)&amp;!Gal(b1-3 S-3)GalNAc(a1-r)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr or Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr or ...GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)GalNAc(a1-?)Ser/Thr or Gal(b1-3)GalNAc(a1-?)Ser/Thr or ...GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#GCNT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β6GlcNAcT"/>
+  <inPathway rdf:resource="#Elongation_and_Branching"/>
+  <inPathway rdf:resource="#Type_I_LacNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3)[GlcNAc(b1-6)]Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<Mannosidase rdf:about="#MAN1A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-?)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN1A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nMan(a1-?)&gt;=5&amp;nMan(a1-?)&lt;=7&amp;!Man(a1-2)Man(a1-3)...Man(a1-6)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-?)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN1B1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-3)...Man(a1-6)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-3)...Man(a1-6)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN1C1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nMan(a1-?)&gt;=5&amp;nMan(a1-?)&lt;=7&amp;!Man(a1-2)Man(a1-3)...Man(a1-6)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-?)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN2A1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-?)&amp;nGlcNAc(b1-2)Man(a1-3)&gt;=1&amp;nGlcNAc(b1-?)=3</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Man(a1-6) or ...Man(a1-6)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-6)...Man(a1-6) or Man(a1-3)...Man(a1-6)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN2A2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!Gal(b1-?)&amp;nGlcNAc(b1-2)Man(a1-3)&gt;=1&amp;nGlcNAc(b1-?)=3</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Man(a1-6) or ...Man(a1-6)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-6)...Man(a1-6) or Man(a1-3)...Man(a1-6)</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN2B1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN2B2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MAN2C1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Mannosidase>
+
+<GlcNAcT rdf:about="#LFNG">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Fuc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Fuc(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(a1-r)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#MFNG">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Fuc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Fuc(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(a1-r)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#RFNG">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Fuc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Fuc(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(a1-r)</hasSubstrate>
+</GlcNAcT>
+
+<ManT rdf:about="#POMT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#POMGNT1_Type"/>
+  <inPathway rdf:resource="#POMGNT2_Type"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-r):Ser or Man(a1-r):Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser or Thr</hasSubstrate>
+</ManT>
+
+<ManT rdf:about="#POMT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#POMGNT1_Type"/>
+  <inPathway rdf:resource="#POMGNT2_Type"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-r):Ser or Man(a1-r):Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser or Thr</hasSubstrate>
+</ManT>
+
+<GlcNAcT rdf:about="#GCNT4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β6GlcNAcT"/>
+  <inPathway rdf:resource="#O-GalNAc"/>
+  <inPathway rdf:resource="#Core2"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!NeuAc(a2-3)Gal(b1-3)GalNAc(a1-?)&amp;!Gal(b1-3 3S])GalNAc(a1-?)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-?)Ser/Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)GalNAc(a1-?)Ser/Thr</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#POMGNT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β2GlcNAcT"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#POMGNT1_Type"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-2)Man(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-r)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#POMGNT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GlcNAcT"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#POMGNT2_Type"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...[GlcNAc(b1-4)]Man(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Man(a1-r)</hasSubstrate>
+</GlcNAcT>
+
+<Sulfotransferase rdf:about="#TPST1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Glycosylation_Regulator"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Sulfotransferase>
+
+<Sulfotransferase rdf:about="#TPST2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Glycosylation_Regulator"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Sulfotransferase>
+
+<Endoglycosidase rdf:about="#ENGASE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#Cytosol_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcNAc(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcNAc(b1-4)GlcNAc(b1-?)Asn</hasSubstrate>
+</Endoglycosidase>
+
+<Mannosidase rdf:about="#EDEM1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#EDEM2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#EDEM3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Processing"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction</hasSubstrate>
+</Mannosidase>
+
+<Mannosidase rdf:about="#MANEA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Dolichol_Pathway"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-2)Man(a1-3) or Man(a1-2)Man(a1-2)Man(a1-3)  or Man(a1-2)Man(a1-2)Man(a1-3) </hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)</hasSubstrate>
+</Mannosidase>
+
+<GlcNAcT rdf:about="#GNPTAB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Lysosomal_Targeting"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)-P-Man(a1-2)Man(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-?)</hasSubstrate>
+</GlcNAcT>
+
+<Glycosylation_Regulator rdf:about="#GNPTG">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Glycosylation_Enhancer"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Lysosomal_Targeting"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</Glycosylation_Regulator>
+
+<NAcetylglucosaminidase rdf:about="#NAGPA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#N-linked"/>
+  <inPathway rdf:resource="#Lysosomal_Targeting"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction ruleP-Man(a1-2)Man(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)-P-Man(a1-2)Man(a1-?)</hasSubstrate>
+</NAcetylglucosaminidase>
+
+<RibitolT rdf:about="#FKRP">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#Dystro"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</RibitolT>
+
+<RibitolT rdf:about="#FKTN">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <inPathway rdf:resource="#Dystro"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</RibitolT>
+
+<Synthase rdf:about="#PAPSS1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#donor_synthesis"/>
+  <inPathway rdf:resource="#PAPS"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAPS</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP</hasSubstrate>
+</Synthase>
+
+<Synthase rdf:about="#PAPSS2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#donor_synthesis"/>
+  <inPathway rdf:resource="#PAPS"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAPS</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP</hasSubstrate>
+</Synthase>
+
+<GlcAT rdf:about="#B3GAT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#HNK-1"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcAT>
+
+<GlcAT rdf:about="#B3GAT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#HNK-1"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcAT>
+
+<GlcNAcT rdf:about="#PIGA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)PI</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#PIGC">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)PI</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#PIGH">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)PI</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#PIGP">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)PI</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#PIGQ">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-?)PI</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PI</hasSubstrate>
+</GlcNAcT>
+
+<ManT rdf:about="#PIGB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-2)Man(a1-6)Man(a1-4)GlcNAc(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-6)Man(a1-4)GlcNAc(a1-r)</hasSubstrate>
+</ManT>
+
+<ManT rdf:about="#PIGM">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-4)GlcN(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcN(a1-r)</hasSubstrate>
+</ManT>
+
+<Modifying_Enzyme rdf:about="#PGAP1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#PGAP2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</Modifying_Enzyme>
+
+<Modifying_Enzyme rdf:about="#PGAP3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#GPI_Linked"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</Modifying_Enzyme>
+
+<GalNAcT rdf:about="#B4GALNT3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#LacdiNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?)</hasSubstrate>
+</GalNAcT>
+
+<GalNAcT rdf:about="#B4GALNT4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β4GalNAcT"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#LacdiNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?)</hasSubstrate>
+</GalNAcT>
 
 
 </rdf:RDF>
