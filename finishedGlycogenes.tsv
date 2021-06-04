@@ -210,10 +210,10 @@ done			EXTL3	O43909	Exostosinlike 3	Heparan_Sulfate,HS_Polymerization	GlcNAcT,α
 done			HAS1	Q92839	Hyaluronan synthase 1	Hyaluronan	GlcNAcT,β4GlcNAcT,GlcAT,β3GlcAT	GlcA(b1-3) or GlcNAc(b1-4)	GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)	None	Membrane	
 done			HAS2	Q92819	Hyaluronan synthase 2	Hyaluronan	GlcNAcT,β4GlcNAcT,GlcAT,β3GlcAT	GlcA(b1-3) or GlcNAc(b1-4)	GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)	None	Membrane	
 done			HAS3	O00219	Hyaluronan synthase 3	Hyaluronan	GlcNAcT,β4GlcNAcT,GlcAT,β3GlcAT	GlcA(b1-3) or GlcNAc(b1-4)	GlcNAc(b1-4)GlcA(b1-3) or GlcA(b1-3)GlcNAc(b1-4)	None	Membrane	
-done			HYAL1	Q12794	Hyaluronidase-1	Extracellular_Degradation,HA_Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	extracellular	
-done			HYAL2	Q12891	Hyaluronidase-2	Extracellular_Degradation,HA_Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	cell membrane, extracellular	
-done			HYAL3	O43820	Hyaluronidase-3	Extracellular_Degradation,HA_Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	ER, extracellular	
-done			HYAL4	Q2M3T9	Hyaluronidase-4	Extracellular_Degradation,HA_Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	cell membrane, extracellular	
+done			HYAL1	Q12794	Hyaluronidase-1	Extracellular_Degradation,HA Extracellular Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	extracellular	
+done			HYAL2	Q12891	Hyaluronidase-2	Extracellular_Degradation,HA Extracellular Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	cell membrane, extracellular	
+done			HYAL3	O43820	Hyaluronidase-3	Extracellular_Degradation,HA Extracellular Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	ER, extracellular	
+done			HYAL4	Q2M3T9	Hyaluronidase-4	Extracellular_Degradation,HA Extracellular Degradation	Glycosidase,NAcetylglucosaminidase	GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)	None	cell membrane, extracellular	
 done	add fig 2		TMTC1	Q8IUR5	Protein O-mannosyl-transferase TMTC1;TMTC1;ortholog	O-Man,TMTC_Type	ManT	Ser[O-Man] or Thr[O-Man]	Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]	None	ER	
 done	add fig 2		TMTC2	Q8N394	Protein O-mannosyl-transferase TMTC2;TMTC2;ortholog	O-Man,TMTC_Type	ManT	Ser[O-Man] or Thr[O-Man]	Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]	None	ER	
 done	add fig 2		TMTC3	Q6ZXV5	Protein O-mannosyl-transferase TMTC3;TMTC3;ortholog	O-Man,TMTC_Type	ManT	Ser[O-Man] or Thr[O-Man]	Man(a1-1)Ser[O-Man] or Man(a1-1)Thr[O-Man]	None	ER	
@@ -285,10 +285,10 @@ onto done, need to fix rest			POMGNT1	Q8WZA1	Protein Olinkedmannose beta1_2Nacet
 onto done, need to fix rest			POMGNT2	Q8NAT1	Protein Olinkedmannose beta1_4Nacetylglucosaminyltransferase 2	O-Man,POMGNT2_Type	GlcNAcT, β4GlcNAcT	...Man(a1-r)	...[GlcNAc(b1-4)]Man(a1-r)	None	ER	
 onto done, need to fix rest	no figure		TPST1	O60507	Protein-tyrosine sulfotransferase 1	Glycosylation_Regulator	Sulfotransferase				Golgi	
 onto done, need to fix rest	no figure		TPST2	O60704	Protein-tyrosine sulfotransferase 2	Glycosylation_Regulator	Sulfotransferase				Golgi	
-done		Releases N-glycans from glycoproteins by cleaving the beta-1,4-glycosidic bond in the N,N'-diacetylchitobiose core.	ENGASE	Q8NFI3	Cytosolic endo-beta-N-acetylglucosaminidase;ENGASE;ortholog	Cytosol_Degradation	Endoglycosidase|NAcetylglucosaminidase	...GlcNAc(b1-4)GlcNAc(b1-?)Asn	...GlcNAc(b1-4)GlcNAc(b1-?)	None	Cytoplasm	
-done			EDEM1	Q92611	ER degradation-enhancing alpha-mannosidase-like protein 1;EDEM1;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
-done			EDEM2	Q9BV94	ER degradation-enhancing alpha-mannosidase-like protein 2;EDEM2;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
-done			EDEM3	Q9BZQ6	ER degradation-enhancing alpha-mannosidase-like protein 3;EDEM3;ortholog	N-linked,Processing	Mannosidase	no reaction			ER	
+done		Releases N-glycans from glycoproteins by cleaving the beta-1,4-glycosidic bond in the N,N'-diacetylchitobiose core.	ENGASE	Q8NFI3	Cytosolic endo-beta-N-acetylglucosaminidase;ENGASE;ortholog	Cytosol_Degradation	Endoglycosidase,NAcetylglucosaminidase	...GlcNAc(b1-4)GlcNAc(b1-?)Asn	...GlcNAc(b1-4)GlcNAc(b1-?)	None	Cytoplasm	
+done			EDEM1	Q92611	ER degradation-enhancing alpha-mannosidase-like protein 1;EDEM1;ortholog	N-linked, Processing	Mannosidase	no reaction			ER	
+done			EDEM2	Q9BV94	ER degradation-enhancing alpha-mannosidase-like protein 2;EDEM2;ortholog	N-linked, Processing	Mannosidase	no reaction			ER	
+done			EDEM3	Q9BZQ6	ER degradation-enhancing alpha-mannosidase-like protein 3;EDEM3;ortholog	N-linked, Processing	Mannosidase	no reaction			ER	
 done			MANEA	Q5SRI9	Glycoprotein endo-alpha-1,2-mannosidase;MANEA;ortholog	Dolichol_Pathway	Mannosidase	Glc(a1-2)Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3) or Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)	Man(a1-2)Man(a1-2)Man(a1-3) or Man(a1-2)Man(a1-2)Man(a1-3)  or Man(a1-2)Man(a1-2)Man(a1-3) 	None	Golgi	
 check reaction rule	already present		GNPTAB	Q3T906	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta;GNPTAB;ortholog	N-linked, Lysosomal_Targeting	GlcNAcT	Man(a1-2)Man(a1-?)	GlcNAc(a1-?)-P-Man(a1-2)Man(a1-?)	None	Golgi	
 done	already present		GNPTG	Q9UJJ9	N-acetylglucosamine-1-phosphotransferase subunit gamma;GNPTG;ortholog	N-linked, Lysosomal_Targeting	Glycosylation_Regulator, Glycosylation_Enhancer	no reaction rule	no reaction rule	None	Golgi, extracellular	
@@ -311,3 +311,42 @@ only onto done	not in figure	Involved in the lipid remodeling steps of GPI-ancho
 only onto done	not in figure	Involved in the lipid remodeling steps of GPI-anchor maturation. 	PGAP3	Q96FM1	Post-GPI attachment to proteins factor 3;PGAP3;ortholog	Lipid-linked, GPI_Linked	Modifying_Enzyme	no reaction rule	no reaction rule		Golgi,ER	
 done			B4GALNT3	Q6L9W6	Beta1_4Nacetylgalactosaminyltransferase 3	Capping,LacdiNAc	GalNAcT, β4GalNAcT	GlcNAc(b1-?)	GalNAc(b1-4)GlcNAc(b1-?)	None	Golgi	
 done			B4GALNT4	Q76KP1	Nacetylbetaglucosaminylglycoprotein 4betaNacetylgalactosaminyltransferase 1	Capping,LacdiNAc	GalNAcT, β4GalNAcT	GlcNAc(b1-?)	GalNAc(b1-4)GlcNAc(b1-?)	None	Golgi	
+done			SULF1	Q8IWU6	Extracellular sulfatase Sulf-1	Extracellular Degradation,GAG Extracellular Degradation	Sulfatase,GlcNAc 6C Sulfatase	GlcNAc(a1-4 6S)	GlcNAc(a1-4)	None	Golgi,Secreted	
+done			SULF2	Q8IWU5	Extracellular sulfatase Sulf-2	Extracellular Degradation,GAG Extracellular Degradation	Sulfatase,GlcNAc 6C Sulfatase	GlcNAc(a1-4 6S)	GlcNAc(a1-4)	None	Golgi	
+done		substrate specificity unclear, weak polylactosamine activity.	B3GNT4	Q9C0J1	Nacetyllactosaminide beta1_3Nacetylglucosaminyltransferase 4	Putative or Unknown Pathways	GlcNAcT,β3GlcNAcT	Gal(b1-?)	GlcNAc(b1-3)Gal(b1-?)	None	Golgi	
+done			B3GALNT1	O75752	UDPGalNAc:beta1_3Nacetylgalactosaminyltransferase 1	Globoside	GalNAcT,β3GalNAcT	Gal(a1-4)Gal(b1-4)Glc(b1-r)	GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc(b1-r)	None	Golgi	
+done			GBA	P04062	Non-lysosomal glucosylceramidase	Glycan_Degradation,Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	Glucosidase	Glc:Cer	Cer	None	Lysosome	
+done			CEMIP2	Q9UHN6	Cell surface hyaluronidase;CEMIP2;ortholog	HA_Extracellular_Degradation	Glucuronidase,NAcetylglucosaminidase				Cell Membrane	
+done			B3GALNT2	Q8NCR0	UDPGalNAc:beta1_3Nacetylgalactosaminyltransferase 2	Capping,LacdiNAc	GalNAcT,β3GalNAcT	GlcNAc(b1-?) or GlcNAc(b1-4)...Man(a1-r)	GalNAc(b1-3)GlcNAc(b1-?) or GalNAc(b1-3)GlcNAc(b1-4)...Man(a1-r)	!@GlcNAc(b1-4)...Man(b1-4)	Golgi, ER	
+done			B3GNT5	Q9BYG0	Lactosylceramide 1_3NacetylbetaDglucosaminyltransferase	Lactoside,Neolactoside	GlcNAcT,β3GlcNAcT	Gal(b1-4)Glc(b1-r) or Gal(b1-4)	GlcNAc(b1-3)Gal(b1-4)Glc(b1-r) or GlcNAc(b1-3)Gal(b1-4)	None	Golgi	
+done			FUCA1	P04066	Tissue alpha-L-fucosidase	Lysosome_Degradation,N-linked_Lysosome_Degradation	Fucosidase	...[Fuc(a1-6)]GlcNAc(b1-?)	...GlcNAc(b1-?)	None	Golgi	
+done			GALC	P54803	Galactocerebrosidase	Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	Galactosidase	Gal:Cer	Cer	None	Lysosome	
+done			GLA	P06280	Alpha-galactosidase A	Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	Galactosidase	Gal:Cer	Cer	None	Lysosome	
+done			GLB1	P16278	Beta-galactosidase	Lysosome_Degradation,N-linked_Lysosome_Degradation,O-linked_Lysosome_Degradation,GAG_Lysosome_Degradation	Galactosidase	Gal(b1-?)...	...	None	Lysosome	
+done			GNS	P15586	N-acetylglucosamine-6-sulfatase	Lysosome_Degradation,GAG_Lysosome_Degradation	Sulfatase,GlcNAc 6C Sulfatase	GlcNAc(a1-4 6S)	GlcNAc(a1-4)	None	Lysosome	
+done			GUSB	P08236	Beta-glucuronidase	Lysosome_Degradation,GAG_Lysosome_Degradation	Glucuronidase	GlcA(b1-3)...	…	None	Lysosome	
+done			HPSE	Q9Y251	Heparanase	Lysosome_Degradation,GAG_Lysosome_Degradation	Glucuronidase		GlcA(a1-4)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-4)GlcNAc(b1-4)	None	Lysosome	
+done			HEXA	P06865	Beta-hexosaminidase subunit alpha	Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	Glycosidase	[Neu5Ac(a2-3)]GalNac(b1-4)Glc(b1-r)	Neu5Ac(a2-3)Glc(b1-r)	None	Lysosome	
+done			HEXB	P07686	Beta-hexosaminidase subunit beta	Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	Glycosidase	[Neu5Ac(a2-3)]GalNac(b1-4)Glc(b1-r)	Neu5Ac(a2-3)Glc(b1-r)	None	Lysosome	
+done			IDS	P22304	Iduronate 2-sulfatase	Lysosome_Degradation,GAG_Lysosome_Degradation	Sulfatase,IdoA 2C Sulfatase	IdoA(a1-3 2S)	IdoA(a1-3)	None	Lysosome	
+done			MANBA	O00462	Beta-mannosidase	Lysosome_Degradation,N-linked_Lysosome_Degradation	Mannosidase	Man(a1-?)...	...	None	Lysosome	
+done			GALNS	P34059	N-acetylgalactosamine-6-sulfatase	Lysosome_Degradation,GAG_Lysosome_Degradation	Sulfatase,GalNAc 6C Sulfatase	...GalNAc(b1-4 6S)	...GalNac(b1-4)	None	Lysosome	
+done			NAGA	P17050	Alpha-N-acetylgalactosaminidase	Lysosome_Degradation,Lipid-linked_Lysosome_Degradation	NAcetylgalactosaminidase	GalNAc(b1-4)...Gal	...Gal	None	Lysosome	
+done			NAGLU	P54802	Alpha-N-acetylglucosaminidase	Lysosome_Degradation,GAG_Lysosome_Degradation	NAcetylgalactosaminidase	GlcNAc(a1-4)GlcA(b1-4)	GlcA(b1-4)	None	Lysosome	
+done			AGA	P20933	N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase	Lysosome_Degradation,N-linked_Lysosome_Degradation	NAcetylglucosaminidase	no reaction rule	no reaction rule		Lysosome	
+done			CTBS	Q01459	Di-N-acetylchitobia	Lysosome_Degradation,N-linked_Lysosome_Degradation	NAcetylglucosaminidase				Lysosome	
+done			IDUA	P35475	Alpha-L-iduronidase	Lysosome_Degradation,GAG_Lysosome_Degradation	Iduronidase	IdoA(a1-?)...	...	None	Lysosome	
+done			SGSH	P51688	N-sulphoglucosamine sulphohydrolase	Lysosome_Degradation,GAG_Lysosome_Degradation	Sulfatase,GlcNAc 2C_Sulfatase	GlcNAc(2S)	GlcNAc	None	Lysosome	
+done	add to O-mannose pathway map (Dystroglycan, 6P on O-linked mannose)	Protein O-mannose kinase specifically mediates phosphorylation at the 6-position of an O-mannose in some proteins like DAG1	POMK	Q9H5K3	Protein O-mannose kinase;POMK;ortholog	O-Man	Kinase	Man	Man(6P)		ER	
+done			EOGT	Q5NDL2	EGF domainspecific Olinked Nacetylglucosamine transferase	O-GlcNAc	GlcNAcT,Other_GlcNAcT	Ser or Thr	GlcNAc:Ser or GlcNAc:Thr	None	Cytoplasm	
+done			OGT	O15294	UDPNacetylglucosaminepeptide Nacetylglucosaminyltransferase 110 kDa subunit	O-GlcNAc	GlcNAcT,Other_GlcNAcT	Ser or Thr	GlcNAc:Ser or GlcNAc:Thr	None	Nucleus,Cytoplasm,Cell Membrane,Mitochondrion	
+done			MGEA5	O60502	Protein O-GlcNAcase;OGA;ortholog	O-GlcNAc	NAcetylglucosaminidase				Nucleus,Cytoplasm	
+done	not in figure		CASD1	Q96PB1	N-acetylneuraminate 9-O-acetyltransferase;CASD1;ortholog	Sugar_Metabolism,Acetylation	Acetyltransferase	no reaction rule	no reaction rule		Golgi	
+done	no figure	Catalyzes the removal of O-acetyl ester groups from position 9 of the parent sialic acid, N-acetylneuraminic acid	SIAE	Q9HAT2	Sialate O-acetylesterase;SIAE;ortholog	Sugar_Metabolism,Acetylation	Acetylesterase				Lysosome,Secreted	
+done			B3GNT2	Q9NY97	Nacetyllactosaminide beta1_3Nacetylglucosaminyltransferase 2	Type_I_LacNAc	GlcNAcT	Gal(b1-4)GlcNAc(b1-?)	GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)	None	Golgi	
+done			B3GNT7	Q8NFL0	UDPGlcNAc:betaGal beta1_3Nacetylglucosaminyltransferase 7	Type_I_LacNAc	GlcNAcT	Gal(b1-4)...GlcNAc(b1-?)	GlcNAc(b1-3)Gal(b1-4)...GlcNAc(b1-?)	None	Golgi	
+done			B3GNT8	Q67FW5	UDPGlcNAc:betaGal beta1_3Nacetylglucosaminyltransferase 8	Type_I_LacNAc	GlcNAcT	Gal(b1-4)GlcNAc(b1-?)	GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)	None	Unknown	
+done		This enzyme is present in the lysosome membrane and complexes with beta-galactosidases and neuraminidases to promote their function.	CTSA	P10619	Lysosomal protective protein	Glycosylation_Regulation	Glycosylation_Regulator				Lysosome	
+done		Facilitates the breakdown of GM2 and GD2 by HEXA	GM2A	P17900	Ganglioside GM2 activator	Glycosylation_Regulation	Glycosylation_Regulator				Lysosome	
+done			GBGT1	Q8N5D6	Globoside alpha1_3Nacetylgalactosaminyltransferase 1	Lipid-linked,Globoside	GalNAcT,α3GalNAcT	GalNAc(b1-3)Gal(a1-?)	GalNAc(a1-3)GalNAc(b1-3)Gal(a1-?)	None	Golgi	
+done		Extracellularly secreted Fucosidase which cleaves a1-6-linked Fucose	FUCA2	Q9BTY2	Plasma alpha-L-fucosidase;FUCA2;ortholog	Extracellular_Degradation,N-linked_Extracellular_Degradation	Fucosidase				Secreted	
