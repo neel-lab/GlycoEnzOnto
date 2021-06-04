@@ -40,11 +40,15 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Acetylation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Modification">
-  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
+<owl:Class rdf:about="#Sugar_Metabolism">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Acetylesterase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Acetyltransferase">
@@ -148,7 +152,7 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Deacetylation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Decarboxylase">
@@ -156,7 +160,7 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Decarboxylation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Dehydratase">
@@ -168,11 +172,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Dephosphorylation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Desulfation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Dolichol_Pathway">
@@ -185,14 +189,6 @@
 
 <owl:Class rdf:about="#O-Man">
   <rdfs:subClassOf rdf:resource="#O-linked"/>
-</owl:Class>
-
-<owl:Class rdf:about="#EOGT">
-  <rdfs:subClassOf rdf:resource="#O-linked"/>
-</owl:Class>
-
-<owl:Class rdf:about="#O-linked">
-  <rdfs:subClassOf rdf:resource="#CorePathways"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Elongation_and_Branching">
@@ -212,7 +208,7 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Epimerization">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Extracellular_Degradation">
@@ -239,8 +235,16 @@
   <rdfs:subClassOf rdf:resource="#CorePathways"/>
 </owl:Class>
 
-<owl:Class rdf:about="#GAG_Degradation">
+<owl:Class rdf:about="#GAG_Extracellular_Degradation">
   <rdfs:subClassOf rdf:resource="#Extracellular_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GAG_Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Lysosome_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
 </owl:Class>
 
 <owl:Class rdf:about="#GDP-Fuc_Synthesis">
@@ -299,6 +303,14 @@
   <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
 </owl:Class>
 
+<owl:Class rdf:about="#GalNAc_6C_Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Sulfatase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
+</owl:Class>
+
 <owl:Class rdf:about="#GalT">
   <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
 </owl:Class>
@@ -341,6 +353,14 @@
 
 <owl:Class rdf:about="#GlcNAcT">
   <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcNAc_2C_Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Sulfatase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#GlcNAc_6C_Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Sulfatase"/>
 </owl:Class>
 
 <owl:Class rdf:about="#GlcT">
@@ -399,7 +419,7 @@
   <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
 </owl:Class>
 
-<owl:Class rdf:about="#HA_Degradation">
+<owl:Class rdf:about="#HA_Extracellular_Degradation">
   <rdfs:subClassOf rdf:resource="#Extracellular_Degradation"/>
 </owl:Class>
 
@@ -427,6 +447,14 @@
   <rdfs:subClassOf rdf:resource="#GAG"/>
 </owl:Class>
 
+<owl:Class rdf:about="#IdoA_2C_Sulfatase">
+  <rdfs:subClassOf rdf:resource="#Sulfatase"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Iduronidase">
+  <rdfs:subClassOf rdf:resource="#Glycosidase"/>
+</owl:Class>
+
 <owl:Class rdf:about="#Intermediate_Transporter">
   <rdfs:subClassOf rdf:resource="#Transporter"/>
 </owl:Class>
@@ -447,12 +475,12 @@
   <rdfs:subClassOf rdf:resource="#GlcCer"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Lysosomal_Targeting">
-  <rdfs:subClassOf rdf:resource="#N-linked"/>
+<owl:Class rdf:about="#Lipid-linked_Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Lysosome_Degradation"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Lysosome_Degradation">
-  <rdfs:subClassOf rdf:resource="#Glycan_Degradation"/>
+<owl:Class rdf:about="#Lysosomal_Targeting">
+  <rdfs:subClassOf rdf:resource="#N-linked"/>
 </owl:Class>
 
 <owl:Class rdf:about="#ManT">
@@ -467,16 +495,20 @@
   <rdfs:subClassOf rdf:resource="#GlcAT"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Sugar_Metabolism">
-  <rdfs:subClassOf rdf:resource="#Pathway"/>
-</owl:Class>
-
 <owl:Class rdf:about="#Modification_Transport">
   <rdfs:subClassOf rdf:resource="#Transporters"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Transporters">
   <rdfs:subClassOf rdf:resource="#Pathway"/>
+</owl:Class>
+
+<owl:Class rdf:about="#N-linked_Extracellular_Degradation">
+  <rdfs:subClassOf rdf:resource="#Extracellular_Degradation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#N-linked_Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Lysosome_Degradation"/>
 </owl:Class>
 
 <owl:Class rdf:about="#N-sulfation">
@@ -511,12 +543,21 @@
   <rdfs:subClassOf rdf:resource="#O-linked"/>
 </owl:Class>
 
+<owl:Class rdf:about="#O-linked">
+  <rdfs:subClassOf rdf:resource="#CorePathways"/>
+</owl:Class>
+
 <owl:Class rdf:about="#O-Glc">
   <rdfs:subClassOf rdf:resource="#O-linked"/>
 </owl:Class>
 
 <owl:Class rdf:about="#O-GlcNAc">
   <rdfs:subClassOf rdf:resource="#CorePathways"/>
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
+<owl:Class rdf:about="#O-linked_Lysosome_Degradation">
+  <rdfs:subClassOf rdf:resource="#Lysosome_Degradation"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Oligosaccharyltransferase">
@@ -576,7 +617,7 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Phosphorylation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Processing">
@@ -589,6 +630,10 @@
 
 <owl:Class rdf:about="#Putative_or_Inactive_Glycogenes">
   <rdfs:subClassOf rdf:resource="#Glycogene"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Putative_or_Unknown_Pathways">
+  <rdfs:subClassOf rdf:resource="#Pathway"/>
 </owl:Class>
 
 <owl:Class rdf:about="#RibitolT">
@@ -607,16 +652,12 @@
   <rdfs:subClassOf rdf:resource="#Capping"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Sulfatase">
-  <rdfs:subClassOf rdf:resource="#Modifying_Enzyme"/>
-</owl:Class>
-
 <owl:Class rdf:about="#Sulfate_Transporter">
   <rdfs:subClassOf rdf:resource="#Transporter"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Sulfation">
-  <rdfs:subClassOf rdf:resource="#Modification"/>
+  <rdfs:subClassOf rdf:resource="#Sugar_Metabolism"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Synthase">
@@ -711,10 +752,6 @@
   <rdfs:subClassOf rdf:resource="#Transporter"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Unknown_Putative_Pathways">
-  <rdfs:subClassOf rdf:resource="#Pathway"/>
-</owl:Class>
-
 <owl:Class rdf:about="#Uridylyltransferase">
   <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
 </owl:Class>
@@ -753,6 +790,10 @@
 
 <owl:Class rdf:about="#α2-8_SialylT">
   <rdfs:subClassOf rdf:resource="#SialylT"/>
+</owl:Class>
+
+<owl:Class rdf:about="#α3GalNAcT">
+  <rdfs:subClassOf rdf:resource="#GalNAcT"/>
 </owl:Class>
 
 <owl:Class rdf:about="#α4GlcNAcT">
@@ -2754,7 +2795,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
   <inPathway rdf:resource="#Extracellular_Degradation"/>
-  <inPathway rdf:resource="#HA_Degradation"/>
+  <inPathway rdf:resource="#HA_Extracellular_Degradation"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
@@ -2764,7 +2805,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
   <inPathway rdf:resource="#Extracellular_Degradation"/>
-  <inPathway rdf:resource="#HA_Degradation"/>
+  <inPathway rdf:resource="#HA_Extracellular_Degradation"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
@@ -2774,7 +2815,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
   <inPathway rdf:resource="#Extracellular_Degradation"/>
-  <inPathway rdf:resource="#HA_Degradation"/>
+  <inPathway rdf:resource="#HA_Extracellular_Degradation"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
@@ -2784,7 +2825,7 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
   <inPathway rdf:resource="#Extracellular_Degradation"/>
-  <inPathway rdf:resource="#HA_Degradation"/>
+  <inPathway rdf:resource="#HA_Extracellular_Degradation"/>
   <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4) or GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-3)GlcNAc(b1-4)GlcA(a1-3)</hasSubstrate>
@@ -3728,6 +3769,362 @@
   <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)GlcNAc(b1-?)</hasProduct>
   <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?)</hasSubstrate>
 </GalNAcT>
+
+<Sulfatase rdf:about="#SULF1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc_6C_Sulfatase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#GAG_Extracellular_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4 6S)</hasSubstrate>
+</Sulfatase>
+
+<Sulfatase rdf:about="#SULF2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc_6C_Sulfatase"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#GAG_Extracellular_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4 6S)</hasSubstrate>
+</Sulfatase>
+
+<GlcNAcT rdf:about="#B3GNT4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcNAcT"/>
+  <inPathway rdf:resource="#Putative_or_Unknown_Pathways"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GalNAcT rdf:about="#B3GALNT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GalNAcT"/>
+  <inPathway rdf:resource="#Globoside"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-3)Gal(a1-4)Gal(b1-4)Glc(b1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(a1-4)Gal(b1-4)Glc(b1-r)</hasSubstrate>
+</GalNAcT>
+
+<Glucosidase rdf:about="#GBA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Glycan_Degradation"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cer</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glc:Cer</hasSubstrate>
+</Glucosidase>
+
+<Glucuronidase rdf:about="#CEMIP2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#NAcetylglucosaminidase"/>
+  <inPathway rdf:resource="#HA_Extracellular_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Glucuronidase>
+
+<GalNAcT rdf:about="#B3GALNT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GalNAcT"/>
+  <inPathway rdf:resource="#Capping"/>
+  <inPathway rdf:resource="#LacdiNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">!@GlcNAc(b1-4)...Man(b1-4)</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-3)GlcNAc(b1-?) or GalNAc(b1-3)GlcNAc(b1-4)...Man(a1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-?) or GlcNAc(b1-4)...Man(a1-r)</hasSubstrate>
+</GalNAcT>
+
+<GlcNAcT rdf:about="#B3GNT5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#β3GlcNAcT"/>
+  <inPathway rdf:resource="#Lactoside"/>
+  <inPathway rdf:resource="#Neolactoside"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4)Glc(b1-r) or GlcNAc(b1-3)Gal(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Glc(b1-r) or Gal(b1-4)</hasSubstrate>
+</GlcNAcT>
+
+<Fucosidase rdf:about="#FUCA1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...[Fuc(a1-6)]GlcNAc(b1-?)</hasSubstrate>
+</Fucosidase>
+
+<Galactosidase rdf:about="#GALC">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cer</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal:Cer</hasSubstrate>
+</Galactosidase>
+
+<Galactosidase rdf:about="#GLA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cer</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal:Cer</hasSubstrate>
+</Galactosidase>
+
+<Galactosidase rdf:about="#GLB1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Lysosome_Degradation"/>
+  <inPathway rdf:resource="#O-linked_Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-?)...</hasSubstrate>
+</Galactosidase>
+
+<Sulfatase rdf:about="#GNS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc_6C_Sulfatase"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4 6S)</hasSubstrate>
+</Sulfatase>
+
+<Glucuronidase rdf:about="#GUSB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">…</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-3)...</hasSubstrate>
+</Glucuronidase>
+
+<Glucuronidase rdf:about="#HPSE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(a1-4)GlcNAc(b1-4) or GlcNAc(b1-4)GlcA(a1-4)GlcNAc(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Glucuronidase>
+
+<Glycosidase rdf:about="#HEXA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neu5Ac(a2-3)Glc(b1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Neu5Ac(a2-3)]GalNac(b1-4)Glc(b1-r)</hasSubstrate>
+</Glycosidase>
+
+<Glycosidase rdf:about="#HEXB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neu5Ac(a2-3)Glc(b1-r)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Neu5Ac(a2-3)]GalNac(b1-4)Glc(b1-r)</hasSubstrate>
+</Glycosidase>
+
+<Sulfatase rdf:about="#IDS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#IdoA_2C_Sulfatase"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IdoA(a1-3)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IdoA(a1-3 2S)</hasSubstrate>
+</Sulfatase>
+
+<Mannosidase rdf:about="#MANBA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-?)...</hasSubstrate>
+</Mannosidase>
+
+<Sulfatase rdf:about="#GALNS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GalNAc_6C_Sulfatase"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GalNac(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GalNAc(b1-4 6S)</hasSubstrate>
+</Sulfatase>
+
+<NAcetylgalactosaminidase rdf:about="#NAGA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#Lipid-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...Gal</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-4)...Gal</hasSubstrate>
+</NAcetylgalactosaminidase>
+
+<NAcetylgalactosaminidase rdf:about="#NAGLU">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA(b1-4)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(a1-4)GlcA(b1-4)</hasSubstrate>
+</NAcetylgalactosaminidase>
+
+<NAcetylglucosaminidase rdf:about="#AGA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</NAcetylglucosaminidase>
+
+<NAcetylglucosaminidase rdf:about="#CTBS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</NAcetylglucosaminidase>
+
+<Iduronidase rdf:about="#IDUA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IdoA(a1-?)...</hasSubstrate>
+</Iduronidase>
+
+<Sulfatase rdf:about="#SGSH">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#GlcNAc_2C_Sulfatase"/>
+  <inPathway rdf:resource="#Lysosome_Degradation"/>
+  <inPathway rdf:resource="#GAG_Lysosome_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(2S)</hasSubstrate>
+</Sulfatase>
+
+<Kinase rdf:about="#POMK">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-Man"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(6P)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man</hasSubstrate>
+</Kinase>
+
+<GlcNAcT rdf:about="#EOGT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Other_GlcNAcT"/>
+  <inPathway rdf:resource="#O-GlcNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc:Ser or GlcNAc:Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser or Thr</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#OGT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Other_GlcNAcT"/>
+  <inPathway rdf:resource="#O-GlcNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc:Ser or GlcNAc:Thr</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser or Thr</hasSubstrate>
+</GlcNAcT>
+
+<NAcetylglucosaminidase rdf:about="#MGEA5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#O-GlcNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</NAcetylglucosaminidase>
+
+<Acetyltransferase rdf:about="#CASD1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Sugar_Metabolism"/>
+  <inPathway rdf:resource="#Acetylation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no reaction rule</hasSubstrate>
+</Acetyltransferase>
+
+<Acetylesterase rdf:about="#SIAE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Sugar_Metabolism"/>
+  <inPathway rdf:resource="#Acetylation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Acetylesterase>
+
+<GlcNAcT rdf:about="#B3GNT2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Type_I_LacNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#B3GNT7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Type_I_LacNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4)...GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)...GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<GlcNAcT rdf:about="#B3GNT8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Type_I_LacNAc"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc(b1-3)Gal(b1-4)GlcNAc(b1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)GlcNAc(b1-?)</hasSubstrate>
+</GlcNAcT>
+
+<Glycosylation_Regulator rdf:about="#CTSA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Glycosylation_Regulation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Glycosylation_Regulator>
+
+<Glycosylation_Regulator rdf:about="#GM2A">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Glycosylation_Regulation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Glycosylation_Regulator>
+
+<GalNAcT rdf:about="#GBGT1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#α3GalNAcT"/>
+  <inPathway rdf:resource="#Lipid-linked"/>
+  <inPathway rdf:resource="#Globoside"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-3)GalNAc(b1-3)Gal(a1-?)</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-3)Gal(a1-?)</hasSubstrate>
+</GalNAcT>
+
+<Fucosidase rdf:about="#FUCA2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <inPathway rdf:resource="#Extracellular_Degradation"/>
+  <inPathway rdf:resource="#N-linked_Extracellular_Degradation"/>
+  <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+  <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+  <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+</Fucosidase>
 
 
 </rdf:RDF>
