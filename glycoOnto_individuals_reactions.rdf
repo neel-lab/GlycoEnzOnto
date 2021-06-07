@@ -3224,19 +3224,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FCSK -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FCSK">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Synthesis"/>
-        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-        <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
-        <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(1P)</hasProduct>
-        <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc</hasSubstrate>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FKRP -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FKRP">
@@ -3298,6 +3285,19 @@
         <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
         <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
         <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Synthesis"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
+        <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc(1P)</hasProduct>
+        <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuc</hasSubstrate>
     </owl:NamedIndividual>
     
 
@@ -3447,9 +3447,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC1 -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphatase"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Synthesis"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
@@ -5014,18 +5014,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#MGEA5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#MGEA5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylglucosaminidase"/>
-        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc"/>
-        <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
-        <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
-        <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#MOGS -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#MOGS">
@@ -5325,6 +5313,18 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#OGA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#OGA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylglucosaminidase"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc"/>
+        <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasConstraint>
+        <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasProduct>
+        <hasSubstrate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</hasSubstrate>
+    </owl:NamedIndividual>
     
 
 
