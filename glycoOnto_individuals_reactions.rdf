@@ -2110,6 +2110,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalT"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Xyl"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
         <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)Gal(b1-4)Xyl(b1-?)Ser</hasProduct>
@@ -2392,6 +2393,7 @@
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Xyl"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</hasConstraint>
         <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-4)Xyl(b1-?)Ser</hasProduct>
@@ -3025,6 +3027,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DSE">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
         <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)</hasProduct>
@@ -3037,6 +3040,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DSEL">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase"/>
+        <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization"/>
         <inPathway rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <hasConstraint rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xyl</hasConstraint>
         <hasProduct rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)</hasProduct>
