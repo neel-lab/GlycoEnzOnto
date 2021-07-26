@@ -61,8 +61,8 @@ done			ST8SIA4	Q92187	CMPNacetylneuraminatepolyalpha2_8sialyltransferase	Capping
 done			ST8SIA5	O15466	Alpha2_8sialyltransferase 8E	Capping	SialylT,α2-8 SialylT	NeuAc(a2-8)NeuAc(a2-3)Gal(b1-?)Glc(b1-?)Cer or NeuAc(a2-3)Gal(b1-?)...Glc(b1-?)Cer	NeuAc(a2-8)NeuAc(a2-8)NeuAc(a2-3)Gal(b1-?)Glc(b1-?)Cer or NeuAc(a2-8)NeuAc(a2-3)Gal(b1-?)...Glc(b1-?)Cer	nNeu5Ac<4	Golgi	
 done			ST8SIA6	P61647	Alpha2_8sialyltransferase 8F	Capping	SialylT,α2-8 SialylT	NeuAc(a2-3)Gal(b1-3)... Ser/Thr or NeuAc(a2-6)GalNAc(a1-?)Ser/Thr or NeuAc(a2-6)...GalNAc(a1-?)Ser/Thr	NeuAc(a2-8)NeuAc(a2-3)Gal(b1-3)... Ser/Thr or NeuAc(a2-8)NeuAc(a2-6)GalNAc(a1-?)Ser/Thr or NeuAc(a2-8)NeuAc(a2-6)...GalNAc(a1-?)Ser/Thr	None	Golgi	
 done			UGCG	Q16739	Ceramide glucosyltransferase	GlcCer	GlcT	Cer	Glc(b1-?):Cer	None	Golgi (cytoplasmic side)	
-description does not match UniPROT			CALR	P27797	Calreticulin;CALR;ortholog	Glycosylation_Regulator	Glycosylation_Regulation	no reaction			ER	
-description does not match UniPROT			CANX	P27824	Calnexin;CANX;ortholog	Glycosylation_Regulator	Glycosylation_Regulation	no reaction			ER	
+description does not match UniProt			CALR	P27797	Calreticulin;CALR;ortholog	Glycosylation_Regulator	Glycosylation_Regulation	no reaction			ER	
+description does not match UniProt			CANX	P27824	Calnexin;CANX;ortholog	Glycosylation_Regulator	Glycosylation_Regulation	no reaction			ER	
 done			POGLUT1	Q8NBL1	Protein Oglucosyltransferase 1	O-Glc	GlcT	Ser[EGF]	Glc(b1-?)Ser[EGF]	None	ER	
 done			GXYLT1	Q4G148	Glucoside xylosyltransferase 1;GXYLT1;ortholog	O-Glc	XylT	Glc(b1-?)Ser[EGF]	Xyl(a1-3)Glc(b1-?)Ser[EGF]		ER	
 done			GXYLT2	A0PJZ3	Glucoside xylosyltransferase 2;GXYLT2;ortholog	O-Glc	XylT	Glc(b1-?)Ser[EGF]	Xyl(a1-3)Glc(b1-?)Ser[EGF]		ER	
