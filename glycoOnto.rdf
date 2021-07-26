@@ -1580,6 +1580,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphodiesterase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphodiesterase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT">
