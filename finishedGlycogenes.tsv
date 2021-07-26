@@ -20,7 +20,7 @@ done	add fig		UGT2B15	P54855	UDP-glucuronosyltransferase 2B15;UGT2B15;ortholog	M
 done	add fig		UGT2B7	P16662	UDP-glucuronosyltransferase 2B7;UGT2B7;ortholog	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None	ER	
 done	add fig		UGT3A1	Q6NUS8	UDP-glucuronosyltransferase 3A1;UGT3A1;ortholog	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None		
 done	add fig		UGT3A2	Q3SY77	UDP-glucuronosyltransferase 3A2;UGT3A2;ortholog	Metabolic_GlcAT	GlcAT	R	GlcA(??-?)R	None		
-done	no fig		SLC2A1	P11166	Solute carrier family 2, facilitated glucose transporter member 1;SLC2A1;ortholog	Sugar_Transport,Glucose_Transport	Glucose_Transporter	Glc [Extracellular]	Glc [Cyto]	None	cell membrane	
+done	no figure		SLC2A1	P11166	Solute carrier family 2, facilitated glucose transporter member 1;SLC2A1;ortholog	Sugar_Transport,Glucose_Transport	Glucose_Transporter	Glc [Extracellular]	Glc [Cyto]	None	cell membrane	
 done	no fig		SLC2A10	O95528	Solute carrier family 2, facilitated glucose transporter member 10;SLC2A10;ortholog	Sugar_Transport,Glucose_Transport	Glucose_Transporter	Glc [Extracellular]	Glc [Cyto]	None	cell membrane	Facilitative glucose transporter required for the development of the cardiovascular system
 done	no fig		SLC2A12	Q8TD20	Solute carrier family 2, facilitated glucose transporter member 12;SLC2A12;ortholog	Sugar_Transport,Glucose_Transport	Glucose_Transporter	Glc [Extracellular]	Glc [Cyto]	None	cell membrane,ER	
 done	no fig		SLC2A2	P11168	Solute carrier family 2, facilitated glucose transporter member 2;SLC2A2;ortholog	Sugar_Transport,Glucose_Transport	Glucose_Transporter	Glc [Extracellular]	Glc [Cyto]	None	cell membrane	Transport of glucose and fructose in beta-cells
