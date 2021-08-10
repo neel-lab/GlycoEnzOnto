@@ -200,11 +200,11 @@
 </owl:Class>
 
 <owl:Class rdf:about="#Dystro">
-  <rdfs:subClassOf rdf:resource="#O-Man"/>
+  <rdfs:subClassOf rdf:resource="#POMGNT2_Type"/>
 </owl:Class>
 
-<owl:Class rdf:about="#O-Man">
-  <rdfs:subClassOf rdf:resource="#O-linked"/>
+<owl:Class rdf:about="#POMGNT2_Type">
+  <rdfs:subClassOf rdf:resource="#POMT_Type"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Elongation_and_Branching">
@@ -568,6 +568,10 @@
   <rdfs:subClassOf rdf:resource="#O-linked"/>
 </owl:Class>
 
+<owl:Class rdf:about="#O-Man">
+  <rdfs:subClassOf rdf:resource="#O-linked"/>
+</owl:Class>
+
 <owl:Class rdf:about="#O-linked_Lysosome_Degradation">
   <rdfs:subClassOf rdf:resource="#Lysosome_Degradation"/>
 </owl:Class>
@@ -617,11 +621,12 @@
 </owl:Class>
 
 <owl:Class rdf:about="#POMGNT1_Type">
-  <rdfs:subClassOf rdf:resource="#O-Man"/>
+  <rdfs:subClassOf rdf:resource="#POMT_Type"/>
 </owl:Class>
 
-<owl:Class rdf:about="#POMGNT2_Type">
+<owl:Class rdf:about="#POMT_Type">
   <rdfs:subClassOf rdf:resource="#O-Man"/>
+  <x_1.1:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</x_1.1:creator>
 </owl:Class>
 
 <owl:Class rdf:about="#Phosphatase">
