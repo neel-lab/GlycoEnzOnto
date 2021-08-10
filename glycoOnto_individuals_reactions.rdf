@@ -379,6 +379,11 @@
   <rdfs:subClassOf rdf:resource="#Sulfatase"/>
 </owl:Class>
 
+<owl:Class rdf:about="#GlcNAc_PhosphoT">
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
+  <x_1.1:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</x_1.1:creator>
+</owl:Class>
+
 <owl:Class rdf:about="#GlcT">
   <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
 </owl:Class>
@@ -654,7 +659,7 @@
 </owl:Class>
 
 <owl:Class rdf:about="#RibitolT">
-  <rdfs:subClassOf rdf:resource="#Glycosyltransferase"/>
+  <rdfs:subClassOf rdf:resource="#Other_Transferases"/>
 </owl:Class>
 
 <owl:Class rdf:about="#Sialidase">
