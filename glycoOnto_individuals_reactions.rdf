@@ -476,10 +476,6 @@
   <rdfs:subClassOf rdf:resource="#Glycosidase"/>
 </owl:Class>
 
-<owl:Class rdf:about="#Intermediate_Transporter">
-  <rdfs:subClassOf rdf:resource="#Transporter"/>
-</owl:Class>
-
 <owl:Class rdf:about="#Keratan_Sulfate">
   <rdfs:subClassOf rdf:resource="#GAG"/>
 </owl:Class>
