@@ -1,0 +1,81 @@
+
+************TEST: Addition Examle (B3GNT6)************
+Rule String: {GlcNAc(b1-3)}GalNAc(a1-?)
+Parser Results (reading left to right):
+An addition of GlcNAc(b1-3)
+A GalNAc monosaccharide with a (a1-?) linkage
+
+************END************
+
+************TEST: Addition Examle with Multiple Reactions: (B3GNT5)************
+Rule String: {GlcNAc(b1-3)}GalNAc(a1-?)
+Parser Results (reading left to right):
+An addition of GlcNAc(b1-3)
+A GalNAc monosaccharide with a (a1-?) linkage
+
+************END************
+
+************TEST: Subtraction Example with uncertain reducing end (FUCA1)************
+Rule String: ...{![Fuc(a1-6)]}GlcNAc(b1-?)
+Parser Results (reading left to right):
+One or more monosaccharides
+A removal of [Fuc(a1-6)]
+A GlcNAc monosaccharide with a (b1-?) linkage
+
+************END************
+
+************TEST: Substitution Example, modifications within glycans, multiple rules (HS6ST2)************
+Rule String: IdoA(a1-4){GlcNS(a1-4)->GlcNS,6OS(a1-4)}|GlcA(a1-4){GlcNS(a1-4)->GlcNS,6OS(a1-4)}
+Parser Results (reading left to right):
+A IdoA monosaccharide with a (a1-4) linkage
+A conversion from GlcNS(a1-4) to GlcNS,6OS(a1-4)
+Logical OR
+A GlcA monosaccharide with a (a1-4) linkage
+A conversion from {GlcNS(a1-4)->GlcNS,6OS(a1-4)} to {GlcNS(a1-4)->GlcNS,6OS(a1-4)}
+
+************END************
+
+************TEST: Constraint Example, with logical NOT,AND, attachment constraint, and uncertain linkage. (B3GALT1)************
+Rule String: !Gal(b1-4)GlcNAc(b1-?)&!@GlcNAc(b1-4)...Man(b1-4)
+Parser Results (reading left to right):
+The absence of
+A Gal monosaccharide with a (b1-4) linkage
+A GlcNAc monosaccharide with a (b1-?) linkage
+Logical AND
+The absence of
+An attachment constraint
+A GlcNAc monosaccharide with a (b1-4) linkage
+One or more monosaccharides
+A Man monosaccharide with a (b1-4) linkage
+
+************END************
+
+************TEST: Multiple substrates at position test (arbitrary rule)************
+Rule String: <Gal(b1-3),GalNAc(b1-3)>GlcNAc(b1-?)
+Parser Results (reading left to right):
+Location where following monosaccharides allowed are: Gal(b1-3),GalNAc(b1-3)
+A GlcNAc monosaccharide with a (b1-?) linkage
+
+************END************
+
+************TEST: Typographical error: monosaccharide-linkage formatting************
+Rule String: Gal(aaa)GlcNAc(a1-4)
+ERROR MESSAGE:
+Couldn't understand underlined parts of ruleString:
+
+
+Gal(aaa)GlcNAc(a1-4)
+~~~~~~~~            
+
+************END************
+
+************TEST: Typographical error: Misformatted rule************
+Rule String: Gal(b1-4)GlcNAc(b1-3)[Fuc(a1-3)]}...
+ERROR MESSAGE:
+Couldn't understand underlined parts of ruleString:
+
+
+Gal(b1-4)GlcNAc(b1-3)[Fuc(a1-3)]}...
+                                ~   
+
+************END************
