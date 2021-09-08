@@ -155,6 +155,33 @@ wildCardMatcher=matcherClass('\[?\.\.\.\]?')
 quantityStartMatcher=LexMatcher(entityDict['monosaccharides'],regex="n(?=%s)")
 attachRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\@(?=%s)")
 negationRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\!(?=%s)")
+reactionMatcher=matcherClass('\{.+\}')
+#innerReactionMatcher used to find reactions within
+# monosaccharide entities (for modification reactions)
+innerReactionMatcher=matcherClass('\{',front=False)
+additionMatcher=matcherClass('\{(?!\!).*?\}')
+subtractionMatcher=matcherClass('\{(?=\!).*?\}')
+substitutionMatcher=matcherClass('\{.*?\-\>.*?\}')
+reversibleMatcher=matcherClass('\{.*?\<\-\>.*?\}')
+###################
+# Entity Detection:
+###################
+multiMatcher=matcherClass('\<.+\>')
+wildCardMatcher=matcherClass('\[?\.\.\.\]?')
+#Monosaccharide-linkage matcher:
+#Match general monosaccharide pattern
+# ensure no { } in front of the string:
+monoLinkMatcher=matcherClass('(?!\{)\[?([A-Za-z0-9\,\{\}]+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
+# Excludes any special characters assoicated
+# with reaction and constraint string (n,@,{},<>)
+#monoLinkMatcher=matcherClass('(?!n|\@|\{|\}|\<|\>)\[?(.+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
+#######################
+# Constraint Detection:
+#######################
+quantityStartMatcher=matcherClass('n')
+attachRuleMatcher=matcherClass('\@')
+negationRuleMatcher=matcherClass('\!')
+>>>>>>> 5346a3638978321a833174668057e4dc8017dbfe
 quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>\=)(\d)')
 #######################
 # Separator Detection
