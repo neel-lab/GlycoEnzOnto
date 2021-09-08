@@ -107,32 +107,54 @@ class LexMatcher:
 ####################
 # Reaction Matchers:
 ####################
-reactionMatcher=matcherClass('\{.+\}')
-#innerReactionMatcher used to find reactions within
-# monosaccharide entities (for modification reactions)
-innerReactionMatcher=matcherClass('\{',front=False)
-additionMatcher=matcherClass('\{(?!\!).*?\}')
-subtractionMatcher=matcherClass('\{(?=\!).*?\}')
-substitutionMatcher=matcherClass('\{.*?\-\>.*?\}')
-reversibleMatcher=matcherClass('\{.*?\<\-\>.*?\}')
+reactionMatcher=matcherClass('\{.+?\}')
+additionMatcher=matcherClass('\{(?!\!).+?\}')
+subtractionMatcher=matcherClass('\{(?=\!).+?\}')
+substitutionMatcher=matcherClass('\{.+?(?!=\<)\-\>.+?\}')
+reversibleMatcher=matcherClass('\{.+?\<\-\>.+?\}')
 ###################
 # Entity Detection:
 ###################
-multiMatcher=matcherClass('\<.+\>')
+
+entityDict={
+        'monosaccharides':['GlcNAc','GlcN','GlcA','Glc','GalNAc','Gal','ManNAc','Man','Neu5Ac','Neu5Gc','Xyl','Fuc','IdoA','Kdn','Ribitol(P5-1)','Ribitol(P5-3)','Ribitol','Fruc'],
+        'Nucleotides':['CMP','UDP','GDP'],
+        'Modifications':['S','P'],
+        'Substrates':['PAPS','R','ATP'],
+        'Compartments':['ER','Golgi','Cytoplasm','Extracellular'],
+        'Aglyca':['Dol-P-P', 'Asn','Ser/Thr','Ser','Thr','Cer','5-hydroxy-L-lysyl-','Lys','WXXW','PI'],
+        'ProteinConstraints':['EGF','Cad']
+}
+
+#Monosaccharide Matcher
+monoMatcher=LexMatcher(entityDict['monosaccharides'],
+        entityDict['Compartments'],
+        entityDict['Modifications'],
+        regex="\[?%s(\[%s\])*((?:\d\,|\,\d|\d|\<.+\>)*)((?:\{\!?\,\d\}|\{\!?\d?\D+?\}|\{.+?\<?\-\>.+?\}))*%s*(\([ab\?][12\?]\-[\d\?]\))*\]?")
+#Sugar Nucleotide Matching:
+nucleotideSugarMatcher=LexMatcher(entityDict['Nucleotides'],entityDict['monosaccharides'],regex="%s\-%s")
+#Modification Matcher
+modMatcher=LexMatcher(entityDict['Modifications'],regex="\d%s",front=True)
+#Aglycon Matcher:
+aglyconMatcher=LexMatcher([re.escape(x) for x in entityDict['Aglyca']],front=True)
+#Compartment Matcher:
+compartmentMatcher=LexMatcher(entityDict['Compartments'],regex='\[%s\]',front=True)
+#Transport Matcher:
+transportMatcher=matcherClass('\-\>')
+#Protein Constraints:
+proteinConstraintMatcher=LexMatcher(entityDict['ProteinConstraints'],regex="\[%s\]")
+#Substrate Matcher:
+substrateMatcher=LexMatcher(entityDict['Substrates'])
+#Multi-entity matcher:
+multiMatcher=matcherClass('\<.+?\>')
+#Wild Card Matcher:
 wildCardMatcher=matcherClass('\[?\.\.\.\]?')
-#Monosaccharide-linkage matcher:
-#Match general monosaccharide pattern
-# ensure no { } in front of the string:
-monoLinkMatcher=matcherClass('(?!\{)\[?([A-Za-z0-9\,\{\}]+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
-# Excludes any special characters assoicated
-# with reaction and constraint string (n,@,{},<>)
-#monoLinkMatcher=matcherClass('(?!n|\@|\{|\}|\<|\>)\[?(.+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
 #######################
 # Constraint Detection:
 #######################
-quantityStartMatcher=matcherClass('n')
-attachRuleMatcher=matcherClass('\@')
-negationRuleMatcher=matcherClass('\!')
+quantityStartMatcher=LexMatcher(entityDict['monosaccharides'],regex="n(?=%s)")
+attachRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\@(?=%s)")
+negationRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\!(?=%s)")
 quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>\=)(\d)')
 #######################
 # Separator Detection
