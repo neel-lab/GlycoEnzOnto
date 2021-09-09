@@ -130,13 +130,14 @@ entityDict={
 monoMatcher=LexMatcher(entityDict['monosaccharides'],
         entityDict['Compartments'],
         entityDict['Modifications'],
-        regex="\[?%s(\[%s\])*((?:\d\,|\,\d|\d|\<.+\>)*)((?:\{\!?\,\d\}|\{\!?\d?\D+?\}|\{.+?\<?\-\>.+?\}))*%s*(\([ab\?][12\?]\-[\d\?]\))*\]?")
+        regex="\[?%s(\[%s\])*((?:\d\,|\,\d|\d|\<.+?\>)*)((?:\{\!?\,\d\}|\{\!?\d?\D+?\}|\{.+?\<?\-\>.+?\}))*%s*(\([ab\?][12\?]\-[\d\?]\))*\]?")
 #Sugar Nucleotide Matching:
 nucleotideSugarMatcher=LexMatcher(entityDict['Nucleotides'],entityDict['monosaccharides'],regex="%s\-%s")
 #Modification Matcher
 modMatcher=LexMatcher(entityDict['Modifications'],regex="\d%s",front=True)
+modMatcher_middle=LexMatcher(entityDict['Modifications'],regex="\d%s",front=False)
 #Aglycon Matcher:
-aglyconMatcher=LexMatcher([re.escape(x) for x in entityDict['Aglyca']],front=True)
+aglyconMatcher=LexMatcher([x for x in entityDict['Aglyca']],front=True)
 #Compartment Matcher:
 compartmentMatcher=LexMatcher(entityDict['Compartments'],regex='\[%s\]',front=True)
 #Transport Matcher:
@@ -155,7 +156,7 @@ wildCardMatcher=matcherClass('\[?\.\.\.\]?')
 quantityStartMatcher=LexMatcher(entityDict['monosaccharides'],regex="n(?=%s)")
 attachRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\@(?=%s)")
 negationRuleMatcher=LexMatcher(entityDict['monosaccharides'],regex="\!(?=%s)")
-reactionMatcher=matcherClass('\{.+\}')
+reactionMatcher=matcherClass('\{.+?\}')
 #innerReactionMatcher used to find reactions within
 # monosaccharide entities (for modification reactions)
 innerReactionMatcher=matcherClass('\{',front=False)
@@ -166,7 +167,6 @@ reversibleMatcher=matcherClass('\{.*?\<\-\>.*?\}')
 ###################
 # Entity Detection:
 ###################
-multiMatcher=matcherClass('\<.+\>')
 wildCardMatcher=matcherClass('\[?\.\.\.\]?')
 #Monosaccharide-linkage matcher:
 #Match general monosaccharide pattern

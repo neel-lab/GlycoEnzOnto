@@ -509,7 +509,7 @@ class entityToken:
         #Modifications:
         if len(mono_components['modPos'])>0:
             #Create a list with the modification positions
-            modPos_lst=re.findall('(\d|\<.+?>)',mono_components['modPos'])
+            modPos_lst=re.findall('(\d|\<.+?\>)',mono_components['modPos'])
             if mono_components['modType'] is None:
                 #Infer the mod if it is within
                 # the modpos:
@@ -545,13 +545,13 @@ class entityToken:
             #Get Reaction Text
             rct_string=re.search('\{(.+?)\}',mono_components['innerReaction']).groups()[0]
             addMoreMono=re.search('(?<=\,)(\d)|(\d)(?=\,)',rct_string)
-            modMatch=modMatcher(rct_string)
-            if modMatcher:
-                rct_token=reactionToken(mono_components['innerReaction'])
+            modMatch=modMatcher_middle(rct_string)
+            if modMatch is not None:
+                rct_token=reactionToken(''.join(['{',modMatcher_middle(rct_string,presence=False).group(),'}']))
             else:
-                if mono_component['modType'] is not None and mono_component['modType'] not in mono_components['innerReaction']:
+                if mono_components['modType'] is not None and mono_components['modType'] not in mono_components['innerReaction']:
                     if addMoreMono is not None:
-                        newRct='{'+re.sub('\,','',rct_string)+mono_component['modType']+'}'
+                        newRct=''.join(['{',addMoreMono.groups()[0],mono_components['modType'],'}'])
                         rct_token=reactionToken(newRct)
         else:
             rct_token=None
@@ -678,10 +678,10 @@ class monoToken(entityToken):
         if self.linkage is not None:
             res+=' with a %s linkage' %(self.linkage)
         if self.modTokens is not None:
-            modString=' '.join([x.__repr__() for x in self.modTokens])
+            modString=' '.join([str([x.__repr__()]) for x in self.modTokens])
             res+=' with the following modifications: %s' %(modString)
         if self.compartment is not None:
-            res=res+' in the %s compartment' %(self.compartment.inputString)
+            res=res+' in %s' %(self.compartment.__repr__())
         if self.reactionToken is not None:
             reactString=' '+self.reactionToken.__repr__()
             res=res + ' having the following reaction: %s' %(reactString)
@@ -807,17 +807,18 @@ class multiToken:
     def __init__(self,string):
         self.__name__='multiToken'
         self.inputString=string
-        self.entity_tokens=self.ligandTokens()
+        self.entity_strings=self.get_option_list()
+        self.tokens=[lexer(e) for e in self.entity_strings]
 
     def __repr__(self):
-        try:
-            s=self.get_option_list()
-        except:
-            return("PARSE ERROR")
-        if len(s)==1:
-            return('Position where %s can be optionally present' %(s[0]))
+        if len(self.tokens)>0:
+            if len(self.tokens)==1:
+                return('Position where %s can be optionally present' %(self.tokens[0]))
+            else:
+                tokenList=','.join([x.__repr__() for x in self.tokens])
+                return(' '.join(['Position where following are possible: ',' OR '.join([str([x.__repr__()]) for x in self.tokens])]))
         else:
-            return('Position where following are possible: ' + ' OR '.join(s))
+            return('PARSE ERROR')
     
     def detectFun(self):
         if multiMatcher(self.inputString):
@@ -832,18 +833,10 @@ class multiToken:
             return(None)
 
     def get_option_list(self):
-        s=re.search('\<(.+)\>',self.inputString).group()
+        s=re.search('\<(.+?)\>',self.inputString).group()
         s=re.sub('(<|>)','',s)
         return(s.split(','))
 
-    def ligandTokens(self):
-        ''' Ligand token method for reaction token.
-            Returns a list because this is a 
-            multi-token container.
-        '''
-        ligands=self.get_option_list()
-        ligand_tokens=[entityToken(l) for l in ligands]
-        return(ligand_tokens)
 
 ##################
 # Separator Tokens
