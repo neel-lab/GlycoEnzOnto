@@ -110,14 +110,14 @@ class LexMatcher:
 reactionMatcher=matcherClass('\{.+?\}')
 additionMatcher=matcherClass('\{(?!\!).+?\}')
 subtractionMatcher=matcherClass('\{(?=\!).+?\}')
-substitutionMatcher=matcherClass('\{.+?(?!=\<)\-\>.+?\}')
+substitutionMatcher=matcherClass('\{.+?(?<!\<)\-\>.+?\}')
 reversibleMatcher=matcherClass('\{.+?\<\-\>.+?\}')
 ###################
 # Entity Detection:
 ###################
 
 entityDict={
-        'monosaccharides':['GlcNAc','GlcN','GlcA','Glc','GalNAc','Gal','ManNAc','Man','Neu5Ac','Neu5Gc','Xyl','Fuc','IdoA','Kdn','Ribitol(P5-1)','Ribitol(P5-3)','Ribitol','Fruc'],
+        'monosaccharides':['GlcNAc','GlcN','GlcA','Glc','GalNAc','GalN','Gal','ManNAc','Man','Neu5Ac','Neu5Gc','Xyl','Fuc','IdoA','Kdn','Ribitol(P5-1)','Ribitol(P5-3)','Ribitol','Fruc'],
         'Nucleotides':['CMP','UDP','GDP'],
         'Modifications':['S','P'],
         'Substrates':['PAPS','R','ATP'],

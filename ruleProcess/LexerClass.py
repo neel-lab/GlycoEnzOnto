@@ -129,7 +129,8 @@ class LexerClass:
         # ruleStringParsingError.
         #Otherwise, return the list of tokens
         if None in tokens:
-            #Find where the None token is:
+            #Find where the None token is
+            # then report error:
             missingLocs=[i for x,i in enumerate(tokens) if x is None]
             uk_start,uk_end=[[m_start[i],m_end[i]] for i in missingLocs]
             raise ruleStringParsingError(self.ruleString,uk_start,uk_end)

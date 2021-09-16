@@ -339,13 +339,13 @@ UDP nucleotide attached to GlcA
 The [Cytoplasm] compartment
 Transports to
 UDP nucleotide attached to GlcA
-Position where following are possible:  ['[The [ER] compartment]'] OR ['[The [Golgi] compartment]']
+Position where following are possible:  ['The [ER] compartment'] OR ['The [Golgi] compartment']
 Logical OR
 UDP nucleotide attached to GalNAc
 The [Cytoplasm] compartment
 Transports to
 UDP nucleotide attached to GalNAc
-Position where following are possible:  ['[The [ER] compartment]'] OR ['[The [Golgi] compartment]']
+Position where following are possible:  ['The [ER] compartment'] OR ['The [Golgi] compartment']
 
 ************END************
 
@@ -2154,7 +2154,7 @@ Rule String: {Gal(b1-3)}Gal(b1-4)Xyl<2P>(b1-?)Ser
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
-A Xyl monosaccharide with a (b1-?) linkage with the following modifications: ['Position where [A modification of P on the 2 position] can be optionally present']
+A Xyl monosaccharide with a (b1-?) linkage with the following modifications: ['Position where A modification of P on the 2 position can be optionally present']
 The Ser aglycon
 
 ************END************
@@ -2165,7 +2165,7 @@ Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
 A Gal monosaccharide with a (b1-4) linkage
-A Xyl monosaccharide with a (b1-?) linkage with the following modifications: ['Position where [A modification of P on the 2 position] can be optionally present']
+A Xyl monosaccharide with a (b1-?) linkage with the following modifications: ['Position where A modification of P on the 2 position can be optionally present']
 
 ************END************
 
@@ -2360,7 +2360,7 @@ An addition of [A GlcNAc monosaccharide with a (a1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
 A Gal monosaccharide with a (b1-3) linkage
 A Gal monosaccharide with a (b1-4) linkage
-Position where [A modification of P on the 2 position] can be optionally present
+Position where A modification of P on the 2 position can be optionally present
 A Xyl monosaccharide
 Logical OR
 An addition of [A GlcNAc monosaccharide with a (a1-4) linkage]
@@ -2437,11 +2437,11 @@ Rule String: ...IdoA(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA(a1-4)GlcN<,6>{,3}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 
 ************END************
 
@@ -2449,9 +2449,9 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 An unknown entity: GlcN
-Position where following are possible:  ['[]'] OR ['[An unknown entity: 6]']
+Position where An unknown entity: 6 can be optionally present
 An addition of [An unknown entity: 3,]
 An unknown entity: S(a1-4)
 
@@ -2461,9 +2461,9 @@ An unknown entity: S(a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 An unknown entity: GlcN
-Position where following are possible:  ['[]'] OR ['[An unknown entity: 6]']
+Position where An unknown entity: 6 can be optionally present
 An addition of [An unknown entity: 3,]
 An unknown entity: S(a1-4)
 
@@ -2473,9 +2473,9 @@ An unknown entity: S(a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 An unknown entity: GlcN
-Position where following are possible:  ['[]'] OR ['[An unknown entity: 6]']
+Position where An unknown entity: 6 can be optionally present
 An addition of [An unknown entity: 3,]
 An unknown entity: S(a1-4)
 
@@ -2485,9 +2485,9 @@ An unknown entity: S(a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 An unknown entity: GlcN
-Position where following are possible:  ['[]'] OR ['[An unknown entity: 6]']
+Position where An unknown entity: 6 can be optionally present
 An addition of [An unknown entity: 3,]
 An unknown entity: S(a1-4)
 
@@ -2497,12 +2497,12 @@ An unknown entity: S(a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,6>{,3}S(a1-4) 
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 An unknown entity:  
 
 ************END************
@@ -2511,9 +2511,9 @@ An unknown entity:
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 An unknown entity: GlcN
-Position where following are possible:  ['[]'] OR ['[An unknown entity: 6]']
+Position where An unknown entity: 6 can be optionally present
 An addition of [An unknown entity: 3,]
 An unknown entity: S(a1-4)
 
@@ -2523,14 +2523,14 @@ An unknown entity: S(a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4) 
 
@@ -2540,14 +2540,14 @@ An unknown entity: (a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4) 
 
@@ -2557,14 +2557,14 @@ An unknown entity: (a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where [An unknown entity: 3] can be optionally present']
+A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4) 
 
@@ -2574,11 +2574,11 @@ An unknown entity: (a1-4)
 Rule String: ...IdoA<2S>(a1-4)GlcN3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN3{!,6}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  An addition of [A modification of S on the 6 position]
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  An addition of [A modification of S on the 6 position]
 
 ************END************
@@ -2587,11 +2587,11 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 Rule String: ...IdoA<2S>(a1-4)GlcN3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN3{!,6}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
-A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  An addition of [A modification of S on the 6 position]
 Logical OR
 One or more monosaccharides
-A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where [A modification of S on the 2 position] can be optionally present']
+A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
 A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  An addition of [A modification of S on the 6 position]
 
 ************END************
@@ -2601,7 +2601,7 @@ Rule String: {Neu5Ac(a2-3)}Gal(b1-3)<[...]>GalNAc(a1-?)Ser/Thr
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
-Position where [One or more monosaccharide on a distinct branch] can be optionally present
+Position where One or more monosaccharide on a distinct branch can be optionally present
 A GalNAc monosaccharide with a (a1-?) linkage
 The Ser/Thr aglycon
 
@@ -3115,12 +3115,12 @@ The Cer aglycon
 ************TEST: GAL3ST2 Rule************
 Rule String: Gal<,6>{,3}S(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)|Gal{,3}S(b1-3)<[Fuc(a1-4)]>GlcNAc(b1-?)
 Parser Results (reading left to right):
-A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
-Position where [A branched Fuc monosaccharide with a (a1-3) linkage] can be optionally present
+A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
 A GlcNAc monosaccharide with a (b1-?) linkage
 Logical OR
 A Gal monosaccharide with a (b1-3) linkage having the following reaction:  An addition of [A modification of S on the 3 position]
-Position where [A branched Fuc monosaccharide with a (a1-4) linkage] can be optionally present
+Position where A branched Fuc monosaccharide with a (a1-4) linkage can be optionally present
 A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************END************
@@ -3128,8 +3128,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 ************TEST: GAL3ST3 Rule************
 Rule String: Gal<,6>{,3}S(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)  
 Parser Results (reading left to right):
-A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where [A modification of S on the 6 position] can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
-Position where [A branched Fuc monosaccharide with a (a1-3) linkage] can be optionally present
+A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
+Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
 A GlcNAc monosaccharide with a (b1-?) linkage
 An unknown entity:   
 
@@ -3139,7 +3139,7 @@ An unknown entity:
 Rule String: Gal{3S}(b1-3)<GlcNAc(b1-6)>GalNAc(b1-?)
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-3) linkage having the following reaction:  An addition of [A modification of S on the 3 position]
-Position where [A GlcNAc monosaccharide with a (b1-6) linkage] can be optionally present
+Position where A GlcNAc monosaccharide with a (b1-6) linkage can be optionally present
 A GalNAc monosaccharide with a (b1-?) linkage
 
 ************END************

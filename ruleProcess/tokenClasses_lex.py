@@ -1,7 +1,7 @@
 import re
 from tokenMatchers import *
 from LexerClass import *
-
+from itertools import chain,product as prod
 
 ######################
 # Reaction Rule Tokens
@@ -18,6 +18,7 @@ class reactionToken:
         - Addition/Subtraction: { }/{! }
         - Substitution/Reversible reaction: { -> }/{ <-> }
         '''
+        self.__name__='reactionToken'
         self.inputString=inputString
         #Get location of reaction match
         self.match=self.matchFun()
@@ -65,10 +66,16 @@ class reactionToken:
                 return(additionToken(reactionText))
             elif subtractionMatcher(reactionText):
                 return(subtractionToken(reactionText))
-            elif substitutionMatcher(reactionText):
+            elif substitutionMatcher(reactionText) and not reversibleMatcher(reactionText):
                 return(substitutionToken(reactionText))
             elif reversibleMatcher(reactionText):
                 return(reversibleToken(reactionText))
+
+    def substrate(self):
+        return(self.token.substrate())
+
+    def product(self):
+        return(self.token.product())
 
 
 class additionToken(reactionToken):
@@ -102,15 +109,17 @@ class additionToken(reactionToken):
 
     def substrate(self):
         '''
-        Substrate method for token.
+        Return the ligand's representation as a 
+        substrate.
         '''
         return('')
 
     def product(self):
         '''
-        Product method for token.
+        Return the ligand string
         '''
-        return(self.get_ligand())
+        #return(list(chain(*[x.product() for x in self.ligand_token])))
+        return(self.ligand_token[0].product())
 
 class subtractionToken(reactionToken):
 
@@ -126,16 +135,10 @@ class subtractionToken(reactionToken):
         '''
         self.__name__='subtractionToken'
         self.inputString=inputString
-        self.ligand=self.get_ligand()
+        self.ligand_string=self.get_ligand()
         #Call the rule lexer to identify components
         # within the reaction rule:
         self.ligand_token=lexer(self.ligand_string)
-
-    def __repr__(self):
-        if self.ligand_token is not None:
-            return('An addition of %s' %(self.ligand_token.__repr__()))
-        else:
-            return('PARSE ERROR')
 
     def __repr__(self):
         if self.ligand_token is not None:
@@ -148,9 +151,16 @@ class subtractionToken(reactionToken):
         return(ligand)
 
     def substrate(self):
-        return(self.get_substrate())
+        '''
+        Return the ligand string
+        '''
+        return(list(chain(*[x.substrate() for x in self.ligand_token])))
 
     def product(self):
+        '''
+        Return the ligand's representation as a 
+        substrate.
+        '''
         return('')
 
 
@@ -182,17 +192,21 @@ class substitutionToken(reactionToken):
         return(frm,to)
 
     def substrate(self):
-        frm,_=self.get_from_to()
-        return(frm)
+        '''
+        Return the from ligand representation:
+        '''
+        return(self.from_ligand_token.token.product())
 
     def product(self):
-        _,to=self.get_from_to()
-        return(to)
+        '''
+        Return the to ligand representation:
+        '''
+        return(self.to_ligand_token.token.product())
     
 
 class reversibleToken(reactionToken):
 
-    def __init__(self,string):
+    def __init__(self,inputString):
         '''
         This class describes reversible reactions which
         have the form {A <-> B}.
@@ -218,12 +232,18 @@ class reversibleToken(reactionToken):
         return(frm,to)
 
     def substrate(self):
-        frm,_=self.get_from_to()
-        return(frm)
+        '''
+        Return the from ligand representation:
+        '''
+        return(self.from_ligand_token.token.product())
 
     def product(self):
-        _,to=self.get_from_to()
-        return(to)
+        '''
+        Return the to ligand representation:
+        '''
+        return(self.to_ligand_token.token.product())
+    
+
 
 ###################
 # Constraint Tokens
@@ -242,12 +262,19 @@ class constraintToken:
         routine which stores a local set of entities which
         are subject to the constraint
         '''
+        self.__name__='constraintToken'
         self.inputString=inputString
         self.match=self.matchFun()
         if self.match is not None:
             self.constr=self.get_constraint_type()
         else:
             self.constr=None
+        #Equate the substrate and product methods, returns 
+        # empty string
+        self.product=self.substrate
+
+    def __repr__(self):
+        return(self.constr.__repr__())
 
     def detectFun(self):
         '''
@@ -285,11 +312,21 @@ class constraintToken:
         '''
         if self.detectFun():
             if quantityStartMatcher(self.inputString):
-                return(quantityRule_token(self.inputString,presence=False))
+                return(quantityRule_token(quantityStartMatcher(self.inputString,presence=False)))
             elif attachRuleMatcher(self.inputString):
-                return(attachRule_token(self.inputString,presence=False))
+                return(attachRule_token(attachRuleMatcher(self.inputString,presence=False)))
             elif negationRuleMatcher(self.inputString):
-                return(negationRule_token(self.inputString,presence=False))
+                return(negationRule_token(negationRuleMatcher(self.inputString,presence=False)))
+            elif quantifierMatcher(self.inputString):
+                return(quantifierToken(quantifierMatcher(self.inputString,presence=False)))
+        else:
+            return(None)
+
+    def substrate(self):
+        '''
+        Returns an empty string, not part of actual string.
+        '''
+        return('')
 
 class quantityRule_token(constraintToken):
 
@@ -439,6 +476,7 @@ class entityToken:
         - Compartments ( cis/medial/trans Golgi, ER, Lysosome)
         - Aglyca (Dol-P-P, Asn, Ser/Thr,Cer)
         '''
+        self.__name__='entityToken'
         #Object String input:
         self.inputString=inputString
         ### Get token Type: ###
@@ -466,13 +504,23 @@ class entityToken:
         if monoMatcher(self.inputString):
             #Get the match object into a group:
             monoMatch=monoMatcher(self.inputString,presence=False)
+            if re.search('^\[',monoMatch.group()) is not None:
+                if re.search('\]$',monoMatch.group())  is not None:
+                    leftBracket=True;rightBracket=True
+                else:
+                    leftBracket=True;rightBracket=False
+            elif re.search('\]$',monoMatch.group()):
+                leftBracket=False;rightBracket=True
+            else:
+                leftBracket=False;rightBracket=False
             matchDict={
                 'mono':monoMatch.groups()[0],
                 'compartment':monoMatch.groups()[1],
                 'modPos':monoMatch.groups()[3],
                 'innerReaction':monoMatch.groups()[4],
                 'modType':monoMatch.groups()[5],
-                'monoLink':monoMatch.groups()[6]
+                'monoLink':monoMatch.groups()[6],
+                'branching':{'leftBracket':leftBracket,'rightBracket':rightBracket}
             }
             return(matchDict)
         else:
@@ -507,6 +555,7 @@ class entityToken:
         else:
             compartment_token=None
         #Modifications:
+        modTokens=[]
         if len(mono_components['modPos'])>0:
             #Create a list with the modification positions
             modPos_lst=re.findall('(\d|\<.+?\>)',mono_components['modPos'])
@@ -519,7 +568,6 @@ class entityToken:
                 else:
                     mtch=modInfer[0]
                     mono_components['modType']=mtch.groups()[1]
-            modTokens=[]
             for mp in modPos_lst:
                 if '<' in mp:
                     #If no modification is present within
@@ -538,25 +586,49 @@ class entityToken:
                     modTokens.append(multiToken(mp))
                 else:
                     modTokens.append(modToken(mp+mono_components['modType']))
+
+        #The GalN and GlcN exception to modification rules:
+        elif mono_components['mono'] in ['GalN','GlcN']:
+            modTokens.append(modToken(''.join(['N',mono_components['modType']])))
         else:
             modTokens=None
         #Modification Reactions:
         if mono_components['innerReaction'] is not None:
-            #Get Reaction Text
-            rct_string=re.search('\{(.+?)\}',mono_components['innerReaction']).groups()[0]
-            addMoreMono=re.search('(?<=\,)(\d)|(\d)(?=\,)',rct_string)
-            modMatch=modMatcher_middle(rct_string)
-            if modMatch is not None:
-                rct_token=reactionToken(''.join(['{',modMatcher_middle(rct_string,presence=False).group(),'}']))
-            else:
-                if mono_components['modType'] is not None and mono_components['modType'] not in mono_components['innerReaction']:
+            #Test different reaction types
+            # Code below is meant to detect ambiguous modification additions.
+            # Addition/Subtraction entities should only have one 
+            # entity within them.  Substitution/Reversible tokens should
+            # only have one entity in their "from" and "to" token attributes.
+            rct_token=reactionToken(mono_components['innerReaction'])
+            if rct_token.token.__name__ in ['additionToken','subtractionToken']:
+                if rct_token.token.ligand_token[0].__name__=='unknownToken':
+                    #Get Reaction Text:
+                    rct_string=rct_token.token.ligand_token[0].product()[0]
+                    #If the reaction text contains a comma and a number,
+                    # infer the reaction is adding another of the current
+                    # modification:
+                    #Otherwise keep token the same and handle error later:
+                    addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',rct_string)
                     if addMoreMono is not None:
-                        newRct=''.join(['{',addMoreMono.groups()[0],mono_components['modType'],'}'])
-                        rct_token=reactionToken(newRct)
+                        rct_token.token.ligand_token[0]=entityToken(addMoreMono.groups()[0]+mono_components['modType'])
+            elif rct_token.token.__name__ in ['substitutionToken','reversibleToken']:
+                if rct_token.token.from_ligand_token[0].token.__name__=='unknownToken' or rct_token.token.to_ligand_token[0].token.__name__=='unknownToken':
+                    #Get Reaction Text from "from" and "to" ligands:
+                    from_rct_string=rctTok.token.from_ligand_token.product()
+                    to_rct_string=rctTok.token.to_ligand_token.product()
+                    #If the reaction text contains a comma and a number,
+                    # infer the reaction is adding another of the current
+                    # modification:
+                    #Otherwise keep token the same and handle error later:
+                    from_addMoreMono,to_addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',from_rct_string),re.search('((?<=\,)(\d)|(\d)(?=\,))',to_rct_string)
+                    if from_addMoreMono is not None:
+                        rct_token.token.from_ligand_token[0]=entityToken(from_addMoreMono.groups[0]+mono_components['modType'])
+                    if to_addMoreMono is not None:
+                        rct_token.token.to_ligand_token[0]=entityToken(to_addMoreMono.groups[0]+mono_components['modType'])
         else:
             rct_token=None
         #Return All Attributes:
-        return(mono_components['mono'],mono_components['monoLink'],modTokens,rct_token,compartment_token)
+        return(mono_components['mono'],mono_components['monoLink'],mono_components['branching'],modTokens,rct_token,compartment_token)
 
     def detectMain(self):
         '''
@@ -576,8 +648,8 @@ class entityToken:
         #Monosaccharide detection:
         if self.detectMono() is not None:
             monoMatch=monoMatcher(self.inputString,presence=False)
-            (mono,linkage,modTokens,rct_token,compartment_token)=self.detectMono()
-            token=monoToken(mono,linkage,modTokens,compartment_token,rct_token)
+            (mono,linkage,branching,modTokens,rct_token,compartment_token)=self.detectMono()
+            token=monoToken(mono,linkage,branching,modTokens,compartment_token,rct_token)
             return(monoMatch,token)
 
         #Nucleotide Sugar:
@@ -641,9 +713,21 @@ class entityToken:
         else:
             return(None)
 
+    def substrate(self):
+        '''
+        Returns the entity's substrate representation:
+        '''
+        return(self.token.substrate())
+
+    def product(self):
+        '''
+        Returns the entity's product representation:
+        '''
+        return(self.token.product())
+
 class monoToken(entityToken):
 
-    def __init__(self,mono,linkage=None,modifications=None,
+    def __init__(self,mono,linkage=None,branching=None,modifications=None,
         compartment=None,reaction=None):
         '''
         Models Monosaccharides with no linkage information.
@@ -662,8 +746,8 @@ class monoToken(entityToken):
         - Plurality Containers: Describes the optional presence  
           of modifications on monosaccharides.
 
-
-        Can take arguments for compartment info
+        This object returns substrate and product representations of this
+        monosaccharide using the "substrate" and "product" methods.
         '''
         self.mono=mono
         self.__name__='mono_token'
@@ -671,34 +755,145 @@ class monoToken(entityToken):
         self.reactionToken=reaction
         self.modTokens=modifications
         self.linkage=linkage
+        self.branching=branching
 
     def __repr__(self):
-        res='A %s monosaccharide' %(self.mono)
 
+        #Halde branching representation:
+        if self.branching['leftBracket']:
+            if self.branching['rightBracket']:
+                res='A branched %s monosaccharide' %(self.mono)
+            else:
+                res='A terminal %s monosaccharide' %(self.mono)
+        elif self.branching['rightBracket']:
+            res='A %s monosaccharide starting on a branch' %(self.mono)
+        else:
+            res='A %s monosaccharide' %(self.mono)
+
+        #Linkage Text
         if self.linkage is not None:
             res+=' with a %s linkage' %(self.linkage)
+        #Modification Text:
         if self.modTokens is not None:
             modString=' '.join([str([x.__repr__()]) for x in self.modTokens])
             res+=' with the following modifications: %s' %(modString)
+        #Compartment Text
         if self.compartment is not None:
             res=res+' in %s' %(self.compartment.__repr__())
+        #Reaction Text:
         if self.reactionToken is not None:
             reactString=' '+self.reactionToken.__repr__()
             res=res + ' having the following reaction: %s' %(reactString)
         return(res)
 
+    #Substrate/Product Utilities:
+    def modification_perms(self):
+        '''
+        Creates all possible permutations of 
+        a monosaccharide's modification permutations
+        Accounts for the possibility of uncertainty markers
+        around modification info: <2S> meaning 2S or no 2S
+        '''
+        #Construct a modification list:
+        modTokenStrings=[]
+        mod=""
+        if self.modTokens is not None:
+            #Get modification type:
+            for t in self.modTokens:
+                if t.__name__=='multiToken':
+                    tokStrings=t.product()
+                else:
+                    tokStrings=[t.product()]
+                modTokenStrings.append(tokStrings)
+        #Create all permutations of "modTokenStrings", then
+        # order based on modification number:
+        modTokenCombs=[sorted(x) for x in list(prod(*modTokenStrings))]
+        modTokenCombs=[[y for y in x if y!=''] for x in modTokenCombs]
+        modTokenCombs=[[re.sub('\D','',y) if i<(len(x)-1) else y for i,y in enumerate(x)] for x in modTokenCombs]
+        return(modTokenCombs)
+
+    def react_strings(self):
+        '''
+        Returns strings for substrate and product elements
+        within a monosaccharide element.
+        '''
+        #Return substrate/product representation of reaction token:
+        if self.reactionToken is not None:
+            return(self.reactionToken.token.substrate(),self.reactionToken.token.product())
+        else:
+            return('','')
+
+    def rp_stringWrap(fun):
+        def _wrap(self):
+            #Modifications:
+            mod_perms=self.modification_perms()
+            ### Decorator Function START: ###
+            #Reaction Components, either substrate or product:
+            compList=fun(self)
+            ### Decorator Function END: ###
+            mod_perms=[sorted(x+compList) for x in mod_perms]
+            #Cleanup empties:
+            mod_perms=[[y for y in x if y!=''] for x in mod_perms]
+            #Generate Linkage possibilities:
+            modStrings=list(chain(*[[','.join(x)] for x in mod_perms]))
+            modStrings=[','.join([re.sub('\D','',y) if i<(len(x.split(','))-1) else y for i,y in enumerate(x.split(','))]) for x in modStrings]
+            #Other Entities:
+            #Brackets:
+            leftBracket='[' if self.branching['leftBracket'] else ''
+            rightBracket=']' if self.branching['rightBracket'] else ''
+            #Compartments:
+            compartment='' if self.compartment is None else self.compartment
+            #Linkages:
+            linkage='' if self.linkage is None else self.linkage
+            #Generate All possible monosaccharide representations:
+            #String Order:
+            # Left Bracket, Monosaccharide, Compartment, Modification Permutations,Linkage Information, Right Bracket: 
+            reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
+            return(reactStrings)
+        return(_wrap)
+
+    #Returns substrate components:
+    @rp_stringWrap
+    def substrate(self):
+        '''
+        Builds monosaccharide "substrate" representation
+        Fills in substrate-specific components
+        '''
+        #Gather monosaccharide modification reaction info, and
+        # integrate into the modification permutations:
+        (substrs,_)=self.react_strings()
+        return([substrs])
+
+    #Returns product components:
+    @rp_stringWrap
+    def product(self):
+        '''
+        Builds monosaccharide "product" representation
+        Fills in product-specific components
+        '''
+        #Gather monosaccharide modification reaction info, and
+        # integrate into the modification permutations:
+        (_,prods)=self.react_strings()
+        return([prods])
+
+
 class modToken(entityToken):
 
     def __init__(self,string):
+        self.__name__='modToken'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         mod,pos=self.get_mod_pos()
         return("A modification of %s on the %s position" %(mod,pos))
     
     def get_mod_pos(self):
-        pos,mod=re.search('(\d)(\D)',self.inputString).groups()
+        pos,mod=re.search('(\d|N)(\D)',self.inputString).groups()
         return(mod,pos)
+    
+    def substrate(self):
+        return(self.inputString)
 
 class nsToken(entityToken):
 
@@ -709,6 +904,7 @@ class nsToken(entityToken):
         '''
         self.__name__='NucleotideSugar_Token'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         try:
@@ -721,6 +917,9 @@ class nsToken(entityToken):
         sch=re.search('(.+)\-(.+)',self.inputString)
         nt,mono=sch.groups()
         return(nt,mono)
+    
+    def substrate(self):
+        return(self.inputString)
 
 class compartmentToken(entityToken):
 
@@ -732,9 +931,13 @@ class compartmentToken(entityToken):
         rules.
         '''
         self.inputString=inputString
+        self.product=self.substrate
 
     def __repr__(self):
         return('The %s compartment' %(self.inputString))
+
+    def substrate(self):
+        return(self.inputString)
 
 class aglycoToken(entityToken):
 
@@ -743,15 +946,20 @@ class aglycoToken(entityToken):
         Models aglycon instances.
         '''
         self.inputString=inputString
+        self.product=self.substrate
 
     def __repr__(self):
         return('The %s aglycon' %(self.inputString))
+
+    def substrate(self):
+        return([self.inputString])
 
 class wildCardToken(entityToken):
 
     def __init__(self,string):
         self.__name__='wildcardToken'
         self.inputString=string
+        self.product=self.substrate
     
     def __repr__(self):
         if '[' in self.inputString and ']' in self.inputString:
@@ -759,44 +967,63 @@ class wildCardToken(entityToken):
         else:
             return('One or more monosaccharides')
 
+    def substrate(self):
+        return([self.inputString])
+
 class transportToken(entityToken):
 
     def __init__(self,string):
         self.__name__='transportToken'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         return('Transports to')
+
+    def substrate(self):
+        return([self.inputString])
 
 class proteinConstraintToken(entityToken):
 
     def __init__(self,string):
         self.__name__='proteinConstraintToken'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         return('A %s protein constraint' %(self.inputString))
+
+    def substrate(self):
+        return([self.inputString])
 
 class substrateToken(entityToken):
 
     def __init__(self,string):
         self.__name__='substrateToken'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         if self.inputString=='R':
             return('Some arbitrary substrate')
         else:
             return('A %s substrate' %(self.inputString))
+    
+    def substrate(self):
+        return([self.inputString])
 
 class unknownToken(entityToken):
 
     def __init__(self,string):
         self.__name__='unknownToken'
         self.inputString=string
+        self.product=self.substrate
 
     def __repr__(self):
         return('An unknown entity: %s'%(self.inputString))
+
+    def substrate(self):
+        return([self.inputString])
 
 ##############################
 # Multi-entity Token Container
@@ -808,7 +1035,8 @@ class multiToken:
         self.__name__='multiToken'
         self.inputString=string
         self.entity_strings=self.get_option_list()
-        self.tokens=[lexer(e) for e in self.entity_strings]
+        self.tokens=list(chain(*[lexer(e) for e in self.entity_strings]))
+        self.product=self.substrate
 
     def __repr__(self):
         if len(self.tokens)>0:
@@ -836,6 +1064,16 @@ class multiToken:
         s=re.search('\<(.+?)\>',self.inputString).group()
         s=re.sub('(<|>)','',s)
         return(s.split(','))
+    
+    def substrate(self):
+        '''
+        Returns substrate/product representations for 
+        multiToken-contained entities:
+        '''
+        if len(self.tokens)==1:
+            return(['',self.tokens[0].product()])
+        else:
+            return([x.product() for x in self.tokens])
 
 
 ##################
@@ -845,6 +1083,7 @@ class multiToken:
 class logicalToken:
 
     def __init__(self,string):
+        self.__name__='logicalToken'
         self.inputString=string
         self.logicalToken=self.get_type()
 
@@ -879,6 +1118,7 @@ class logicalToken:
 class or_separator(logicalToken):
 
     def __init__(self,string):
+        self.__name__='or_separator'
         self.inputString=string
 
     def __repr__(self):
@@ -887,6 +1127,7 @@ class or_separator(logicalToken):
 class and_separator(logicalToken):
 
     def __init__(self,string):
+        self.__name__='and_separator'
         self.inputString=string
     
     def __repr__(self):
@@ -897,3 +1138,12 @@ class and_separator(logicalToken):
 #######################
 
 lexer=LexerClass(lexicon=[reactionToken,constraintToken,entityToken,multiToken,logicalToken],ukToken=unknownToken)
+
+#########################
+# Unexpected Token Errors
+#########################
+
+class unexpectedTokenError(Exception):
+
+    def __init__(self,expect_t,t):
+        self.msg="Was expecting to find {expect_t} but found {t}"
