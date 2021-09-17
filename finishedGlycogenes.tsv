@@ -384,5 +384,5 @@ None	no figure		GANC	Q8TET4	Neutral alpha-glucosidase C;GANC;ortholog	Glycogen_B
 None	no figure		GAA	P10253	Lysosomal alpha-glucosidase	Glycogen_Breakdown	Glucosidase	no reaction		None	Lysosome	no reaction	
 None	no figure		CASD1	Q96PB1	N-acetylneuraminate 9-O-acetyltransferase;CASD1;ortholog	Sugar_Metabolism	Acetyltransferase	Neu5Ac(a2-?)	Neu5,9Ac(a2-?)	None	Golgi	Neu5{,9}Ac(a2-?)	
 None	no figure		SIAE	Q9HAT2	Sialate O-acetylesterase	Sugar_Metabolism	Acetylesterase	Neu5,9Ac(a2-?)	Neu5Ac(a2-?)	None	Lysosome,Secreted	Neu5{!,9}Ac(a2-?)	
-None	no figure		GBGT1	Q8N5D6	Inactive Globoside alpha1_3Nacetylgalactosaminyltransferase 1	Inactive_Enzyme	GalNAcT	no reaction			Golgi	no reaction	
-None	no figure		CMAHP	Q9Y471	Inactive cytidine monophosphate-N-acetylneuraminic acid hydroxylase	Inactive_Enzyme	Hydroxylase	no reaction			Cytoplasm	no reaction	
+None	no figure		GBGT1	Q8N5D6	Inactive Globoside alpha1_3Nacetylgalactosaminyltransferase 1	Inactive_Enzyme	GalNAcT	no reaction		None	Golgi	no reaction	
+None	no figure		CMAHP	Q9Y471	Inactive cytidine monophosphate-N-acetylneuraminic acid hydroxylase	Inactive_Enzyme	Hydroxylase	no reaction		None	Cytoplasm	no reaction	
