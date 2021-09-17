@@ -123,6 +123,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylesterase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -131,6 +132,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -191,6 +201,49 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping">
@@ -199,10 +252,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cofactor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cofactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Collagen_Glycosylation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Collagen_Glycosylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -260,6 +322,66 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Extracellular_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Extracellular_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -328,10 +450,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dioxygenase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dioxygenase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -416,10 +556,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Extracellular_Degradation -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Extracellular_Degradation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -488,10 +629,54 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -500,6 +685,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6S_Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6S_Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -524,6 +718,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6S_Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6S_Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -608,10 +811,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcN6S_Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcN6S_Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc3ST -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc3ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -620,6 +833,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6S_Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6S_Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -673,6 +895,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosaminidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosaminidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport">
@@ -717,6 +948,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogen_Breakdown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogen_Breakdown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -791,10 +1031,61 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Extracellular_Degradation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Extracellular_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -803,6 +1094,66 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HNK-1">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Extracellular_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Extracellular_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -848,10 +1199,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Hydroxylase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Hydroxylase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-Branching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-Branching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-branching -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-branching">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -869,6 +1247,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Iduronidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Inactive_Enzyme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Inactive_Enzyme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
     </owl:Class>
     
 
@@ -877,6 +1264,49 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Intracellular_Lectin">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Glycan_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -931,18 +1361,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked_Lysosome_Degradation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked_Lysosome_Degradation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosomal_Targeting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosomal_Targeting">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1003,10 +1426,28 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Extracellular_Degradation -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Cytosol_Degradation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Extracellular_Degradation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1014,7 +1455,16 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1103,6 +1553,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1140,10 +1591,45 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Cytosol_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Cytosol_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Glycan_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Glycan_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Glycan_Degradation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1152,6 +1638,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Oligosaccharyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Degradation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Degradation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1196,10 +1691,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#donor_synthesis"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1283,6 +1779,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphoesterase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphoesterase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphorylation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphorylation">
@@ -1307,10 +1812,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -1412,6 +1935,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Synthase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Synthase">
@@ -1424,6 +1956,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transamidase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transamidase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1624,6 +2165,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Uridylyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1632,6 +2174,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1671,36 +2214,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphodiesterase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphodiesterase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphoesterase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#phosphoesterase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#transamidase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#transamidase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -1730,9 +2247,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
     </owl:Class>
     
@@ -1742,6 +2275,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1763,6 +2297,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4GlcNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4GlcNAcT">
@@ -1771,17 +2313,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4_FucosylT -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4_FucosylT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6_FucosylT -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6_FucosylT">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
     </owl:Class>
     
@@ -1800,6 +2334,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β2GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1872,6 +2407,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β6GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1957,7 +2502,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -1985,7 +2530,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT2">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -1995,8 +2540,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT3">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2006,7 +2551,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT4">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2016,8 +2561,8 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT5">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2027,7 +2572,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT6">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2037,7 +2582,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT7">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2047,7 +2592,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT8">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Branching"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT"/>
     </owl:NamedIndividual>
     
 
@@ -2057,7 +2602,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT9">
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
     </owl:NamedIndividual>
     
 
