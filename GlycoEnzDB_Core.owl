@@ -22667,8 +22667,6 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Hydroxylase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Inactive_Enzyme"/>
-        <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint113"/>
-        <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint114"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule32"/>
     </owl:NamedIndividual>
     
@@ -23814,8 +23812,6 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0047277"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Inactive_Enzyme"/>
-        <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint111"/>
-        <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint112"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule32"/>
     </owl:NamedIndividual>
     
@@ -27108,42 +27104,6 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#constraint110">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
         <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(a1-?) or GlcNAc(b1-4)GlcNAc</glycan:has_ruleString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.jp/bio/12/glyco/glycan#constraint111 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#constraint111">
-        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</glycan:has_ruleString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.jp/bio/12/glyco/glycan#constraint112 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#constraint112">
-        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</glycan:has_ruleString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.jp/bio/12/glyco/glycan#constraint113 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#constraint113">
-        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</glycan:has_ruleString>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.jp/bio/12/glyco/glycan#constraint114 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#constraint114">
-        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">None</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
