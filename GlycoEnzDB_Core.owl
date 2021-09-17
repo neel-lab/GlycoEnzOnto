@@ -23995,7 +23995,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule5"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPA"/>
-        <glycan:interactsWith rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPB"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPB"/>
     </owl:NamedIndividual>
     
 
@@ -24008,8 +24008,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule5"/>
-        <glycan:interactsWith rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPA"/>
-        <glycan:interactsWith rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPB"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPA"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPB"/>
     </owl:NamedIndividual>
     
 
@@ -24073,6 +24073,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule56"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GNPTG"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GNTAB"/>
     </owl:NamedIndividual>
     
 
@@ -24087,6 +24088,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule32"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GNPTG"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GNTAB"/>
     </owl:NamedIndividual>
     
 
@@ -24100,6 +24102,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule221"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.jp/bio/12/glyco/glycan#GNTAB -->
+
+    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#GNTAB">
+        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
     </owl:NamedIndividual>
     
 
@@ -25118,14 +25128,6 @@
     
 
 
-    <!-- http://purl.jp/bio/12/glyco/glycan#O94777 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#O94777">
-        <rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.jp/bio/12/glyco/glycan#OGA -->
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#OGA">
@@ -25288,20 +25290,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulation"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule32"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.jp/bio/12/glyco/glycan#PIGG -->
-
-    <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#PIGG">
-        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0051267"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule105"/>
-        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#PIGF"/>
-        <glycan:interactsWith rdf:resource="http://purl.uniprot.org/uniprot/PIGG"/>
     </owl:NamedIndividual>
     
 
@@ -31195,8 +31183,15 @@
     <!-- http://purl.uniprot.org/uniprot/PIGG -->
 
     <owl:NamedIndividual rdf:about="http://purl.uniprot.org/uniprot/PIGG">
+        <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0051267"/>
         <rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
-        <core:encodedBy rdf:resource="http://purl.jp/bio/12/glyco/glycan#PIGG"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule105"/>
+        <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#PIGF"/>
+        <glycan:interactsWith rdf:resource="http://purl.uniprot.org/uniprot/PIGG"/>
+        <core:encodedBy rdf:resource="http://purl.uniprot.org/uniprot/PIGG"/>
     </owl:NamedIndividual>
     
 
@@ -34454,5 +34449,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
