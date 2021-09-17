@@ -285,7 +285,7 @@
     <!-- http://purl.jp/bio/12/glyco/glycan#has_constraint -->
 
     <owl:ObjectProperty rdf:about="http://purl.jp/bio/12/glyco/glycan#has_constraint">
-        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdfs:range rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint"/>
     </owl:ObjectProperty>
     
@@ -339,7 +339,7 @@
     <!-- http://purl.jp/bio/12/glyco/glycan#has_rule -->
 
     <owl:ObjectProperty rdf:about="http://purl.jp/bio/12/glyco/glycan#has_rule">
-        <rdfs:domain rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdfs:range rdf:resource="http://purl.jp/bio/12/glyco/glycan#rule"/>
     </owl:ObjectProperty>
     
