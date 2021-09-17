@@ -160,7 +160,6 @@ PIGA, PIGC, PIGH, PIGP, PIGQ, PIGY, DPM2			PIGH	Q14442	Phosphatidylinositol Nace
 PIGA, PIGC, PIGH, PIGP, PIGQ, PIGY, DPM2			PIGP	P57054	Phosphatidylinositol Nacetylglucosaminyltransferase subunit P	GPI_Linked	Glycosylation_Regulation	no reaction	no reaction	None	ER	no reaction	
 PIGA, PIGC, PIGH, PIGP, PIGQ, PIGY, DPM2			PIGQ	Q9BRB3	Phosphatidylinositol Nacetylglucosaminyltransferase subunit Q	GPI_Linked	Glycosylation_Regulation	no reaction	no reaction	None	ER	no reaction	
 PIGA, PIGC, PIGH, PIGP, PIGQ, PIGY, DPM2			PIGY	Q3MUY2	Phosphatidylinositol Nacetylglucosaminyltransferase subunit Y	GPI_Linked	Glycosylation_Regulation	no reaction	no reaction	None	ER	no reaction	
-None			DPM2	O94777	Dolichol phosphate-mannose biosynthesis regulatory protein	GPI_Linked	Glycosylation_Regulation	no reaction	no reaction	None	ER	no reaction	
 None			PIGL	Q9Y2B2	N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase	GPI_Linked	Modifying_Enzyme,Deacetylase	GlcNAc(a1-6)PI	GlcN(a1-6)PI	None	ER	{GlcNAc->GlcN}(a1-6)PI	
 None			PIGW	Q7Z7B1	Phosphatidylinositol-glycan biosynthesis class W protein	GPI_Linked	Modifying_Enzyme,Acyltransferase	GlcN(a1-6)PI	GlcN[ancyl](a1-6)PI	None	ER	GlcN{[ancyl]}(a1-6)PI	
 PIGM, PIGX			PIGM	Q9H3S5	GPI mannosyltransferase 1	GPI_Linked	ManT	GlcN(a1-6)(ancyl)PI	Man(a1-4)GlcN(a1-6)(ancyl)PI	None	ER	{Man(a1-4)}GlcN(a1-6)(ancyl)PI	
