@@ -423,7 +423,17 @@ class quantifierToken(constraintToken):
         self.inputString=string
     
     def __repr__(self):
-        return("Preceeding pattern matches %s times" %(self.inputString))
+        qt,val=quantifierMatcher(self.inputString).groups()
+        return("Preceeding pattern matches %s %s times" %(qt,val))
+
+    def get_quantifier_quantity(self):
+        '''
+        Returns the quantifier as a string
+        and the quantity as an integer.
+        '''
+        qt,val=quantifierMatcher(self.inputString).groups()
+        return((str(qt),int(val)))
+        
     
     def detectFun(self):
         '''
@@ -445,19 +455,24 @@ class quantifierToken(constraintToken):
         else:
             return(None)
 
-    def logical_fun(self):
-        qt,val=re.search('',self.inputString).groups()
+    def logical_fun(self,mtchs):
+        '''
+        This function evaluates the length of a set 
+        of match objects for a particular glycan constraint.
+        Employed in constraint generation functions:
+        '''
+        qt,val=re.search('(\>\=|\<\=|\>|\<)(\d)',self.inputString).groups()
         l_fun=lambda pat,s:re.findall(pat,s)
         if qt=="=":
-            return lambda pat,s: len(l_fun(pat,s))==qt
+            return len(mtchs)==qt
         elif qt==">=":
-            return lambda pat,s: len(l_fun(pat,s))>=qt
+            return len(mtchs)>=qt
         elif qt=="<=":
-            return lambda pat,s: len(l_fun(pat,s))<=qt
+            return len(mtchs)<=qt
         elif qt==">":
-            return lambda pat,s: len(l_fun(pat,s))>qt
+            return len(mtchs)>qt
         elif qt=="<":
-            return lambda pat,s: len(l_fun(pat,s))<qt
+            return len(mtchs)<qt
 
 ###############
 # Entity Tokens
@@ -823,6 +838,7 @@ class monoToken(entityToken):
         else:
             return('','')
 
+    #Creates all permutations of a monosaccharide's representation:
     def rp_stringWrap(fun):
         def _wrap(self):
             #Modifications:

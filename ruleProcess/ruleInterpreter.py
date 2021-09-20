@@ -31,34 +31,36 @@ class ConflictingRuleException(Exception):
 # Rule Regex Converter
 ######################
 
-def rule2regex(rl):
-    '''
-    Converts reaction rules into regex string.  Makes
-    syntax compatible with regular expressions.
-    '''
-    # Escape Characters:
-    rl=re.sub(r'\(','\(',rl)
-    rl=re.sub(r'\)','\)',rl)
-    rl=re.sub(r'\[','\[',rl)
-    rl=re.sub(r'\]','\]',rl)
-    rl=re.sub(r'\-','\-',rl)
-    #If a wild card exists in front of pattern,
-    # match can happen internally on a glycan structure.
-    wild=re.search(r'\.\.\.',rl)
-    frontwild=re.search(r'^\.\.\.',rl)
-    if frontwild is not None:
-        rl=re.sub('^\.\.\.','',rl)
-    elif frontwild is None:
-        rl=re.sub('^','(?:^|\[)',rl)
-    elif frontwild is None and wild is not None:
-        rl=re.sub('\.\.\.','.*?',rl)
-    # Uncertain linkages:
-    rl=re.sub(r'\-\?','-[0-9]',rl)
-    #If a core linkage is detected, append a "$" to the 
-    # string to look at the core:
-    if re.search(r'\([ab][12]\-$',rl) is not None:
-        rl=re.sub(r'(\([ab][12]\-$)','\g<1>$')
-    return(rl)
+class regexMethodSet:
+
+    def rule2regex(self,rl):
+        '''
+        Converts reaction rules into regex string.  Makes
+        syntax compatible with regular expressions.
+        '''
+        # Escape Characters:
+        rl=re.sub(r'\(','\(',rl)
+        rl=re.sub(r'\)','\)',rl)
+        rl=re.sub(r'\[','\[',rl)
+        rl=re.sub(r'\]','\]',rl)
+        rl=re.sub(r'\-','\-',rl)
+        #If a wild card exists in front of pattern,
+        # match can happen internally on a glycan structure.
+        wild=re.search(r'(?!^)\.\.\.',rl)
+        frontwild=re.search(r'^\.\.\.',rl)
+        if frontwild is not None:
+            rl=re.sub('^\.\.\.','',rl)
+        elif frontwild is None:
+            rl=re.sub('^','(?:^|\[)',rl)
+        elif frontwild is None and wild is not None:
+            rl=re.sub('\.\.\.','(.+?)',rl)
+        # Uncertain linkages:
+        rl=re.sub(r'\-\?','-[0-9]',rl)
+        #If a core linkage is detected, append a "$" to the 
+        # string to look at the core:
+        if re.search(r'\([ab\?][12\?]\-$',rl) is not None:
+            rl=re.sub(r'(\([ab][12]\-$)','\g<1>$')
+        return(rl)
 
 
 ##########################
@@ -111,7 +113,7 @@ class Rule:
             sets return something that is NOT "False".
             Responses can be "None" or "True"
             '''
-            res=all([fun(x) not False for x in ruleSets])
+            res=all([fun(x) is not False for x in ruleSets])
             return(res)
         return(_check)
 
@@ -181,6 +183,96 @@ class Rule:
 # Reaction Rule Class:
 ##########################
 
+@dataclass
+class GlycanProcessorGenerator(regexMethodSet):
+    '''
+    Class which returns from/to strings for 
+    processing substrates/products
+    '''
+    fromString: str
+    toString: str
+
+    def rule2regex(self,rl):
+        '''
+        Converts reaction rules into regex string.  Makes
+        syntax compatible with regular expressions.
+        '''
+        # Escape Characters:
+        rl=re.sub(r'\(','\(',rl)
+        rl=re.sub(r'\)','\)',rl)
+        rl=re.sub(r'\[','\[',rl)
+        rl=re.sub(r'\]','\]',rl)
+        rl=re.sub(r'\-','\-',rl)
+        #If a wild card exists in front of pattern,
+        # match can happen internally on a glycan structure.
+        wild=re.search(r'(?!^)\.\.\.',rl)
+        frontwild=re.search(r'^\.\.\.',rl)
+        if frontwild is not None:
+            rl=re.sub('^\.\.\.','',rl)
+        elif frontwild is None:
+            rl=re.sub('^','(?:^|\[)',rl)
+        elif frontwild is None and wild is not None:
+            rl=re.sub('\.\.\.','(.+?)',rl)
+        # Uncertain linkages:
+        rl=re.sub(r'\-\?','-[0-9]',rl)
+        #If a core linkage is detected, append a "$" to the 
+        # string to look at the core:
+        if re.search(r'\([ab\?][12\?]\-$',rl) is not None:
+            rl=re.sub(r'(\([ab][12]\-$)','\g<1>$')
+        return(rl)
+
+    def makeToRepString(self,fromWildGrp):
+        toRepString=re.sub('(?!^)\.\.\.',fromWildGrp,self.toString)
+        return(toRepString)
+    
+    def getGlycanMatch(self,fromString_regex,glycan):
+        '''
+        Performs the glycan matching procedure.
+        Returns all possible matches
+        '''
+        return(re.finditer(fromString_regex,glycan))
+    
+    def makeProducts(self,glycan):
+        '''
+        Method generates a list of strings that look
+        like the "to" pattern.
+        '''
+        fromString_regex=super().rule2regex(self.fromString)
+        self.toString=re.sub('^\.\.\.','',self.toString)
+        mtchs=self.getGlycanMatch(fromString_regex,glycan)
+        #Initialize a product list:
+        products=[]
+        for m in mtchs:
+            #Matches with groups are assumed to have 
+            # wild card regions within the match string.
+            #Take the matched wild card text and replace it
+            # in the to string using the "makeToRepString"
+            # method:
+            if len(m.groups())!=0:
+                #Assume 1 group:
+                fromWildGroup=m.groups()[0]
+                to=self.makeToRepString(fromWildGroup)
+            #Otherwise, there are no wild card token in the 
+            # substrate/product strings, and just return the
+            # string contents.
+            else:
+                to=self.toString
+            #Add a "[" if the head of a branch:
+            if re.search('^\[',m.group()) is not None:
+                to=''.join(['[',to])
+            #Constant indicies:
+            front_start=0
+            front_end=m.start()
+            back_start=m.end()
+            back_end=len(glycan)
+            #Replace text where "frm" was found with the "to" text:
+            products.append(''.join([glycan[front_start:front_end],to,glycan[back_start:back_end]]))
+        return(products)
+
+    def __call__(self,glycan):
+        return(self.makeProducts(glycan))
+
+
 class reactionRule(Rule):
 
     def __init__(self):
@@ -193,11 +285,10 @@ class reactionRule(Rule):
     ############################
     # Reaction Rule Validation:
     ############################
-
-    @checkWrapper
-    @allTrueWrap
+    @Rule.checkWrapper
+    @Rule.allTrueWrap
     def noConstraints(self,ruleSet):
-        return(all([x.__name__!='constraintToken' for x in ruleSet]))
+        return([x.__name__!='constraintToken' for x in ruleSet])
 
     @classmethod
     def fromComponents(cls,ruleComponents):
@@ -223,7 +314,6 @@ class reactionRule(Rule):
         else:
             return(None)
         
-
     ######################################
     # Substrate/Product Pair List Builder:
     ######################################
@@ -251,29 +341,9 @@ class reactionRule(Rule):
         Wrapper to dynamically create instances
         of "proc_" with "frm" "to" pairs.
         '''
-        return lambda glycan: proc_(glycan,frm,to)
-
-    def proc_(glycan,frm,to):
-        '''
-        Finds fragments in "glycan" where "frm" is located
-        and replaces each with text in "to"
-        '''
-        #Create the "from" string regex:
-        frm_regex=rule2regex(frm)
-        mtchs=re.finditer(frm_regex,glycan)
-        #Initialize a product list:
-        products=[]
-        for m in mtchs:
-            #Constant indicies:
-            front_start=0
-            front_end=m.start()
-            back_start=m.end()
-            back_end=len(glycan)
-            #Get Match Fragment:
-            p=m.group()
-            #Replace text where "frm" was found with the "to" text:
-            products.append(''.join([glycan[front_start:front_end],to,glycan[back_start:back_end]]))
-        return(products)
+        gpg=GlycanProcessGenerator(frm,to)
+        return lambda glycan:gpg(glycan)
+        #return lambda glycan: proc_(glycan,frm,to)
 
     def glycanProcAggregator(fun):
         def _wrap(self):
@@ -311,7 +381,7 @@ class reactionRule(Rule):
     ######################################
 
     @glycanProcAggregator
-    def forwardInference(self,pairList):
+    def forwardGeneratorMain(self,pairList):
         '''
         Produces a list of all possible glycans where "substrate"
         is taken to "product"
@@ -319,7 +389,7 @@ class reactionRule(Rule):
         return([t[0] for t in pairList],[t[1] for t in pairList])
 
     @glycanProcAggregator
-    def reverseInference(self,pairList):
+    def reverseGeneratorMain(self,pairList):
         '''
         Produces a list of all possible glycans where "product"
         is taken to "substrate"
@@ -331,11 +401,75 @@ class reactionRule(Rule):
 ##########################
 
 @dataclass
-class Constraint:
+class ConstraintMethodGenerator(regexMethodSet):
+    '''
+    This class creates methods which evaluate 
+    substrates/products for their validity.
+    This class is instantiated by passing lists of
+    rule tokens which are searched for the following attributes:
+    1. Negation: The prefix of a constraint string prohibiting a 
+       structure to exist.
+    2. Numeric: This flag denotes that the structural components
+       of the constraint string have some constraint on its 
+       frequency.
+    3. Attachment: This flag denotes there is an "attachment" 
+       constraint in the rule.  Will trigger methods to recognize
+       the attachment constraint.
+    '''
     negation: bool
-    numeric: bool
-    attachment: int
+    numeric: quantifierToken = None
+    attachment: bool
     seqSet: list
+    addMono: str = None
+
+    def createSeq(self):
+        '''
+        Generates monosaccharide sequence from
+        "seqSet"
+        '''
+        seq=''.join([x.product() for x in self.seqSet])
+        if self.attachment:
+            if addMono is None:
+                raise Exception("Attachment constraint detected but no monosaccharide provided for attachment")
+            else:
+                seq=re.sub('\@',self.addMono)
+        return(seq)
+    
+    # "searchDecorator" takes arguments "isNegation" and "numericObj"
+    # which are passthrough variables for "negation" and "numeric"
+    # for this object.  Additional function modifiers can be made
+    # within this block to expand constraint processing:
+    def searchDecorator(isNegation=negation,numericObj=numeric):
+        def _searchDecWrap(self,fun):
+            '''
+            Decorates the main search function "fun"
+            with additional logical/numeric constraints.
+            '''
+            #Base search function:
+            funOut=fun()
+            #Negation
+            if isNegation:
+                funOut=lambda glycan: funOut(glycan) is None
+            else:
+                funOut=lambda glycan: funOut(glycan) is not None
+            #Numerical Constraint
+            if numericObj is not None:
+                #The quantifier object contains a method
+                # Which automatically evaluates if the quantity
+                # of patterns matched fulfills the quantifier.
+                funOut=lambda glycan: numericObj.logical_fun(funOut(glycan))
+            return(funOut)
+        return(_searchDecWrap)
+                
+    @searchDecorator(negation,numeric)
+    def constraintGen(self):
+        '''
+        Converts constraint sequence into a 
+        regular expression function
+        '''
+        stringSearch=self.createSeq()
+        stringSearch_regex=super().rule2regex(stringSearch)
+        return lambda glycan: re.finditer(stringSearch_regex,glycan)
 
     @classmethod
     def fromComponents(cls,ruleSet):
@@ -345,7 +479,7 @@ class Constraint:
         the constraint constructor.
         '''
         negation=False
-        numeric=False
+        numeric=quantifierToken
         attachment=None
         seqSet=[]
         for i,t in enumerate(ruleSet):
@@ -354,8 +488,12 @@ class Constraint:
                     negation=True
                 elif t.constr.__name__=='quantityRule_token':
                     numeric=True
+                    if ruleSet[-1].__name__!='quantifierToken':
+                        raise Exception("Quantity rule detected but no quantifier/quantity provided")
+                    else:
+                        numeric=t.constr
                 elif t.constr.__name__=='attachRule_token':
-                    attachment=i
+                    attachment=True
             else:
                 seqSet.append(t)
         return(cls(negation,numeric,attachment,seqSet))
@@ -370,13 +508,13 @@ class constraintRule(Rule):
     # Constraint Rule Validation:
     ############################
 
-    @checkWrapper
-    @allTrueWrap
+    @Rule.checkWrapper
+    @Rule.allTrueWrap
     def noReactions(self,ruleSet):
-        return([x.__name__!='reactionToken' for x in ruleSet]
+        return([x.__name__!='reactionToken' for x in ruleSet])
 
-    @checkWrapper
-    @possibleTrueWrap
+    @Rule.checkWrapper
+    @Rule.possibleTrueWrap
     def validNumeric(self,ruleSet):
         '''
         Numeric constraints must have the quantity rule prefix "n"
@@ -386,8 +524,8 @@ class constraintRule(Rule):
         validQuantityToken=True if ruleSet[-1].__name__=='quantifierToken' else False
         return([validQuantityRuleToken,validQuantityToken])
 
-    @checkWrapper
-    @possibleTrueWrap
+    @Rule.checkWrapper
+    @Rule.possibleTrueWrap
     def validNegation(self,ruleSet):
         '''
         Checks for negation rule presence and validity  
@@ -424,25 +562,23 @@ class constraintRule(Rule):
         else:
             return(None)
     
-    def ConstraintGenerator(self):
+    def ConstraintGenerator_Aggregator(self):
+        '''
+        Takes a set of ConstraintGenerator classes and 
+        concatenates these into one function.
+        This allows the substrates/products to be evaluated 
+        with only one function
+        '''
         #Split rule:
         ruleSets,logicalSeps=self.getRuleSets()
         #Make Constraint objects:
-        Constraint_Classes=[Constraint.fromComponents(r)
-
-
-    ######################################
-    # Recognition string builder:
-    ######################################
-    def pairListBuilder(self,ruleSet):
-        '''
-        Method that invokes substrate and product 
-        building from tokens in a ruleSet:
-        Returns pairs of tokens.
-        '''
-        ruleSet
-        #Create every permutation of substrate/product strings:
-        substrates=[''.join(x) for x in prod(*[y.substrate() for y in ruleSet])]
-        products=[''.join(x) for x in prod(*[y.product() for y in ruleSet])]
-        #Return substrate/product pairs:
-        return([(s,p) for s,p in zip(substrates,products)])
+        Constraint_Classes=[ConstraintMethodGenerator.fromComponents(r) for r in ruleSets]
+        #Merge into one function:
+        def mergeWrapper(acc,cur,sep):
+            if sep=='&':
+                return lambda in: acc(in) and cur(in)
+            elif sep=='|':
+                return lambda in: acc(in) or cur(in)
+        #Merge the functions together
+        constraintMain=functools.reduce(lambda acc,(cur,sep):lambda in: acc(in) and x[0](in) if x[1]=='&' else acc(in) or x[0](in),lambda in:Constraint_Classes[0](in))
+        return constraintMain

@@ -6,10 +6,9 @@ from dataclasses import dataclass
 # Test pair list
 ################
 
-pairList=[('a','A'),('b','B'),('c','C'),('d','D'),('e','E')]
-
-#def pairListGenerator():
-#    return([('...a','...A'),('...b','...B'),('...c','...C'),('...d','...D'),('...e','...E')])
+pairList=[('Gal(b1-4)GlcNAc(b1-?)','Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)')]
+def pairListGenerator():
+    return([('Gal(b1-4)GlcNAc(b1-?)','Gal(b1-4)[Fuc(a1-3)]GlcNAc(b1-?)')])
 
 ###############################################
 # Reaction Search/Replace Generating Functions:
@@ -42,7 +41,7 @@ class GlycanProcessGenerator:
         if frontwild is not None:
             rl=re.sub('^\.\.\.','',rl)
         elif frontwild is None:
-            rl=re.sub('^','(?:^|\[)',rl)
+            rl=re.sub('^','(^|\[)',rl)
         elif frontwild is None and wild is not None:
             rl=re.sub('\.\.\.','.+?',rl)
         # Uncertain linkages:
@@ -89,6 +88,9 @@ class GlycanProcessGenerator:
             # string contents.
             else:
                 to=self.toString
+            #Add a "[" if the head of a branch:
+            if re.search('^\[',m.group()) is not None:
+                to=''.join(['[',to])
             #Constant indicies:
             front_start=0
             front_end=m.start()
@@ -170,14 +172,8 @@ def reverseGeneratorMain(pairList):
 forwardInferelator=forwardGeneratorMain(pairList)
 reverseInferelator=reverseGeneratorMain(pairList)
 
-forwardTestSeq="""Hello, my name is Inigo Montoya, you killed my father, prepare to die."""
-reverseTestSeq="""Agile Beavers Conjure Dastardly Evils"""
+testGlycan='Gal(b1-4)GlcNAc(b1-2)[Gal(b1-4)GlcNAc(b1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)'
 
 # These inferelators should output a list of sequences
 # which modify the input by only one recognition sequence.
-print(forwardInferelator(forwardTestSeq))
-print(reverseInferelator(reverseTestSeq))
-
-#############################
-# Constraint Generator Tests:
-#############################
+print(forwardInferelator(testGlycan))

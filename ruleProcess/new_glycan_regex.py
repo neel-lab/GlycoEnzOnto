@@ -9,6 +9,26 @@ def rule2regex(rl):
     Converts reaction rules into regex string.  Makes
     syntax compatible with regular expressions.
     '''
+    # Uncertain linkages:
+    uncertainty=re.search('\(([\D\?])([\d\?])\-([\d\?])\)',rl)
+    if uncertainty is not None:
+        if uncertainty.groups()[0]=='?':
+            pos1='[ab]'
+        else:
+            pos1=uncertainty.groups()[0]
+        if uncertainty.groups()[1]=='?':
+            pos2='[12]'
+        else:
+            pos2=uncertainty.groups()[1]
+        if uncertainty.groups()[2]=='?':
+            pos3='[0-9]'
+        else:
+            pos3=uncertainty.groups()[2]
+    #Reassembl
+    stereo_u=re.search('\(\?[12]\-[0-9]\)',rl)
+    number_u=re.search('\([ab]\?\-[0-9]\)|\([ab][0-9]\-\?\)')
+    if stereo_u is not None:
+        rl=re.sub(
     # Escape Characters:
     rl=re.sub(r'\(','\(',rl)
     rl=re.sub(r'\)','\)',rl)
@@ -17,19 +37,13 @@ def rule2regex(rl):
     rl=re.sub(r'\-','\-',rl)
     #If a wild card exists in front of pattern,
     # match can happen internally on a glycan structure.
-    wild=re.search(r'\.\.\.',rl)
+    wild=re.search(r'(?!^)\.\.\.',rl)
     frontwild=re.search(r'^\.\.\.',rl)
     if frontwild is not None:
         rl=re.sub('^\.\.\.','',rl)
-    elif frontwild is None:
+    else:
         rl=re.sub('^','(?:^|\[)',rl)
-    elif frontwild is None and wild is not None:
-        rl=re.sub('\.\.\.','.*?',rl)
-    # Uncertain linkages:
+    if frontwild is None and wild is not None:
+        rl=re.sub('(?!^)\.\.\.','.+?',rl)
     rl=re.sub(r'\-\?','-[0-9]',rl)
-    #If a core linkage is detected, append a "$" to the 
-    # string to look at the core:
-    if re.search(r'\([ab][12]\-$',rl) is not None:
-        rl=re.sub(r'(\([ab][12]\-$)','\g<1>$')
     return(rl)
-
