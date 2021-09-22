@@ -31,7 +31,7 @@ class ConflictingRuleException(Exception):
 # Rule Regex Converter
 ######################
 
-class regexMethodSet:
+class generatorSet:
 
     def rule2regex(self,rl):
         '''
@@ -159,8 +159,6 @@ class Rule:
                 return(True)
         return(_check)
 
-
-
     #############################
     # Universal Token Validators:
     #############################
@@ -184,7 +182,7 @@ class Rule:
 ##########################
 
 @dataclass
-class GlycanProcessorGenerator(regexMethodSet):
+class GlycanProcessorGenerator(generatorSet):
     '''
     Class which returns from/to strings for 
     processing substrates/products
@@ -400,8 +398,7 @@ class reactionRule(Rule):
 # Constraint Rule Class:
 ##########################
 
-@dataclass
-class ConstraintMethodGenerator(regexMethodSet):
+class ConstraintMethodGenerator(generatorSet):
     '''
     This class creates methods which evaluate 
     substrates/products for their validity.
@@ -416,11 +413,31 @@ class ConstraintMethodGenerator(regexMethodSet):
        constraint in the rule.  Will trigger methods to recognize
        the attachment constraint.
     '''
-    negation: bool
-    numeric: quantifierToken = None
-    attachment: bool
-    seqSet: list
-    addMono: str = None
+    def __init__(self,negation,numeric,attachment,seqSet,addMono):
+        '''
+        Parses constraint rule components within a
+        rule set and returns tags used for 
+        the constraint constructor.
+        '''
+        self.negation=False
+        self.numeric=quantifierToken
+        self.attachment=None
+        self.seqSet=[]
+        for i,t in enumerate(ruleSet):
+            if t.__name__=='constraintToken':
+                if t.constr.__name__=='negationRule_token':
+                    negation=True
+                elif t.constr.__name__=='quantityRule_token':
+                    numeric=True
+                    if ruleSet[-1].__name__!='quantifierToken':
+                        raise Exception("Quantity rule detected but no quantifier/quantity provided")
+                    else:
+                        numeric=t.constr
+                elif t.constr.__name__=='attachRule_token':
+                    attachment=True
+            else:
+                seqSet.append(t)
+        return(cls(negation,numeric,attachment,seqSet,addMono))
 
     def createSeq(self):
         '''
@@ -472,7 +489,7 @@ class ConstraintMethodGenerator(regexMethodSet):
         return lambda glycan: re.finditer(stringSearch_regex,glycan)
 
     @classmethod
-    def fromComponents(cls,ruleSet):
+    def fromComponents(cls,ruleSet,addMono=None):
         '''
         Parses constraint rule components within a
         rule set and returns tags used for 
@@ -496,7 +513,7 @@ class ConstraintMethodGenerator(regexMethodSet):
                     attachment=True
             else:
                 seqSet.append(t)
-        return(cls(negation,numeric,attachment,seqSet))
+        return(cls(negation,numeric,attachment,seqSet,addMono))
 
 
 class constraintRule(Rule):
@@ -504,9 +521,9 @@ class constraintRule(Rule):
     def __init__(self):
         super().__init__(ruleComponents)
 
-    ############################
+    #############################
     # Constraint Rule Validation:
-    ############################
+    #############################
 
     @Rule.checkWrapper
     @Rule.allTrueWrap
@@ -550,9 +567,9 @@ class constraintRule(Rule):
         ruleSets,logicalSeps=self.getRuleSets()
         #Check Conditions for each rule set:
         # Default constraints:
-        basicValidation=self.basicValidationWrapper(ruleSets)
+        basicValidation=self.basicValidationWrapper(self.ruleSets)
         # Reaction-specific constraints:
-        hasNoReactions=self.noReactions(ruleSets)
+        hasNoReactions=self.noReactions(self.ruleSets)
         # Valid constraint formatting:
         hasValidNegation=self.validNegation();hasValidQuantityConstraint=self.validNumeric()
         #If all are true, returns an instance of class.
@@ -569,16 +586,20 @@ class constraintRule(Rule):
         This allows the substrates/products to be evaluated 
         with only one function
         '''
-        #Split rule:
-        ruleSets,logicalSeps=self.getRuleSets()
         #Make Constraint objects:
-        Constraint_Classes=[ConstraintMethodGenerator.fromComponents(r) for r in ruleSets]
+        ConstraintFuns=[ConstraintMethodGenerator.fromComponents(r).constraintGen() for r in self.ruleSets]
+        #Constraint_Classes=[ConstraintMethodGenerator.fromComponents(r) for r in self.ruleSets]
         #Merge into one function:
-        def mergeWrapper(acc,cur,sep):
+        def mergeWrapper(acc,_zipInfo):
+            sep,cur=_zipInfo
             if sep=='&':
-                return lambda in: acc(in) and cur(in)
+                res=lambda within: acc(within) and cur(within)
             elif sep=='|':
-                return lambda in: acc(in) or cur(in)
+                res=lambda within: acc(within) or cur(within)
+            return(res)
         #Merge the functions together
-        constraintMain=functools.reduce(lambda acc,(cur,sep):lambda in: acc(in) and x[0](in) if x[1]=='&' else acc(in) or x[0](in),lambda in:Constraint_Classes[0](in))
-        return constraintMain
+        # "initialFunction" is the first constraint in the "Constraint_Classes" list.
+        initialFunction=lambda within:Constraint_Classes[0](within)
+        pairedIterator=zip(Constraint_Classes[1:],self.logicalSeps)
+        constraintMain=functools.reduce(lambda acc,x:mergeWrapper(acc,x),pairedIterator,initialFunction)
+        return(constraintMain)

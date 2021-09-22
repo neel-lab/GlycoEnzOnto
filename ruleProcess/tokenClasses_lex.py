@@ -29,6 +29,10 @@ class reactionToken:
             self.token=None
 
     def __repr__(self):
+        '''
+        Representation takes on the value of whatever 
+        reaction token was instantiated in this object.
+        '''
         return(self.get_reaction_type().__repr__())
 
     def detectFun(self):
