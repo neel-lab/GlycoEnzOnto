@@ -4,6 +4,7 @@ import requests
 import json
 import urllib
 import numpy as np
+import glypy
 #The database we are querying is GlyGen:
 db="http://sparql.glygen.org:8880/sparql"
 
@@ -21,7 +22,7 @@ query1="""
         ?glycan glycan:is_from_source ?source .
         ?source glycan:has_taxon <http://purl.uniprot.org/core/taxonomy/9606> .
         ?seqAcc glycan:has_sequence ?glycanSeq .
-        ?seqAcc glycan:in_carbohydrate_format <http://purl.jp/bio/12/glyco/glycan#carbohydrate_format_wurcs> .
+        ?seqAcc glycan:in_carbohydrate_format <http://purl.jp/bio/12/glyco/glycan#carbohydrate_format_glycoct> .
     }
 """
 query2=''.join([query1,'LIMIT 10000 OFFSET 10000'])
