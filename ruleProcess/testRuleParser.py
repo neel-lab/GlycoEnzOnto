@@ -11,16 +11,18 @@ def test_wrapper(rule,ruleName):
     print(f'Rule String: {rule}')
     try:
         res=lexer(rule)
-        print('Parser Results (reading left to right):')
-        for r in res:
-            print(r)
     except Exception as exc:
-        print('ERROR MESSAGE:')
+        print('PARSING ERROR\nERROR MESSAGE:')
         print(exc)
+    if any([type(x)==unknownToken for x in res]):
+        print('PARSING FAILURE')
+    print('Parser Results (reading left to right):')
+    for r in res:
+        print(r)
     print('\n************END************')
 
 finishedGlycogenes=pd.read_csv('../finishedGlycogenes.tsv',sep='\t',index_col=None)
 for i,r in finishedGlycogenes.iterrows():
-    if r['NewRule']=='no reaction':
+    if r['Rules']=='no reaction':
         continue
-    test_wrapper(r['NewRule'],r['geneName']+' Rule')
+    test_wrapper(r['Rules'],r['geneName']+' Rule')
