@@ -350,5 +350,5 @@ for g,v in new_gob_dict.items():
     except Exception as e: print(f'Couldn\'t do {g}');print(e);couldntDos+=1
 
 print("Total unprocessed: {0}".format(couldntDos))
-glycoStructOnto.save(file='glycoStructOnto.rdf',format='rdfxml')
-print('Saved \"glycoStructOnto.rdf\"')
+#glycoStructOnto.save(file='glycoStructOnto.rdf',format='rdfxml')
+#print('Saved \"glycoStructOnto.rdf\"')
