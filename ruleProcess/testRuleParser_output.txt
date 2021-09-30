@@ -27,6 +27,7 @@ A reversible conversion from [A GalNAc monosaccharide] to [A GlcNAc monosacchari
 
 ************TEST: TSTA3 Rule************
 Rule String: {GDP-4-keto-6-deoxy-D-mannose->GDP-Fuc}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [An unknown entity: GDP-4-keto-6-deoxy-D-ma, Quantitiy of, Quantitiy of, An unknown entity: ose] to [GDP nucleotide attached to Fuc]
 
@@ -41,6 +42,7 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 
 ************TEST: UAP1 Rule************
 Rule String: {GlcNAc(1P)->UDP-GlcNAc}|{GalNAc(1P)->UDP-GalNAc}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [A GlcNAc monosaccharide, An unknown entity: (, A modification of P on the 1 position, An unknown entity: )] to [UDP nucleotide attached to GlcNAc]
 Logical OR
@@ -79,7 +81,7 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 ************TEST: AMDHD2 Rule************
 Rule String: {GlcNAc6P->GlcN6P}
 Parser Results (reading left to right):
-A conversion from [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']]
 
 ************END************
 
@@ -121,12 +123,13 @@ A Glc monosaccharide having the following reaction:  A removal of [A modificatio
 ************TEST: GNPNAT1 Rule************
 Rule String: {GlcN6P->GlcNAc6P}
 Parser Results (reading left to right):
-A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']] to [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
 ************END************
 
 ************TEST: GNE Rule************
 Rule String: {UDP-GlcNAc->ManNAc}|{ManNAc->MAnNAc6P}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [UDP nucleotide attached to GlcNAc] to [A ManNAc monosaccharide]
 Logical OR
@@ -137,14 +140,14 @@ A conversion from [A ManNAc monosaccharide] to [An unknown entity: MA, Quantitiy
 ************TEST: GNPDA1 Rule************
 Rule String: {GlcN6P->Fruc6P}
 Parser Results (reading left to right):
-A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
 ************END************
 
 ************TEST: GPI Rule************
 Rule String: {GlcN6P->Fruc6P}
 Parser Results (reading left to right):
-A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
 ************END************
 
@@ -165,7 +168,7 @@ A conversion from [A GlcNAc monosaccharide] to [A ManNAc monosaccharide]
 ************TEST: GNPDA2 Rule************
 Rule String: {GlcN6P->Fruc6P}
 Parser Results (reading left to right):
-A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
 ************END************
 
@@ -186,14 +189,14 @@ A reversible conversion from [A GlcNAc monosaccharide with the following modific
 ************TEST: GFPT1 Rule************
 Rule String: {Fruc6P->GlcN6P}
 Parser Results (reading left to right):
-A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']]
 
 ************END************
 
 ************TEST: GFPT2 Rule************
 Rule String: {Fruc6P->GlcN6P}
 Parser Results (reading left to right):
-A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
+A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position'] ['A modification of P on the N position']]
 
 ************END************
 
@@ -217,14 +220,12 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: HK1 Rule************
 Rule String: Glc{6P}|Fruc{6P}|GlcN{6P}|Man{6P}
-PARSING FAILURE
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Fruc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
-An unknown entity: GlcN
-An addition of [A modification of P on the 6 position]
+A GlcN monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Man monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 
@@ -243,14 +244,12 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: GCK Rule************
 Rule String: Glc{6P}|Fruc{6P}|GlcN{6P}|Man{6P}
-PARSING FAILURE
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Fruc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
-An unknown entity: GlcN
-An addition of [A modification of P on the 6 position]
+A GlcN monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Man monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 
@@ -258,6 +257,7 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: GMDS Rule************
 Rule String: {GDP-Man->GDP-4-6-dehydro-6-deoxy-D-Mannose}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [GDP nucleotide attached to Man] to [An unknown entity: GDP-4-6-dehydro-6-deoxy-D-, A Man monosaccharide, Quantitiy of, An unknown entity: ose]
 
@@ -463,6 +463,7 @@ A conversion from [A GlcNAc monosaccharide with a (a1-?) linkage] to [A GlcNAc m
 
 ************TEST: STT3B Rule************
 Rule String: Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4){GlcNAc(a1-?)->GlcNAc(b1-?}
+PARSING FAILURE
 Parser Results (reading left to right):
 A Glc monosaccharide with a (a1-2) linkage
 A Glc monosaccharide with a (a1-3) linkage
@@ -693,6 +694,7 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: GNPTAB Rule************
 Rule String: {GlcNAc(a1-?)-P-}Man(a1-2)Man(a1-?)
+PARSING FAILURE
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-?) linkage, An unknown entity: -P-]
 A Man monosaccharide with a (a1-2) linkage
@@ -1278,6 +1280,7 @@ The Ser/Thr aglycon
 
 ************TEST: PLOD1 Rule************
 Rule String: {Lys->5-hydroxy-L-lysyl}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [The Lys aglycon] to [An unknown entity: 5-hydroxy-L-lysyl]
 
@@ -1285,6 +1288,7 @@ A conversion from [The Lys aglycon] to [An unknown entity: 5-hydroxy-L-lysyl]
 
 ************TEST: PLOD2 Rule************
 Rule String: {Lys->5-hydroxy-L-lysyl}
+PARSING FAILURE
 Parser Results (reading left to right):
 A conversion from [The Lys aglycon] to [An unknown entity: 5-hydroxy-L-lysyl]
 
@@ -1502,7 +1506,7 @@ The PI aglycon
 Rule String: {GlcNAc->GlcN}(a1-6)PI
 PARSING FAILURE
 Parser Results (reading left to right):
-A conversion from [A GlcNAc monosaccharide] to [An unknown entity: GlcN]
+A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide]
 An unknown entity: (a1-6)
 The PI aglycon
 
@@ -1512,9 +1516,7 @@ The PI aglycon
 Rule String: GlcN{[ancyl]}(a1-6)PI
 PARSING FAILURE
 Parser Results (reading left to right):
-An unknown entity: GlcN
-An addition of [An unknown entity: [a, Quantitiy of, An unknown entity: cyl]]
-An unknown entity: (a1-6)
+A GlcN monosaccharide with a (a1-6) linkage having the following reaction:  An addition of [An unknown entity: [a, Quantitiy of, An unknown entity: cyl]]
 The PI aglycon
 
 ************END************
@@ -1524,7 +1526,8 @@ Rule String: {Man(a1-4)}GlcN(a1-6)(ancyl)PI
 PARSING FAILURE
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-4) linkage]
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1537,7 +1540,8 @@ PARSING FAILURE
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-6) linkage]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1551,7 +1555,8 @@ Parser Results (reading left to right):
 A Man monosaccharide with a (a1-6) linkage
 An addition of [An unknown entity: [2EtNP]]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1565,7 +1570,8 @@ Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-6) linkage]
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1581,7 +1587,8 @@ A Man monosaccharide with a (a1-2) linkage
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1598,7 +1605,8 @@ An addition of [An unknown entity: [6EtNP]]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1616,7 +1624,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1635,7 +1644,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1654,7 +1664,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1676,7 +1687,8 @@ A removal of [An unknown entity: [6EtNP]]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1698,7 +1710,8 @@ A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 An addition of [A branched GalNAc monosaccharide with a (b1-4) linkage]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -2422,7 +2435,7 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide]
 An unknown entity: (a1-4)
 
 ************END************
@@ -2433,7 +2446,7 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide]
 An unknown entity: (a1-4)
 
 ************END************
@@ -2444,7 +2457,7 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide]
 An unknown entity: (a1-4)
 
 ************END************
@@ -2455,7 +2468,7 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide] to [A GlcN monosaccharide]
 An unknown entity: (a1-4)
 
 ************END************
@@ -2467,7 +2480,7 @@ Parser Results (reading left to right):
 One or more monosaccharides
 A conversion from [A GlcA monosaccharide] to [A IdoA monosaccharide]
 An unknown entity: (a1-4)
-A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']
+A GlcN monosaccharide
 
 ************END************
 
@@ -2475,10 +2488,10 @@ A GlcN monosaccharide with the following modifications: ['A modification of S on
 Rule String: GlcA{2S}(b1-3)GalNS(b1-4)|IdoA{2S}(a1-3)GalNS(b1-4)
 Parser Results (reading left to right):
 A GlcA monosaccharide with a (b1-3) linkage having the following reaction:  An addition of [A modification of S on the 2 position]
-A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the N position']
+A GalN monosaccharide with a (b1-4) linkage
 Logical OR
 A IdoA monosaccharide with a (a1-3) linkage having the following reaction:  An addition of [A modification of S on the 2 position]
-A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the N position']
+A GalN monosaccharide with a (b1-4) linkage
 
 ************END************
 
@@ -2593,13 +2606,13 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4]) 
 
@@ -2611,13 +2624,13 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4]) 
 
@@ -2629,13 +2642,13 @@ PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4)
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
+A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present'] ['A modification of > on the N position']
 An addition of [An unknown entity: ,, A modification of S on the 6 position]
 An unknown entity: (a1-4]) 
 
@@ -2643,27 +2656,29 @@ An unknown entity: (a1-4])
 
 ************TEST: SULF1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN,3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN,3{!,6}S(a1-4)
+PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  A removal of [An unknown entity: ,6]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] ['A modification of S on the N position'] having the following reaction:  A removal of [An unknown entity: ,6]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  A removal of [An unknown entity: ,6]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] ['A modification of S on the N position'] having the following reaction:  A removal of [An unknown entity: ,6]
 
 ************END************
 
 ************TEST: SULF2 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN,3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN,3{!,6}S(a1-4)
+PARSING FAILURE
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  A removal of [An unknown entity: ,6]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] ['A modification of S on the N position'] having the following reaction:  A removal of [An unknown entity: ,6]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] having the following reaction:  A removal of [An unknown entity: ,6]
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the 3 position'] ['A modification of S on the N position'] having the following reaction:  A removal of [An unknown entity: ,6]
 
 ************END************
 
@@ -2825,6 +2840,7 @@ A GalNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GALNAC5 Rule************
 Rule String: {NeuAc(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)...Cer
+PARSING FAILURE
 Parser Results (reading left to right):
 An addition of [An unknown entity: NeuAc(a2-3)]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2837,6 +2853,7 @@ The Cer aglycon
 
 ************TEST: ST6GALNAC6 Rule************
 Rule String: {NeuAc(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)...Cer
+PARSING FAILURE
 Parser Results (reading left to right):
 An addition of [An unknown entity: NeuAc(a2-3)]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2988,7 +3005,8 @@ An unknown entity: [2EtNP][
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GalNAc monosaccharide starting on a branch with a (b1-4) linkage
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -3618,6 +3636,7 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: NEU1 Rule************
 Rule String: {!NeuAc(a2-3)}Gal(b1-?)|{!NeuAc(a2-6)}Gal(b1-?)
+PARSING FAILURE
 Parser Results (reading left to right):
 A removal of [An unknown entity: NeuAc(a2-3)]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3629,6 +3648,7 @@ A Gal monosaccharide with a (b1-?) linkage
 
 ************TEST: NEU2 Rule************
 Rule String: {!NeuAc(a2-3)}Gal(b1-?)
+PARSING FAILURE
 Parser Results (reading left to right):
 A removal of [An unknown entity: NeuAc(a2-3)]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3718,8 +3738,7 @@ A removal of [A IdoA monosaccharide with a (a1-?) linkage]
 Rule String: GlcN{!S}
 PARSING FAILURE
 Parser Results (reading left to right):
-An unknown entity: GlcN
-A removal of [An unknown entity: S]
+A GlcN monosaccharide having the following reaction:  A removal of [An unknown entity: S]
 
 ************END************
 
@@ -3727,9 +3746,7 @@ A removal of [An unknown entity: S]
 Rule String: GlcN{Ac}(a1-4)
 PARSING FAILURE
 Parser Results (reading left to right):
-An unknown entity: GlcN
-An addition of [An unknown entity: Ac]
-An unknown entity: (a1-4)
+A GlcN monosaccharide with a (a1-4) linkage having the following reaction:  An addition of [An unknown entity: Ac]
 
 ************END************
 
