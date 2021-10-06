@@ -23191,6 +23191,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule127"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule128"/>
@@ -23203,6 +23204,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#FUT10">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Inactive_Glycogenes"/>
     </owl:NamedIndividual>
     
@@ -23214,6 +23216,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0046920"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Inactive_Glycogenes"/>
     </owl:NamedIndividual>
     
@@ -23227,6 +23230,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule127"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule128"/>
@@ -23244,6 +23248,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0046920"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint7"/>
@@ -23262,6 +23267,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0017083"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint7"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule129"/>
@@ -23278,6 +23284,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0017083"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint7"/>
@@ -23297,6 +23304,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0017083"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint7"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule131"/>
@@ -23314,6 +23322,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0046920"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule133"/>
     </owl:NamedIndividual>
@@ -23343,6 +23352,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0017083"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint7"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule131"/>
@@ -28149,7 +28159,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule190">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(a1-4)GlcN&lt;,6&gt;{,3}S(a1-4]) </glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(a1-4)GlcN&lt;,6&gt;{,3}S(a1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
