@@ -3,7 +3,7 @@ None			GALK1	P51570	Galactokinase	Nucleotide_Sugar_Synthesis,UDP-Gal Synthesis	K
 None			GALK2	Q01415	N-acetylgalactosamine kinase	Nucleotide_Sugar_Synthesis,UDP-GalNAc Synthesis	Kinase	GalNAc	GalNAc1P	None	Cytosol	GalNAc{1P}	
 None			GALE	Q14376	UDP-glucose 4-epimerase	Nucleotide_Sugar_Synthesis,UDP-Gal Synthesis,UDP-Glc Synthesis,UDP-GalNAc Synthesis,UDP-GlcNAc Synthesis	Epimerase	UDP-Gal|UDP-Glc|UDP-GalNAc|UDP-GlcNAc	UDP-Glc|UDP-Gal|UDP-GlcNAc|UDP-GalNAc	None	Cytosol	{UDP-Gal->UDP-Glc}|{UDP-GalNAc->UDP-GlcNAc}	
 None			TSTA3	Q13630	GDP-L-fucose synthase	Nucleotide_Sugar_Synthesis,GDP-Fuc Synthesis	Synthase	GDP-4-keto-6-deoxy-D-mannose	GDP-Fuc	None	Cytosol	{GDP-4-keto-6-deoxy-D-mannose->GDP-Fuc}	
-GMPPA,GMPPB			GMPPB	Q9Y5P6	Mannose-1-phosphate guanyltransferase beta	Nucleotide_Sugar_Synthesis	ManT	Man1P	GDP-Man	None	Cytosol	{Man1P->GDP-Man}	
+GMPPA,GMPPB			GMPPB	Q9Y5P6	Mannose-1-phosphate guanyltransferase beta	Nucleotide_Sugar_Synthesis	Uridylyltransferase	Man1P	GDP-Man	None	Cytosol	{Man1P->GDP-Man}	
 None			UAP1	Q16222	UDP-N-Acetylglucosamine Pyrophosphorylase 1	Nucleotide_Sugar_Synthesis,UDP-GalNAc Synthesis,UDP-GlcNAc Synthesis	Uridylyltransferase	GlcNAc(1P)|GalNAc(1P)	UDP-GlcNAc|UDP-GalNAc	None	Cytosol	{GlcNAc1P->UDP-GlcNAc}|{GalNAc1P->UDP-GalNAc}	
 None			FCSK	Q8N0W3	L-Fucose Kinase	Nucleotide_Sugar_Synthesis,GDP-Fuc Synthesis	Kinase	Fuc	Fuc1P	None	Cytosol	Fuc{1P}	
 None			CMAS	Q8NFW8	N-acylneuraminate cytidylyltransferase	Nucleotide_Sugar_Synthesis,CMP-Neu5Ac Synthesis	Cytidylyltransferase	Neu5Ac	CMP-Neu5Ac	None	Nucleus	{Neu5Ac->CMP-Neu5Ac}	
