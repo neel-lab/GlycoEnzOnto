@@ -24017,8 +24017,8 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#GMPPB">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004475"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Uridylyltransferase"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule6"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPA"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#GMPPB"/>
