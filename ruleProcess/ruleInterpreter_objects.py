@@ -20,6 +20,11 @@ for _,r in finishedGlycogenes.iterrows():
     except:
         objDict[r['geneName']]=None
 
+############################
+# Glypy's glycan dictionary:
+############################
+monosaccharide_dict={k:v.serialize() for k,v in glypy.monosaccharides.items()}
+
 #Get the names of unprocessed glycogenes:
 unproc_ggenes=[k for k,v in objDict.items() if v==None]
 #Filter dictionary with only instantiated reactionRules:
@@ -31,7 +36,7 @@ objDict={k:v for k,v in objDict.items() if k not in unproc_ggenes}
 
 @dataclass
 class Entity:
-    entityList: list
+    entity_list: list
 
     @classmethod
     def factory(cls,*args,**kwargs):
@@ -56,8 +61,8 @@ class monoReactionEntity(ReactionEntity):
 @dataclass
 class SubstitutionEntity:
     operation: str
-    from_entity: list
-    to_entity: list
+    from_entity_list: list
+    to_entity_list: list
 
     @classmethod
     def factory(cls,*args,**kwargs):
@@ -97,7 +102,7 @@ class glycoCTConvert:
             elif token.token.__name__=='subtractionToken':
                 monoEntity=token.substrate()
                 opString='subtraction'
-            return(ReactionEntity.factory(entity=monoEntity,operation=opString))
+            return(ReactionEntity.factory(entity_list=monoEntity,operation=opString))
         elif token.token.__name__ in ['substitutionToken','reversibleToken']:
             monoEntityFrom=token.substrate()
             monoEntityTo=token.product()
@@ -105,7 +110,7 @@ class glycoCTConvert:
                 opString='substitution'
             elif token.token.__name__=='reversibleToken':
                 opString='reversible'
-            return(SubstitutionEntity.factory(operation=opString,from_entity=monoEntityFrom,to_entity=monoEntityTo))
+            return(SubstitutionEntity.factory(operation=opString,from_entity_list=monoEntityFrom,to_entity_list=monoEntityTo))
 
     def mono_rctTokenProcess(self,token):
         '''
@@ -120,7 +125,7 @@ class glycoCTConvert:
                 monoEntity=token.product()
                 modToken=token.token.reactionToken.token.ligand_token[0].product()
                 opString='subtraction'
-            return(monoReactionEntity.factory(operation=opString,mod_entity=modToken,entity=monoEntity))
+            return(monoReactionEntity.factory(operation=opString,mod_entity=modToken,entity_list=monoEntity))
         elif token.token.reactionToken.token.__name__ in ['substitutionToken','reversibleToken']:
             monoEntity=token.substrate()
             fromModEntity=token.token.reactionToken.token.from_ligand_token[0].product()
@@ -143,20 +148,50 @@ class glycoCTConvert:
         for elt in ruleSet:
             if elt.substrate()!=elt.product():
                 if elt.__name__=='reactionToken':
-                    obj=self.reactionEntityDetect(elt)
+                    obj=self.rctTokenProcess(elt)
                 elif elt.__name__=='entityToken':
                     obj=self.mono_rctTokenProcess(elt)
             else:
-                obj=Entity(entity=elt.substrate())
+                obj=Entity(entity_list=elt.substrate())
             ruleObjList.append(obj)
         return(ruleObjList)
 
-    def tokenizeIUPAC(self,ruleTupList):
+    def get_structureObj_lists(self):
+        '''
+        Create nested list of structure objects:
+        '''
+        return([self.structureExtract(l) for l in self.ruleSets])
+
+    
+    
+    def buildRuleGraph(self,structList):
+        '''
+        Builds graph structures out of reaction rules
+        '''
+
+    def tokenizeIUPAC(self,res):
         '''
         Takes monosaccharide entities and splits them
         into expected tags required for glycoCT conversion.
         Returns a dictionary for glycoStructOnto instantiation.
         '''
+        #First expect monosaccharide:
+        monoPattern=re.compile(r'(?P<WildCard>\[?\.\.\.\]?)?(?P<Mono>[A-Za-z]+?)(?P<Modification>\d\,?[SP])?(?P<Linkage>\([ab\?][12\?]\-[\d\?]\))')
+        #Pattern for just modifications:
+        modPattern=re.compile(r'(?P<Position>\d)(?<Modification>\D)')
+        #Linkage Pattern:
+        linkPattern=re.compile(r'\((?P<anomerConfig>[ab])(?P<anomerLink>[12\?])\-(?P<linkCarbon>[\d\?])\)')
+
+        #Try matching monosaccharide:
+        if re.search(monoPattern,res) is not None:
+            #Extract monosaccharide patterns matched:
+            monoGroups=re.search(monoPattern,res).groupdict() 
+            ### Look up GlycoCT representation of monosaccharide in GlyPy ###
+            if monoGroups['Mono'] in monosaccharide_dict.keys():
+                monoRep=glypy.monosaccharides[monoGroups['Mono']]
+            elif monoGroups['WildCard'] not None:
+                monoRep=monoGroups['WildCard'] 
+
         monoMatcher=LexMatcher(entityDict['monosaccharides'],
                 entityDict['Compartments'],
                 entityDict['Modifications'],
@@ -166,5 +201,3 @@ class glycoCTConvert:
         #regex="\[?%s(\[%s\])*((?:\d\,|\,\d|\d|\<.+?\>)*)((?:\{\!?\,\d\}|\{\!?\d?\D+?\}|\{.+?\<?\-\>.+?\}))*%s*(\([ab\?][12\?]\-[\d\?]\))*\]?")
         for (_,mono) in ruleTupList:
             pass
-
-
