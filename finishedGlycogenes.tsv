@@ -5,7 +5,7 @@ None			GALE	Q14376	UDP-glucose 4-epimerase	Nucleotide_Sugar_Synthesis,UDP-Gal_Sy
 None			TSTA3	Q13630	GDP-L-fucose synthase	Nucleotide_Sugar_Synthesis,GDP-Fuc_Synthesis	Synthase	GDP-4-keto-6-deoxy-D-mannose	GDP-Fuc	None	Cytosol	{GDP-4-keto-6-deoxy-D-mannose->GDP-Fuc}	
 GMPPA,GMPPB			GMPPB	Q9Y5P6	Mannose-1-phosphate guanyltransferase beta	Nucleotide_Sugar_Synthesis	Uridylyltransferase	Man1P	GDP-Man	None	Cytosol	{Man1P->GDP-Man}	
 None			UAP1	Q16222	UDP-N-Acetylglucosamine Pyrophosphorylase 1	Nucleotide_Sugar_Synthesis,UDP-GalNAc_Synthesis,UDP-GlcNAc_Synthesis	Uridylyltransferase	GlcNAc(1P)|GalNAc(1P)	UDP-GlcNAc|UDP-GalNAc	None	Cytosol	{GlcNAc1P->UDP-GlcNAc}|{GalNAc1P->UDP-GalNAc}	
-None			FCSK	Q8N0W3	LFucose Kinase	Nucleotide_Sugar_Synthesis,GDP-Fuc_Synthesis	Kinase	Fuc	Fuc1P	None	Cytosol	Fuc{1P}	
+None			FCSK	Q8N0W3	L-Fucose Kinase	Nucleotide_Sugar_Synthesis,GDP-Fuc_Synthesis	Kinase	Fuc	Fuc1P	None	Cytosol	Fuc{1P}	
 None			CMAS	Q8NFW8	N-acylneuraminate cytidylyltransferase	Nucleotide_Sugar_Synthesis,CMP-Neu5Ac_Synthesis	Cytidylyltransferase	Neu5Ac	CMP-Neu5Ac	None	Nucleus	{Neu5Ac->CMP-Neu5Ac}	
 None			FPGT	O14772	Fucose-1-phosphate guanylyltransferase	Nucleotide_Sugar_Synthesis,GDP-Fuc_Synthesis	Guanylyltransferase	Fuc1P	GDP-Fuc	None	Cytosol	{Fuc1P->GDP-Fuc}	
 GMPPA,GMPPB			GMPPA	Q96IJ6	Mannose-1-phosphate guanyltransferase alpha	Nucleotide_Sugar_Synthesis,GDP-Man_Synthesis	Guanylyltransferase	Man1P	GDP-Man	None	Cytosol	{Man1P->GDP-Man}	
