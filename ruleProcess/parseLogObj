@@ -1,0 +1,5 @@
+#!/bin/bash
+
+awk 'BEGIN{FS="\n";RS="************END************";ukEntries=0}
+$0~/ERROR/{print $0;ukEntries+=1}
+END{print "There are " ukEntries " out of " NR " (" 100*(ukEntries/NR)"%) with entries not instantiated or having unknowns"}' testRuleParserObj_output.txt | vim -

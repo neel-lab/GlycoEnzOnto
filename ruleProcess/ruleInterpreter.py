@@ -4,6 +4,7 @@ from LexerClass import *
 from itertools import product as prod
 from dataclasses import dataclass
 import functools
+from functools import *
 
 #######################
 # Default Lexer:
@@ -15,17 +16,37 @@ lexer=LexerClass(lexicon=[reactionToken,constraintToken,entityToken,multiToken,l
 # Rule String Exceptions
 ##########################
 
-class ConflictingRuleException(Exception):
+class reactionRuleErrorException(Exception):
+    def __init__(self,basicValidation,hasNoConstraints):
+        self.basicValidation=basicValidation
+        self.hasNoConstraints=hasNoConstraints
+        if not self.basicValidation:
+            raise basicValidationError()
+        elif not self.hasNoConstraints:
+            raise ConflictingRuleException()
+        pass
 
+class constraintRuleErrorException(Exception):
+
+    def __init__(self,basicValidation,hasNoConstraints):
+        self.basicValidation=basicValidation
+        self.hasNoConstraints=hasNoConstraints
+        if not self.basicValidationError:
+            raise basicValidationError()
+        elif not self.hasNoConstraints:
+            raise ConflictingRuleException()
+        pass
+
+class basicValidationError(Exception):
+    def __init__(self):
+        self.message="Some tokens are unknown in the input"
+        super().__init__(self.message)
+
+class ConflictingRuleException(Exception):
     def __init__(self):
         self.message="Reaction and Constraint component detected in same rule string, this is not allowed"
         super().__init__(self.message)
 
-class ConflictingRuleException(Exception):
-
-    def __init__(self):
-        self.message="Reaction and Constraint component detected in same rule string, this is not allowed"
-        super().__init__(self.message)
 
 ######################
 # Rule Regex Converter
@@ -75,12 +96,13 @@ class Rule:
         - Checking if combination of token types is allowed.
         '''
         self.ruleComponents=ruleComponents
-        self.ruleSets,self.logicalSeps=self.getRuleSets()
+        self.ruleSets,self.logicalSeps=self.getRuleSets(self.ruleComponents)
 
     #######################
     #Rule Splitter Utility:
     #######################
-    def getRuleSets(self,ruleComponents):
+    @staticmethod
+    def getRuleSets(ruleComponents):
         '''
         Separates rule components sequences by 
         logicalToken types.  These sequences are then
@@ -118,17 +140,17 @@ class Rule:
         return(_check)
 
     def allTrueWrap(fun):
-        def _check(self,ruleSet):
+        def _check_sub(ruleSet):
             '''
             Checks if all tokens within a ruleSet are 
             True.
             '''
             res=all(fun(ruleSet))
             return(res)
-        return(_check)
+        return(_check_sub)
 
     def possibleTrueWrap(fun):
-        def _check(self,ruleSet):
+        def _check_sub(ruleSet):
             '''
             If a ruleSet matches none of the "fun"
             constraints, returns None.
@@ -157,7 +179,7 @@ class Rule:
             else:
                 #All are true, meaning this is a valid quantification rule:
                 return(True)
-        return(_check)
+        return(_check_sub)
 
     #############################
     # Universal Token Validators:
@@ -165,16 +187,16 @@ class Rule:
     
     @checkWrapper
     @allTrueWrap
-    def validTokens(self,ruleSet):
+    def validTokens(ruleSet):
         return([(x.substrate() is not None and x.product() is not None) for x in ruleSet])
 
     @checkWrapper
     @allTrueWrap
-    def noUnknownTokens(self,ruleSet):
+    def noUnknownTokens(ruleSet):
         return([x.__name__!='unknownToken' for x in ruleSet])
 
     def basicValidationWrapper(self,ruleSets):
-        return(validTokens(ruleSets) and noUnknownTokens(ruleSets))
+        return(self.validTokens(ruleSets) and self.noUnknownTokens(ruleSets))
 
 
 ##########################
@@ -273,19 +295,28 @@ class GlycanProcessorGenerator(generatorSet):
 
 class reactionRule(Rule):
 
-    def __init__(self):
-        super().__init__(self,ruleComponents)
+    def __init__(self,ruleComponents):
+        super().__init__(ruleComponents)
+        #Check Conditions for each rule set:
+        # Default constraints:
+        basicValidation=self.basicValidationWrapper(self.ruleSets)
+        # Reaction-specific constraints:
+        hasNoConstraints=self.noConstraints(self.ruleSets)
+        #If all are true, returns an instance of class.
+        #Otherwise returns none:
+        if (not basicValidation) or (not hasNoConstraints):
+            raise reactionRuleErrorException(basicValidation,hasNoConstraints)
+        #If rule is valid, create generator terms:
         #Instantiate forward and referse inference methods:
         self.forward=self.forwardGeneratorMain()
         self.reverse=self.reverseGeneratorMain()
-
 
     ############################
     # Reaction Rule Validation:
     ############################
     @Rule.checkWrapper
     @Rule.allTrueWrap
-    def noConstraints(self,ruleSet):
+    def noConstraints(ruleSet):
         return([x.__name__!='constraintToken' for x in ruleSet])
 
     @classmethod
@@ -298,19 +329,7 @@ class reactionRule(Rule):
         2. All tokens must not be unknown
         3. No tokens should be Constraints.
         '''
-        #Split rule:
-        ruleSets,logicalSeps=self.getRuleSets(ruleComponents)
-        #Check Conditions for each rule set:
-        # Default constraints:
-        basicValidation=self.basicValidationWrapper(self.ruleSets)
-        # Reaction-specific constraints:
-        hasNoConstraints=self.noConstraints(ruleSets)
-        #If all are true, returns an instance of class.
-        #Otherwise returns none:
-        if basicValidation and hasNoConstraints:
-            return(cls(ruleComponents))
-        else:
-            return(None)
+        return(cls(ruleComponents))
         
     ######################################
     # Substrate/Product Pair List Builder:
@@ -328,7 +347,7 @@ class reactionRule(Rule):
         return([(s,p) for s,p in zip(substrates,products)])
 
     def pairListGenerator(self):
-        return(functools.reduce(sum,[pairListBuilder(x) for x in self.ruleSets]))
+        return(functools.reduce(lambda x,y: x+y,[self.pairListBuilder(x) for x in self.ruleSets]))
 
     ###############################################
     # Reaction Search/Replace Generating Functions:
@@ -339,9 +358,8 @@ class reactionRule(Rule):
         Wrapper to dynamically create instances
         of "proc_" with "frm" "to" pairs.
         '''
-        gpg=GlycanProcessGenerator(frm,to)
-        return lambda glycan:gpg(glycan)
-        #return lambda glycan: proc_(glycan,frm,to)
+        gpg=GlycanProcessorGenerator(frm,to)
+        return(lambda glycan:gpg(glycan))
 
     def glycanProcAggregator(fun):
         def _wrap(self):
@@ -357,9 +375,9 @@ class reactionRule(Rule):
             # substrate->product or product->substrate.
             frm_list,to_list=fun(pairList)
             #Make a list of replacer functions:
-            funList=[makeGlycanProcessor(frm,to) for frm,to in zip(frm_list,to_list)]
+            funList=[self.makeGlycanProcessor(frm,to) for frm,to in zip(frm_list,to_list)]
             #Make conversion function:
-            convertMain=reduct(lambda cur,pres: lambda string: cur(string)+pres(string),funList)
+            convertMain=functools.reduce(lambda cur,pres: lambda string: cur(string)+pres(string),funList)
             return(convertMain)
         return(_wrap)
 
@@ -379,7 +397,7 @@ class reactionRule(Rule):
     ######################################
 
     @glycanProcAggregator
-    def forwardGeneratorMain(self,pairList):
+    def forwardGeneratorMain(pairList):
         '''
         Produces a list of all possible glycans where "substrate"
         is taken to "product"
@@ -387,7 +405,7 @@ class reactionRule(Rule):
         return([t[0] for t in pairList],[t[1] for t in pairList])
 
     @glycanProcAggregator
-    def reverseGeneratorMain(self,pairList):
+    def reverseGeneratorMain(pairList):
         '''
         Produces a list of all possible glycans where "product"
         is taken to "substrate"
@@ -452,41 +470,27 @@ class ConstraintMethodGenerator(generatorSet):
                 seq=re.sub('\@',self.addMono)
         return(seq)
     
-    # "searchDecorator" takes arguments "isNegation" and "numericObj"
-    # which are passthrough variables for "negation" and "numeric"
-    # for this object.  Additional function modifiers can be made
-    # within this block to expand constraint processing:
-    def searchDecorator(isNegation=negation,numericObj=numeric):
-        def _searchDecWrap(self,fun):
-            '''
-            Decorates the main search function "fun"
-            with additional logical/numeric constraints.
-            '''
-            #Base search function:
-            funOut=fun()
-            #Negation
-            if isNegation:
-                funOut=lambda glycan: funOut(glycan) is None
-            else:
-                funOut=lambda glycan: funOut(glycan) is not None
-            #Numerical Constraint
-            if numericObj is not None:
-                #The quantifier object contains a method
-                # Which automatically evaluates if the quantity
-                # of patterns matched fulfills the quantifier.
-                funOut=lambda glycan: numericObj.logical_fun(funOut(glycan))
-            return(funOut)
-        return(_searchDecWrap)
-                
-    @searchDecorator(negation,numeric)
     def constraintGen(self):
         '''
-        Converts constraint sequence into a 
-        regular expression function
+        Generates a constraint method which evaluates if a 
+        generated product is valid.
         '''
+        #Base search function:
         stringSearch=self.createSeq()
         stringSearch_regex=super().rule2regex(stringSearch)
-        return lambda glycan: re.finditer(stringSearch_regex,glycan)
+        funOut=lambda glycan: re.finditer(stringSearch_regex,glycan)
+        #Negation:
+        if self.negation:
+            funOut=lambda glycan: funOut(glycan) is None
+        else:
+            funOut=lambda glycan: funOut(glycan) is not None
+        #Numerical Constraint:
+        if self.numeric is not None:
+            #The quantifier object contains a method
+            # Which automatically evaluates if the quantity
+            # of patterns matched fulfills the quantifier.
+            funOut=lambda glycan: self.numeric.logical_fun(funOut(glycan))
+        return(funOut)
 
     @classmethod
     def fromComponents(cls,ruleSet,addMono=None):

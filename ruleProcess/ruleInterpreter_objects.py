@@ -189,7 +189,7 @@ class glycoCTConvert:
             ### Look up GlycoCT representation of monosaccharide in GlyPy ###
             if monoGroups['Mono'] in monosaccharide_dict.keys():
                 monoRep=glypy.monosaccharides[monoGroups['Mono']]
-            elif monoGroups['WildCard'] not None:
+            elif monoGroups['WildCard'] is not None:
                 monoRep=monoGroups['WildCard'] 
 
         monoMatcher=LexMatcher(entityDict['monosaccharides'],
