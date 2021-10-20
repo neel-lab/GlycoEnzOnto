@@ -21,7 +21,7 @@ query="""
         ?seqAcc glycan:in_carbohydrate_format <http://purl.jp/bio/12/glyco/glycan#carbohydrate_format_glycoct> .
         BIND(STRBEFORE(?glycanSeq,"LIN") as ?Residues)
         BIND(STRAFTER(?glycanSeq,"LIN") as ?Linkages)
-        FILTER( !REGEX(?Linkages,"\\\\d\\\\|\\\\d") && !REGEX(?Residues,"1b\\\\:o\\\\-") && REGEX(?glycanSeq,"RES") && REGEX(?glycanSeq,"LIN") && !REGEX(?Residues,"\\\\-x|x\\\\-|\\\\:x|x\\\\:|x\\\\||\\\\|x") )
+        FILTER( !REGEX(?Linkages,"\\\\-1") && !REGEX(?Linkages,"\\\\d\\\\|\\\\d") && !REGEX(?Residues,"1b\\\\:o\\\\-") && REGEX(?glycanSeq,"RES") && REGEX(?glycanSeq,"LIN") && !REGEX(?Residues,"\\\\-x|x\\\\-|\\\\:x|x\\\\:|x\\\\||\\\\|x") )
     }
 """
 sparql.setQuery(query)

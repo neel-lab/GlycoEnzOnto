@@ -11,11 +11,13 @@ import types
 # prefix component:  <http://mzjava.expasy.org/component/>
 # prefix structureConnection:  <http://mzjava.expasy.org/structureConnection/>
 
-glycoStructOnto=get_ontology('http://mzjava.expasy.org/glycan/')
+glycoStructOnto=get_ontology('http://mzjava.expasy.org/glycan/glycoStructOnto.owl')
+glycoStructOnto.base_iri='http://mzjava.expasy.org/glycan/'
+#gso_namespace=glycoStructOnto.get_namespace('http://mzjava.expasy.org/glycan/')
 #This loads the SKOS ontology
 skos=get_ontology('http://www.w3.org/2004/02/skos/core').load()
 #GlycoRDF:
-glycan=get_ontology('https://raw.githubusercontent.com/ReneRanzinger/GlycoRDF/master/ontology/glycan.owl').load()
+glycoRDF=get_ontology('https://raw.githubusercontent.com/ReneRanzinger/GlycoRDF/master/ontology/glycan.owl').load()
 
 
 ################################
@@ -75,7 +77,8 @@ class GlycoCTProcessor:
         onto_monos_names=[x.name for x in onto_monos]
         onto_monos={ct:v for ct,v in zip(onto_monos_labels,onto_monos_names)}
         try:
-            mono_res=onto[onto_monos[baseResidue]]()
+            with onto:
+                mono_res=onto[onto_monos[baseResidue]]()
         except:
             raise Exception(f'passed residue {baseResidue} not found in ontology monosaccharides')
         return(mono_res)
@@ -86,7 +89,8 @@ class GlycoCTProcessor:
         onto_subs_names=[x.name for x in onto_subs]
         onto_subs={sb:v for sb,v in zip(onto_subs_labels,onto_subs_names)}
         try:
-            subst_res=onto[onto_subs[substituent]]()
+            with onto:
+                subst_res=onto[onto_subs[substituent]]()
         except:
             raise Exception(f'passed residue {substituent} not found in ontology substituents')
         return(subst_res)
@@ -111,6 +115,7 @@ class GlycoCTProcessor:
         return(residueObjects) 
 
     def mono_mono_connect(self,fromRes,toRes,anomerLink,anomericity,linkageNumber):
+        fromRes.is_GlycosidicLinkage.append(toRes)
         #Handle anomer connection:
         if anomerLink==1:
             fromRes.has_anomerCarbon_1.append(toRes)
@@ -158,37 +163,38 @@ class GlycoCTProcessor:
         '''
         Processes residue and linkage information: 
         '''
-        #Residue String Data:
-        residueData=dict([self.match_residue(res) for res in self.residues])
-        #Linkage String Data:
-        linkData=dict([self.match_link(link) for link in self.linkages])
-        #Process the residue data:
-        residueObjects=self.residue_creator(residueData,onto)
-        #Link residues with a glycan:
-        glyc=onto.glycan()
-        #Set the glycan iri to be defined by GlyGen:
-        glyc.iri=self.accNum
-        for r,e in residueObjects.items():
-            glyc.has_residue.append(e)
-        #Make links between residues in Glycan:
-        for l in linkData.values():
-            #From/To Information:
-            fromRes=residueObjects[int(l['ParentIndex'])]
-            toRes=residueObjects[int(l['ChildIndex'])]
-            #Get the anomer carbon number
-            anomerLink=int(l['ChildCarbonLink'])
-            #Get the linkage carbon number:
-            linkageNumber=[int(x) for x in l['ParentCarbonLinks'].split('|')][0]
-            #Ontology Stuff:
-            if onto.monosaccharide in toRes.is_instance_of[0].ancestors():
-                #Get the anomericity of the child monosaccharide and
-                # pass it to the mono_mono_connect function:
-                anomericity=residueData[l['ChildIndex']]['Anomericity']
-                #Mono-Mono connection:
-                self.mono_mono_connect(fromRes,toRes,anomerLink,anomericity,linkageNumber)
-            elif onto.substituent in toRes.is_instance_of[0].ancestors():
-                #Mono-substituent connection:
-                self.mono_subst_connect(fromRes,toRes,linkageNumber)
+        with onto:
+            #Residue String Data:
+            residueData=dict([self.match_residue(res) for res in self.residues])
+            #Linkage String Data:
+            linkData=dict([self.match_link(link) for link in self.linkages])
+            #Process the residue data:
+            residueObjects=self.residue_creator(residueData,onto)
+            #Link residues with a glycan:
+            glyc=onto.glycan()
+            #Set the glycan iri to be defined by GlyGen:
+            glyc.iri=self.accNum
+            for r,e in residueObjects.items():
+                glyc.has_residue.append(e)
+            #Make links between residues in Glycan:
+            for l in linkData.values():
+                #From/To Information:
+                fromRes=residueObjects[int(l['ParentIndex'])]
+                toRes=residueObjects[int(l['ChildIndex'])]
+                #Get the anomer carbon number
+                anomerLink=int(l['ChildCarbonLink'])
+                #Get the linkage carbon number:
+                linkageNumber=[int(x) for x in l['ParentCarbonLinks'].split('|')][0]
+                #Ontology Stuff:
+                if onto.monosaccharide in toRes.is_instance_of[0].ancestors():
+                    #Get the anomericity of the child monosaccharide and
+                    # pass it to the mono_mono_connect function:
+                    anomericity=residueData[l['ChildIndex']]['Anomericity']
+                    #Mono-Mono connection:
+                    self.mono_mono_connect(fromRes,toRes,anomerLink,anomericity,linkageNumber)
+                elif onto.substituent in toRes.is_instance_of[0].ancestors():
+                    #Mono-substituent connection:
+                    self.mono_subst_connect(fromRes,toRes,linkageNumber)
 
 ##########################
 # Residue Types in Glygen:
@@ -239,10 +245,11 @@ for k,g in gob_dict.items():
     if all([m in monoRes.values() for m in mono_residues]):
         new_gob_dict[k]=g
 
+print('Instantiating %i glycans into structure ontology' %(len(new_gob_dict)))
 
-############################
-# glycoStructOnto Definition
-############################
+#############################
+# glycoStructOnto Definition:
+#############################
 
 with glycoStructOnto:
     ##########
@@ -259,15 +266,6 @@ with glycoStructOnto:
     for k,v in monoRes.items():
         nc=types.new_class(k,(monosaccharide,))
         nc.label=v
-
-    ##############################################
-    #Manually defined monosaccharide residue info:
-    ##############################################
-    #manuallyDefinedMonos=[glypy.Monosaccharide(anomer='alpha',configuration='d',stem='gal',superclass='hex',ring_start=1,ring_end=5),
-    #                        glypy.Monosaccharide(anomer='alpha',configuration='d',stem='glc',superclass='hex',ring_start=1,ring_end=5),
-    #                    ]
-    #for mr in manuallyDefinedMonos:
-    #    nc=types.new_class(mr.serialize(),(monosaccharide,))
 
     class substituent(residue):
         label=['Substituent']
@@ -336,19 +334,20 @@ with glycoStructOnto:
         domain=[monosaccharide]
         range=[monosaccharide]
 
-#Ontology-defined monosaccharides:
-onto_monos=[x.name for x in glycoStructOnto.get_children_of(glycoStructOnto['monosaccharide'])]
-onto_monos={x:y for x,y in glypy.monosaccharides.items() if x in onto_monos}
-#Ontology-defined substituents:
-onto_subst=[x.name for x in glycoStructOnto.get_children_of(glycoStructOnto['substituent'])]
+if __name__=='__main__':
+    #Ontology-defined monosaccharides:
+    onto_monos=[x.name for x in glycoStructOnto.get_children_of(glycoStructOnto['monosaccharide'])]
+    onto_monos={x:y for x,y in glypy.monosaccharides.items() if x in onto_monos}
+    #Ontology-defined substituents:
+    onto_subst=[x.name for x in glycoStructOnto.get_children_of(glycoStructOnto['substituent'])]
 
-#Testing:
-couldntDos=0
-for g,v in new_gob_dict.items():
-    try:
-        v.glyco_object(glycoStructOnto)
-    except Exception as e: print(f'Couldn\'t do {g}');print(e);couldntDos+=1
+    #Testing:
+    couldntDos=0
+    for g,v in new_gob_dict.items():
+        try:
+            v.glyco_object(glycoStructOnto)
+        except Exception as e: print(f'Couldn\'t do {g}');print(e);couldntDos+=1
 
-print("Total unprocessed: {0}".format(couldntDos))
-#glycoStructOnto.save(file='glycoStructOnto.rdf',format='rdfxml')
-#print('Saved \"glycoStructOnto.rdf\"')
+    print("Total unprocessed: {0}".format(couldntDos))
+    glycoStructOnto.save(file='glycoStructOnto.rdf',format='rdfxml')
+    print('Saved \"glycoStructOnto.rdf\"')
