@@ -19364,6 +19364,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
+        <rdfs:comment>The Core Pathways are distinct sets of glycosylation pathways responsible for the addition of monosaccharides to their protein or lipid substituents and subsequent extension.  Depending on which monosaccharide is attached at the root of a glycan, there will be different sets of enzymes to initiate the glycan structure.</rdfs:comment>
     </owl:Class>
     
 
