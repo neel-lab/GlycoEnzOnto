@@ -19162,6 +19162,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylation">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
     </owl:Class>
     
@@ -19187,7 +19188,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acyltransferase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -19286,7 +19287,16 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -19312,7 +19322,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Collagen_Glycosylation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Collagen_Glycosylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -19428,7 +19438,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -19507,6 +19517,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway">
@@ -19519,7 +19538,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -19528,6 +19546,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dystro">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#EOGT_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#EOGT_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -19672,7 +19699,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
     </owl:Class>
     
 
@@ -19749,7 +19776,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalCer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalCer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
     </owl:Class>
     
 
@@ -19811,14 +19838,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Galα1-3Gal_Antigen -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Galα1-3Gal_Antigen">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside">
@@ -19854,7 +19873,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
     </owl:Class>
     
 
@@ -20011,7 +20030,17 @@
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+    </owl:Class>
     
 
 
@@ -20132,7 +20161,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -20265,15 +20294,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-branching -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-branching">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
@@ -20354,7 +20374,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -20397,14 +20417,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lactoside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
     </owl:Class>
     
 
@@ -20552,7 +20564,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#donor_synthesis"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
     </owl:Class>
     
 
@@ -20609,7 +20621,6 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
     </owl:Class>
     
@@ -20677,6 +20688,15 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O_ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O_ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -20780,14 +20800,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POGLUT1_Type -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POGLUT1_Type">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT1_Type -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT1_Type">
@@ -20815,7 +20827,9 @@
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
     
 
 
@@ -20860,18 +20874,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Modification -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Glycosylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Modification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
@@ -20881,7 +20886,16 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Metabolism"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Modification"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_XylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_XylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -20922,6 +20936,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialylation"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
     </owl:Class>
     
@@ -21218,6 +21233,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT">
@@ -21227,36 +21251,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#acyltransferase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#acyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#dioxygenase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#dioxygenase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#donor_synthesis -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#donor_synthesis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -21303,10 +21301,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2_FucosylT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -21337,10 +21336,29 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3_FucosylT">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -21361,10 +21379,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -21451,6 +21487,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4XylT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4XylT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β6GlcNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β6GlcNAcT">
@@ -21465,14 +21519,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Blood_Group_i&amp;I -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Blood_Group_i&amp;I">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
     </owl:Class>
     
 
@@ -21540,8 +21586,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Globoside"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lactoside"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Neolactoside"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GalT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule226"/>
@@ -21601,6 +21647,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0019187"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule61"/>
     </owl:NamedIndividual>
     
@@ -21636,6 +21683,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004377"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule64"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule65"/>
     </owl:NamedIndividual>
@@ -21648,6 +21696,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule55"/>
     </owl:NamedIndividual>
     
@@ -21708,6 +21757,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0000033"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule62"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule63"/>
     </owl:NamedIndividual>
@@ -21722,6 +21772,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0052925"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule52"/>
     </owl:NamedIndividual>
     
@@ -21771,6 +21822,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0052926"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule53"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule54"/>
     </owl:NamedIndividual>
@@ -21886,7 +21938,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint24"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule220"/>
@@ -21902,8 +21954,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core3"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Globoside"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lactoside"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint25"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule222"/>
@@ -22265,6 +22317,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule112"/>
     </owl:NamedIndividual>
     
@@ -22389,10 +22442,10 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008146"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0045130"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6ST"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule150"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule233"/>
@@ -22501,6 +22554,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001517"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core2"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
@@ -22520,6 +22574,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008459"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6ST"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Type_II_LacNAc"/>
@@ -22553,6 +22608,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001517"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core2"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
@@ -22571,6 +22627,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001517"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core2"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
@@ -22825,6 +22882,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004169"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004582"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
@@ -22876,6 +22934,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule91"/>
     </owl:NamedIndividual>
     
@@ -22887,6 +22946,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule91"/>
     </owl:NamedIndividual>
     
@@ -22898,6 +22958,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule91"/>
     </owl:NamedIndividual>
     
@@ -22909,6 +22970,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule91"/>
     </owl:NamedIndividual>
     
@@ -22992,8 +23054,8 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#EOGT">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#EOGT_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule87"/>
     </owl:NamedIndividual>
     
@@ -23411,7 +23473,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing"/>
@@ -23431,7 +23493,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing"/>
@@ -23450,7 +23512,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
@@ -24175,6 +24237,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0035252"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule89"/>
     </owl:NamedIndividual>
     
@@ -24187,6 +24250,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0035252"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule89"/>
     </owl:NamedIndividual>
     
@@ -24614,6 +24678,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule108"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule109"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule110"/>
@@ -24629,6 +24695,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule108"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule109"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule110"/>
@@ -25283,6 +25351,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0000030"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule120"/>
     </owl:NamedIndividual>
     
@@ -25366,6 +25435,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule117"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#PIGM"/>
         <glycan:interactsWith rdf:resource="http://purl.jp/bio/12/glyco/glycan#PIGX"/>
@@ -25483,6 +25553,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule118"/>
     </owl:NamedIndividual>
     
@@ -25536,6 +25607,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint6"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule123"/>
     </owl:NamedIndividual>
@@ -25724,6 +25796,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT1_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule100"/>
@@ -25739,6 +25812,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT1_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule100"/>
@@ -25816,6 +25890,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule111"/>
     </owl:NamedIndividual>
     
@@ -26472,6 +26547,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#TMTC1">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type"/>
@@ -26484,6 +26560,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#TMTC2">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type"/>
@@ -26496,6 +26573,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#TMTC3">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type"/>
@@ -26508,6 +26586,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#TMTC4">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type"/>
@@ -26645,7 +26724,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004857"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0005496"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26660,7 +26739,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0005080"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26674,7 +26753,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26688,7 +26767,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26699,7 +26778,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT1A5">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26713,7 +26792,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26729,7 +26808,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0005080"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26745,7 +26824,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0005504"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26759,7 +26838,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26771,7 +26850,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2A1">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26783,7 +26862,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2A2">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26795,7 +26874,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2A3">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26807,7 +26886,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2B10">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26819,7 +26898,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2B11">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26832,7 +26911,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26845,7 +26924,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26857,7 +26936,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT2B28">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26870,7 +26949,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26883,7 +26962,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0001972"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26896,7 +26975,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008194"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26908,7 +26987,7 @@
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#UGT3A2">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008194"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
@@ -26921,7 +27000,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalCer"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lipid-linked"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule232"/>
     </owl:NamedIndividual>
     
@@ -26966,6 +27045,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0140560"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule90"/>
     </owl:NamedIndividual>
     
