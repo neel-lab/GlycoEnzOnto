@@ -545,151 +545,6 @@ class entityToken:
         else:
             return None
 
-    ###################################
-    # Monosaccharide detection methods:
-    ###################################
-
-    def getMono_compartment(self,compartment_component):
-        return(compartmentToken(compartment_component) if compartment_component is not None else None)
-
-    def modPos_inference(self,mod_positions):
-        '''
-        Look for mod in the 'modPos' key:
-         This works when the modification can be present or absent, as 
-         denoted by a "< >" marker.  "modMatcher" will not detect the mod
-         within the multi-container, and thus will be picked up below:
-        '''
-        modPos_lst=re.findall('(\d|\<.+?\>)',mod_positions)
-        modInfer=[re.search('(\d)(\D)',x).groups()[1] for x in modPos_lst if re.search('(\d)(\D)',x) is not None]
-        if len(modInfer)>0 and len(set(modInfer))==1:
-            inferedMod=modInfer[0]
-        else:
-            inferedMod=None
-        return(inferedMod)
-    
-    def rctInference(self,rctn):
-        '''
-        Look for mod in the 'innerReaction' key:
-          Returns the string of anything resembling a modification.
-        '''
-        if rctn is None:
-            return(None)
-        else:
-            mtch=re.search('\{.*?(\d)(\D).*?\}',rctn)
-            if mtch is not None:
-                inferedMod=mtch.groups()[1]
-                return(inferedMod)
-            else:
-                return(None)
-
-    def inferMod(self,mod_positions,rctn):
-        '''
-        Tries to look for modifications in the 'modPos'
-        and 'innerReaction' keys in the mono_parse result.
-        If anything is matched, returns the mod string.
-        Otherwise returns None:
-        '''
-        inferences=[self.modPos_inference(mod_positions),self.rctInference(rctn)]
-        if all([x==None for x in inferences]):
-            return(None)
-        else:
-            inferredMod=[x for x in inferences if x is not None][0]
-            return(inferredMod)
-    
-    def getMono_modification(self,modType,mod_positions,rctn,mono):
-        '''
-        Modifications:
-        Modifications are present if :
-        1. They have a 'modPos' or 'modType' value in the 
-           'mono_components' dictionary.
-        2. They have a reaction which adds a modification to
-           the monosaccharide
-        '''
-
-        #Modification Inference:
-        # If the modification is not found in an expected spot,
-        # other locations such as reaction components and multi-containers
-        # are checked:
-        if modType is None:
-            #Run the inference routine
-            # If nothing returns, assume there is no modification:
-            inferredMod=self.inferMod(mod_positions,rctn)
-            if inferredMod is not None:
-                modType=inferredMod
-
-        #Keep running list of modification tokens here:
-        modTokens=[]
-        #Presence of a modification position and a modification type
-        # means there is/are modification(s) in the monosaccharide:
-        if len(mod_positions)>0:
-            #Create a list with the modification positions
-            modPos_lst=re.findall('(\d|\<.+?\>)',mod_positions)
-            for mp in modPos_lst:
-                if '<' in mp:
-                    #If no modification is present within
-                    # multi-entity container, associate with
-                    # "modType"
-                    ents=re.search('\<(.+?)\>',mp).groups()[0].split(',')
-                    newEnts=[]
-                    for e in ents:
-                        if len(e)==0:
-                            continue
-                        elif modType not in e:
-                            newEnts.append(e+modType) 
-                        else:
-                            newEnts.append(e)
-                    mp=''.join(['<',','.join(newEnts),'>'])
-                    modTokens.append(multiToken(mp))
-                else:
-                    modTokens.append(modToken(mp+modType))
-        #The GalN and GlcN exception to modification rules:
-        elif mono in ['GalN','GlcN'] and len(mod_positions)==0 and modType is not None:
-            modTokens.append(modToken(''.join(['N',modType])))
-        else:
-            modTokens=None
-        return(modTokens,modType)
-
-    def getMono_reaction(self,rctn,modType):
-        '''
-        Returns reaction object if there is an internal reaction:
-        '''
-        #Modification Reactions:
-        if rctn is not None:
-            #Test different reaction types
-            # Code below is meant to detect ambiguous modification additions.
-            # Addition/Subtraction entities should only have one 
-            # entity within them.  Substitution/Reversible tokens should
-            # only have one entity in their "from" and "to" token attributes.
-            rct_token=reactionToken(rctn)
-            if rct_token.token.__name__ in ['additionToken','subtractionToken']:
-                if rct_token.token.ligand_token[0].__name__=='unknownToken':
-                    #Get Reaction Text:
-                    rct_string=rct_token.token.ligand_token[0].product()[0]
-                    #If the reaction text contains a comma and a number,
-                    # infer the reaction is adding another of the current
-                    # modification:
-                    #Otherwise keep token the same and handle error later:
-                    addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',rct_string)
-                    if addMoreMono is not None:
-                        rct_token.token.ligand_token[0]=entityToken(addMoreMono.groups()[0]+modType)
-            elif rct_token.token.__name__ in ['substitutionToken','reversibleToken']:
-                if rct_token.token.from_ligand_token[0].token.__name__=='unknownToken' or rct_token.token.to_ligand_token[0].token.__name__=='unknownToken':
-                    #Get Reaction Text from "from" and "to" ligands:
-                    from_rct_string=rctTok.token.from_ligand_token.product()
-                    to_rct_string=rctTok.token.to_ligand_token.product()
-                    #If the reaction text contains a comma and a number,
-                    # infer the reaction is adding another of the current
-                    # modification:
-                    #Otherwise keep token the same and handle error later:
-                    from_addMoreMono,to_addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',from_rct_string),re.search('((?<=\,)(\d)|(\d)(?=\,))',to_rct_string)
-                    if from_addMoreMono is not None:
-                        rct_token.token.from_ligand_token[0]=entityToken(from_addMoreMono.groups[0]+modType)
-                    if to_addMoreMono is not None:
-                        rct_token.token.to_ligand_token[0]=entityToken(to_addMoreMono.groups[0]+modType)
-        else:
-            rct_token=None
-        return(rct_token)
-
     def detectMono(self):
         '''
         Method for detecting monosaccharide entities.
@@ -704,7 +559,6 @@ class entityToken:
         Group 5 Modification name (if present): Detected from "entityToken"'s allowed modification list.
         Group 6 Linkage information: (\([ab\?][12\?]\-[\d\?]\)).
 
-        Returns components of a monoToken object in the order they are passed to instantiate the object.
         '''
         #Parse the monosaccharide components using
         # the wrapping function;
@@ -713,20 +567,87 @@ class entityToken:
         if mono_components is None:
             return(None)
         #Otherwise, create the monosaccharide token
-        # and associate ancestor tokens. 
-        
-        #Compartment Method:
-        compartment_component=self.getMono_compartment(mono_components['compartment'])
-        #Modification Method:
-        modifications,inferredModType=self.getMono_modification(mono_components['modType'],mono_components['modPos'],mono_components['innerReaction'],mono_components['mono'])
-        #Reactions Method:
-        reaction=self.getMono_reaction(mono_components['innerReaction'],mono_components['modType'])
-        #Return All Attributes:
-        return(mono_components['mono'],mono_components['monoLink'],mono_components['branching'],modifications,reaction,compartment_component)
+        # and associate ancestor tokens when necessary
+        #Compartment:
+        if mono_components['compartment'] is not None:
+            compartment_token=compartmentToken(mono_components['compartment'])
+        else:
+            compartment_token=None
+        #Modifications:
+        modTokens=[]
+        if len(mono_components['modPos'])>0:
+            #Create a list with the modification positions
+            modPos_lst=re.findall('(\d|\<.+?\>)',mono_components['modPos'])
+            if mono_components['modType'] is None:
+                #Infer the mod if it is within
+                # the modpos:
+                modInfer=[re.search('(\d)(\D)',x) for x in modPos_lst if re.search('(\d)(\D)',x) is not None]
+                if len(modInfer)==0:
+                    raise Exception("Malformed Monosaccharide: there are modification positions within the monosaccharide with no valid modifications found.  Check the input rule string")
+                else:
+                    mtch=modInfer[0]
+                    mono_components['modType']=mtch.groups()[1]
+            for mp in modPos_lst:
+                if '<' in mp:
+                    #If no modification is present within
+                    # multi-entity container, associate with
+                    # "modType"
+                    ents=re.search('\<(.+?)\>',mp).groups()[0].split(',')
+                    newEnts=[]
+                    for e in ents:
+                        if len(e)==0:
+                            continue
+                        elif mono_components['modType'] not in e:
+                            newEnts.append(e+mono_components['modType']) 
+                        else:
+                            newEnts.append(e)
+                    mp=''.join(['<',','.join(newEnts),'>'])
+                    modTokens.append(multiToken(mp))
+                else:
+                    modTokens.append(modToken(mp+mono_components['modType']))
 
-    ##############################################
-    ### END  Monosaccharide detection methods: ###
-    ##############################################
+        #The GalN and GlcN exception to modification rules:
+        elif mono_components['mono'] in ['GalN','GlcN']:
+            modTokens.append(modToken(''.join(['N',mono_components['modType']])))
+        else:
+            modTokens=None
+        #Modification Reactions:
+        if mono_components['innerReaction'] is not None:
+            #Test different reaction types
+            # Code below is meant to detect ambiguous modification additions.
+            # Addition/Subtraction entities should only have one 
+            # entity within them.  Substitution/Reversible tokens should
+            # only have one entity in their "from" and "to" token attributes.
+            rct_token=reactionToken(mono_components['innerReaction'])
+            if rct_token.token.__name__ in ['additionToken','subtractionToken']:
+                if rct_token.token.ligand_token[0].__name__=='unknownToken':
+                    #Get Reaction Text:
+                    rct_string=rct_token.token.ligand_token[0].product()[0]
+                    #If the reaction text contains a comma and a number,
+                    # infer the reaction is adding another of the current
+                    # modification:
+                    #Otherwise keep token the same and handle error later:
+                    addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',rct_string)
+                    if addMoreMono is not None:
+                        rct_token.token.ligand_token[0]=entityToken(addMoreMono.groups()[0]+mono_components['modType'])
+            elif rct_token.token.__name__ in ['substitutionToken','reversibleToken']:
+                if rct_token.token.from_ligand_token[0].token.__name__=='unknownToken' or rct_token.token.to_ligand_token[0].token.__name__=='unknownToken':
+                    #Get Reaction Text from "from" and "to" ligands:
+                    from_rct_string=rctTok.token.from_ligand_token.product()
+                    to_rct_string=rctTok.token.to_ligand_token.product()
+                    #If the reaction text contains a comma and a number,
+                    # infer the reaction is adding another of the current
+                    # modification:
+                    #Otherwise keep token the same and handle error later:
+                    from_addMoreMono,to_addMoreMono=re.search('((?<=\,)(\d)|(\d)(?=\,))',from_rct_string),re.search('((?<=\,)(\d)|(\d)(?=\,))',to_rct_string)
+                    if from_addMoreMono is not None:
+                        rct_token.token.from_ligand_token[0]=entityToken(from_addMoreMono.groups[0]+mono_components['modType'])
+                    if to_addMoreMono is not None:
+                        rct_token.token.to_ligand_token[0]=entityToken(to_addMoreMono.groups[0]+mono_components['modType'])
+        else:
+            rct_token=None
+        #Return All Attributes:
+        return(mono_components['mono'],mono_components['monoLink'],mono_components['branching'],modTokens,rct_token,compartment_token)
 
     def detectMain(self):
         '''
@@ -898,11 +819,12 @@ class monoToken(entityToken):
         if self.modTokens is not None:
             #Get modification type:
             for t in self.modTokens:
-                if t.__name__=='multiToken':
-                    tokStrings=list(chain(*t.product()))
-                    modTokenStrings.append(tokStrings)
-                else:
-                    modTokenStrings.append(t.product())
+                tokStrings=t.product()
+                #if t.__name__=='multiToken':
+                #    tokStrings=t.product()
+                #else:
+                #    tokStrings=[t.product()]
+                modTokenStrings.append(tokStrings)
         #Create all permutations of "modTokenStrings", then
         # order based on modification number:
         modTokenCombs=[sorted(x) for x in list(prod(*modTokenStrings))]
@@ -919,7 +841,7 @@ class monoToken(entityToken):
         if self.reactionToken is not None:
             return(self.reactionToken.token.substrate(),self.reactionToken.token.product())
         else:
-            return([''],[''])
+            return('','')
 
     #Creates all permutations of a monosaccharide's representation:
     def rp_stringWrap(fun):
@@ -931,8 +853,11 @@ class monoToken(entityToken):
             compList=fun(self)
             ### Decorator Function END: ###
             mod_perms=[sorted(x+compList) for x in mod_perms]
+            if mod_perms==[[['']]]:
+                mod_perms=[['']]
             #Cleanup empties:
             mod_perms=[[y for y in x if y!=''] for x in mod_perms]
+            #print(mod_perms)
             #Generate Linkage possibilities:
             modStrings=list(chain(*[[','.join(x)] for x in mod_perms]))
             modStrings=[','.join([re.sub('\D','',y) if i<(len(x.split(','))-1) else y for i,y in enumerate(x.split(','))]) for x in modStrings]
@@ -941,7 +866,7 @@ class monoToken(entityToken):
             leftBracket='[' if self.branching['leftBracket'] else ''
             rightBracket=']' if self.branching['rightBracket'] else ''
             #Compartments:
-            compartment='' if self.compartment is None else self.compartment.product()[0]
+            compartment='' if self.compartment is None else self.compartment
             #Linkages:
             linkage='' if self.linkage is None else self.linkage
             #Generate All possible monosaccharide representations:
@@ -961,7 +886,7 @@ class monoToken(entityToken):
         #Gather monosaccharide modification reaction info, and
         # integrate into the modification permutations:
         (substrs,_)=self.react_strings()
-        return(substrs)
+        return([substrs])
 
     #Returns product components:
     @rp_stringWrap
@@ -973,7 +898,7 @@ class monoToken(entityToken):
         #Gather monosaccharide modification reaction info, and
         # integrate into the modification permutations:
         (_,prods)=self.react_strings()
-        return(prods)
+        return([prods])
 
 
 class modToken(entityToken):
@@ -992,9 +917,7 @@ class modToken(entityToken):
         return(mod,pos)
     
     def substrate(self):
-        #output not originally in string.
-        # remove if necessary;
-        return([self.inputString])
+        return(self.inputString)
 
 class nsToken(entityToken):
 
@@ -1020,7 +943,7 @@ class nsToken(entityToken):
         return(nt,mono)
     
     def substrate(self):
-        return([self.inputString])
+        return(self.inputString)
 
 class compartmentToken(entityToken):
 
@@ -1038,7 +961,7 @@ class compartmentToken(entityToken):
         return('The %s compartment' %(self.inputString))
 
     def substrate(self):
-        return([self.inputString])
+        return(self.inputString)
 
 class aglycoToken(entityToken):
 
@@ -1172,12 +1095,9 @@ class multiToken:
         multiToken-contained entities:
         '''
         if len(self.tokens)==1:
-            #New:
-            return(['',self.tokens[0].product()[0]])
-            #Old:
-            #return([[''],self.tokens[0].product()])
+            return(['',self.tokens[0].product()])
         else:
-            return([x.product()[0] for x in self.tokens])
+            return([x.product() for x in self.tokens])
 
 
 ##################
