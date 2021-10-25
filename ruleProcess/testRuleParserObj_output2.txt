@@ -1,4 +1,3 @@
-Instantiating 1126 glycans into structure ontology
 
 ************TEST: GALK1 Rule************
 Rule String: Gal{1P}
@@ -16,6 +15,8 @@ A GalNAc monosaccharide having the following reaction:  An addition of [A modifi
 
 ************TEST: GALE Rule************
 Rule String: {UDP-Gal->UDP-Glc}|{UDP-GalNAc->UDP-GlcNAc}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [UDP nucleotide attached to Gal] to [UDP nucleotide attached to Glc]
 Logical OR
@@ -26,7 +27,7 @@ A conversion from [UDP nucleotide attached to GalNAc] to [UDP nucleotide attache
 ************TEST: TSTA3 Rule************
 Rule String: {GDP-4-keto-6-deoxy-D-mannose->GDP-Fuc}
 INSTANTIATION ERROR
-'unknownToken' object has no attribute 'token'
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [An unknown entity: GDP-4-keto-6-deoxy-D-ma, Quantitiy of, Quantitiy of, An unknown entity: ose] to [GDP nucleotide attached to Fuc]
 
@@ -34,6 +35,8 @@ A conversion from [An unknown entity: GDP-4-keto-6-deoxy-D-ma, Quantitiy of, Qua
 
 ************TEST: GMPPB Rule************
 Rule String: {Man1P->GDP-Man}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Man monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [GDP nucleotide attached to Man]
 
@@ -41,6 +44,8 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 
 ************TEST: UAP1 Rule************
 Rule String: {GlcNAc1P->UDP-GlcNAc}|{GalNAc1P->UDP-GalNAc}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [UDP nucleotide attached to GlcNAc]
 Logical OR
@@ -57,6 +62,8 @@ A Fuc monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: CMAS Rule************
 Rule String: {Neu5Ac->CMP-Neu5Ac}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Neu5Ac monosaccharide] to [CMP nucleotide attached to Neu5Ac]
 
@@ -64,6 +71,8 @@ A conversion from [A Neu5Ac monosaccharide] to [CMP nucleotide attached to Neu5A
 
 ************TEST: FPGT Rule************
 Rule String: {Fuc1P->GDP-Fuc}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Fuc monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [GDP nucleotide attached to Fuc]
 
@@ -71,6 +80,8 @@ A conversion from [A Fuc monosaccharide with the following modifications: ['A mo
 
 ************TEST: GMPPA Rule************
 Rule String: {Man1P->GDP-Man}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Man monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [GDP nucleotide attached to Man]
 
@@ -78,6 +89,8 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 
 ************TEST: AMDHD2 Rule************
 Rule String: {GlcNAc6P->GlcN6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -85,6 +98,8 @@ A conversion from [A GlcNAc monosaccharide with the following modifications: ['A
 
 ************TEST: GALT Rule************
 Rule String: {Gal1P->UDP-Gal}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Gal monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [UDP nucleotide attached to Gal]
 
@@ -92,6 +107,8 @@ A conversion from [A Gal monosaccharide with the following modifications: ['A mo
 
 ************TEST: UGP2 Rule************
 Rule String: {Glc1P->UDP-Glc}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Glc monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [UDP nucleotide attached to Glc]
 
@@ -99,6 +116,8 @@ A conversion from [A Glc monosaccharide with the following modifications: ['A mo
 
 ************TEST: UGDH Rule************
 Rule String: {UDP-Glc->UDP-GlcA}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [UDP nucleotide attached to Glc] to [UDP nucleotide attached to GlcA]
 
@@ -106,6 +125,8 @@ A conversion from [UDP nucleotide attached to Glc] to [UDP nucleotide attached t
 
 ************TEST: UXS1 Rule************
 Rule String: {UDP-GlcA->UDP-Xyl}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [UDP nucleotide attached to GlcA] to [UDP nucleotide attached to Xyl]
 
@@ -122,6 +143,8 @@ A Glc monosaccharide having the following reaction:  A removal of [A modificatio
 
 ************TEST: GNPNAT1 Rule************
 Rule String: {GlcN6P->GlcNAc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -129,6 +152,8 @@ A conversion from [A GlcN monosaccharide with the following modifications: ['A m
 
 ************TEST: GNE Rule************
 Rule String: {UDP-GlcNAc->ManNAc}|ManNAc{6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [UDP nucleotide attached to GlcNAc] to [A ManNAc monosaccharide]
 Logical OR
@@ -138,6 +163,8 @@ A ManNAc monosaccharide having the following reaction:  An addition of [A modifi
 
 ************TEST: GNPDA1 Rule************
 Rule String: {GlcN6P->Fruc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -145,6 +172,8 @@ A conversion from [A GlcN monosaccharide with the following modifications: ['A m
 
 ************TEST: GPI Rule************
 Rule String: {GlcN6P->Fruc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -152,6 +181,8 @@ A conversion from [A GlcN monosaccharide with the following modifications: ['A m
 
 ************TEST: MPI Rule************
 Rule String: {Man6P->Fruc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Man monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -159,6 +190,8 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 
 ************TEST: RENBP Rule************
 Rule String: {GlcNAc->ManNAc}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcNAc monosaccharide] to [A ManNAc monosaccharide]
 
@@ -166,6 +199,8 @@ A conversion from [A GlcNAc monosaccharide] to [A ManNAc monosaccharide]
 
 ************TEST: GNPDA2 Rule************
 Rule String: {GlcN6P->Fruc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -173,6 +208,8 @@ A conversion from [A GlcN monosaccharide with the following modifications: ['A m
 
 ************TEST: PGM2 Rule************
 Rule String: {Glc1P<->Glc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A reversible conversion from [A Glc monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [A Glc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -180,6 +217,8 @@ A reversible conversion from [A Glc monosaccharide with the following modificati
 
 ************TEST: PGM3 Rule************
 Rule String: {GlcNAc1P<->GlcNAc6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A reversible conversion from [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 1 position']] to [A GlcNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -187,6 +226,8 @@ A reversible conversion from [A GlcNAc monosaccharide with the following modific
 
 ************TEST: GFPT1 Rule************
 Rule String: {Fruc6P->GlcN6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -194,6 +235,8 @@ A conversion from [A Fruc monosaccharide with the following modifications: ['A m
 
 ************TEST: GFPT2 Rule************
 Rule String: {Fruc6P->GlcN6P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Fruc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A GlcN monosaccharide with the following modifications: ['A modification of P on the 6 position']]
 
@@ -263,7 +306,7 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 ************TEST: GMDS Rule************
 Rule String: {GDP-Man->GDP-4-6-dehydro-6-deoxy-D-Mannose}
 INSTANTIATION ERROR
-'unknownToken' object has no attribute 'token'
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [GDP nucleotide attached to Man] to [An unknown entity: GDP-4-6-dehydro-6-deoxy-D-, A Man monosaccharide, Quantitiy of, An unknown entity: ose]
 
@@ -271,6 +314,8 @@ A conversion from [GDP nucleotide attached to Man] to [An unknown entity: GDP-4-
 
 ************TEST: NANS Rule************
 Rule String: {ManNAc6P->Neu5Ac}|{Man6P->Kdn}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A ManNAc monosaccharide with the following modifications: ['A modification of P on the 6 position']] to [A Neu5Ac monosaccharide]
 Logical OR
@@ -280,6 +325,8 @@ A conversion from [A Man monosaccharide with the following modifications: ['A mo
 
 ************TEST: PMM2 Rule************
 Rule String: Man{1P->6P}|Man{6P->1P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A Man monosaccharide having the following reaction:  A conversion from [A modification of P on the 1 position] to [A modification of P on the 6 position]
 Logical OR
@@ -289,6 +336,8 @@ A Man monosaccharide having the following reaction:  A conversion from [A modifi
 
 ************TEST: PGM1 Rule************
 Rule String: Glc{1P->6P}|Glc{6P->1P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  A conversion from [A modification of P on the 1 position] to [A modification of P on the 6 position]
 Logical OR
@@ -298,6 +347,8 @@ A Glc monosaccharide having the following reaction:  A conversion from [A modifi
 
 ************TEST: PMM1 Rule************
 Rule String: Man{1P->6P}|Man{6P->1P}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A Man monosaccharide having the following reaction:  A conversion from [A modification of P on the 1 position] to [A modification of P on the 6 position]
 Logical OR
@@ -307,6 +358,8 @@ A Man monosaccharide having the following reaction:  A conversion from [A modifi
 
 ************TEST: DPM1 Rule************
 Rule String: {Man(a1-?)}Dol-P-P
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-?) linkage]
 The Dol-P-P aglycon
@@ -315,6 +368,8 @@ The Dol-P-P aglycon
 
 ************TEST: ALG5 Rule************
 Rule String: {Glc(a1-?)}Dol-P-P
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (a1-?) linkage]
 The Dol-P-P aglycon
@@ -446,6 +501,8 @@ The [Golgi] compartment
 
 ************TEST: STT3A Rule************
 Rule String: Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4){GlcNAc(a1-?)->GlcNAc(b1-?)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A Glc monosaccharide with a (a1-2) linkage
 A Glc monosaccharide with a (a1-3) linkage
@@ -465,6 +522,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-?) linkage] to [A GlcNAc m
 
 ************TEST: STT3B Rule************
 Rule String: Glc(a1-2)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6)]Man(b1-4)GlcNAc(b1-4){GlcNAc(a1-?)->GlcNAc(b1-?)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A Glc monosaccharide with a (a1-2) linkage
 A Glc monosaccharide with a (a1-3) linkage
@@ -484,6 +543,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-?) linkage] to [A GlcNAc m
 
 ************TEST: ALG3 Rule************
 Rule String: {Man(a1-3)}Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-3) linkage]
 A Man monosaccharide with a (a1-6) linkage
@@ -498,6 +559,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG9 Rule************
 Rule String: {Man(a1-2)}Man(a1-3)Man(a1-6)[Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)|Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6){[Glc(a1-3)}Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-3) linkage
@@ -526,6 +589,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG12 Rule************
 Rule String: {Man(a1-6)}[Man(a1-2)Man(a1-3)]Man(a1-6)[Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-6) linkage]
 A terminal Man monosaccharide with a (a1-2) linkage
@@ -543,6 +608,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG6 Rule************
 Rule String: Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6){[Glc(a1-3)}Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Man monosaccharide with a (a1-2) linkage
 A Man monosaccharide with a (a1-6) linkage
@@ -561,6 +628,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG8 Rule************
 Rule String: Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6){[Glc(a1-2)}Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Man monosaccharide with a (a1-2) linkage
 A Man monosaccharide with a (a1-6) linkage
@@ -580,6 +649,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG10 Rule************
 Rule String: Man(a1-2)Man(a1-6)[Man(a1-2)Man(a1-3)]Man(a1-6){[Glc(a1-2)}Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Man monosaccharide with a (a1-2) linkage
 A Man monosaccharide with a (a1-6) linkage
@@ -600,6 +671,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG10B Rule************
 Rule String: {Glc(a1-2)}Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (a1-2) linkage]
 A Glc monosaccharide with a (a1-3) linkage
@@ -612,6 +685,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: DPAGT1 Rule************
 Rule String: {GlcNAc(a1-?)}Dol-P-P
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-?) linkage]
 The Dol-P-P aglycon
@@ -620,6 +695,8 @@ The Dol-P-P aglycon
 
 ************TEST: ALG13 Rule************
 Rule String: {GlcNAc(b1-4)}GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (a1-?) linkage
@@ -628,6 +705,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG14 Rule************
 Rule String: {GlcNAc(b1-4)}GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (a1-?) linkage
@@ -636,6 +715,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG1 Rule************
 Rule String: {Man(b1-4)}GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-4) linkage
@@ -645,6 +726,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG2 Rule************
 Rule String: {Man(a1-3)}Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)|{Man(a1-6)}[Man(a1-2)Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-3) linkage]
 A Man monosaccharide with a (b1-4) linkage
@@ -662,6 +745,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: ALG11 Rule************
 Rule String: Man(a1-6){[Man(a1-2)}Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)|Man(a1-6)[Man(a1-2){Man(a1-2)}Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Man monosaccharide with a (a1-6) linkage
 An addition of [A terminal Man monosaccharide with a (a1-2) linkage]
@@ -682,6 +767,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: GNPTAB Rule************
 Rule String: {GlcNAc(a1-?)-P-}Man(a1-2)Man(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-?) linkage, An unknown entity: -P-]
 A Man monosaccharide with a (a1-2) linkage
@@ -703,6 +790,8 @@ A Man monosaccharide with a (a1-?) linkage
 
 ************TEST: MAN1A1 Rule************
 Rule String: {!Man(a1-2)}Man(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-?) linkage
@@ -711,6 +800,8 @@ A Man monosaccharide with a (a1-?) linkage
 
 ************TEST: MAN1A2 Rule************
 Rule String: {!Man(a1-2)}Man(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-?) linkage
@@ -719,6 +810,8 @@ A Man monosaccharide with a (a1-?) linkage
 
 ************TEST: MAN1B1 Rule************
 Rule String: {!Man(a1-2)}Man(a1-3)...Man(a1-6)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-3) linkage
@@ -729,6 +822,8 @@ A Man monosaccharide with a (a1-6) linkage
 
 ************TEST: MAN1C1 Rule************
 Rule String: {!Man(a1-2)}Man(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-?) linkage
@@ -737,6 +832,8 @@ A Man monosaccharide with a (a1-?) linkage
 
 ************TEST: MAN2A1 Rule************
 Rule String: {!Man(a1-6)}...Man(a1-6)|{!Man(a1-3)}...Man(a1-6)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-6) linkage]
 One or more monosaccharides
@@ -750,6 +847,8 @@ A Man monosaccharide with a (a1-6) linkage
 
 ************TEST: MAN2A2 Rule************
 Rule String: {!Man(a1-6)}...Man(a1-6)|{!Man(a1-3)}...Man(a1-6)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-6) linkage]
 One or more monosaccharides
@@ -763,6 +862,8 @@ A Man monosaccharide with a (a1-6) linkage
 
 ************TEST: MOGS Rule************
 Rule String: {!Glc(a1-2)}Glc(a1-3)Glc(a1-3)Man(a1-2)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Glc monosaccharide with a (a1-2) linkage]
 A Glc monosaccharide with a (a1-3) linkage
@@ -773,6 +874,8 @@ A Man monosaccharide with a (a1-2) linkage
 
 ************TEST: GANAB Rule************
 Rule String: {!Glc(a1-3)}Man(a1-2)|{!Glc(a1-3)}Glc(a1-3)Man(a1-2)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Glc monosaccharide with a (a1-3) linkage]
 A Man monosaccharide with a (a1-2) linkage
@@ -785,6 +888,8 @@ A Man monosaccharide with a (a1-2) linkage
 
 ************TEST: UGGT1 Rule************
 Rule String: {Glc(a1-2)}Man(a1-2)Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-3)[Man(a1-2)Man(a1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-2)GlcNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (a1-2) linkage]
 A Man monosaccharide with a (a1-2) linkage
@@ -803,6 +908,8 @@ A GlcNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: UGGT2 Rule************
 Rule String: {Glc(a1-3)}Man(a1-2)Man(a1-2)Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (a1-3) linkage]
 A Man monosaccharide with a (a1-2) linkage
@@ -813,6 +920,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: MANEA Rule************
 Rule String: {!Glc(a1-2)}Glc(a1-3)Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)|{!Glc(a1-3)}Glc(a1-3)Man(a1-2)Man(a1-2)Man(a1-3)|{!Glc(a1-3)}Man(a1-2)Man(a1-2)Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Glc monosaccharide with a (a1-2) linkage]
 A Glc monosaccharide with a (a1-3) linkage
@@ -836,6 +945,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: FUT8 Rule************
 Rule String: ...{[Fuc(a1-6)]}GlcNAc(b1-?)Asn
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 An addition of [A branched Fuc monosaccharide with a (a1-6) linkage]
@@ -846,6 +957,8 @@ The Asn aglycon
 
 ************TEST: MGAT1 Rule************
 Rule String: {GlcNAc(b1-2)}Man(a1-3)[Man(a1-3)[Man(a1-6)]Man(a1-6)]Man(b1-4)GlcNAc(b1-2)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-2) linkage]
 A Man monosaccharide with a (a1-3) linkage
@@ -873,6 +986,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: MGAT3 Rule************
 Rule String: GlcNAc(b1-2)Man(a1-3)[Man(a1-6)]{[GlcNAc(b1-4)]}Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 A Man monosaccharide with a (a1-3) linkage
@@ -886,6 +1001,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: MGAT4A Rule************
 Rule String: GlcNAc(b1-2){[GlcNAc(b1-4)]}Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-4) linkage]
@@ -895,6 +1012,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: MGAT4B Rule************
 Rule String: GlcNAc(b1-2){[GlcNAc(b1-4)]}Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-4) linkage]
@@ -904,6 +1023,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: MGAT4C Rule************
 Rule String: GlcNAc(b1-2){[GlcNAc(b1-4)]}Man(a1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-4) linkage]
@@ -913,6 +1034,8 @@ A Man monosaccharide with a (a1-3) linkage
 
 ************TEST: MGAT5 Rule************
 Rule String: GlcNAc(b1-2){[GlcNAc(b1-6)]}Man(a1-6)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-6) linkage]
@@ -922,6 +1045,8 @@ A Man monosaccharide with a (a1-6) linkage
 
 ************TEST: GALNT1 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -930,6 +1055,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT10 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -938,6 +1065,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT11 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -946,6 +1075,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT12 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -954,6 +1085,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT13 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -962,6 +1095,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT14 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -970,6 +1105,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT15 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -978,6 +1115,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT16 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -986,6 +1125,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT17 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -994,6 +1135,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT18 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1002,6 +1145,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT2 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1010,6 +1155,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT3 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1018,6 +1165,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT4 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1026,6 +1175,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT5 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1034,6 +1185,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT6 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1042,6 +1195,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT7 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1050,6 +1205,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT8 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1058,6 +1215,8 @@ The Ser/Thr aglycon
 
 ************TEST: GALNT9 Rule************
 Rule String: {GalNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1066,6 +1225,8 @@ The Ser/Thr aglycon
 
 ************TEST: EOGT Rule************
 Rule String: {GlcNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1074,6 +1235,8 @@ The Ser/Thr aglycon
 
 ************TEST: POGLUT1 Rule************
 Rule String: {Glc(b1-?)}Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (b1-?) linkage]
 The Ser aglycon
@@ -1083,6 +1246,8 @@ A [EGF] protein constraint
 
 ************TEST: POGLUT2 Rule************
 Rule String: {Glc(b1-?)}Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (b1-?) linkage]
 The Ser aglycon
@@ -1092,6 +1257,8 @@ A [EGF] protein constraint
 
 ************TEST: POGLUT3 Rule************
 Rule String: {Glc(b1-?)}Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (b1-?) linkage]
 The Ser aglycon
@@ -1101,6 +1268,8 @@ A [EGF] protein constraint
 
 ************TEST: GXYLT1 Rule************
 Rule String: {Xyl(a1-3)}Glc(b1-?)Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (a1-3) linkage]
 A Glc monosaccharide with a (b1-?) linkage
@@ -1111,6 +1280,8 @@ A [EGF] protein constraint
 
 ************TEST: GXYLT2 Rule************
 Rule String: {Xyl(a1-3)}Glc(b1-?)Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (a1-3) linkage]
 A Glc monosaccharide with a (b1-?) linkage
@@ -1121,6 +1292,8 @@ A [EGF] protein constraint
 
 ************TEST: XXYLT1 Rule************
 Rule String: {Xyl(a1-3)}Xyl(a1-3)Glc(b1-?)Ser[EGF]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (a1-3) linkage]
 A Xyl monosaccharide with a (a1-3) linkage
@@ -1132,6 +1305,8 @@ A [EGF] protein constraint
 
 ************TEST: DPY19L1 Rule************
 Rule String: {Man(??-?)}WXXW
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (??-?) linkage]
 The WXXW aglycon
@@ -1140,6 +1315,8 @@ The WXXW aglycon
 
 ************TEST: DPY19L2 Rule************
 Rule String: {Man(??-?)}WXXW
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (??-?) linkage]
 The WXXW aglycon
@@ -1148,6 +1325,8 @@ The WXXW aglycon
 
 ************TEST: DPY19L3 Rule************
 Rule String: {Man(??-?)}WXXW
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (??-?) linkage]
 The WXXW aglycon
@@ -1156,6 +1335,8 @@ The WXXW aglycon
 
 ************TEST: DPY19L4 Rule************
 Rule String: {Man(??-?)}WXXW
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (??-?) linkage]
 The WXXW aglycon
@@ -1164,6 +1345,8 @@ The WXXW aglycon
 
 ************TEST: TMTC1 Rule************
 Rule String: {Man(a1-1)}Ser/Thr[Cad]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-1) linkage]
 The Ser/Thr aglycon
@@ -1173,6 +1356,8 @@ A [Cad] protein constraint
 
 ************TEST: TMTC2 Rule************
 Rule String: {Man(a1-1)}Ser/Thr[Cad]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-1) linkage]
 The Ser/Thr aglycon
@@ -1182,6 +1367,8 @@ A [Cad] protein constraint
 
 ************TEST: TMTC3 Rule************
 Rule String: {Man(a1-1)}Ser/Thr[Cad]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-1) linkage]
 The Ser/Thr aglycon
@@ -1191,6 +1378,8 @@ A [Cad] protein constraint
 
 ************TEST: TMTC4 Rule************
 Rule String: {Man(a1-1)}Ser/Thr[Cad]
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-1) linkage]
 The Ser/Thr aglycon
@@ -1200,6 +1389,8 @@ A [Cad] protein constraint
 
 ************TEST: POFUT1 Rule************
 Rule String: {Fuc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Fuc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1208,6 +1399,8 @@ The Ser/Thr aglycon
 
 ************TEST: POFUT2 Rule************
 Rule String: {Fuc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Fuc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1216,6 +1409,8 @@ The Ser/Thr aglycon
 
 ************TEST: LFNG Rule************
 Rule String: {GlcNAc(b1-3)}Fuc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Fuc monosaccharide with a (a1-?) linkage
@@ -1225,6 +1420,8 @@ The Ser/Thr aglycon
 
 ************TEST: MFNG Rule************
 Rule String: {GlcNAc(b1-3)}Fuc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Fuc monosaccharide with a (a1-?) linkage
@@ -1234,6 +1431,8 @@ The Ser/Thr aglycon
 
 ************TEST: RFNG Rule************
 Rule String: {GlcNAc(b1-3)}Fuc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Fuc monosaccharide with a (a1-?) linkage
@@ -1243,6 +1442,8 @@ The Ser/Thr aglycon
 
 ************TEST: B3GLCT Rule************
 Rule String: {Glc(b1-3)}Fuc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (b1-3) linkage]
 A Fuc monosaccharide with a (a1-?) linkage
@@ -1252,6 +1453,8 @@ The Ser/Thr aglycon
 
 ************TEST: PLOD1 Rule************
 Rule String: {Lys->5-hydroxy-L-lysyl}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [The Lys aglycon] to [The 5-hydroxy-L-lysyl aglycon]
 
@@ -1259,6 +1462,8 @@ A conversion from [The Lys aglycon] to [The 5-hydroxy-L-lysyl aglycon]
 
 ************TEST: PLOD2 Rule************
 Rule String: {Lys->5-hydroxy-L-lysyl}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [The Lys aglycon] to [The 5-hydroxy-L-lysyl aglycon]
 
@@ -1266,6 +1471,8 @@ A conversion from [The Lys aglycon] to [The 5-hydroxy-L-lysyl aglycon]
 
 ************TEST: PLOD3 Rule************
 Rule String: {Glc(a1-2)}Gal(b1-?)5-hydroxy-L-lysyl
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (a1-2) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -1275,6 +1482,8 @@ The 5-hydroxy-L-lysyl aglycon
 
 ************TEST: COLGALT1 Rule************
 Rule String: {Gal(b1-?)}5-hydroxy-L-lysyl
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-?) linkage]
 The 5-hydroxy-L-lysyl aglycon
@@ -1283,6 +1492,8 @@ The 5-hydroxy-L-lysyl aglycon
 
 ************TEST: COLGALT2 Rule************
 Rule String: {Gal(b1-?)}5-hydroxy-L-lysyl
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-?) linkage]
 The 5-hydroxy-L-lysyl aglycon
@@ -1301,6 +1512,8 @@ The Ser/Thr aglycon
 
 ************TEST: POMT1 Rule************
 Rule String: {Man(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1309,6 +1522,8 @@ The Ser/Thr aglycon
 
 ************TEST: POMT2 Rule************
 Rule String: {Man(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -1317,6 +1532,8 @@ The Ser/Thr aglycon
 
 ************TEST: POMGNT1 Rule************
 Rule String: {GlcNAc(b1-2)}Man(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-2) linkage]
 A Man monosaccharide with a (a1-?) linkage
@@ -1326,6 +1543,8 @@ The Ser/Thr aglycon
 
 ************TEST: POMGNT2 Rule************
 Rule String: {GlcNAc(b1-4)}Man(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A Man monosaccharide with a (a1-?) linkage
@@ -1335,6 +1554,8 @@ The Ser/Thr aglycon
 
 ************TEST: FKTN Rule************
 Rule String: {Ribitol(P5-3)}GalNAc(b1-3)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Ribitol(P5-3) monosaccharide]
 A GalNAc monosaccharide with a (b1-3) linkage
@@ -1346,6 +1567,8 @@ The Ser/Thr aglycon
 
 ************TEST: FKRP Rule************
 Rule String: {Ribitol(P5-1)}Ribitol(P5-3)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Ribitol(P5-1) monosaccharide]
 A Ribitol(P5-3) monosaccharide
@@ -1357,6 +1580,8 @@ The Ser/Thr aglycon
 
 ************TEST: MGAT5B Rule************
 Rule String: GlcNAc(b1-2){[GlcNAc(b1-6)]}Man(a1-?)Ser/Thr|GlcNAc(b1-2){[GlcNAc(b1-6)]}Man(a1-6)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-6) linkage]
@@ -1371,6 +1596,8 @@ A Man monosaccharide with a (a1-6) linkage
 
 ************TEST: B3GALNT2 Rule************
 Rule String: {GalNAc(b1-3)}GlcNAc(b1-?)|{GalNAc(b1-3)}GlcNAc(b1-4)Man(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-3) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -1384,6 +1611,8 @@ The Ser/Thr aglycon
 
 ************TEST: LARGE1 Rule************
 Rule String: {Xyl(a1-3)}GlcA(b1-4)Xyl(b1-4)...Man6P(a1-?)Ser/Thr|{GlcA(b1-3)}Xyl(a1-3)...Man6P(a1-?)Ser/Thr|{Xyl(a1-3)}GlcA(b1-3)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (a1-3) linkage]
 A GlcA monosaccharide with a (b1-4) linkage
@@ -1408,6 +1637,8 @@ The Ser/Thr aglycon
 
 ************TEST: LARGE2 Rule************
 Rule String: {Xyl(a1-3)}GlcA(b1-4)Xyl(b1-4)...Man6P(a1-?)Ser/Thr|{GlcA(b1-3)}Xyl(a1-3)...Man6P(a1-?)Ser/Thr|{Xyl(a1-3)}GlcA(b1-3)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (a1-3) linkage]
 A GlcA monosaccharide with a (b1-4) linkage
@@ -1432,6 +1663,8 @@ The Ser/Thr aglycon
 
 ************TEST: RXYLT1 Rule************
 Rule String: {Xyl(b1-4)}Ribitol(P5-1)Ribitol(P5-3)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (b1-4) linkage]
 A Ribitol(P5-1) monosaccharide
@@ -1444,6 +1677,8 @@ The Ser/Thr aglycon
 
 ************TEST: B4GAT1 Rule************
 Rule String: {GlcA(b1-4)}Xyl(b1-4)Ribitol(P5-1)...Man6P(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-4) linkage]
 A Xyl monosaccharide with a (b1-4) linkage
@@ -1456,6 +1691,8 @@ The Ser/Thr aglycon
 
 ************TEST: CRPPA Rule************
 Rule String: {Ribitol5P->CMP-Ribitol}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A Ribitol monosaccharide with the following modifications: ['A modification of P on the 5 position']] to [CMP nucleotide attached to Ribitol]
 
@@ -1463,6 +1700,8 @@ A conversion from [A Ribitol monosaccharide with the following modifications: ['
 
 ************TEST: PIGA Rule************
 Rule String: {GlcNAc(a1-6)}PI
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-6) linkage]
 The PI aglycon
@@ -1472,7 +1711,7 @@ The PI aglycon
 ************TEST: PIGL Rule************
 Rule String: {GlcNAc(a1-6)->GlcN(a1-6)}PI
 INSTANTIATION ERROR
-'unknownToken' object has no attribute 'token'
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A GlcNAc monosaccharide with a (a1-6) linkage] to [An unknown entity: GlcN(a1-6)]
 The PI aglycon
@@ -1690,6 +1929,8 @@ The PI aglycon
 
 ************TEST: FUT1 Rule************
 Rule String: {Fuc(a1-2)}Gal(b1-?)GalNAc(b1-?)|{Fuc(a1-2)}Gal(b1-?)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Fuc monosaccharide with a (a1-2) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -1703,6 +1944,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT2 Rule************
 Rule String: {Fuc(a1-2)}Gal(b1-?)GalNAc(b1-?)|{Fuc(a1-2)}Gal(b1-?)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Fuc monosaccharide with a (a1-2) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -1716,6 +1959,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT3 Rule************
 Rule String: ...Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|...Gal(b1-3){[Fuc(a1-4)]}GlcNAc(b1-?)|Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|Gal(b1-3){[Fuc(a1-4)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A Gal monosaccharide with a (b1-4) linkage
@@ -1739,6 +1984,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT4 Rule************
 Rule String: ...Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A Gal monosaccharide with a (b1-4) linkage
@@ -1749,6 +1996,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT5 Rule************
 Rule String: ...Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|...Gal(b1-3){[Fuc(a1-4)]}GlcNAc(b1-?)|Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|Gal(b1-3){[Fuc(a1-4)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A Gal monosaccharide with a (b1-4) linkage
@@ -1772,6 +2021,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT6 Rule************
 Rule String: Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|Neu5Ac(a2-3)Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage
 An addition of [A branched Fuc monosaccharide with a (a1-3) linkage]
@@ -1786,6 +2037,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT7 Rule************
 Rule String: Neu5Ac(a2-3)Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Neu5Ac monosaccharide with a (a2-3) linkage
 A Gal monosaccharide with a (b1-4) linkage
@@ -1796,6 +2049,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: FUT9 Rule************
 Rule String: Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)|...GlcNAc(b1-3)Gal(b1-4){[Fuc(a1-3)]}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage
 An addition of [A branched Fuc monosaccharide with a (a1-3) linkage]
@@ -1811,6 +2066,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: UGCG Rule************
 Rule String: {Glc(b1-?)}Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Glc monosaccharide with a (b1-?) linkage]
 The Cer aglycon
@@ -1819,6 +2076,8 @@ The Cer aglycon
 
 ************TEST: ABO Rule************
 Rule String: Fuc(a1-2){[GalNAc(a1-3)]}Gal(b1-?)|Fuc(a1-2){[Gal(a1-3)]}Gal(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Fuc monosaccharide with a (a1-2) linkage
 An addition of [A branched GalNAc monosaccharide with a (a1-3) linkage]
@@ -1832,6 +2091,8 @@ A Gal monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GALNT1 Rule************
 Rule String: {GalNAc(b1-3)}Gal(a1-4)Gal(b1-4)Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (a1-4) linkage
@@ -1843,6 +2104,8 @@ The Cer aglycon
 
 ************TEST: B4GALNT1 Rule************
 Rule String: {GalNAc(b1-4)}Gal(b1-4)Glc(b1-?)Cer|Neu5Ac(a2-3){[GalNAc(b1-4)]}Gal(b1-4)Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -1859,6 +2122,8 @@ The Cer aglycon
 
 ************TEST: B4GALNT2 Rule************
 Rule String: Neu5Ac(a2-3){[GalNAc(b1-4)]}Gal(b1-4)GlcNAc|Neu5Ac(a2-3){[GalNAc(b1-4)]}Gal(b1-3)GalNAc
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Neu5Ac monosaccharide with a (a2-3) linkage
 An addition of [A branched GalNAc monosaccharide with a (b1-4) linkage]
@@ -1874,6 +2139,8 @@ A GalNAc monosaccharide
 
 ************TEST: B4GALNT3 Rule************
 Rule String: {GalNAc(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -1882,6 +2149,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALNT4 Rule************
 Rule String: {GalNAc(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -1890,6 +2159,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: CHSY3 Rule************
 Rule String: {GalNAc(b1-4)}GlcA(b1-3)GalNAc(b1-4)|{GlcA(b1-3)}GalNAc(b1-4)GlcA(b1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -1903,6 +2174,8 @@ A GlcA monosaccharide with a (b1-3) linkage
 
 ************TEST: CHSY1 Rule************
 Rule String: {GalNAc(b1-4)}GlcA(b1-3)GalNAc(b1-4)|{GlcA(b1-3)}GalNAc(b1-4)GlcA(b1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -1916,6 +2189,8 @@ A GlcA monosaccharide with a (b1-3) linkage
 
 ************TEST: CHPF Rule************
 Rule String: {GalNAc(b1-4)}GlcA(b1-3)GalNAc(b1-4)|{GlcA(b1-3)}GalNAc(b1-4)GlcA(b1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -1929,6 +2204,8 @@ A GlcA monosaccharide with a (b1-3) linkage
 
 ************TEST: CSGALNACT1 Rule************
 Rule String: {GalNAc(b1-4)}GlcA(b1-3)Gal(b1-3)Gal(b1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -1953,6 +2230,8 @@ A GalNAc monosaccharide with a (b1-4) linkage
 
 ************TEST: CHPF2 Rule************
 Rule String: {GlcA(b1-3)}GalNAc(b1-4)GlcA(b1-3)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-3) linkage]
 A GalNAc monosaccharide with a (b1-4) linkage
@@ -2060,6 +2339,8 @@ An unknown entity: (b1-4)
 
 ************TEST: DSEL Rule************
 Rule String: ...{GlcA(b1-3)->IdoA(b1-3)}GalNAc(b1-4)
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A conversion from [A GlcA monosaccharide with a (b1-3) linkage] to [A IdoA monosaccharide with a (b1-3) linkage]
@@ -2069,6 +2350,8 @@ A GalNAc monosaccharide with a (b1-4) linkage
 
 ************TEST: DSE Rule************
 Rule String: ...{GlcA(b1-3)->IdoA(b1-3)}GalNAc(b1-4)
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A conversion from [A GlcA monosaccharide with a (b1-3) linkage] to [A IdoA monosaccharide with a (b1-3) linkage]
@@ -2089,6 +2372,8 @@ A GalNAc monosaccharide
 
 ************TEST: OGT Rule************
 Rule String: {GlcNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -2097,6 +2382,8 @@ The Ser/Thr aglycon
 
 ************TEST: OGA Rule************
 Rule String: {!GlcNAc(a1-?)}Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A GlcNAc monosaccharide with a (a1-?) linkage]
 The Ser/Thr aglycon
@@ -2105,6 +2392,8 @@ The Ser/Thr aglycon
 
 ************TEST: HAS1 Rule************
 Rule String: {GlcNAc(b1-4)}GlcA(b1-3)|{GlcA(b1-3)}GlcNAc(b1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -2116,6 +2405,8 @@ A GlcNAc monosaccharide with a (b1-4) linkage
 
 ************TEST: HAS2 Rule************
 Rule String: {GlcNAc(b1-4)}GlcA(b1-3)|{GlcA(b1-3)}GlcNAc(b1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -2127,6 +2418,8 @@ A GlcNAc monosaccharide with a (b1-4) linkage
 
 ************TEST: HAS3 Rule************
 Rule String: {GlcNAc(b1-4)}GlcA(b1-3)|{GlcA(b1-3)}GlcNAc(b1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -2138,6 +2431,8 @@ A GlcNAc monosaccharide with a (b1-4) linkage
 
 ************TEST: XYLT1 Rule************
 Rule String: {Xyl(b1-?)}Ser
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (b1-?) linkage]
 The Ser aglycon
@@ -2146,6 +2441,8 @@ The Ser aglycon
 
 ************TEST: XYLT2 Rule************
 Rule String: {Xyl(b1-?)}Ser
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Xyl monosaccharide with a (b1-?) linkage]
 The Ser aglycon
@@ -2154,6 +2451,8 @@ The Ser aglycon
 
 ************TEST: B4GALT7 Rule************
 Rule String: {Gal(b1-4)}Xyl(b1-?)Ser
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A Xyl monosaccharide with a (b1-?) linkage
@@ -2172,6 +2471,8 @@ The Ser aglycon
 
 ************TEST: B3GALT6 Rule************
 Rule String: {Gal(b1-3)}Gal(b1-4)Xyl<2P>(b1-?)Ser
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2182,6 +2483,8 @@ The Ser aglycon
 
 ************TEST: B3GAT3 Rule************
 Rule String: {GlcA(b1-3)}Gal(b1-3)Gal(b1-4)Xyl<2P>(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2192,6 +2495,8 @@ A Xyl monosaccharide with a (b1-?) linkage with the following modifications: ['P
 
 ************TEST: A4GNT Rule************
 Rule String: {GlcNAc(a1-4)}Gal(b1-3)GalNAc|{GlcNAc(a1-4)}Gal(b1-4)GlcNAc
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-4) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2205,6 +2510,8 @@ A GlcNAc monosaccharide
 
 ************TEST: B3GNT2 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2214,6 +2521,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GNT3 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-3)GalNAc(a1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2223,6 +2532,8 @@ A GalNAc monosaccharide with a (a1-?) linkage
 
 ************TEST: B3GNT4 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2232,6 +2543,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GNT5 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-4)Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2242,6 +2555,8 @@ The Cer aglycon
 
 ************TEST: B3GNT6 Rule************
 Rule String: {GlcNAc(b1-3)}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A GalNAc monosaccharide with a (a1-?) linkage
@@ -2251,6 +2566,8 @@ The Ser/Thr aglycon
 
 ************TEST: B3GNT7 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-4)GlcNAc(b1-?)|{GlcNAc(b1-3)}Gal(b1-4)GlcNAc6S(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2264,6 +2581,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage with the following modifications: 
 
 ************TEST: B3GNT8 Rule************
 Rule String: {GlcNAc(b1-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2273,6 +2592,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: GCNT1 Rule************
 Rule String: Gal(b1-3){[GlcNAc(b1-6)]}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-3) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-6) linkage]
@@ -2283,6 +2604,8 @@ The Ser/Thr aglycon
 
 ************TEST: GCNT2 Rule************
 Rule String: ...GlcNAc(b1-3){[GlcNAc(b1-6)]}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcNAc monosaccharide with a (b1-3) linkage
@@ -2294,6 +2617,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: GCNT3 Rule************
 Rule String: GlcNAc(b1-3){[GlcNAc(b1-6)]}GalNAc(a1-?)Ser/Thr|Gal(b1-3){[GlcNAc(b1-6)]}GalNAc(a1-?)Ser/Thr|...GlcNAc(b1-3){[GlcNAc(b1-6)]}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-3) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-6) linkage]
@@ -2315,6 +2640,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: GCNT4 Rule************
 Rule String: Gal(b1-3){[GlcNAc(b1-6)]}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-3) linkage
 An addition of [A branched GlcNAc monosaccharide with a (b1-6) linkage]
@@ -2325,6 +2652,8 @@ The Ser/Thr aglycon
 
 ************TEST: EXT1 Rule************
 Rule String: {GlcA(b1-4)}GlcNAc(a1-4)GlcA(b1-3)|{GlcNAc(a1-4)}GlcA(b1-4)GlcNAc(a1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (a1-4) linkage
@@ -2338,6 +2667,8 @@ A GlcNAc monosaccharide with a (a1-4) linkage
 
 ************TEST: EXT2 Rule************
 Rule String: {GlcA(b1-4)}GlcNAc(a1-4)GlcA(b1-3)|{GlcNAc(a1-4)}GlcA(b1-4)GlcNAc(a1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (a1-4) linkage
@@ -2351,6 +2682,8 @@ A GlcNAc monosaccharide with a (a1-4) linkage
 
 ************TEST: EXTL1 Rule************
 Rule String: {GlcNAc(a1-4)}GlcA(b1-4)GlcNAc(a1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-4) linkage]
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2360,6 +2693,8 @@ A GlcNAc monosaccharide with a (a1-4) linkage
 
 ************TEST: EXTL2 Rule************
 Rule String: {GalNAc(a1-4)}GlcA(b1-4)GlcNAc(a1-4)|{GlcNAc(a1-4)}GlcA(b1-3)Gal(b1-3)Gal(b1-4)Xyl(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GalNAc monosaccharide with a (a1-4) linkage]
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2375,6 +2710,8 @@ A Xyl monosaccharide with a (b1-?) linkage
 
 ************TEST: EXTL3 Rule************
 Rule String: {GlcNAc(a1-4)}GlcA(b1-3)Gal(b1-3)Gal(b1-4)<2P>Xyl|{GlcNAc(a1-4)}GlcA(b1-4)GlcNAc(a1-4)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcNAc monosaccharide with a (a1-4) linkage]
 A GlcA monosaccharide with a (b1-3) linkage
@@ -2391,6 +2728,8 @@ A GlcNAc monosaccharide with a (a1-4) linkage
 
 ************TEST: NDST1 Rule************
 Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2400,6 +2739,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN mon
 
 ************TEST: NDST2 Rule************
 Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2409,6 +2750,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN mon
 
 ************TEST: NDST3 Rule************
 Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2418,6 +2761,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN mon
 
 ************TEST: NDST4 Rule************
 Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
@@ -2427,6 +2772,8 @@ A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN mon
 
 ************TEST: GLCE Rule************
 Rule String: ...{GlcA(a1-4)->IdoA(a1-4)}GlcNS
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 One or more monosaccharides
 A conversion from [A GlcA monosaccharide with a (a1-4) linkage] to [A IdoA monosaccharide with a (a1-4) linkage]
@@ -2447,8 +2794,6 @@ A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST1 Rule************
 Rule String: ...IdoA(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage
@@ -2462,8 +2807,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST2 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2473,8 +2816,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST3A1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2484,8 +2825,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST3B1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2495,8 +2834,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST4 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2506,8 +2843,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST5 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2521,8 +2856,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST6 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2632,6 +2965,8 @@ The Ser/Thr aglycon
 
 ************TEST: ST3GAL2 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)GalNAc(b1-?)...Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2644,6 +2979,8 @@ The Cer aglycon
 
 ************TEST: ST3GAL3 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-4)GlcNAc(b1-?)|{Neu5Ac(a2-3)}Gal(b1-3)GlcNAc(b1-?)|{Neu5Ac(a2-3)}Gal(b1-3)GalNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2661,6 +2998,8 @@ A GalNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST3GAL4 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-?)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -2670,6 +3009,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST3GAL5 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-?)Cer|{Neu5Ac(a2-3)}Gal(b1-4)Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -2684,6 +3025,8 @@ The Cer aglycon
 
 ************TEST: ST3GAL6 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2693,6 +3036,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GAL1 Rule************
 Rule String: {Neu5Ac(a2-6)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-6) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2702,6 +3047,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GAL2 Rule************
 Rule String: {Neu5Ac(a2-6)}GalNAc(b1-4)GlcNAc(b1-?)|{Neu5Ac(a2-6)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-6) linkage]
 A GalNAc monosaccharide with a (b1-4) linkage
@@ -2715,6 +3062,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GALNAC1 Rule************
 Rule String: {Neu5Ac(a2-6)}GalNAc(a1-?)Ser/Thr|Gal(b1-3){[Neu5Ac(a2-6)]}GalNAc(a1-?)Ser/Thr|Neu5Ac(a2-3)Gal(b1-3){[Neu5Ac(a2-6)]}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-6) linkage]
 A GalNAc monosaccharide with a (a1-?) linkage
@@ -2735,6 +3084,8 @@ The Ser/Thr aglycon
 
 ************TEST: ST6GALNAC2 Rule************
 Rule String: {Neu5Ac(a2-6)}GalNAc(a1-?)Ser/Thr|Gal(b1-3){[Neu5Ac(a2-6)]}GalNAc(a1-?)Ser/Thr|Neu5Ac(a2-3)Gal(b1-3){[Neu5Ac(a2-6)]}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-6) linkage]
 A GalNAc monosaccharide with a (a1-?) linkage
@@ -2755,6 +3106,8 @@ The Ser/Thr aglycon
 
 ************TEST: ST6GALNAC3 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2765,6 +3118,8 @@ A GalNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GALNAC4 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2775,6 +3130,8 @@ A GalNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: ST6GALNAC5 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)...Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2787,6 +3144,8 @@ The Cer aglycon
 
 ************TEST: ST6GALNAC6 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)[Neu5Ac(a2-6)]GalNAc(b1-?)...Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2799,6 +3158,8 @@ The Cer aglycon
 
 ************TEST: ST8SIA1 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-3)Gal(b1-?)Glc(b1-?)Cer|{Neu5Ac(a2-8)}Neu5Ac(a2-8)Neu5Ac(a2-3)Gal(b1-?)Glc(b1-?)Cer|{Neu5Ac(a2-8)}Neu5Ac(a2-3)Gal(b1-?)...Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-3) linkage
@@ -2824,6 +3185,8 @@ The Cer aglycon
 
 ************TEST: ST8SIA2 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-?)...
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-?) linkage
@@ -2833,6 +3196,8 @@ One or more monosaccharides
 
 ************TEST: ST8SIA3 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-?)...
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-?) linkage
@@ -2842,6 +3207,8 @@ One or more monosaccharides
 
 ************TEST: ST8SIA4 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-?)...
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-?) linkage
@@ -2851,6 +3218,8 @@ One or more monosaccharides
 
 ************TEST: ST8SIA5 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-8)Neu5Ac(a2-3)Gal(b1-?)Glc(b1-?)Cer|{Neu5Ac(a2-8)}Neu5Ac(a2-3)Gal(b1-?)...Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-8) linkage
@@ -2870,6 +3239,8 @@ The Cer aglycon
 
 ************TEST: ST8SIA6 Rule************
 Rule String: {Neu5Ac(a2-8)}Neu5Ac(a2-?)...Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-8) linkage]
 A Neu5Ac monosaccharide with a (a2-?) linkage
@@ -2880,6 +3251,8 @@ The Ser/Thr aglycon
 
 ************TEST: B3GAT1 Rule************
 Rule String: {GlcA(b1-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2889,6 +3262,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GAT2 Rule************
 Rule String: {GlcA(b1-3)}Gal(b1-4)GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (b1-3) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2898,6 +3273,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GALT1 Rule************
 Rule String: {Gal(b1-3)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -2906,6 +3283,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B3GALT2 Rule************
 Rule String: {Gal(b1-3)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -2944,6 +3323,8 @@ The PI aglycon
 
 ************TEST: B3GALT5 Rule************
 Rule String: {Gal(b1-3)}GlcNAc(b1-3)...Glc(b1-?)Cer|{Gal(b1-3)}GalNAc(b1-3)Gal(a1-4)...Glc(b1-?)Cer|{Gal(b1-3)}GlcNAc(b1-3)[GalNAc(b1-6)]GalNAc(a1-1)Ser/Thr|GalNAc(b1-6){[Gal(b1-3)}GlcNAc(b1-3)]GalNAc(a1-1)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GlcNAc monosaccharide with a (b1-3) linkage
@@ -2974,6 +3355,8 @@ The Ser/Thr aglycon
 
 ************TEST: A4GALT Rule************
 Rule String: {Gal(a1-4)}Gal(b1-4)Glc(b1-?)|{Gal(a1-4)}Gal(b1-4)GlcNAc(b1-3)Gal(b1-4)Glc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (a1-4) linkage]
 A Gal monosaccharide with a (b1-4) linkage
@@ -2989,6 +3372,8 @@ A Glc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT1 Rule************
 Rule String: {Gal(b1-4)}GlcNAc(b1-?)|{Gal(b1-4)}Glc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3000,6 +3385,8 @@ A Glc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT2 Rule************
 Rule String: {Gal(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3008,6 +3395,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT3 Rule************
 Rule String: {Gal(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3016,6 +3405,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT4 Rule************
 Rule String: {Gal(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3024,6 +3415,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT5 Rule************
 Rule String: {Gal(b1-4)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3032,6 +3425,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: B4GALT6 Rule************
 Rule String: {Gal(b1-4)}Glc(b1-?)Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-4) linkage]
 A Glc monosaccharide with a (b1-?) linkage
@@ -3041,6 +3436,8 @@ The Cer aglycon
 
 ************TEST: C1GALT1 Rule************
 Rule String: {Gal(b1-3)}GalNAc(a1-?)Ser/Thr
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GalNAc monosaccharide with a (a1-?) linkage
@@ -3050,6 +3447,8 @@ The Ser/Thr aglycon
 
 ************TEST: UGT8 Rule************
 Rule String: {Gal(b1-?)}Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A Gal monosaccharide with a (b1-?) linkage]
 The Cer aglycon
@@ -3143,7 +3542,7 @@ The Cer aglycon
 ************TEST: GAL3ST2 Rule************
 Rule String: Gal<6S>{3S}(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)|Gal{3S}(b1-3)<[Fuc(a1-4)]>GlcNAc(b1-?)
 INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
+sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
@@ -3158,7 +3557,7 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 ************TEST: GAL3ST3 Rule************
 Rule String: Gal<6S>{3S}(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)
 INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
+sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
@@ -3218,6 +3617,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: PAPSS1 Rule************
 Rule String: {ATP->PAPS}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A ATP substrate] to [A PAPS substrate]
 
@@ -3225,6 +3626,8 @@ A conversion from [A ATP substrate] to [A PAPS substrate]
 
 ************TEST: PAPSS2 Rule************
 Rule String: {ATP->PAPS}
+INSTANTIATION ERROR
+'list' object has no attribute 'token'
 Parser Results (reading left to right):
 A conversion from [A ATP substrate] to [A PAPS substrate]
 
@@ -3232,6 +3635,8 @@ A conversion from [A ATP substrate] to [A PAPS substrate]
 
 ************TEST: UGT1A1 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3240,6 +3645,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A10 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3248,6 +3655,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A3 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3256,6 +3665,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A4 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3264,6 +3675,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A5 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3272,6 +3685,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A6 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3280,6 +3695,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A7 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3288,6 +3705,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A8 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3296,6 +3715,8 @@ Some arbitrary substrate
 
 ************TEST: UGT1A9 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3304,6 +3725,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2A1 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3312,6 +3735,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B10 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3320,6 +3745,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B17 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3328,6 +3755,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B28 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3336,6 +3765,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B4 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3344,6 +3775,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2A2 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3352,6 +3785,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2A3 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3360,6 +3795,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B11 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3368,6 +3805,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B15 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3376,6 +3815,8 @@ Some arbitrary substrate
 
 ************TEST: UGT2B7 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3384,6 +3825,8 @@ Some arbitrary substrate
 
 ************TEST: UGT3A1 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3392,6 +3835,8 @@ Some arbitrary substrate
 
 ************TEST: UGT3A2 Rule************
 Rule String: {GlcA(??-?)}R
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 An addition of [A GlcA monosaccharide with a (??-?) linkage]
 Some arbitrary substrate
@@ -3488,6 +3933,8 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: FUCA1 Rule************
 Rule String: ...{![Fuc(a1-6)]}GlcNAc(b1-?)Asn
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A removal of [A branched Fuc monosaccharide with a (a1-6) linkage]
@@ -3498,6 +3945,8 @@ The Asn aglycon
 
 ************TEST: FUCA2 Rule************
 Rule String: ...{![Fuc(a1-6)]}GlcNAc(b1-?)Asn
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 One or more monosaccharides
 A removal of [A branched Fuc monosaccharide with a (a1-6) linkage]
@@ -3532,6 +3981,8 @@ A removal of [A GlcNAc monosaccharide with a (b1-?) linkage]
 
 ************TEST: GLB1 Rule************
 Rule String: {!Gal(b1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Gal monosaccharide with a (b1-?) linkage]
 
@@ -3539,6 +3990,8 @@ A removal of [A Gal monosaccharide with a (b1-?) linkage]
 
 ************TEST: HEXA Rule************
 Rule String: {!GalNAc(b1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A GalNAc monosaccharide with a (b1-?) linkage]
 
@@ -3546,6 +3999,8 @@ A removal of [A GalNAc monosaccharide with a (b1-?) linkage]
 
 ************TEST: HEXB Rule************
 Rule String: {!GalNAc(b1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A GalNAc monosaccharide with a (b1-?) linkage]
 
@@ -3553,6 +4008,8 @@ A removal of [A GalNAc monosaccharide with a (b1-?) linkage]
 
 ************TEST: MAN2B1 Rule************
 Rule String: {!Man(a1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-?) linkage]
 
@@ -3560,6 +4017,8 @@ A removal of [A Man monosaccharide with a (a1-?) linkage]
 
 ************TEST: MAN2B2 Rule************
 Rule String: {!Man(a1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-?) linkage]
 
@@ -3567,6 +4026,8 @@ A removal of [A Man monosaccharide with a (a1-?) linkage]
 
 ************TEST: MANBA Rule************
 Rule String: {!Man(b1-?)}GlcNAc(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (b1-?) linkage]
 A GlcNAc monosaccharide with a (b1-?) linkage
@@ -3575,6 +4036,8 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: NEU1 Rule************
 Rule String: {!Neu5Ac(a2-3)}Gal(b1-?)|{!Neu5Ac(a2-6)}Gal(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3586,6 +4049,8 @@ A Gal monosaccharide with a (b1-?) linkage
 
 ************TEST: NEU2 Rule************
 Rule String: {!Neu5Ac(a2-3)}Gal(b1-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3594,6 +4059,8 @@ A Gal monosaccharide with a (b1-?) linkage
 
 ************TEST: NEU3 Rule************
 Rule String: {!Neu5Ac(a2-?)}Gal(b1-?)|{!Neu5Ac(a2-?)}Neu5Ac(a2-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Neu5Ac monosaccharide with a (a2-?) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3605,6 +4072,8 @@ A Neu5Ac monosaccharide with a (a2-?) linkage
 
 ************TEST: NEU4 Rule************
 Rule String: {!Neu5Ac(a2-?)}Gal(b1-?)|{!Neu5Ac(a2-?)}Neu5Ac(a2-?)
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Neu5Ac monosaccharide with a (a2-?) linkage]
 A Gal monosaccharide with a (b1-?) linkage
@@ -3628,6 +4097,8 @@ A removal of [A GlcNAc monosaccharide with a (b1-?) linkage, The Asn aglycon]
 
 ************TEST: MAN2C1 Rule************
 Rule String: {!Man(a1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Man monosaccharide with a (a1-?) linkage]
 
@@ -3635,6 +4106,8 @@ A removal of [A Man monosaccharide with a (a1-?) linkage]
 
 ************TEST: GLA Rule************
 Rule String: {!Gal(a1-?)}Gal
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Gal monosaccharide with a (a1-?) linkage]
 A Gal monosaccharide
@@ -3643,6 +4116,8 @@ A Gal monosaccharide
 
 ************TEST: GBA Rule************
 Rule String: {!Glc(b1-?)}Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Glc monosaccharide with a (b1-?) linkage]
 The Cer aglycon
@@ -3651,6 +4126,8 @@ The Cer aglycon
 
 ************TEST: GALC Rule************
 Rule String: {!Gal(b1-?)}Cer
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A Gal monosaccharide with a (b1-?) linkage]
 The Cer aglycon
@@ -3668,6 +4145,8 @@ A IdoA monosaccharide with a (a1-?) linkage having the following reaction:  A re
 
 ************TEST: IDUA Rule************
 Rule String: {!IdoA(a1-?)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A IdoA monosaccharide with a (a1-?) linkage]
 
@@ -3696,6 +4175,8 @@ An unknown entity: (a1-4)
 
 ************TEST: NAGLU Rule************
 Rule String: {!GlcNAc(a1-4)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A GlcNAc monosaccharide with a (a1-4) linkage]
 
@@ -3712,6 +4193,8 @@ A GlcA monosaccharide with a (b1-4) linkage having the following reaction:  A re
 
 ************TEST: GUSB Rule************
 Rule String: {!GlcA(b1-3)}
+INSTANTIATION ERROR
+reduce() of empty sequence with no initial value
 Parser Results (reading left to right):
 A removal of [A GlcA monosaccharide with a (b1-3) linkage]
 

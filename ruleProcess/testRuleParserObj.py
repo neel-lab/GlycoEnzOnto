@@ -1,6 +1,6 @@
 import pandas as pd
 from tokenClasses_lex import *
-from ruleInterpreter import *
+from ruleInterpreter_objects import *
 import traceback
 
 def test_wrapper(rule,ruleName):
@@ -16,7 +16,7 @@ def test_wrapper(rule,ruleName):
         print('PARSING ERROR\nERROR MESSAGE:')
         print(exc)
     try:
-        resObj=reactionRule(res)
+        gct=reactionRule(res)
     except Exception as exc:
         print('INSTANTIATION ERROR')
         print(exc)
@@ -24,14 +24,9 @@ def test_wrapper(rule,ruleName):
     for r in res:
         print(r)
     print('\n************END************')
-    try:
-        resObj=reactionRule(res)
-        return(resObj)
-    except Exception as exc:
-        return(None)
 
 finishedGlycogenes=pd.read_csv('../finishedGlycogenes.tsv',sep='\t',index_col=None)
 for i,r in finishedGlycogenes.iterrows():
     if r['Rules']=='no reaction':
         continue
-    _=test_wrapper(r['Rules'],r['geneName']+' Rule')
+    test_wrapper(r['Rules'],r['geneName']+' Rule')
