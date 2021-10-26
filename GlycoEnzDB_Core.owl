@@ -21636,7 +21636,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0003948"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylglucosaminidase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule254"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule253"/>
     </owl:NamedIndividual>
     
 
@@ -22465,7 +22465,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HNK-1"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule246"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule245"/>
     </owl:NamedIndividual>
     
 
@@ -22596,8 +22596,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule246"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule247"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule248"/>
     </owl:NamedIndividual>
     
 
@@ -22616,7 +22616,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule236"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule237"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule240"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule239"/>
     </owl:NamedIndividual>
     
 
@@ -22666,7 +22666,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint27"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule249"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule248"/>
     </owl:NamedIndividual>
     
 
@@ -22682,7 +22682,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
         <glycan:has_constraint rdf:resource="http://purl.jp/bio/12/glyco/glycan#constraint27"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule249"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule248"/>
     </owl:NamedIndividual>
     
 
@@ -22835,7 +22835,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylglucosaminidase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule255"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule254"/>
     </owl:NamedIndividual>
     
 
@@ -23227,7 +23227,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule253"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
     </owl:NamedIndividual>
     
 
@@ -23241,7 +23241,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule253"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
     </owl:NamedIndividual>
     
 
@@ -23460,8 +23460,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule240"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule241"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule242"/>
     </owl:NamedIndividual>
     
 
@@ -23480,8 +23480,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule242"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule243"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule244"/>
     </owl:NamedIndividual>
     
 
@@ -23500,7 +23500,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule243"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule242"/>
     </owl:NamedIndividual>
     
 
@@ -23517,7 +23517,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule245"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule244"/>
     </owl:NamedIndividual>
     
 
@@ -24025,7 +24025,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule256"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule255"/>
     </owl:NamedIndividual>
     
 
@@ -24320,7 +24320,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule257"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule256"/>
     </owl:NamedIndividual>
     
 
@@ -24339,7 +24339,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule257"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule256"/>
     </owl:NamedIndividual>
     
 
@@ -24802,7 +24802,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008270"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Mannosidase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule258"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule257"/>
     </owl:NamedIndividual>
     
 
@@ -24813,7 +24813,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Mannosidase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule258"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule257"/>
     </owl:NamedIndividual>
     
 
@@ -24824,7 +24824,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Mannosidase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Cytosol_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule258"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule257"/>
     </owl:NamedIndividual>
     
 
@@ -24836,7 +24836,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0004567"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Mannosidase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule259"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule258"/>
     </owl:NamedIndividual>
     
 
@@ -25159,8 +25159,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialidase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule259"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule260"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule261"/>
     </owl:NamedIndividual>
     
 
@@ -25178,7 +25178,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Cytosol_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Cytosol_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialidase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule260"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule259"/>
     </owl:NamedIndividual>
     
 
@@ -25197,6 +25197,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialidase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule261"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule262"/>
     </owl:NamedIndividual>
     
@@ -25215,6 +25216,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Lysosome_Degradation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialidase"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule261"/>
         <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule262"/>
     </owl:NamedIndividual>
     
@@ -25254,7 +25256,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule249"/>
     </owl:NamedIndividual>
     
 
@@ -25266,7 +25268,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule249"/>
     </owl:NamedIndividual>
     
 
@@ -25930,7 +25932,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
     
 
@@ -25944,7 +25946,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facilitative glucose transporter required for the development of the cardiovascular system</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -25957,7 +25959,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
     
 
@@ -25972,7 +25974,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transport of glucose and fructose in beta-cells</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -25987,7 +25989,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mediates the uptake of glucose, 2-deoxyglucose, galactose, mannose, xylose and fucose</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -26000,7 +26002,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
     
 
@@ -26013,7 +26015,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fructose transporter that has only low activity with other monosaccharides. Critical in small intestines</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -26026,7 +26028,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule252"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
     </owl:NamedIndividual>
     
 
@@ -26727,7 +26729,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26742,7 +26744,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26756,7 +26758,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26770,7 +26772,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26781,7 +26783,7 @@
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26795,7 +26797,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26811,7 +26813,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26827,7 +26829,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26841,7 +26843,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0042803"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26853,7 +26855,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26865,7 +26867,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26877,7 +26879,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26889,7 +26891,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26901,7 +26903,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26914,7 +26916,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26927,7 +26929,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26939,7 +26941,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26952,7 +26954,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26965,7 +26967,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26978,7 +26980,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0015020"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -26990,7 +26992,7 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0008194"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT"/>
-        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule251"/>
+        <glycan:has_rule rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionrule250"/>
     </owl:NamedIndividual>
     
 
@@ -27909,7 +27911,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule157">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(b1-3)GalNAc{,4}6S(b1-4)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA(b1-3)GalNAc6{,4}S(b1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -27918,7 +27920,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule158">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)GalNAc{,4}6S(b1-4)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA(a1-3)GalNAc6{,4}S(b1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28260,7 +28262,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule192">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA&lt;2S&gt;(a1-4)GlcN&lt;,6&gt;{,3}S(a1-4])</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA&lt;2S&gt;(a1-4)GlcN&lt;,6&gt;{,3}S(a1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28269,7 +28271,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule193">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA&lt;2S&gt;(a1-4)GlcN{3,}&lt;,6&gt;S(a1-4)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA&lt;2S&gt;(a1-4)GlcN&lt;,6&gt;{3,}S(a1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28278,7 +28280,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule194">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA&lt;2S&gt;(a1-4)GlcN&lt;,3&gt;{,6S}(a1-4)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...IdoA&lt;2S&gt;(a1-4)GlcN&lt;,3&gt;{,6}S(a1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28287,7 +28289,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule195">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA&lt;2S&gt;(a1-4)GlcN&lt;,3&gt;{,6S}(a1-4]) </glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...GlcA&lt;2S&gt;(a1-4)GlcN&lt;,3&gt;{,6}S(a1-4)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28593,7 +28595,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule225">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-6)[{Gal(b1-3)}GlcNAc(b1-3)]GalNAc(a1-1)Ser/Thr</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc(b1-6){[Gal(b1-3)}GlcNAc(b1-3)]GalNAc(a1-1)Ser/Thr</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28746,7 +28748,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule240">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcNAc{6S}(b1-6)Man </glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-?)Cer</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28755,7 +28757,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule241">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-?)Cer</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-4)Glc(b1-?)Cer</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28764,7 +28766,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule242">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-4)Glc(b1-?)Cer</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal&lt;6S&gt;{3S}(b1-4)&lt;[Fuc(a1-3)]&gt;GlcNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28773,7 +28775,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule243">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal&lt;6S&gt;{3S}(b1-4)&lt;[Fuc(a1-3)]&gt;GlcNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-3)&lt;[Fuc(a1-4)]&gt;GlcNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28782,7 +28784,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule244">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-3)&lt;[Fuc(a1-4)]&gt;GlcNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-3)&lt;GlcNAc(b1-6)&gt;GalNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28791,7 +28793,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule245">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal{3S}(b1-3)&lt;GlcNAc(b1-6)&gt;GalNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA{3S}(b1-3)Gal(b1-4)GlcNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28800,7 +28802,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule246">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlcA{3S}(b1-3)Gal(b1-4)GlcNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[GlcNAc{6S}(b1-6)]GalNAc</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28809,7 +28811,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule247">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[GlcNAc{6S}(b1-6)]GalNAc</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[Gal(b1-4)GlcNAc{6S}(b1-6)]GalNAc</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28818,7 +28820,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule248">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal(b1-3)[Gal(b1-4)GlcNAc{6S}(b1-6)]GalNAc</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc{4S}(b1-4)GlcNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28827,7 +28829,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule249">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GalNAc{4S}(b1-4)GlcNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{ATP-&gt;PAPS}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28845,7 +28847,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule250">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{ATP-&gt;PAPS}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{GlcA(??-?)}R</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28854,7 +28856,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule251">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{GlcA(??-?)}R</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glc[Extracellular]-&gt;Glc[Cytoplasm]</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28863,7 +28865,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule252">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glc[Extracellular]-&gt;Glc[Cytoplasm]</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...{![Fuc(a1-6)]}GlcNAc(b1-?)Asn</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28872,7 +28874,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule253">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...{![Fuc(a1-6)]}GlcNAc(b1-?)Asn</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...&lt;[...]&gt;GlcNAc(b1-?){!Asn}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28881,7 +28883,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule254">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...&lt;[...]&gt;GlcNAc(b1-?){!Asn}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...&lt;[...]&gt;GlcNAc(b1-4){!GlcNAc(b1-?)}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28890,7 +28892,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule255">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">...&lt;[...]&gt;GlcNAc(b1-4){!GlcNAc(b1-?)}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Gal(b1-?)}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28899,7 +28901,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule256">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Gal(b1-?)}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!GalNAc(b1-?)}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28908,7 +28910,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule257">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!GalNAc(b1-?)}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Man(a1-?)}</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28917,7 +28919,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule258">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Man(a1-?)}</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Man(b1-?)}GlcNAc(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28926,7 +28928,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule259">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Man(b1-?)}GlcNAc(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-3)}Gal(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28944,7 +28946,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule260">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-3)}Gal(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-6)}Gal(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28953,7 +28955,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule261">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-6)}Gal(b1-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-?)}Gal(b1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -28962,7 +28964,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule262">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-?)}Gal(b1-?) or {!Neu5Ac(a2-?)}Neu5Ac(a2-?)</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{!Neu5Ac(a2-?)}Neu5Ac(a2-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -29493,7 +29495,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule64">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-6)[{Man(a1-2)}Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Man(a1-6){[Man(a1-2)}Man(a1-3)]Man(b1-4)GlcNAc(b1-4)GlcNAc(a1-?)</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
@@ -29826,7 +29828,7 @@
 
     <owl:NamedIndividual rdf:about="http://purl.jp/bio/12/glyco/glycan#reactionrule98">
         <rdf:type rdf:resource="http://purl.jp/bio/12/glyco/glycan#reactionRule"/>
-        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{Gal(b1-?)}5-hydroxy-L-lysyl-</glycan:has_ruleString>
+        <glycan:has_ruleString rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{Gal(b1-?)}5-hydroxy-L-lysyl</glycan:has_ruleString>
     </owl:NamedIndividual>
     
 
