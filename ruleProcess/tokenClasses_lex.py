@@ -608,7 +608,7 @@ class entityToken:
                     modTokens.append(modToken(mp+mono_components['modType']))
 
         #The GalN and GlcN exception to modification rules:
-        elif mono_components['mono'] in ['GalN','GlcN'] and mono_components['modType'] is not None:
+        elif mono_components['mono'] in ['GalN','GlcN'] and mono_components['modType'] is not None and mono_components['modPos'] is None:
             modTokens.append(modToken(''.join(['N',mono_components['modType'][0]])))
         else:
             modTokens=None
@@ -820,17 +820,16 @@ class monoToken(entityToken):
         if self.modTokens is not None:
             #Get modification type:
             for t in self.modTokens:
-                tokStrings=t.product()
-                #if t.__name__=='multiToken':
-                #    tokStrings=t.product()
-                #else:
-                #    tokStrings=[t.product()]
+                if t.__name__=='multiToken':
+                    tokStrings=t.product()
+                else:
+                    tokStrings=[t.product()]
                 modTokenStrings.append(tokStrings)
         #Create all permutations of "modTokenStrings", then
         # order based on modification number:
         modTokenCombs=[sorted(x) for x in list(prod(*modTokenStrings))]
         modTokenCombs=[[y for y in x if y!=''] for x in modTokenCombs]
-        modTokenCombs=[[re.sub('\D','',y) if i<(len(x)-1) else y for i,y in enumerate(x)] for x in modTokenCombs]
+        modTokenCombs=[[re.sub('\d','',y) if i<(len(x)-1) else y for i,y in enumerate(x)] for x in modTokenCombs]
         return(modTokenCombs)
 
     def react_strings(self):
@@ -945,7 +944,7 @@ class nsToken(entityToken):
         return(nt,mono)
     
     def substrate(self):
-        return(self.inputString)
+        return([self.inputString])
 
 class compartmentToken(entityToken):
 
@@ -1097,7 +1096,10 @@ class multiToken:
         multiToken-contained entities:
         '''
         if len(self.tokens)==1:
-            return(['',self.tokens[0].product()[0]])
+            if type(self.tokens[0].product())==str:
+                return(['',self.tokens[0].product()])
+            else:
+                return(['',self.tokens[0].product()[0]])
         else:
             return([x.product() for x in self.tokens])
 

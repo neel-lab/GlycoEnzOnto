@@ -13,10 +13,23 @@ def pairwise(iterable):
     next(b, None)
     return zip(a, b)
 
+def test_wrapper(rule):
+    try:
+        res=lexer(rule)
+    except Exception as exc:
+        return(None)
+    try:
+        gct=reactionRule(res)
+    except Exception as exc:
+        return(None)
+    return(gct)
+
+
 import sys
 sys.path.insert(0,'../glycan_rdf')
 from glycan_structure_ontology import GlycoCTProcessor
 finishedGlycogenes=pd.read_csv('../finishedGlycogenes.tsv',sep='\t',index_col=None)
+
 #Make dict:
 objDict=dict()
 for _,r in finishedGlycogenes.iterrows():
