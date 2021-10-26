@@ -113,8 +113,6 @@ A conversion from [UDP nucleotide attached to GlcA] to [UDP nucleotide attached 
 
 ************TEST: G6PC1 Rule************
 Rule String: Glc{!6P}
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  A removal of [A modification of P on the 6 position]
 
@@ -219,15 +217,12 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: HK1 Rule************
 Rule String: Glc{6P}|Fruc{6P}|GlcN{6P}|Man{6P}
-INSTANTIATION ERROR
-Some tokens are unknown in the input
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Fruc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
-An unknown entity: GlcN
-An addition of [A modification of P on the 6 position]
+A GlcN monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Man monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 
@@ -246,15 +241,12 @@ A Man monosaccharide having the following reaction:  An addition of [A modificat
 
 ************TEST: GCK Rule************
 Rule String: Glc{6P}|Fruc{6P}|GlcN{6P}|Man{6P}
-INSTANTIATION ERROR
-Some tokens are unknown in the input
 Parser Results (reading left to right):
 A Glc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Fruc monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
-An unknown entity: GlcN
-An addition of [A modification of P on the 6 position]
+A GlcN monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 Logical OR
 A Man monosaccharide having the following reaction:  An addition of [A modification of P on the 6 position]
 
@@ -1471,10 +1463,8 @@ The PI aglycon
 
 ************TEST: PIGL Rule************
 Rule String: {GlcNAc(a1-6)->GlcN(a1-6)}PI
-INSTANTIATION ERROR
-'unknownToken' object has no attribute 'token'
 Parser Results (reading left to right):
-A conversion from [A GlcNAc monosaccharide with a (a1-6) linkage] to [An unknown entity: GlcN(a1-6)]
+A conversion from [A GlcNAc monosaccharide with a (a1-6) linkage] to [A GlcN monosaccharide with a (a1-6) linkage]
 The PI aglycon
 
 ************END************
@@ -1482,11 +1472,9 @@ The PI aglycon
 ************TEST: PIGW Rule************
 Rule String: GlcN{[ancyl]}(a1-6)PI
 INSTANTIATION ERROR
-Some tokens are unknown in the input
+sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
-An unknown entity: GlcN
-An addition of [An unknown entity: [a, Quantitiy of, An unknown entity: cyl]]
-An unknown entity: (a1-6)
+A GlcN monosaccharide with a (a1-6) linkage having the following reaction:  An addition of [An unknown entity: [a, Quantitiy of, An unknown entity: cyl]]
 The PI aglycon
 
 ************END************
@@ -1497,7 +1485,8 @@ INSTANTIATION ERROR
 Some tokens are unknown in the input
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-4) linkage]
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1511,7 +1500,8 @@ Some tokens are unknown in the input
 Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-6) linkage]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1526,7 +1516,8 @@ Parser Results (reading left to right):
 A Man monosaccharide with a (a1-6) linkage
 An addition of [An unknown entity: [2EtNP]]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1541,7 +1532,8 @@ Parser Results (reading left to right):
 An addition of [A Man monosaccharide with a (a1-6) linkage]
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1558,7 +1550,8 @@ A Man monosaccharide with a (a1-2) linkage
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1576,7 +1569,8 @@ An addition of [An unknown entity: [6EtNP]]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1595,7 +1589,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1615,7 +1610,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1635,7 +1631,8 @@ An unknown entity: [6EtNP]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1658,7 +1655,8 @@ A removal of [An unknown entity: [6EtNP]]
 A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -1681,7 +1679,8 @@ A Man monosaccharide with a (a1-6) linkage
 An unknown entity: [2EtNP]
 An addition of [A branched GalNAc monosaccharide with a (b1-4) linkage]
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -2038,23 +2037,15 @@ A GalNAc monosaccharide with a (b1-4) linkage having the following reaction:  An
 ************END************
 
 ************TEST: CHST15 Rule************
-Rule String: ...GlcA(b1-3)GalNAc{,4}6S(b1-4)|...IdoA(a1-3)GalNAc{,4}6S(b1-4)
-INSTANTIATION ERROR
-Some tokens are unknown in the input
+Rule String: ...GlcA(b1-3)GalNAc6{,4}S(b1-4)|...IdoA(a1-3)GalNAc6{,4}S(b1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-3) linkage
-An unknown entity: GalNAc
-An addition of [An unknown entity: ,4]
-A modification of S on the 6 position
-An unknown entity: (b1-4)
+A GalNAc monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the 6 position'] having the following reaction:  An addition of [An unknown entity: ,4]
 Logical OR
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-3) linkage
-An unknown entity: GalNAc
-An addition of [An unknown entity: ,4]
-A modification of S on the 6 position
-An unknown entity: (b1-4)
+A GalNAc monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the 6 position'] having the following reaction:  An addition of [An unknown entity: ,4]
 
 ************END************
 
@@ -2447,8 +2438,6 @@ A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST1 Rule************
 Rule String: ...IdoA(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage
@@ -2462,8 +2451,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST2 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2473,8 +2460,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST3A1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2484,8 +2469,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST3B1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2495,8 +2478,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST4 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2506,8 +2487,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST5 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,6>{,3}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2521,8 +2500,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: HS3ST6 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN<,6>{3,}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2531,66 +2508,46 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 ************END************
 
 ************TEST: HS6ST1 Rule************
-Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
-INSTANTIATION ERROR
-'<' not supported between instances of 'str' and 'list'
+Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4)
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4) 
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 
 ************END************
 
 ************TEST: HS6ST2 Rule************
-Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
-INSTANTIATION ERROR
-'<' not supported between instances of 'str' and 'list'
+Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4)
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4) 
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 
 ************END************
 
 ************TEST: HS6ST3 Rule************
-Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6S}(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6S}(a1-4) 
-INSTANTIATION ERROR
-'<' not supported between instances of 'str' and 'list'
+Rule String: ...IdoA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)|...GlcA<2S>(a1-4)GlcN<,3>{,6}S(a1-4)
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4)
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 Logical OR
 One or more monosaccharides
 A GlcA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
-A GlcN monosaccharide with the following modifications: ['Position where An unknown entity: 3 can be optionally present']
-An addition of [An unknown entity: ,, A modification of S on the 6 position]
-An unknown entity: (a1-4) 
+A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 3 position can be optionally present'] having the following reaction:  An addition of [An unknown entity: ,6]
 
 ************END************
 
 ************TEST: SULF1 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN,3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN,3{!,6}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2604,8 +2561,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: SULF2 Rule************
 Rule String: ...IdoA<2S>(a1-4)GlcN,3{!,6}S(a1-4)|...GlcA<2S>(b1-4)GlcN,3{!,6}S(a1-4)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 One or more monosaccharides
 A IdoA monosaccharide with a (a1-4) linkage with the following modifications: ['Position where A modification of S on the 2 position can be optionally present']
@@ -2619,8 +2574,6 @@ A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['
 
 ************TEST: ST3GAL1 Rule************
 Rule String: {Neu5Ac(a2-3)}Gal(b1-3)<[...]>GalNAc(a1-?)Ser/Thr
-INSTANTIATION ERROR
-sequence item 2: expected str instance, list found
 Parser Results (reading left to right):
 An addition of [A Neu5Ac monosaccharide with a (a2-3) linkage]
 A Gal monosaccharide with a (b1-3) linkage
@@ -2935,7 +2888,8 @@ An unknown entity: [2EtNP][
 An addition of [A Gal monosaccharide with a (b1-3) linkage]
 A GalNAc monosaccharide starting on a branch with a (b1-4) linkage
 A Man monosaccharide with a (a1-4) linkage
-An unknown entity: GlcN(a1-6)(a
+A GlcN monosaccharide with a (a1-6) linkage
+An unknown entity: (a
 Quantitiy of
 An unknown entity: cyl)
 The PI aglycon
@@ -3142,8 +3096,6 @@ The Cer aglycon
 
 ************TEST: GAL3ST2 Rule************
 Rule String: Gal<6S>{3S}(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)|Gal{3S}(b1-3)<[Fuc(a1-4)]>GlcNAc(b1-?)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
@@ -3157,8 +3109,6 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: GAL3ST3 Rule************
 Rule String: Gal<6S>{3S}(b1-4)<[Fuc(a1-3)]>GlcNAc(b1-?)
-INSTANTIATION ERROR
-'<' not supported between instances of 'list' and 'str'
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-4) linkage with the following modifications: ['Position where A modification of S on the 6 position can be optionally present'] having the following reaction:  An addition of [A modification of S on the 3 position]
 Position where A branched Fuc monosaccharide with a (a1-3) linkage can be optionally present
@@ -3168,8 +3118,6 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 
 ************TEST: GAL3ST4 Rule************
 Rule String: Gal{3S}(b1-3)<GlcNAc(b1-6)>GalNAc(b1-?)
-INSTANTIATION ERROR
-sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 A Gal monosaccharide with a (b1-3) linkage having the following reaction:  An addition of [A modification of S on the 3 position]
 Position where A GlcNAc monosaccharide with a (b1-6) linkage can be optionally present
@@ -3400,8 +3348,6 @@ Some arbitrary substrate
 
 ************TEST: SLC2A1 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3411,8 +3357,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A10 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3422,8 +3366,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A12 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3433,8 +3375,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A2 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3444,8 +3384,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A3 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3455,8 +3393,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A4 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3466,8 +3402,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A5 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3477,8 +3411,6 @@ A Glc monosaccharide starting on a branch in The [Cytoplasm] compartment
 
 ************TEST: SLC2A8 Rule************
 Rule String: Glc[Extracellular]->Glc[Cytoplasm]
-INSTANTIATION ERROR
-sequence item 2: expected str instance, compartmentToken found
 Parser Results (reading left to right):
 A Glc monosaccharide starting on a branch in The [Extracellular] compartment
 Transports to
@@ -3508,8 +3440,6 @@ The Asn aglycon
 
 ************TEST: AGA Rule************
 Rule String: ...<[...]>GlcNAc(b1-?){!Asn}
-INSTANTIATION ERROR
-sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 One or more monosaccharides
 Position where One or more monosaccharide on a distinct branch can be optionally present
@@ -3520,8 +3450,6 @@ A removal of [The Asn aglycon]
 
 ************TEST: CTBS Rule************
 Rule String: ...<[...]>GlcNAc(b1-4){!GlcNAc(b1-?)}
-INSTANTIATION ERROR
-sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 One or more monosaccharides
 Position where One or more monosaccharide on a distinct branch can be optionally present
@@ -3616,8 +3544,6 @@ A Neu5Ac monosaccharide with a (a2-?) linkage
 
 ************TEST: ENGASE Rule************
 Rule String: ...<[...]>GlcNAc(b1-4){!GlcNAc(b1-?)Asn}
-INSTANTIATION ERROR
-sequence item 1: expected str instance, list found
 Parser Results (reading left to right):
 One or more monosaccharides
 Position where One or more monosaccharide on a distinct branch can be optionally present
@@ -3659,8 +3585,6 @@ The Cer aglycon
 
 ************TEST: IDS Rule************
 Rule String: IdoA{!2S}(a1-?)
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 A IdoA monosaccharide with a (a1-?) linkage having the following reaction:  A removal of [A modification of S on the 2 position]
 
@@ -3676,21 +3600,18 @@ A removal of [A IdoA monosaccharide with a (a1-?) linkage]
 ************TEST: SGSH Rule************
 Rule String: GlcN{!S}
 INSTANTIATION ERROR
-Some tokens are unknown in the input
+sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
-An unknown entity: GlcN
-A removal of [An unknown entity: S]
+A GlcN monosaccharide having the following reaction:  A removal of [An unknown entity: S]
 
 ************END************
 
 ************TEST: HGSNAT Rule************
 Rule String: GlcN{Ac}(a1-4)
 INSTANTIATION ERROR
-Some tokens are unknown in the input
+sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
-An unknown entity: GlcN
-An addition of [An unknown entity: Ac]
-An unknown entity: (a1-4)
+A GlcN monosaccharide with a (a1-4) linkage having the following reaction:  An addition of [An unknown entity: Ac]
 
 ************END************
 
@@ -3703,8 +3624,6 @@ A removal of [A GlcNAc monosaccharide with a (a1-4) linkage]
 
 ************TEST: ARSK Rule************
 Rule String: GlcA{!2S}(b1-4)
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 A GlcA monosaccharide with a (b1-4) linkage having the following reaction:  A removal of [A modification of S on the 2 position]
 
@@ -3719,8 +3638,6 @@ A removal of [A GlcA monosaccharide with a (b1-3) linkage]
 
 ************TEST: GNS Rule************
 Rule String: GlcNAc{!6S}(a1-4)
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (a1-4) linkage having the following reaction:  A removal of [A modification of S on the 6 position]
 
@@ -3728,8 +3645,6 @@ A GlcNAc monosaccharide with a (a1-4) linkage having the following reaction:  A 
 
 ************TEST: ARSB Rule************
 Rule String: GalNAc{!4S}(b1-4)
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 A GalNAc monosaccharide with a (b1-4) linkage having the following reaction:  A removal of [A modification of S on the 4 position]
 
@@ -3737,8 +3652,6 @@ A GalNAc monosaccharide with a (b1-4) linkage having the following reaction:  A 
 
 ************TEST: GALNS Rule************
 Rule String: ...GalNAc{!6S}(b1-4)|...Gal{!6S}(b1-4)
-INSTANTIATION ERROR
-sequence item 0: expected str instance, list found
 Parser Results (reading left to right):
 One or more monosaccharides
 A GalNAc monosaccharide with a (b1-4) linkage having the following reaction:  A removal of [A modification of S on the 6 position]

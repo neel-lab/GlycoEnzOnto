@@ -158,7 +158,8 @@ class subtractionToken(reactionToken):
         '''
         Return the ligand string
         '''
-        return(list(chain(*[x.substrate() for x in self.ligand_token])))
+        return(self.ligand_token[0].substrate())
+        #return(list(chain(*[x.substrate() for x in self.ligand_token])))
 
     def product(self):
         '''
@@ -607,8 +608,8 @@ class entityToken:
                     modTokens.append(modToken(mp+mono_components['modType']))
 
         #The GalN and GlcN exception to modification rules:
-        elif mono_components['mono'] in ['GalN','GlcN']:
-            modTokens.append(modToken(''.join(['N',mono_components['modType']])))
+        elif mono_components['mono'] in ['GalN','GlcN'] and mono_components['modType'] is not None:
+            modTokens.append(modToken(''.join(['N',mono_components['modType'][0]])))
         else:
             modTokens=None
         #Modification Reactions:
@@ -851,13 +852,15 @@ class monoToken(entityToken):
             ### Decorator Function START: ###
             #Reaction Components, either substrate or product:
             compList=fun(self)
+            if compList==[['']]:
+                compList=['']
             ### Decorator Function END: ###
             mod_perms=[sorted(x+compList) for x in mod_perms]
             if mod_perms==[[['']]]:
                 mod_perms=[['']]
             #Cleanup empties:
             mod_perms=[[y for y in x if y!=''] for x in mod_perms]
-            #print(mod_perms)
+            print(compList)
             #Generate Linkage possibilities:
             modStrings=list(chain(*[[','.join(x)] for x in mod_perms]))
             modStrings=[','.join([re.sub('\D','',y) if i<(len(x.split(','))-1) else y for i,y in enumerate(x.split(','))]) for x in modStrings]
@@ -866,7 +869,7 @@ class monoToken(entityToken):
             leftBracket='[' if self.branching['leftBracket'] else ''
             rightBracket=']' if self.branching['rightBracket'] else ''
             #Compartments:
-            compartment='' if self.compartment is None else self.compartment
+            compartment='' if self.compartment is None else self.compartment.substrate()
             #Linkages:
             linkage='' if self.linkage is None else self.linkage
             #Generate All possible monosaccharide representations:
@@ -1095,7 +1098,7 @@ class multiToken:
         multiToken-contained entities:
         '''
         if len(self.tokens)==1:
-            return(['',self.tokens[0].product()])
+            return(['',self.tokens[0].product()[0]])
         else:
             return([x.product() for x in self.tokens])
 

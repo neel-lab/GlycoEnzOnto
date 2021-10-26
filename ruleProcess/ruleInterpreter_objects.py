@@ -142,9 +142,9 @@ class monoSubstitutionEntity(SubstitutionEntity):
 
 class glycoCTConvert:
 
-    def __init__(self,ruleComponentList):
+    def __init__(self,reactionRule_inst):
         #Gather rule components:
-        self.ruleSets=Rule.getRuleSets(ruleComponentList)
+        self.ruleSets=reactionRule_inst.ruleSets
 
     def rctTokenProcess(self,token):
         '''
