@@ -860,7 +860,6 @@ class monoToken(entityToken):
                 mod_perms=[['']]
             #Cleanup empties:
             mod_perms=[[y for y in x if y!=''] for x in mod_perms]
-            print(compList)
             #Generate Linkage possibilities:
             modStrings=list(chain(*[[','.join(x)] for x in mod_perms]))
             modStrings=[','.join([re.sub('\D','',y) if i<(len(x.split(','))-1) else y for i,y in enumerate(x.split(','))]) for x in modStrings]
