@@ -851,11 +851,11 @@ A GlcNAc monosaccharide with a (b1-?) linkage
 ************END************
 
 ************TEST: MGAT2 Rule************
-Rule String: GlcNAc(b1-2)Man(a1-3)[GlcNAc(b1-2)Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)
+Rule String: GlcNAc(b1-2)Man(a1-3){[GlcNAc(b1-2)}Man(a1-6)]Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)
 Parser Results (reading left to right):
 A GlcNAc monosaccharide with a (b1-2) linkage
 A Man monosaccharide with a (a1-3) linkage
-A terminal GlcNAc monosaccharide with a (b1-2) linkage
+An addition of [A terminal GlcNAc monosaccharide with a (b1-2) linkage]
 A Man monosaccharide starting on a branch with a (a1-6) linkage
 A Man monosaccharide with a (b1-4) linkage
 A GlcNAc monosaccharide with a (b1-4) linkage
@@ -2385,7 +2385,7 @@ Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage]
 
 ************END************
 
@@ -2394,7 +2394,7 @@ Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage]
 
 ************END************
 
@@ -2403,7 +2403,7 @@ Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage]
 
 ************END************
 
@@ -2412,7 +2412,7 @@ Rule String: ...GlcA(b1-4){GlcNAc(a1-4)->GlcNS(a1-4)}
 Parser Results (reading left to right):
 One or more monosaccharides
 A GlcA monosaccharide with a (b1-4) linkage
-A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage with the following modifications: ['A modification of S on the N position']]
+A conversion from [A GlcNAc monosaccharide with a (a1-4) linkage] to [A GlcN monosaccharide with a (a1-4) linkage]
 
 ************END************
 
@@ -2421,7 +2421,7 @@ Rule String: ...{GlcA(a1-4)->IdoA(a1-4)}GlcNS
 Parser Results (reading left to right):
 One or more monosaccharides
 A conversion from [A GlcA monosaccharide with a (a1-4) linkage] to [A IdoA monosaccharide with a (a1-4) linkage]
-A GlcN monosaccharide with the following modifications: ['A modification of S on the N position']
+A GlcN monosaccharide
 
 ************END************
 
@@ -2429,10 +2429,10 @@ A GlcN monosaccharide with the following modifications: ['A modification of S on
 Rule String: GlcA{2S}(b1-3)GalNS(b1-4)|IdoA{2S}(a1-3)GalNS(b1-4)
 Parser Results (reading left to right):
 A GlcA monosaccharide with a (b1-3) linkage having the following reaction:  An addition of [A modification of S on the 2 position]
-A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the N position']
+A GalN monosaccharide with a (b1-4) linkage
 Logical OR
 A IdoA monosaccharide with a (a1-3) linkage having the following reaction:  An addition of [A modification of S on the 2 position]
-A GalN monosaccharide with a (b1-4) linkage with the following modifications: ['A modification of S on the N position']
+A GalN monosaccharide with a (b1-4) linkage
 
 ************END************
 

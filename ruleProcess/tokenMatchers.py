@@ -181,7 +181,7 @@ monoLinkMatcher=matcherClass('(?!\{)\[?([A-Za-z0-9\,\{\}]+?)(\([ab\?][12\?]\-[\d
 quantityStartMatcher=matcherClass('n')
 attachRuleMatcher=matcherClass('\@')
 negationRuleMatcher=matcherClass('\!')
-quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>\=)(\d)')
+quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>|\<)(\d)')
 #######################
 # Separator Detection
 #######################

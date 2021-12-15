@@ -13,6 +13,7 @@ import types
 
 glycoStructOnto=get_ontology('http://mzjava.expasy.org/glycan/glycoStructOnto.owl')
 glycoStructOnto.base_iri='http://mzjava.expasy.org/glycan/'
+#glycoStructOnto=get_ontology('http://mzjava.expasy.org/glycan/')
 #gso_namespace=glycoStructOnto.get_namespace('http://mzjava.expasy.org/glycan/')
 #This loads the SKOS ontology
 skos=get_ontology('http://www.w3.org/2004/02/skos/core').load()
@@ -215,26 +216,34 @@ highFreqMonos=[k for k,v in unique_monosaccharide_tally.items() if v>1]
 # Glypy's Unique Monosaccharide Residues
 ########################################
 monoRes=dict()
+#for (m,v) in [(x,y) for (x,y) in glypy.monosaccharides.items() if y.serialize() in unique_monosaccharide_residues]:
 for (m,v) in glypy.monosaccharides.items():
     mr=v.serialize()
     if re.search('LIN',mr) is None and mr not in monoRes.values():
-        monoRes[''.join(['monores',str(len(monoRes)+1)])]=mr
-    elif re.search('LIN',mr) is not None:
-        mr=re.split('\ 2s\:',mr)[0]
-        if mr not in monoRes.values():
-            monoRes[''.join(['monores',str(len(monoRes)+1)])]=mr
+        monoRes[m]=mr
+        #monoRes[''.join(['monores',str(len(monoRes)+1)])]=mr
+    else:
+        next
+    #elif re.search('LIN',mr) is not None:
+    #    mr=re.split('\ 2s\:',mr)[0]
+    #    if mr not in monoRes.values():
+    #        #monoRes[''.join(['monores',str(len(monoRes)+1)])]=mr
+    #        monoRes[m]=mr
 
 ###############################################################
 # Monosaccharide residues in Glygen & NOT represented in Glypy:
 ###############################################################
 #Find the non-represented monosaccharide residues:
-noRep=[x for x in unique_monosaccharide_residues if x not in monoRes]
+noRep=[x for x in unique_monosaccharide_residues if x not in monoRes.values() and unique_monosaccharide_tally[x]>=10]
+#THIS RESULTS IN THE FOLLOWING LIST:
+# ['RES 1b:a-dglc-HEX-1:5', 'RES 1b:b-dxyl-PEN-1:5', 'RES 1b:a-dgal-HEX-1:5']
+# Manually adding these in
+monoRes['adGlc']='RES 1b:a-dglc-HEX-1:5'
+monoRes['bdXyl']='RES 1b:b-dxyl-PEN-1:5'
+monoRes['adGal']='RES 1b:a-dgal-HEX-1:5'
 # If these residues happen in at least 10 monosaccharides or more,
 # add them to the monoRep list:
-for nr in noRep:
-    if unique_monosaccharide_tally[nr]>=10:
-        if nr not in monoRes.values():
-            monoRes[''.join(['monores',str(len(monoRes)+1)])]=nr
+
 
 #Filter out glycans that do not have residues in the monoRes
 # list:
@@ -272,16 +281,16 @@ with glycoStructOnto:
     #Gather substituents in glygen's set of unambiguously
     # defined glycans:
     substituents=dict()
-    for g in glygen_glycans:
-        residues=g[1].split('LIN')[0].split(' ')
-        for r in residues:
-                if re.search('^\d+?s',r) is not None:
-                    rs=re.sub('^(\d+?)s\:','RES 1s:',r)
-                    if rs not in substituents.values():
-                        substituents[''.join(['subsres',str(len(substituents)+1)])]=rs
+    #List of all substituents:
+    for elt in set(chain(*[[x for x in g[1].split('LIN')[0].split(' ') if re.search('^\d+?s',x) is not None] for g in glygen_glycans])):
+        rs=re.sub('^\d+?s','RES 1s',elt)
+        rs_name=re.sub('\d+?s\:','',elt)
+        substituents[rs_name]=rs
+
     for s,v in substituents.items():
         subst_in=types.new_class(s,(substituent,))
         subst_in.label=v
+
     ####################
     # Object Properties:
     ####################
@@ -345,7 +354,9 @@ if __name__=='__main__':
     couldntDos=0
     for g,v in new_gob_dict.items():
         try:
-            v.glyco_object(glycoStructOnto)
+            #with glycoStructOnto:
+            with glycoStructOnto:
+                v.glyco_object(glycoStructOnto)
         except Exception as e: print(f'Couldn\'t do {g}');print(e);couldntDos+=1
 
     print("Total unprocessed: {0}".format(couldntDos))

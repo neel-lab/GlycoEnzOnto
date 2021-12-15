@@ -293,7 +293,8 @@ class constraintToken:
         isQuantityStart=quantityStartMatcher(self.inputString)
         isAttach=attachRuleMatcher(self.inputString)
         isNegation=negationRuleMatcher(self.inputString)
-        return(isQuantityStart or isAttach or isNegation)
+        isQuantity=quantifierMatcher(self.inputString)
+        return(isQuantityStart or isAttach or isNegation or isQuantity)
 
     def matchFun(self):
         '''
@@ -307,6 +308,8 @@ class constraintToken:
                 return(attachRuleMatcher(self.inputString,presence=False))
             elif negationRuleMatcher(self.inputString):
                 return(negationRuleMatcher(self.inputString,presence=False))
+            elif quantifierMatcher(self.inputString):
+                return(quantifierMatcher(self.inputString,presence=False))
         else:
             return(None)
 
@@ -323,7 +326,7 @@ class constraintToken:
             elif negationRuleMatcher(self.inputString):
                 return(negationRule_token(negationRuleMatcher(self.inputString,presence=False)))
             elif quantifierMatcher(self.inputString):
-                return(quantifierToken(quantifierMatcher(self.inputString,presence=False)))
+                return(quantifierToken(self.inputString))
         else:
             return(None)
 
@@ -426,9 +429,10 @@ class quantifierToken(constraintToken):
     def __init__(self,string):
         self.__name__='quantifierToken'
         self.inputString=string
+        self.mtch=quantifierMatcher(self.inputString,presence=False)
     
     def __repr__(self):
-        qt,val=quantifierMatcher(self.inputString).groups()
+        qt,val=self.mtch.groups()
         return("Preceeding pattern matches %s %s times" %(qt,val))
 
     def get_quantifier_quantity(self):
@@ -436,7 +440,7 @@ class quantifierToken(constraintToken):
         Returns the quantifier as a string
         and the quantity as an integer.
         '''
-        qt,val=quantifierMatcher(self.inputString).groups()
+        qt,val=self.mtch.groups()
         return((str(qt),int(val)))
         
     
@@ -466,7 +470,8 @@ class quantifierToken(constraintToken):
         of match objects for a particular glycan constraint.
         Employed in constraint generation functions:
         '''
-        qt,val=re.search('(\>\=|\<\=|\>|\<)(\d)',self.inputString).groups()
+        qt,val=self.get_quantifier_quantity()
+
         l_fun=lambda pat,s:re.findall(pat,s)
         if qt=="=":
             return len(mtchs)==qt
@@ -955,6 +960,7 @@ class compartmentToken(entityToken):
         monosaccharides when describing transport
         rules.
         '''
+        self.__name__='compartmentToken'
         self.inputString=inputString
         self.product=self.substrate
 
@@ -970,14 +976,19 @@ class aglycoToken(entityToken):
         '''
         Models aglycon instances.
         '''
+        self.__name__='aglycoToken'
         self.inputString=inputString
         self.product=self.substrate
 
     def __repr__(self):
         return('The %s aglycon' %(self.inputString))
 
+    #def substrate(self):
+    #    return([self.inputString])
+
     def substrate(self):
-        return([self.inputString])
+        return(["$"])
+
 
 class wildCardToken(entityToken):
 
