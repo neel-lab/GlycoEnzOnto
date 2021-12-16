@@ -116,7 +116,7 @@ class additionToken(reactionToken):
         Return the ligand's representation as a 
         substrate.
         '''
-        return('')
+        return([''])
 
     def product(self):
         '''
@@ -158,14 +158,15 @@ class subtractionToken(reactionToken):
         '''
         Return the ligand string
         '''
-        return(list(chain(*[x.substrate() for x in self.ligand_token])))
+        return(self.ligand_token[0].substrate())
+        #return(list(chain(*[x.substrate() for x in self.ligand_token])))
 
     def product(self):
         '''
         Return the ligand's representation as a 
         substrate.
         '''
-        return('')
+        return([''])
 
 
 class substitutionToken(reactionToken):
@@ -199,13 +200,13 @@ class substitutionToken(reactionToken):
         '''
         Return the from ligand representation:
         '''
-        return(self.from_ligand_token.token.product())
+        return(self.from_ligand_token[0].token.product())
 
     def product(self):
         '''
         Return the to ligand representation:
         '''
-        return(self.to_ligand_token.token.product())
+        return(self.to_ligand_token[0].token.product())
     
 
 class reversibleToken(reactionToken):
@@ -239,13 +240,13 @@ class reversibleToken(reactionToken):
         '''
         Return the from ligand representation:
         '''
-        return(self.from_ligand_token.token.product())
+        return(self.from_ligand_token[0].token.product())
 
     def product(self):
         '''
         Return the to ligand representation:
         '''
-        return(self.to_ligand_token.token.product())
+        return(self.to_ligand_token[0].token.product())
     
 
 
@@ -292,7 +293,8 @@ class constraintToken:
         isQuantityStart=quantityStartMatcher(self.inputString)
         isAttach=attachRuleMatcher(self.inputString)
         isNegation=negationRuleMatcher(self.inputString)
-        return(isQuantityStart or isAttach or isNegation)
+        isQuantity=quantifierMatcher(self.inputString)
+        return(isQuantityStart or isAttach or isNegation or isQuantity)
 
     def matchFun(self):
         '''
@@ -306,6 +308,8 @@ class constraintToken:
                 return(attachRuleMatcher(self.inputString,presence=False))
             elif negationRuleMatcher(self.inputString):
                 return(negationRuleMatcher(self.inputString,presence=False))
+            elif quantifierMatcher(self.inputString):
+                return(quantifierMatcher(self.inputString,presence=False))
         else:
             return(None)
 
@@ -322,7 +326,7 @@ class constraintToken:
             elif negationRuleMatcher(self.inputString):
                 return(negationRule_token(negationRuleMatcher(self.inputString,presence=False)))
             elif quantifierMatcher(self.inputString):
-                return(quantifierToken(quantifierMatcher(self.inputString,presence=False)))
+                return(quantifierToken(self.inputString))
         else:
             return(None)
 
@@ -425,9 +429,10 @@ class quantifierToken(constraintToken):
     def __init__(self,string):
         self.__name__='quantifierToken'
         self.inputString=string
+        self.mtch=quantifierMatcher(self.inputString,presence=False)
     
     def __repr__(self):
-        qt,val=quantifierMatcher(self.inputString).groups()
+        qt,val=self.mtch.groups()
         return("Preceeding pattern matches %s %s times" %(qt,val))
 
     def get_quantifier_quantity(self):
@@ -435,7 +440,7 @@ class quantifierToken(constraintToken):
         Returns the quantifier as a string
         and the quantity as an integer.
         '''
-        qt,val=quantifierMatcher(self.inputString).groups()
+        qt,val=self.mtch.groups()
         return((str(qt),int(val)))
         
     
@@ -465,7 +470,8 @@ class quantifierToken(constraintToken):
         of match objects for a particular glycan constraint.
         Employed in constraint generation functions:
         '''
-        qt,val=re.search('(\>\=|\<\=|\>|\<)(\d)',self.inputString).groups()
+        qt,val=self.get_quantifier_quantity()
+
         l_fun=lambda pat,s:re.findall(pat,s)
         if qt=="=":
             return len(mtchs)==qt
@@ -607,8 +613,8 @@ class entityToken:
                     modTokens.append(modToken(mp+mono_components['modType']))
 
         #The GalN and GlcN exception to modification rules:
-        elif mono_components['mono'] in ['GalN','GlcN']:
-            modTokens.append(modToken(''.join(['N',mono_components['modType']])))
+        elif mono_components['mono'] in ['GalN','GlcN'] and mono_components['modType'] is not None and mono_components['modPos'] is None:
+            modTokens.append(modToken(''.join(['N',mono_components['modType'][0]])))
         else:
             modTokens=None
         #Modification Reactions:
@@ -828,7 +834,7 @@ class monoToken(entityToken):
         # order based on modification number:
         modTokenCombs=[sorted(x) for x in list(prod(*modTokenStrings))]
         modTokenCombs=[[y for y in x if y!=''] for x in modTokenCombs]
-        modTokenCombs=[[re.sub('\D','',y) if i<(len(x)-1) else y for i,y in enumerate(x)] for x in modTokenCombs]
+        modTokenCombs=[[re.sub('\d','',y) if i<(len(x)-1) else y for i,y in enumerate(x)] for x in modTokenCombs]
         return(modTokenCombs)
 
     def react_strings(self):
@@ -850,8 +856,12 @@ class monoToken(entityToken):
             ### Decorator Function START: ###
             #Reaction Components, either substrate or product:
             compList=fun(self)
+            if compList==[['']]:
+                compList=['']
             ### Decorator Function END: ###
             mod_perms=[sorted(x+compList) for x in mod_perms]
+            if mod_perms==[[['']]]:
+                mod_perms=[['']]
             #Cleanup empties:
             mod_perms=[[y for y in x if y!=''] for x in mod_perms]
             #Generate Linkage possibilities:
@@ -862,7 +872,7 @@ class monoToken(entityToken):
             leftBracket='[' if self.branching['leftBracket'] else ''
             rightBracket=']' if self.branching['rightBracket'] else ''
             #Compartments:
-            compartment='' if self.compartment is None else self.compartment
+            compartment='' if self.compartment is None else self.compartment.substrate()
             #Linkages:
             linkage='' if self.linkage is None else self.linkage
             #Generate All possible monosaccharide representations:
@@ -939,7 +949,7 @@ class nsToken(entityToken):
         return(nt,mono)
     
     def substrate(self):
-        return(self.inputString)
+        return([self.inputString])
 
 class compartmentToken(entityToken):
 
@@ -950,6 +960,7 @@ class compartmentToken(entityToken):
         monosaccharides when describing transport
         rules.
         '''
+        self.__name__='compartmentToken'
         self.inputString=inputString
         self.product=self.substrate
 
@@ -965,14 +976,19 @@ class aglycoToken(entityToken):
         '''
         Models aglycon instances.
         '''
+        self.__name__='aglycoToken'
         self.inputString=inputString
         self.product=self.substrate
 
     def __repr__(self):
         return('The %s aglycon' %(self.inputString))
 
+    #def substrate(self):
+    #    return([self.inputString])
+
     def substrate(self):
-        return([self.inputString])
+        return(["$"])
+
 
 class wildCardToken(entityToken):
 
@@ -1091,7 +1107,10 @@ class multiToken:
         multiToken-contained entities:
         '''
         if len(self.tokens)==1:
-            return(['',self.tokens[0].product()])
+            if type(self.tokens[0].product())==str:
+                return(['',self.tokens[0].product()])
+            else:
+                return(['',self.tokens[0].product()[0]])
         else:
             return([x.product() for x in self.tokens])
 

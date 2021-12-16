@@ -1,8 +1,7 @@
 import pandas as pd
 from tokenClasses_lex import *
-from ruleInterpreter import *
+from ruleInterpreter_objects import *
 import traceback
-
 
 def test_wrapper(rule,ruleName):
     '''
@@ -16,10 +15,8 @@ def test_wrapper(rule,ruleName):
     except Exception as exc:
         print('PARSING ERROR\nERROR MESSAGE:')
         print(exc)
-    if 'unknown' in str(res):
-        print('PARSING FAILURE')
     try:
-        resObj=reactionRule(res)
+        gct=reactionRule(res)
     except Exception as exc:
         print('INSTANTIATION ERROR')
         print(exc)

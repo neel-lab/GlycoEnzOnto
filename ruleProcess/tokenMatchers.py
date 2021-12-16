@@ -122,7 +122,7 @@ entityDict={
         'Modifications':['S','P'],
         'Substrates':['PAPS','R','ATP'],
         'Compartments':['ER','Golgi','Cytoplasm','Extracellular'],
-        'Aglyca':['Dol-P-P', 'Asn','Ser/Thr','Ser','Thr','Cer','5-hydroxy-L-lysyl-','Lys','WXXW','PI'],
+        'Aglyca':['Dol-P-P', 'Asn','Ser/Thr','Ser','Thr','Cer','5-hydroxy-L-lysyl','Lys','WXXW','PI'],
         'ProteinConstraints':['EGF','Cad']
 }
 
@@ -181,7 +181,7 @@ monoLinkMatcher=matcherClass('(?!\{)\[?([A-Za-z0-9\,\{\}]+?)(\([ab\?][12\?]\-[\d
 quantityStartMatcher=matcherClass('n')
 attachRuleMatcher=matcherClass('\@')
 negationRuleMatcher=matcherClass('\!')
-quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>\=)(\d)')
+quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>|\<)(\d)')
 #######################
 # Separator Detection
 #######################

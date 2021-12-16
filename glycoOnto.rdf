@@ -111,15 +111,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylation">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylesterase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylesterase">
@@ -132,7 +123,8 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -166,6 +158,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu59Ac_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu59Ac_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Synthesis"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -405,26 +406,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Deacetylation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Deacetylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Decarboxylase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Decarboxylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Decarboxylation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Decarboxylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
     </owl:Class>
     
 
@@ -445,26 +430,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dephosphorylation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dephosphorylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Desulfation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Desulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dioxygenase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dioxygenase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -533,14 +511,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerization -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
     </owl:Class>
     
 
@@ -653,7 +623,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
     </owl:Class>
     
 
@@ -785,18 +755,8 @@
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside -->
-
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA2ST -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA2ST">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -905,7 +865,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nutrient_Transport"/>
     </owl:Class>
     
 
@@ -1185,7 +1145,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Xyl"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
     </owl:Class>
     
 
@@ -1234,7 +1194,7 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA_2C_Sulfatase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
@@ -1324,7 +1284,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
     </owl:Class>
     
 
@@ -1394,10 +1354,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Synthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Synthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporters"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport"/>
     </owl:Class>
     
 
@@ -1513,7 +1482,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport"/>
     </owl:Class>
     
 
@@ -1521,10 +1490,14 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nutrient_Transport -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nutrient_Transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporters"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport"/>
     </owl:Class>
     
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport -->
 
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport"/>
+    </owl:Class>
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc -->
 
@@ -1695,7 +1668,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Synthesis"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -1779,14 +1752,6 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphoesterase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphorylation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphorylation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
     </owl:Class>
     
 
@@ -1884,22 +1849,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporters"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase">
@@ -1912,14 +1861,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfate_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Metabolism"/>
     </owl:Class>
     
 
@@ -1957,6 +1898,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Terminal_Gal_Sulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Terminal_Gal_Sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transamidase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transamidase">
@@ -1974,18 +1924,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporters -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporters">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
     </owl:Class>
     
 
@@ -2449,7 +2399,6 @@
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX -->
-
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
@@ -2476,7 +2425,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Xyl"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
     </owl:Class>
     
 
@@ -2857,65 +2806,49 @@
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A1"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A10 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A10"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A12 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A12">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A12"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A2"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A3 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A3"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A4 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A4"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A5 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A5"/>
     
 
 
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A8 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sugar_Transport"/>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A8"/>
     
 
 
