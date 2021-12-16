@@ -17962,6 +17962,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+        <rdfs:comment>N-glycan synthesis begins on the outer ER membrane, wherethe human enzyme DPAGT1 first transfers a GlcNAc-1-P  from  UDP-GlcNAc  to  Dol-P.  This  is  followed  by  the  addition  of  a  second  GlcNAc  (by  ALG13/14 heterodimer)  followed  by  five  additional  Man  by  ALG1,  ALG2  and  ALG11. ThisMan5GlcNAc2-P-P-Dol precursor  is  then  translocated from  the  cytoplasm  intothe  ER lumen.  Theremaining  steps  of  the biosynthetic pathways proceed within the ER. Here,four more Man residues are first added by ALG3, ALG9 and  ALG12,  all  from  Dol-P-Man  donors. Following  this, three  glucose  monosaccharides are  added by ALG6,  ALG8  and  ALG10,usingDol-P-Glc as donor.Together  these  steps  result  in  the  formation  ofthe Glc3-Man9-GlcNAc2β1-PP-Dol precursor.</rdfs:comment>
     </owl:Class>
     
 
@@ -17978,7 +17979,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -18247,14 +18247,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc_6C_Sulfatase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc_6C_Sulfatase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT">
@@ -18299,6 +18291,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA_IdoA2ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -18350,22 +18343,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc_2C_Sulfatase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc_2C_Sulfatase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc_6C_Sulfatase -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc_6C_Sulfatase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
     </owl:Class>
     
 
@@ -18727,19 +18704,20 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2ST -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2ST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA_2C_Sulfatase -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA_2C_Sulfatase">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -18924,6 +18902,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <rdfs:comment>N-linked glycosylation occurs on proteins asparagine residues within an N-X-S/T motif.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the Dolichol Pathway, Processing, and optionally, Branching.</rdfs:comment>
     </owl:Class>
     
 
@@ -19296,6 +19275,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+        <rdfs:comment>The Processing pathways begins with the removal α(1-2)Glc by MOGS from the nonreducing terminal end of the α(1-3)Man branch to produce Glc2Man9GlcNAc2. During this trimming process, glycoproteins containing a single α(1-3)Glc residue are recognized by the ER lectin chaperones, calreticulin (CRT) and calnexin (CNX). These chaperones are complexed with protein disulfide isomerase isoforms, and this aids the folding and maturation of glycoproteins. Upon transient release from the lectin chaperones, α-Glucosidase II clips the remaining Glc and the protein moves to the next steps of processing, provided it is well folded.</rdfs:comment>
     </owl:Class>
     
 
@@ -19411,7 +19391,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphatase"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
