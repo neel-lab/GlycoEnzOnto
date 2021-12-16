@@ -12,7 +12,7 @@ glycogenes=./finishedGlycogenes.tsv
 for GGENE in $(awk 'BEGIN{FS="\t"}FNR==1{next}{print $4}' $glycogenes)
 do
 	echo "Parsing ${GGENE}"
-	GOLR_QUERY=$(echo "http://golr-aux.geneontology.io/solr/select?qt=standard&?fq=document_category:%22annotation%22&q=*:*&fq=bioentity_label:%22${GGENE}%22&fq:taxon=%22NCBITaxon%3A9606%22&&&wt=json&indent=on&fl=${FL_STRING}")
+	GOLR_QUERY=$(echo "http://golr-aux.geneontology.io/solr/select?qt=standard&?fq=document_category:%22annotation%22&q=*:*&fq=bioentity_label:%22${GGENE}%22&fq:taxon=%22NCBITaxon%3A9606%22&&&wt=json&rows=10000&start=0&indent=on&fl=${FL_STRING}")
 	echo ${GOLR_QUERY}
 	#Store GOlr glycogene query in JSON string
 	#curl -X GET -s $(echo "${GOLR_QUERY}") | jq .response.docs | jq '. = (. | unique)' | jq .[] >> ggene_json_dta_new.json
