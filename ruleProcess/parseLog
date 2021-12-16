@@ -1,5 +1,0 @@
-#!/bin/bash
-
-awk 'BEGIN{FS="\n";RS="************END************";ukEntries=0}
-$0~/unknown/{print $0;ukEntries+=1}
-END{print "There are " ukEntries " out of " NR " (" 100*(ukEntries/NR)"%) with entries unknown"}' testRuleParser_output.txt
