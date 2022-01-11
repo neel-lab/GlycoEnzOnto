@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3#"
-     xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/untitled-ontology-3"
+<rdf:RDF xmlns="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#"
+     xml:base="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:glycoOnto="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto"/>
     
 
@@ -23,27 +24,40 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasConstraint -->
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasConstraint"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasProduct -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasProduct"/>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasSubstrate -->
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#hasSubstrate"/>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2001/xmlschema.owl"/>
+    </rdf:Description>
     
 
 
@@ -58,10 +72,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#dependentOn -->
+    <!-- http://purl.jp/bio/12/glyco/glycan#in_glycan_database -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#dependentOn">
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    <owl:ObjectProperty rdf:about="http://purl.jp/bio/12/glyco/glycan#in_glycan_database">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glycan is present in the glycan database specified by the URI.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.jp/bio/12/glyco/glycan.owl"/>
     </owl:ObjectProperty>
     
 
@@ -72,6 +88,36 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.jp/bio/12/glyco/glycan#has_ruleString -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/12/glyco/glycan#has_ruleString">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.jp/bio/12/glyco/glycan#has_sequence -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.jp/bio/12/glyco/glycan#has_sequence">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence of the Glycan</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.jp/bio/12/glyco/glycan.owl"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -89,7 +135,9 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ABO_BloodGroups">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation"/>
+        <obo:IAO_0000115 xml:lang="en">The terminal fucosylation of blood group A (GalNAc(a1-3)Gal(b1-3)b-GlcNAc), B ( Gal(a1-3)Gal(b1-3)b-GlcNAc ), or O ( Gal(b1-3)b-GlcNAc ) via FUT1 or FUT2.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ABO Blood Group Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -98,7 +146,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ATP_Sulfurylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which converts ATP into PAPS through the replacement of the pyrophosphate group with sulfate.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">ATP Sulfurylase</rdfs:label>
     </owl:Class>
     
 
@@ -107,6 +157,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <rdfs:label xml:lang="en">Acetylase</rdfs:label>
+        <rdfs:label xml:lang="en">An enzyme which transfers an acetyl group to another molecule.</rdfs:label>
     </owl:Class>
     
 
@@ -115,7 +167,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylesterase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers an acetic ester to another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Acetylesterase</rdfs:label>
     </owl:Class>
     
 
@@ -124,7 +178,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An Enzyme which transfers an acetyl group to another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Acetyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -150,6 +206,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Branching">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which N-linked glycans increase their degree of branching.  Firstly, MGAT1 and MGAT2 transfer N-acetylglucosamine residues onto the a1-3 and a1-6 mannose arms of glycan structures which emerge from the processing pathway, respectively, and via the MGAT4a/b/c and MGAT5 enzymes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Branching</rdfs:label>
     </owl:Class>
     
 
@@ -158,6 +216,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <rdfs:label xml:lang="en">C-Mannosylation</rdfs:label>
+        <rdfs:label xml:lang="en">The process by which mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin proteins.</rdfs:label>
     </owl:Class>
     
 
@@ -166,7 +226,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu59Ac_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which CMP-Neu5,9Ac is synthesized.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Neu5,9Ac Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -175,6 +237,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which CMP-Neu5Ac is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CMP-Neu5Ac Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -183,6 +247,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which CMP-Neu5Ac is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CMP-Neu5Ac Transport</rdfs:label>
     </owl:Class>
     
 
@@ -191,6 +257,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMP-Neu5Ac_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports CMP-Neu5Ac from the cytoplasm into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CMP-Neu5Ac Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -199,6 +267,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS4ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">Chondroitin sulfate-specific sulfotransferase which transfer sulfate groups onto the 4 carbon on N-acetylgalactosamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">CS4ST</rdfs:label>
     </owl:Class>
     
 
@@ -215,7 +285,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin sulfate is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Chondroitin Sulfate Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -224,7 +296,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin sulfate is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Chondroitin Sulfate Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -241,7 +315,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin sulfate is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Chondroitin Sulfate Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -250,7 +326,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cad_ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers mannose residues onto cadherin proteins onto serine or threonine residues.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Cadherin ManT</rdfs:label>
     </owl:Class>
     
 
@@ -259,6 +337,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process involving the transfer of monosaccharides to the non-reducing ends of glycans which, upon tranfer, precludes any other monosaccharides from being attached.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Capping</rdfs:label>
     </owl:Class>
     
 
@@ -268,6 +348,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cofactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Cofactor</rdfs:label>
     </owl:Class>
     
 
@@ -276,6 +357,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Collagen_Glycosylation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which galactose is attached to serine or threonine residues on collagen.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -285,6 +367,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core1">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which galactose is added onto an O-linked N-acetylgalactosamine through the action of the galactosyltransferase C1GALT1 and its chaperone C1GALT1C1 to form the T antigen ( Gal(b1-3)GalNAc-Ser/Thr ).</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Type I LacNAc extension via B3GNT3 on the T antigen is also possible.</rdfs:comment>
+        <rdfs:label xml:lang="en">Core 1</rdfs:label>
     </owl:Class>
     
 
@@ -293,6 +378,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core2">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which N-acetylglucosamine is transferred to the T antigen to form Gal(b1-3)[GlcNAc(b1-6)]GalNAc(a1-Ser/Thr) through the action of GCNT1 or GCNT4.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Core 2</rdfs:label>
     </owl:Class>
     
 
@@ -301,6 +388,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core3">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which N-acetylglucosamine is added onto an O-linked N-acetylgalactosamine through the action of the B3GNT6 to form GlcNAc(b1-3)GalNAc(a1-Ser/Thr).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Core 3</rdfs:label>
     </owl:Class>
     
 
@@ -309,6 +398,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Core4">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the Core 3 structure receives another N-acetylglucosamine structure through the action of GCNT3 to form GlcNAc(b1-3)[GlcNAc(b1-6)]GalNAc(a1-Ser/Thr).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Core 4</rdfs:label>
     </owl:Class>
     
 
@@ -317,7 +408,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
-        <rdfs:comment>The Core Pathways are distinct sets of glycosylation pathways responsible for the addition of monosaccharides to their protein or lipid substituents and subsequent extension.  Depending on which monosaccharide is attached at the root of a glycan, there will be different sets of enzymes to initiate the glycan structure.</rdfs:comment>
+        <obo:IAO_0000115>The Core Pathways are distinct sets of glycosylation pathways responsible for the addition of monosaccharides to their protein or lipid substituents and subsequent extension.  Depending on which monosaccharide is attached at the root of a glycan, there will be different sets of enzymes to initiate the glycan structure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Core Pathways</rdfs:label>
     </owl:Class>
     
 
@@ -334,6 +426,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycan is degraded in the cytosol.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Cytosol Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -350,7 +444,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which dermatan sulfate is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dermatan Sulfate Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -367,7 +463,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which dermatan sulfate is degraded in the extracellular matrix.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dermatan Sulfate Extracellular Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -376,7 +474,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#DS_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which dermatan sulfate is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dermatan Sulfate Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -393,7 +493,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which dermatan sulfate is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dermatan Sulfate Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -402,6 +504,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Deacetylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which removes acetyl groups from a molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Deacetylase</rdfs:label>
     </owl:Class>
     
 
@@ -410,6 +514,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Decarboxylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which removes carboxyl groups from another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Decarboxylase</rdfs:label>
     </owl:Class>
     
 
@@ -418,6 +524,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dehydratase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which remove an equivalent of water from a molecule and results in a double or triple bond between oxygen and carbon.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Dehydratase</rdfs:label>
     </owl:Class>
     
 
@@ -426,6 +534,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dehydrogenase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which remove hydrogen from hydroxyl groups resulting in the formation of a double bond between carbon and oxygen.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Dehydrogenase</rdfs:label>
     </owl:Class>
     
 
@@ -434,7 +544,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dioxygenase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which utilize dioxygen to perform oxidorecutions.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dioxygenase</rdfs:label>
     </owl:Class>
     
 
@@ -443,7 +555,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dol-P-P_ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which transfer mannose residues onto dolichol diphosphate on the extravesicular membrane on the endoplasmic reticulum.  These enzymes produce precursors for the Dolichol Pathway to initiate N-linked glycosylation.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Dolichol Phosphate ManT</rdfs:label>
     </owl:Class>
     
 
@@ -452,7 +566,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dolichol_Pathway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
-        <rdfs:comment>N-glycan synthesis begins on the outer ER membrane, wherethe human enzyme DPAGT1 first transfers a GlcNAc-1-P  from  UDP-GlcNAc  to  Dol-P.  This  is  followed  by  the  addition  of  a  second  GlcNAc  (by  ALG13/14 heterodimer)  followed  by  five  additional  Man  by  ALG1,  ALG2  and  ALG11. ThisMan5GlcNAc2-P-P-Dol precursor  is  then  translocated from  the  cytoplasm  intothe  ER lumen.  Theremaining  steps  of  the biosynthetic pathways proceed within the ER. Here,four more Man residues are first added by ALG3, ALG9 and  ALG12,  all  from  Dol-P-Man  donors. Following  this, three  glucose  monosaccharides are  added by ALG6,  ALG8  and  ALG10,usingDol-P-Glc as donor.Together  these  steps  result  in  the  formation  ofthe Glc3-Man9-GlcNAc2β1-PP-Dol precursor.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which the N-linked glycan precursory structure is synthesized onto dolichol diphosphate in the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:comment>N-glycan synthesis begins on the outer ER membrane, where the human enzyme DPAGT1 first transfers a GlcNAc-1-P  from  UDP-GlcNAc  to  Dol-P.  This  is  followed  by  the  addition  of  a  second  GlcNAc  (by  ALG13/14 heterodimer)  followed  by  five  additional  Man  by  ALG1,  ALG2  and  ALG11. ThisMan5GlcNAc2-P-P-Dol precursor  is  then  translocated from  the  cytoplasm  intothe  ER lumen.  Theremaining  steps  of  the biosynthetic pathways proceed within the ER. Here,four more Man residues are first added by ALG3, ALG9 and  ALG12,  all  from  Dol-P-Man  donors. Following  this, three  glucose  monosaccharides are  added by ALG6,  ALG8  and  ALG10,usingDol-P-Glc as donor.Together  these  steps  result  in  the  formation  ofthe Glc3-Man9-GlcNAc2β1-PP-Dol precursor.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dolichol Pathway</rdfs:label>
     </owl:Class>
     
 
@@ -461,6 +577,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">This pathway encompasses the synthesis of donors, which are substrates for glycosylation.  This includes the synthesis sugar nucleotide structure required for glycosyaltion, as well as modifying molecules such as sulfate, phosphate, and ethanolamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Donor Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -469,6 +587,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which substrates for glycosylation are transported from the cytosol into other compartments.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Donor Transport</rdfs:label>
     </owl:Class>
     
 
@@ -477,6 +597,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dystro">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the Core M3 O-mannose structure is extended through the successive actions of B4GALNT2 adding N-acetylgalactosamine, FKTN creating a phosphodiester bond between N-acetylglucosamine and ribitol, FKRP forming another phosphodiester bond with another ribitol, and further polymerization with xylose and glucuronic acid thorugh the alternating action of RXYLT1 and B4GAT1, respectively.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α-Dystroglycan</rdfs:label>
     </owl:Class>
     
 
@@ -486,6 +608,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#EOGT_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <oboInOwl:hasExactSynonym xml:lang="en">O-GlcNAcylation</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">EOGT-type O-linked Glycosylation</rdfs:label>
+        <rdfs:label xml:lang="en">Process by which N-acetylglucosamine is attached to serine or threonine residues of proteins.</rdfs:label>
     </owl:Class>
     
 
@@ -494,6 +619,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation"/>
+        <obo:IAO_0000115 xml:lang="en">A phase in the glycosylation process where glycans receive a variable number of monosaccharides which increases their degree of polymerization and degree of branching.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Elongation and Branching</rdfs:label>
     </owl:Class>
     
 
@@ -502,6 +629,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Endoglycosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">Endoglycosidases cleave glycosidic bonds of a pair of monosaccharides which does not contain a terminal monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Endoglycosidase</rdfs:label>
     </owl:Class>
     
 
@@ -510,6 +639,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Epimerase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which invert the stereochemistry about asymmetrical carbon atoms, where the molecule contains more than one asymmetrical carbon.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Epimerase</rdfs:label>
     </owl:Class>
     
 
@@ -518,6 +649,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycan is degraded in the extracellular matrix.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Extracellular Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -526,6 +659,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between fucose and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Fucosidase</rdfs:label>
     </owl:Class>
     
 
@@ -534,6 +669,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers fucose onto another molecule.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -542,6 +678,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Fucosylation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which fucose is added to terminal galactose or N-acetylglucosamine by fucosyltransferases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Fucosylation</rdfs:label>
     </owl:Class>
     
 
@@ -550,6 +688,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosaminoglycan is initiated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosaminoglycans</rdfs:label>
     </owl:Class>
     
 
@@ -558,7 +698,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosaminoglycan is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glycosaminoglycan Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -567,6 +709,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosaminoglycan is degraded in the lysosome.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosaminoglycan Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -575,6 +719,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which GDP-fucose is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Fuc Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -583,6 +729,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which GDP-fucose is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Fuc Transport</rdfs:label>
     </owl:Class>
     
 
@@ -591,6 +739,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Fuc_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports GDP-Fucose from the cytoplasm into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Fuc Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -599,6 +749,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by GDP-mannose is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Man Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -607,6 +759,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which GDP-mannose is transported from the cytoplasm to the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Man Transport</rdfs:label>
     </owl:Class>
     
 
@@ -615,6 +769,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GDP-Man_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports GDP-mannose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GDP-Man Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -623,6 +779,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GPI_Linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
+        <obo:IAO_0000115 xml:lang="en">The metabolic process by which the Glycosylphosphatidylinositol (GPI) anchor is synthesized sequentially by PIG enzymes in the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GPI-Linked</rdfs:label>
     </owl:Class>
     
 
@@ -639,7 +797,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosphingolipid is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glycosphingolipid Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -648,7 +808,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GSL_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosphingolipid is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glycosphingolipid Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -665,7 +827,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycosphingolipid is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glycosphingolipid Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -674,7 +838,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal3ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 3 carbon of  galactose.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Gal3ST</rdfs:label>
     </owl:Class>
     
 
@@ -683,6 +849,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 6 carbon of  galactose.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Gal6ST</rdfs:label>
     </owl:Class>
     
 
@@ -691,7 +859,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Gal6S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 6 carbon of galactose.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Gal6S Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -700,6 +870,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalCer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
+        <obo:IAO_0000115 xml:lang="en">The initiation of galactosylceramide via the action of UGT8.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GalCer</rdfs:label>
     </owl:Class>
     
 
@@ -708,6 +880,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc4ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 4 carbon of  N-acetylgalactosamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GalNAc4ST</rdfs:label>
     </owl:Class>
     
 
@@ -716,6 +890,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 6 carbon N-acetylgalactosamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GalNAc6ST</rdfs:label>
     </owl:Class>
     
 
@@ -724,7 +900,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAc6S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 6 carbon of N-acetylgalactosamine.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">GalNAc6S Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -733,6 +911,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylgalactosamine onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -741,6 +921,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers galactose onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GalT</rdfs:label>
     </owl:Class>
     
 
@@ -749,6 +931,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Galactosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between galactose and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Galactosidase</rdfs:label>
     </owl:Class>
     
 
@@ -757,6 +941,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Ganglioside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GalNAc(b1-4)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B4GALNT1, and B3GALT4, as well as subsequent sialylation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Ganglioside</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA3ST -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA3ST">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 3 carbon of  glucuronic acid.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcA3ST</rdfs:label>
     </owl:Class>
     
 
@@ -765,14 +961,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT3ST -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT3ST">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers glucuronic acid onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -781,7 +971,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcA_IdoA2ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">Bifunctional sulfotransferase which adds sulfate onto either glucuronic acid or iduronic acid onto the 2 carbon.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">GlcA/IdoA2ST</rdfs:label>
     </owl:Class>
     
 
@@ -790,6 +982,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids"/>
+        <obo:IAO_0000115 xml:lang="en">The initiation of glucosylceramides.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcCer</rdfs:label>
     </owl:Class>
     
 
@@ -798,7 +992,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcN6S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 6 carbon of glucosamine.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">GlcN6S Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -807,7 +1003,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc3ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 3 carbon of  N-acetylglucosamine.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">GlcNAc3ST</rdfs:label>
     </owl:Class>
     
 
@@ -816,6 +1014,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 6 carbon of  N-acetylglucosamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcNAc6ST</rdfs:label>
     </owl:Class>
     
 
@@ -824,6 +1024,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 6 carbon of N-acetylglucosamine.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">GlcNAc6S Sulfatase</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -833,6 +1035,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylglucosamine onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -850,6 +1054,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a glucose monosaccharide onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">GlcT</rdfs:label>
     </owl:Class>
     
 
@@ -858,6 +1064,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Globoside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which the GalNAc(b1-3)Gal(a1-4)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, A4GALT, and B3GALNT1.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Globoside</rdfs:label>
     </owl:Class>
     
 
@@ -866,7 +1074,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosaminidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between glucosamine and another monosaccharide.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glucosaminidase</rdfs:label>
     </owl:Class>
     
 
@@ -875,6 +1085,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nutrient_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which glucose is transported into the cytoplasm.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glucose Transport</rdfs:label>
     </owl:Class>
     
 
@@ -883,6 +1095,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucose_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein which transports glucose into the cytoplasm of the cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glucose Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -891,6 +1105,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between glucose and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glucosidase</rdfs:label>
     </owl:Class>
     
 
@@ -899,6 +1115,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between glucuronic acid and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glucuronidase</rdfs:label>
     </owl:Class>
     
 
@@ -915,6 +1133,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glycan is broken down through the action of glycosidases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycan Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -923,7 +1143,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogen_Breakdown">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">The successive breakdown of a polysaccharide comprised entirely of glucose.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Glycogen Breakdown</rdfs:label>
     </owl:Class>
     
 
@@ -931,7 +1153,8 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:IAO_0000115 xml:lang="en">This class encompasses the molecular functions of glycogenes in GlycoOnto.  This encompasses glycogene functions such as glycosyltransferases, glycosidases, monosaccharide modifying enzymes, transporters, and genes which regulate the glycosylation process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycogene</rdfs:label>
     </owl:Class>
     
 
@@ -940,6 +1163,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycolipids">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which lipid-bound glycans are initiated.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycolipids</rdfs:label>
     </owl:Class>
     
 
@@ -948,6 +1173,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">Glycosidases catalyze the hydrolysis of glycosidic bonds between two monosaccharides.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosidase</rdfs:label>
     </owl:Class>
     
 
@@ -956,6 +1183,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">The synthesis of complex carbohydrates, known as glycans, via a series of metabolic reactions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosylation</rdfs:label>
     </owl:Class>
     
 
@@ -964,6 +1193,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Enhancer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <obo:IAO_0000115 xml:lang="en">Proteins which promote glycoyslation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosylation Enhancer</rdfs:label>
     </owl:Class>
     
 
@@ -972,6 +1203,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Inhibitor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <obo:IAO_0000115 xml:lang="en">Proteins which prevent glycosylation from occurring.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosylation Inhibitor</rdfs:label>
     </owl:Class>
     
 
@@ -980,6 +1213,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a protein either promotes or hinders glycosylation through interaction with other proteins.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosylation Regulation</rdfs:label>
     </owl:Class>
     
 
@@ -988,6 +1223,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">Glycosylation Regulators are proteins which interact with glycans or proteins which perform glycosylation to modulate their function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Glycosylation Regulator</rdfs:label>
     </owl:Class>
     
 
@@ -996,6 +1233,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between two monosaccharides, where one monosaccharide is transferred to another.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1020,7 +1258,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which hyaluronic acid is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Hyaluronic Acid Cytoplasmic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1037,6 +1277,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which hyaluronic acid is degraded in the extracellular matrix.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Hyaluronic Acid Extracellular Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1045,7 +1287,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HA_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which Hyaluronic Acid is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Hyaluronic Acid Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1062,7 +1306,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which hyaluronic acid is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Hyaluronic Acid Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1071,6 +1317,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HNK-1">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which the HNK-1 epitope is synthesized, whereby glucuronyltransferases B3GAT1/2 transfer glucuronic acid to terminal galactose and the subsequent sulfation of the glucuronic acid via CHST10.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">HNK-1 Epitope Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -1087,7 +1335,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfate is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Heparan Sulfate Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1104,7 +1354,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Extracellular_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfate is degraded in the extracellular matrix.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Heparan Sulfate Extracellular Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1113,7 +1365,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfate is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Heparan Sulfate Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1130,7 +1384,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfate is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Heparan Sulfate Lysosome Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1139,6 +1395,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Polymerization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates increase their degree of polymerization through successive additions of N-acetylglucosamine and glucuronic acid.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Heparan Sulfate Polymerization</rdfs:label>
     </owl:Class>
     
 
@@ -1147,6 +1405,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates undergo sulfation on the N-acetylglucosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Heparan Sulfate Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -1155,6 +1415,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Heparan_Sulfate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates receive more N-acetylglucosamine or glucuronic acid monosaccharides and sulfations, in an unprescribed manner, thus increasing their degree of polymerization and extent of modification.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Heparan Sulfate Extension</rdfs:label>
     </owl:Class>
     
 
@@ -1163,7 +1425,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Human_Inactive">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">This class is here to describe glycogenes which are encoded in the human genome but do not exhibit any activity in vivo.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Human-Inactive Glycogenes</rdfs:label>
     </owl:Class>
     
 
@@ -1172,6 +1436,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Hyaluronan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG"/>
+        <obo:IAO_0000115 xml:lang="en">Process of hyaluronan polysaccharide synthesis ( GlcA(b1-3)GlcNAc(a1-4) )</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Hyaluronan</rdfs:label>
     </owl:Class>
     
 
@@ -1180,7 +1446,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Hydroxylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which transfer hydroxyl groups onto molecules.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Hydroxylase</rdfs:label>
     </owl:Class>
     
 
@@ -1189,7 +1457,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#I-Branching">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which Type I LacNAc structures receive an N-acetylglucosamine residue in a β1-6 linkage via GCNT2 or GCNT3.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">I-Branching</rdfs:label>
     </owl:Class>
     
 
@@ -1198,7 +1468,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2ST">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto the 2 carbon of  iduronic acid.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">IdoA2ST</rdfs:label>
     </owl:Class>
     
 
@@ -1207,7 +1479,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#IdoA2S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
+        <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 2 carbon of iduronic acid.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">IdoA2S Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -1216,7 +1490,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Iduronidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between iduronic acid and another monosaccharide.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Iduronidase</rdfs:label>
     </owl:Class>
     
 
@@ -1225,6 +1501,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Inactive_Enzyme">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A class describing enzymes with uncertain functions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Inactive Enzymes</rdfs:label>
     </owl:Class>
     
 
@@ -1233,7 +1511,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Intracellular_Lectin">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <obo:IAO_0000115 xml:lang="en">Carbohydrate-binding proteins which bind to glycan structures within the cell.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Intracellular Lectin</rdfs:label>
     </owl:Class>
     
 
@@ -1250,7 +1530,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Keratan Sulfate Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1259,7 +1541,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Keratan Sulfate Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1276,7 +1560,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG_Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Keratan Sulfate Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1285,7 +1571,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#KS_Sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate receives sulfations on N-acetylglucosamine and galactose residues in LacNAc chains on either N-linked or O-linked glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Keratan Sulfate Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -1294,6 +1582,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Keratan_Sulfate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate is synthesized through the increased polymerization of Type II LacNAc and subsequent N-acetylglucosamine and galactose sulfation via the CHST sulfotransferases.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Keratan Sulfate Extension</rdfs:label>
     </owl:Class>
     
 
@@ -1302,14 +1592,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which catalyze the transfer of phosphate groups onto molecules.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Kinase</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#LacdiNAc -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#LacDiNAc -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#LacdiNAc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#LacDiNAc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <rdfs:label xml:lang="en">A process by which N-acetylgalactosamine is transferred onto N-acetylglucosamine via B4GALNT3 or B4GALNT4.</rdfs:label>
+        <rdfs:label xml:lang="en">LacDiNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1318,6 +1612,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lactoside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B3GNT5, and B3GALNT1.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Lactoside</rdfs:label>
     </owl:Class>
     
 
@@ -1326,7 +1622,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosomal_Targeting">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which GNPTAB and GNPTG transfer N-acetylglucosamine to unprocessed N-linked glycan mannose branches to mark them for transport to the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Lysosomal Targeting</rdfs:label>
     </owl:Class>
     
 
@@ -1335,6 +1633,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A glycan degradation process which occurs in lysosomes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Lysosome Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1343,6 +1643,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a mannose monosaccharide onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">ManT</rdfs:label>
     </owl:Class>
     
 
@@ -1351,6 +1653,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Mannosidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between mannose and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Mannosidase</rdfs:label>
     </owl:Class>
     
 
@@ -1359,6 +1663,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Metabolic_GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers glucuronic acid onto nonpolar xenobiotics for their clearance through the excratory system.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Metabolic GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -1367,7 +1673,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process which synthesizes substrates required for the modifcation of monosaccharides in glycan structures.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Modification Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -1376,6 +1684,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which substrates required for the modification of monosaccharides on glycan structures are transported into the endoplasmic reticulum or Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Modification Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1384,6 +1694,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which alter the chemistry of monosaccharides through the transfer of functional gruops or through isomerization.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Modifying Enzyme</rdfs:label>
     </owl:Class>
     
 
@@ -1393,6 +1705,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
         <rdfs:comment>N-linked glycosylation occurs on proteins asparagine residues within an N-X-S/T motif.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the Dolichol Pathway, Processing, and optionally, Branching.</rdfs:comment>
+        <rdfs:label xml:lang="en">N-linked Glycosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1409,7 +1722,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an N-linked glycan is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">N-linked Cytoplasmic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1418,7 +1733,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an N-linked glycan is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">N-linked Glycan Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1435,7 +1752,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an N-linked glycan is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">N-linked Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1444,6 +1763,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HS_Sulfation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which amine structure on glucosamine undergo sulfation to variable degrees.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Heparan Sulfate Amine Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -1452,6 +1773,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylgalactosaminidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between N-acetylgalactosamine and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">NAcetylgalactosaminidase</rdfs:label>
     </owl:Class>
     
 
@@ -1460,6 +1783,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAcetylglucosaminidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between N-acetylglucosamine and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">NAcetylglucosaminidase</rdfs:label>
     </owl:Class>
     
 
@@ -1468,14 +1793,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Neolactoside">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcCer"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B3GNT5, and a myriad of B4GALTs.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Neolactoside</rdfs:label>
     </owl:Class>
     
 
@@ -1483,7 +1802,9 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which monosaccharides are chemically modified and derivatized with nucleotides in the cytoplasm to form substrates for glycosylation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Nucleotide Sugar Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -1492,6 +1813,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Donor_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which sugar nucleotides synthesized in the cytoplasm are transported into the endoplasmic reticulum or Golgi to serve as substrates for glycosylation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Nucleotide Sugar Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1500,6 +1823,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nutrient_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which nutrients are transported into the cytoplasm from outside the cell.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Nutrient Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1508,6 +1833,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">Process by which fucose is attached to serine or threonine residues in EGF-like repeats ( CXXXX(S/T)C ), and is subsequently conjugated with N-acetylglucosamine via the action of lunatic, maniac, or radical fringe (LFNG, MFNG, or RFNG).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-Fucosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1516,6 +1843,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GalNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">Process by which N-acetylgalactosamine is added to serine or threonine residues onto proteins.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-GalNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1524,7 +1853,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Glc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a glucose is attached onto serine or threonine residues on proteins.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">O-Glucosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1533,6 +1864,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-GlcNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which N-acetylglucosamine is attached to serine or threonine residues on proteins.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-GlcNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1541,6 +1874,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which mannose is attached to serine or threonine residues of proteins.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-Mannose</rdfs:label>
     </owl:Class>
     
 
@@ -1549,6 +1884,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Xyl">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GAG"/>
+        <obo:IAO_0000115 xml:lang="en">Process by which chondroitin, dermatan, and heparan sulfates are initiated.  Involves the initial linkage of xylose onto a serine residue, followed by succesive galactose transfer by B4GALT7 and B3GALT6, and glucuronic acid transfer by B3GAT3.  Chondroitin and dermatan sulfates are initiated by adding N-acetylgalactosamine onto the terminal glucuronic acid, whereas heparan sulfates receive N-acetylglucosamine.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-Xylose Initiation</rdfs:label>
     </owl:Class>
     
 
@@ -1557,6 +1894,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which glycosylation is initiated via the covalent attachment of a monosaccharide onto an oxygen residue of a protein.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">O-linked Glycosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1573,7 +1912,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytosol_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an O-linked glycan is degraded in the cytosol.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">O-linked Cytosolic Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1582,7 +1923,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked_Glycan_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an O-linked glycan is degraded.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">O-linked Glycan Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1599,7 +1942,9 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Lysosome_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which an O-linked glycan is degraded in the lysosome.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">O-linked Lysosomal Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -1608,7 +1953,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O_ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers mannose onto serine or threonine residues of proteins, not exclusive to cadherin.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">O ManT</rdfs:label>
     </owl:Class>
     
 
@@ -1625,6 +1972,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Degradation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
+        <obo:IAO_0000115 xml:lang="en">Other breakdown processes related to glycosylation.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
@@ -1634,6 +1982,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GalNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β2GalNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GalNAcT"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000115 xml:lang="en">Other kinds of enzymes which transfer N-acetylgalactosamine which do not fit the classifications.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Other GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -1642,6 +2003,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GalTs">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GalT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GalT"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000115 xml:lang="en">Other enzymes which transfer galactose onto molecules which do not fit within the classificaitons.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Other GalT</rdfs:label>
     </owl:Class>
     
 
@@ -1650,6 +2022,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GlcAT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GlcAT"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000115 xml:lang="en">Other enzymes which transfer glucuronic acid onto molecules which do not fit within the classificaitons.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Other GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -1658,6 +2041,19 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <owl:disjointWith>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4GlcNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β2GlcNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GlcNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GlcNAcT"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β6GlcNAcT"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:disjointWith>
+        <obo:IAO_0000115 xml:lang="en">Other enzymes which transfer N-acetylglucosamine onto molecules which do not fit within the classificaitons.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Other GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -1674,7 +2070,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">Process by which Phosphoadenosine phosphosulfate (PAPS) is synthesized.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:comment xml:lang="en">PAPS is required for the sulfation of monosaccharides in glycan structures.  Several glycan types are sulfated, including glycosaminoglycans such as chondroitin and dermatan sulfates, heparan sulfates, keratan sulfates, and some terminal structures such as sulfated Sialyl Lewis X, sulfated GalCer, and the HNK1 epitope.</rdfs:comment>
     </owl:Class>
     
 
@@ -1683,6 +2081,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which PAPS is transported into the Golgi to be a substrate for glycan sulfation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">PAPS Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1691,6 +2091,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PAPS_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports PAPS from the cytosol into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">PAPS Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -1699,6 +2101,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT1_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc"/>
+        <obo:IAO_0000115 xml:lang="en">The addition of galactose by B4GALT1 onto N-acetylglucosamine present on an O-linked fucose reside which was attached by POFUT1.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">POFUT1-Type O-Fucosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1707,6 +2111,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT2_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc"/>
+        <obo:IAO_0000115 xml:lang="en">Process which occurs after the addtion of POFUT2-initiated O-fucosylated structures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">POFUT2-Type O-Fucosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1715,6 +2121,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT1_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMT_Type"/>
+        <obo:IAO_0000115 xml:lang="en">A process where mannose is attached to serine or threonine residues in proteins by POMT1 or POMT2, and subsequently receives an N-acetylglucosamine residues from POMGNT1 and potentially the MGAT5b enzyme, forming either Core M1 or Core M2 O-mannose structures, respectively.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">POMGNT1-Type O-mannosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1723,6 +2131,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMGNT2_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMT_Type"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which mannose is attached to serine or threonine residues on proteins and subsequently receives N-acetylglucosamine from the POMGNT2 enzyme, thus forming the Core M3 O-mannose structure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">POMGNT2-Type O-mannosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1731,7 +2141,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POMT_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which mannose is attached to serine or threonie residues on proteins through the action of POMT enzymes.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">POMT-Type O-mannosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1739,7 +2151,8 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <obo:IAO_0000115 xml:lang="en">A set of glycogenes which perform a function responsible for metabolic processes which i. synthesize sugar nucleotide substrates for glycosylation, ii. facilitates transport of sugar nucleotides into the endoplasmic reticulum and Golgi, iii. synthesizes glycan structures, and iv. faciliates the degradation of glycans.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Pathway</rdfs:label>
     </owl:Class>
     
 
@@ -1748,6 +2161,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which remove phosphate groups from molecules.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Phosphatase</rdfs:label>
     </owl:Class>
     
 
@@ -1756,7 +2171,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphoesterase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">Enzyme which transfers a phosphoester group, particularly on GPI-anchors.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Phosphoesterase</rdfs:label>
     </owl:Class>
     
 
@@ -1765,7 +2182,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Processing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the precursory N-linked glycan structure produced by the Dolichol Pathway is trimmed successively via glucosidases and mannosidases.</obo:IAO_0000115>
         <rdfs:comment>The Processing pathways begins with the removal α(1-2)Glc by MOGS from the nonreducing terminal end of the α(1-3)Man branch to produce Glc2Man9GlcNAc2. During this trimming process, glycoproteins containing a single α(1-3)Glc residue are recognized by the ER lectin chaperones, calreticulin (CRT) and calnexin (CNX). These chaperones are complexed with protein disulfide isomerase isoforms, and this aids the folding and maturation of glycoproteins. Upon transient release from the lectin chaperones, α-Glucosidase II clips the remaining Glc and the protein moves to the next steps of processing, provided it is well folded.</rdfs:comment>
+        <rdfs:label xml:lang="en">Processing</rdfs:label>
     </owl:Class>
     
 
@@ -1774,6 +2193,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers fucose directly onto the amino acids of a protein.  Fucose is covalently attached onto serine or threonine residues.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1782,7 +2202,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Modification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a protein is modified by a molecle that is not a monosaccharide.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Protein Modification</rdfs:label>
     </owl:Class>
     
 
@@ -1791,7 +2213,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_Modification"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which a protein&apos;s tyrosine residues are sulfated by TPST1 enzymes.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Protein Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -1800,7 +2224,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers xylose onto proteins on either serine or threonine residues.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Protein XylT</rdfs:label>
     </owl:Class>
     
 
@@ -1809,6 +2235,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Inactive_Glycogenes">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">This class describes enzymes that are predicted to be some sort of glycosylating enzyme, but does not have sufficient experimental evidence to support a classification into a group.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Putative or Inactive Glycogenes</rdfs:label>
     </owl:Class>
     
 
@@ -1817,6 +2245,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Unknown_Pathways">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A class describing pathways still under investigation or postulated pathways which have no evidence for taking place due to lack of experimental evidence.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Putative or Unknown Pathways</rdfs:label>
     </owl:Class>
     
 
@@ -1833,6 +2263,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosidase"/>
+        <obo:IAO_0000115 xml:lang="en">A glycosidase which cleaves glycosidic bonds between any sialic acid and another monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Sialidase</rdfs:label>
     </owl:Class>
     
 
@@ -1842,6 +2274,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT">
         <owl:equivalentClass rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialylation"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers sialic acid onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">SialylT</rdfs:label>
     </owl:Class>
     
 
@@ -1850,6 +2284,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sialylation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process of the addition of sialic acid onto the non-reducing ends of glycan structures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Sialylation</rdfs:label>
     </owl:Class>
     
 
@@ -1858,14 +2294,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfate_Transporter -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfate_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">Enzymes which remove sulfate molecules from molecules.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -1874,6 +2304,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfotransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group onto another molecule.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Sulfotransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1883,6 +2315,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">An enzyme which transfers a sulfate group from PAPS onto another molecule.</rdfs:label>
+        <rdfs:label xml:lang="en">Sulfurylase</rdfs:label>
     </owl:Class>
     
 
@@ -1891,6 +2325,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Synthase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which catalyzes a synthesis process.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Synthase</rdfs:label>
     </owl:Class>
     
 
@@ -1899,6 +2335,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TMTC_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Man"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which mannose is added onto serine or threonine residues on proteins through the action of TMTC1-4 proteins.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">This glycosylation predominantly takes place on cadherin molecules.</rdfs:comment>
+        <rdfs:label xml:lang="en">TMTC-Type O-mannosylation</rdfs:label>
     </owl:Class>
     
 
@@ -1907,7 +2346,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Terminal_Gal_Sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which a galactose residue in a galactosylceramide is sulfated by galactose sulfotransferases GAL3ST1-4.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Terminal Galactose Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -1916,7 +2357,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transamidase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers an amide group onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Transamidase</rdfs:label>
     </owl:Class>
     
 
@@ -1925,6 +2368,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms covalent bonds between two molecules, where one molecule is transferred onto another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Transferase</rdfs:label>
     </owl:Class>
     
 
@@ -1933,6 +2378,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which molecules are transported from one cellular compartment to another.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1941,6 +2388,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">A protein responsible for the shuttling of sugar nucleotide substrate from the cytosol into the endoplasmic reticulum or Golgi.  Transporters in this class exclusively transport substrates for glycosylation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -1949,6 +2398,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Type_III_LacNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the disaccharide  [Gal(β1-3)GalNAc] is synthesized onto glycans.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Type III LacNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1957,6 +2408,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Type_II_LacNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the disaccharide  [Gal(β1-4)GlcNAc] is synthesized onto glycans.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Type II LacNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1965,6 +2418,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Type_I_LacNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the disaccharide  [Gal(β1-3)GlcNAc] is synthesized onto glycans.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Type I LacNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1973,6 +2428,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-N-acetylgalactosamine is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GalNAc Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -1981,6 +2438,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-N-acetylgalactosamine is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GalNAc Transport</rdfs:label>
     </owl:Class>
     
 
@@ -1989,6 +2448,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GalNAc_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-N-acetylgalactosamine from the cytoplasm into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GalNAc</rdfs:label>
     </owl:Class>
     
 
@@ -1997,6 +2458,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-galactose is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Gal Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2005,6 +2468,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-galactose is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Gal Transport</rdfs:label>
     </owl:Class>
     
 
@@ -2013,6 +2478,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Gal_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-galactose from the cytoplasm into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Gal Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2021,6 +2488,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-GlcA is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcA Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2029,6 +2498,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-glucuronic acid is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcA Transport</rdfs:label>
     </owl:Class>
     
 
@@ -2037,6 +2508,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcA_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-glucuronic acid from the cytoplasm into the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcA Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2045,6 +2518,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-N-acetylglucosamine is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcNAc Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2053,6 +2528,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-N-acetylglucosamine is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcNAc Trasport</rdfs:label>
     </owl:Class>
     
 
@@ -2061,6 +2538,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-GlcNAc_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-N-acetylglucosamine from the cytoplasm into the endoplasmic reticulum and Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-GlcNAc Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2069,6 +2548,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-glucose is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Glc Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2077,6 +2558,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-glucose is transported from the cytoplasm to the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Glc Transport</rdfs:label>
     </owl:Class>
     
 
@@ -2085,6 +2568,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Glc_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-glucose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Glc Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2093,6 +2578,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Synthesis">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which UDP-xylose is synthesized.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Xyl Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2101,6 +2588,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which UDP-xylose is transported from the cytoplasm to the Golgi.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Xyl Transport</rdfs:label>
     </owl:Class>
     
 
@@ -2109,6 +2598,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UDP-Xyl_Transporter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transporter"/>
+        <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-xylose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">UDP-Xyl Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2126,7 +2617,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#W_ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers mannose to the 2 carbon of tryptophan residues in a W-X-X-W motif.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">Tyrosine ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2135,7 +2628,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers xylose onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">XylT</rdfs:label>
     </owl:Class>
     
 
@@ -2153,7 +2648,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ppGalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylgalactosamine onto serine or threonine residues to initiate O-linked mucin type glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">ppGalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2162,6 +2659,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-3_SialylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between a sialic acid and a galactose monosaccharide on a glycan, where the 2 carbon of the sialic acid is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end galactose.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α2-3 SialylT</rdfs:label>
     </owl:Class>
     
 
@@ -2170,6 +2669,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-6_SialylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between a sialic acid and a galactose on a glycan, where the 2 carbon of the sialic acid is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end monosaccharide.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α2-6 SialylT</rdfs:label>
     </owl:Class>
     
 
@@ -2178,6 +2679,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bonds between two sialic acid residues, where the 2 carbon of the sialic acid on the non-reducing end is in the α configuration and the glycosidic bond is formed on the 8 carbon on the other sialic acid on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α2-8 SialylT</rdfs:label>
     </owl:Class>
     
 
@@ -2186,6 +2689,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between fucose and another monosaccharide on a glycan, where the anomeric carbon of fucose is in the α configuration and the glycosidic bond is formed on the 2 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α2 FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -2194,7 +2699,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between mannose and another monosaccharide on a glycan, where the anomeric carbon of mannose is in the α configuration and the glycosidic bond is formed on the 2 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α2 ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2203,6 +2710,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between fucose and another monosaccharide on a glycan, where the anomeric carbon of fucose is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α3 FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -2211,7 +2720,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylgalactosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylgalactosamine is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α3 GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2220,7 +2731,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GalT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between galactose and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α3 GalT</rdfs:label>
     </owl:Class>
     
 
@@ -2229,7 +2742,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between glucuronic acid and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α3 GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -2238,7 +2753,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between mannose and another monosaccharide on a glycan, where the anomeric carbon of mannose is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α3 ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2247,7 +2764,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between xylose and another monosaccharide on a glycan, where the anomeric carbon of xylose is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α3 XylT</rdfs:label>
     </owl:Class>
     
 
@@ -2256,6 +2775,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between fucose and another monosaccharide on a glycan, where the anomeric carbon of fucose is in the α configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α4 FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -2264,6 +2785,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylglucosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylglucosamine is in the α configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α4 GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2272,7 +2795,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between mannose and another monosaccharide on a glycan, where the anomeric carbon of mannose is in the α configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α4 ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2281,6 +2806,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between fucose and another monosaccharide on a glycan, where the anomeric carbon of fucose is in the α configuration and the glycosidic bond is formed on the 6 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">α6 FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -2289,7 +2816,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between mannose and another monosaccharide on a glycan, where the anomeric carbon of mannose is in the α configuration and the glycosidic bond is formed on the 6 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">α6 ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2298,7 +2827,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β2GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylgalactosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylgalactosamine is in the β configuration and the glycosidic bond is formed on the 2 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">β2 GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2307,7 +2838,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β2GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylglucosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylglucosamine is in the β configuration and the glycosidic bond is formed on the 2 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">β2 GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2316,6 +2849,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylgalactosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylgalactosamine is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β3 GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2324,6 +2859,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GalT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between galactose and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β3 GalT</rdfs:label>
     </owl:Class>
     
 
@@ -2332,6 +2869,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between glucuronic acid and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β3 GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -2340,6 +2879,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β3GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylglucosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylglucosamine is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β3 GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2348,6 +2889,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GalNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylgalactosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylgalactosamine is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β4 GalNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2356,6 +2899,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GalT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GalT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between galactose and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β4 GalT</rdfs:label>
     </owl:Class>
     
 
@@ -2364,6 +2909,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between glucuronic acid and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β4 GlcAT</rdfs:label>
     </owl:Class>
     
 
@@ -2372,6 +2919,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylglucosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylglucosamine is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">β4 GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2380,7 +2929,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4ManT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ManT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between mannose and another monosaccharide on a glycan, where the anomeric carbon of mannose is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">β4 ManT</rdfs:label>
     </owl:Class>
     
 
@@ -2389,7 +2940,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β4XylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#XylT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between xylose and another monosaccharide on a glycan, where the anomeric carbon of xylose is in the β configuration and the glycosidic bond is formed on the 4 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">β4 XylT</rdfs:label>
     </owl:Class>
     
 
@@ -2398,7 +2951,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#β6GlcNAcT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAcT"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between N-acetylglucosamine and another monosaccharide on a glycan, where the anomeric carbon of N-acetylglucosamine is in the β configuration and the glycosidic bond is formed on the 6 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">β6 GlcNAcT</rdfs:label>
     </owl:Class>
     
 
@@ -2408,6 +2963,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">6-sulfated sialyl Lewis X</rdfs:label>
+        <rdfs:label xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</rdfs:label>
     </owl:Class>
     
 
@@ -2416,6 +2973,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates increase their degree of polymerization through successive additions of N-acetylgalactosamine and glucuronic acid.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Polymerization</rdfs:label>
     </owl:Class>
     
 
@@ -2424,6 +2983,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Sulfation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates undergo sulfation on the N-acetylgalactosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -2432,6 +2993,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin or dermatan sulfates receive more N-acetylgalactosamine or glucuronic acid monosaccharides and sulfations, and glucuronic acid epimerizations to variable degrees.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Extension</rdfs:label>
     </owl:Class>
     
 
@@ -2440,912 +3003,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SdaAntigen_&amp;_GM2">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which N-acetylgalactosamine is added to galactose in a b1-4 linkage by B4GALNT2.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">B4GALNT2 catalyzes N-acetylgalactosamine transfer to galactose on N- and O-linked glycan contexts onto Type II lactosamine structures, or onto the GM3 ganglioside.</rdfs:comment>
+        <rdfs:label xml:lang="en">SdA Antigen and GM2 Synthesis</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMAS -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CMAS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FCSK -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FCSK">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FPGT -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FPGT">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Inactive_Glycogenes"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT11 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT11">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Putative_or_Inactive_Glycogenes"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α4FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Branching"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α6FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FUT9">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3FucosylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#G6PC1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Phosphatase"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALE -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALK1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALK1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALK2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALK2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALT -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GALT">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GCK -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GCK">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GFPT1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GFPT1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GFPT2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GFPT2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMDS -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMDS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dehydratase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPB -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GMPPB">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNE -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNPDA1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNPDA1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNPNAT1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GNPNAT1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#HK3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAGK -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NAGK">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Kinase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NANS -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#NANS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PGM3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PMM1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PMM1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PMM2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#PMM2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#POFUT2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-Fuc"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A1"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A10"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A12 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A12"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A2"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A3"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A4"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A5"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC2A8"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35A3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modification_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35B4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35C1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35C1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35D1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35D1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35D2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SLC35D2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Transport"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST3GAL6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GAL1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GAL1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GAL2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GAL2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST6GALNAC6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ST8SIA6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SialylT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α2-8_SialylT"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TSTA3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#TSTA3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UAP1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UAP1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGDH -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGDH">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Dehydrogenase"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGP2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGP2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A5 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A5">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A6 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A6">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A8 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A8">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A9 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT1A9">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A3 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2A3">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B10 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B10">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B11 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B11">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B15 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B15">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B17 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B17">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B28 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B28">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B7 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT2B7">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT3A1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT3A1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT3A2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UGT3A2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UXS1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#UXS1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Nucleotide_Sugar_Synthesis"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
