@@ -82,15 +82,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#inPathway -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#inPathway">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycogene"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -157,8 +148,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acetylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers an acetyl group to another molecule.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Acetylase</rdfs:label>
-        <rdfs:label xml:lang="en">An enzyme which transfers an acetyl group to another molecule.</rdfs:label>
     </owl:Class>
     
 
@@ -189,7 +180,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Acyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers an acyl group onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Acyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -198,6 +191,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Aminotransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers an amino group onto another molecule.</obo:IAO_0000115>
+        <rdfs:label>Aminotransferase</rdfs:label>
     </owl:Class>
     
 
@@ -216,8 +211,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#C-Man">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin proteins.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">C-Mannosylation</rdfs:label>
-        <rdfs:label xml:lang="en">The process by which mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin proteins.</rdfs:label>
     </owl:Class>
     
 
@@ -359,6 +354,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
         <obo:IAO_0000115 xml:lang="en">A process by which galactose is attached to serine or threonine residues on collagen.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Collagen Glycosylation</rdfs:label>
     </owl:Class>
     
 
@@ -418,6 +414,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytidylyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <rdfs:comment>An enzyme which transfers cytidylyl phosphate groups onto another molecule.</rdfs:comment>
+        <rdfs:label>Cytidylyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -607,10 +605,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#EOGT_Type">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#O-linked"/>
+        <obo:IAO_0000115 xml:lang="en">Process by which N-acetylglucosamine is attached to serine or threonine residues of proteins.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <oboInOwl:hasExactSynonym xml:lang="en">O-GlcNAcylation</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">EOGT-type O-linked Glycosylation</rdfs:label>
-        <rdfs:label xml:lang="en">Process by which N-acetylglucosamine is attached to serine or threonine residues of proteins.</rdfs:label>
     </owl:Class>
     
 
@@ -670,6 +668,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase"/>
         <obo:IAO_0000115 xml:lang="en">An enzyme which transfers fucose onto another molecule.</obo:IAO_0000115>
+        <rdfs:label>FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -1025,8 +1024,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc6S_Sulfatase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfatase"/>
         <obo:IAO_0000115 xml:lang="en">A sulfatase which removes sulfate groups from the 6 carbon of N-acetylglucosamine.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">GlcNAc6S Sulfatase</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label xml:lang="en">GlcNAc6S Sulfatase</rdfs:label>
     </owl:Class>
     
 
@@ -1045,7 +1044,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcNAc_PhosphoT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers phosphate onto N-acetylglucosamine.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>GlcNAc Phosphotransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1125,6 +1126,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glucuronidation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Pathway"/>
+        <obo:IAO_0000115>A process by which glucuronic acid is covalently linked onto xenobiotics for their clearance by the excretory system.</obo:IAO_0000115>
+        <rdfs:label>Glucuronidation</rdfs:label>
     </owl:Class>
     
 
@@ -1234,6 +1237,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transferase"/>
         <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between two monosaccharides, where one monosaccharide is transferred to another.</obo:IAO_0000115>
+        <rdfs:label>Glycosyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1242,6 +1246,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Guanylyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers a guanylyl phosphate group onto another molecule.</obo:IAO_0000115>
+        <rdfs:label>Guanylyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1602,7 +1608,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#LacDiNAc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
-        <rdfs:label xml:lang="en">A process by which N-acetylgalactosamine is transferred onto N-acetylglucosamine via B4GALNT3 or B4GALNT4.</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A process by which N-acetylgalactosamine is transferred onto N-acetylglucosamine via B4GALNT3 or B4GALNT4.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">LacDiNAc</rdfs:label>
     </owl:Class>
     
@@ -1964,6 +1970,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Oligosaccharyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which facilitates the transfer of a glycan structure en bloc from one molecule to another.</obo:IAO_0000115>
+        <rdfs:label>Oligosaccharyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1974,6 +1982,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycan_Degradation"/>
         <obo:IAO_0000115 xml:lang="en">Other breakdown processes related to glycosylation.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Other Degradation</rdfs:label>
     </owl:Class>
     
 
@@ -2073,6 +2082,7 @@
         <obo:IAO_0000115 xml:lang="en">Process by which Phosphoadenosine phosphosulfate (PAPS) is synthesized.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:comment xml:lang="en">PAPS is required for the sulfation of monosaccharides in glycan structures.  Several glycan types are sulfated, including glycosaminoglycans such as chondroitin and dermatan sulfates, heparan sulfates, keratan sulfates, and some terminal structures such as sulfated Sialyl Lewis X, sulfated GalCer, and the HNK1 epitope.</rdfs:comment>
+        <rdfs:label>PAPS Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -2194,6 +2204,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Protein_FucosylT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#FucosylT"/>
         <obo:IAO_0000115 xml:lang="en">An enzyme which transfers fucose directly onto the amino acids of a protein.  Fucose is covalently attached onto serine or threonine residues.</obo:IAO_0000115>
+        <rdfs:label>Protein FucosylT</rdfs:label>
     </owl:Class>
     
 
@@ -2255,6 +2266,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#RibitolT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers ribitol onto another molecule.</obo:IAO_0000115>
+        <rdfs:label>Ribitol Transferase</rdfs:label>
     </owl:Class>
     
 
@@ -2314,8 +2327,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Sulfurylase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Modifying_Enzyme"/>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which transfers a sulfate group from PAPS onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label xml:lang="en">An enzyme which transfers a sulfate group from PAPS onto another molecule.</rdfs:label>
         <rdfs:label xml:lang="en">Sulfurylase</rdfs:label>
     </owl:Class>
     
@@ -2608,7 +2621,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Uridylyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers an uridylyl phosphate group onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Uridylyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -2639,7 +2654,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#ethanolamine_phosphate_transferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers an ethanolamine phosphate group onto another molecule.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Ethanolamine Phosphate Transferase</rdfs:label>
     </owl:Class>
     
 
@@ -2742,7 +2759,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#α3GlcAT">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#GlcAT"/>
-        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between glucuronic acid and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the β configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An enzyme which forms a glycosidic bond between glucuronic acid and another monosaccharide on a glycan, where the anomeric carbon of galactose is in the α configuration and the glycosidic bond is formed on the 3 carbon on the reducing end.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">α3 GlcAT</rdfs:label>
     </owl:Class>
@@ -2962,9 +2979,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">6-sulfated sialyl Lewis X</rdfs:label>
-        <rdfs:label xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</rdfs:label>
     </owl:Class>
     
 
@@ -3011,5 +3028,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
