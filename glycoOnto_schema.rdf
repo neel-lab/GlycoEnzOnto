@@ -9,7 +9,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto/1.0.0"/>
+        <dc:creator>Sriram Neelamegham</dc:creator>
+        <dc:creator>Theodore Groth</dc:creator>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">GlycoOnto is an ontology which describes the molecular functions and metabolic pathway involvement of 381 glycosylation-related genes, called glycogenes.  The four biological processes modelled in GlycoOnto are 1. metabolism of glycosylation donor substrates, including sugar nucleotides and monosaccharide substituents, 2. transport of donor substrates into glycosylation compartments such as the endoplasmic reticulum and Golgi, 3. the glycosylation process, and 4. degradation of glycans.  Auxilliary processes which serve to modulate the glycosylation process or substrates for glycosylation are also modelled in GlycoOnto.  The mechanistic functions of each enzyme are encoded as a single string in the form of reaction rules and reaction constraints.</dc:description>
+        <dc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</dc:license>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GlycoOnto</dc:title>
+    </owl:Ontology>
     
 
 
@@ -33,6 +40,24 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
