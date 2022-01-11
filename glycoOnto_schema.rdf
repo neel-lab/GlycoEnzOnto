@@ -367,6 +367,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cofactor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Glycosylation_Regulator"/>
+        <obo:IAO_0000115>A protein required for the proper function of another protein to carry out a glycosylation-related process.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">Cofactor</rdfs:label>
     </owl:Class>
@@ -439,7 +440,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Cytidylyltransferase">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases"/>
-        <rdfs:comment>An enzyme which transfers cytidylyl phosphate groups onto another molecule.</rdfs:comment>
+        <obo:IAO_0000115>An enzyme which transfers cytidylyl phosphate groups onto another molecule.</obo:IAO_0000115>
         <rdfs:label>Cytidylyltransferase</rdfs:label>
     </owl:Class>
     
@@ -1735,7 +1736,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#N-linked">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CorePathways"/>
-        <rdfs:comment>N-linked glycosylation occurs on proteins asparagine residues within an N-X-S/T motif.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the Dolichol Pathway, Processing, and optionally, Branching.</rdfs:comment>
+        <obo:IAO_0000115>N-linked glycosylation occurs on proteins asparagine residues within an N-X-S/T motif.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the Dolichol Pathway, Processing, and optionally, Branching.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">N-linked Glycosylation</rdfs:label>
     </owl:Class>
     
@@ -2096,6 +2097,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Other_Transferases">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Transferase"/>
+        <obo:IAO_0000115>An enzyme which transfers something other than a monosaccharide or a molecular substituent which modifies a monosaccharide on a glycan structure.</obo:IAO_0000115>
+        <rdfs:label>Other Transferase</rdfs:label>
     </owl:Class>
     
 
