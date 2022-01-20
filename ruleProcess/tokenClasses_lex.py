@@ -781,6 +781,9 @@ class monoToken(entityToken):
         self.modTokens=modifications
         self.linkage=linkage
         self.branching=branching
+        #Flag for case when a single monosaccharide
+        # continues its branching.
+        self.isextendbranch=False
 
     def __repr__(self):
 
@@ -844,7 +847,11 @@ class monoToken(entityToken):
         '''
         #Return substrate/product representation of reaction token:
         if self.reactionToken is not None:
-            return(self.reactionToken.token.substrate(),self.reactionToken.token.product())
+            sub,prd=self.reactionToken.token.substrate(),self.reactionToken.token.product()
+            return(sub,prd)
+        elif self.isextendbranch:
+            sub='['+self.mono;prod=self.mono
+            return(sub,prod)
         else:
             return('','')
 
@@ -878,7 +885,10 @@ class monoToken(entityToken):
             #Generate All possible monosaccharide representations:
             #String Order:
             # Left Bracket, Monosaccharide, Compartment, Modification Permutations,Linkage Information, Right Bracket: 
-            reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
+            if self.isextendbranch:
+                reactStrings=[''.join(x) for x in prod(*[[leftBracket],[compartment],modStrings,[linkage],[rightBracket]])]
+            else:
+                reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
             return(reactStrings)
         return(_wrap)
 

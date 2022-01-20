@@ -78,3 +78,12 @@ for i,r in finishedGlycogenes.iterrows():
         processed.append(geneName)
     except :
         notProcessed.append(geneName)
+
+####################
+# Processing Report:
+####################
+
+print('Processing Summary:')
+print(f'{len(noRuleGlycogenes)} do not have reaction rules and were not processed.')
+print(f'Of the {len(processed)+len(notProcessed)} glycogenes:\n{len(processed)} were successfully processed.')
+print(f'Unprocessed genes: {notProcessed}')

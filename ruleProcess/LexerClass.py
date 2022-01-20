@@ -108,6 +108,14 @@ class LexerClass:
                 #Get matched position using token matchFun method:
                 sch=tok.matchFun()
                 sch_end=sch.end()
+                ### Branching check for 2nd stub:
+                #  If the last added mono has left square bracket
+                #  and current mono has right bracket, set the mono
+                #  "isextendbranch" to "True"
+                if len(tokens)>0:
+                    if tokens[-1].__name__=='reactionToken':
+                        if tokens[-1].token.ligand_token[0].token.branching['leftBracket'] and tok.token.branching['rightBracket']:
+                            tok.token.isextendbranch=True
                 #Append the found token to the token list:
                 tokens.append(tok)
                 #Mark the match end:

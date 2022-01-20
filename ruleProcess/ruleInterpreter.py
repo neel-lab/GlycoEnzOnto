@@ -226,7 +226,13 @@ class GlycanProcessorGenerator(generatorSet):
     def __init__(self,fromString,toString,reactionType):
         self.fromString=fromString
         self.toString=toString
+        print(self.fromString)
+        print(self.toString)
         self.reactionType=reactionType
+
+    #Call method for GlycanProcessorGenerator:
+    def __call__(self,glycan):
+        return(self.makeProducts(glycan))
      
     def constructToString(self,mtch):
         '''
@@ -316,6 +322,7 @@ class GlycanProcessorGenerator(generatorSet):
         like the "to" pattern.
         '''
         fromString_regex=super().rule2regex(self.fromString)
+        print(fromString_regex)
         #self.toString=re.sub('^\.\.\.','',self.toString)
         mtchs=self.getGlycanMatch(fromString_regex,glycan)
         #Initialize a product list:
@@ -337,8 +344,6 @@ class GlycanProcessorGenerator(generatorSet):
             #products=[self.fixGlycanBranching(p) for p in products]
         return(products)
 
-    def __call__(self,glycan):
-        return(self.makeProducts(glycan))
 
 
 class reactionRule(Rule):
@@ -508,7 +513,7 @@ class ConstraintMethodGenerator(generatorSet):
         "seqSet"
         '''
         self.negation=False
-        self.numeric=quantifierToken
+        self.numeric=None
         self.attachment=None
         self.reactionRule=reactionRule
         self.seqSet=[]
@@ -535,8 +540,13 @@ class ConstraintMethodGenerator(generatorSet):
                         self.seqSet.append('@')
             else:
                 self.seqSet.append(t.product()[0])
+
         #Generate the constraint:
         self.constraint=self.constraintGen()
+
+    #Call method for ConstraintMethodGenerator:
+    def __call__(self,glycan):
+        return(self.constraint(glycan))
 
     def getAddMono(self):
         '''
@@ -574,19 +584,20 @@ class ConstraintMethodGenerator(generatorSet):
         #Base search function:
         stringSearch=self.createSeq()
         stringSearch_regex=super().rule2regex(stringSearch)
-        funOut=lambda glycan: re.finditer(stringSearch_regex,glycan)
+        funOut_search=lambda glycan: re.finditer(stringSearch_regex,glycan)
         #Negation:
         if self.negation:
-            funOut=lambda glycan: funOut(glycan) is None
+            funOut=lambda glycan: len(list(funOut_search(glycan)))==0
         else:
-            funOut=lambda glycan: funOut(glycan) is not None
+            funOut=lambda glycan: len(list(funOut_search(glycan)))>0
         #Numerical Constraint:
         if self.numeric is not None:
             #The quantifier object contains a method
             # Which automatically evaluates if the quantity
             # of patterns matched fulfills the quantifier.
-            funOut=lambda glycan: self.numeric.logical_fun(funOut(glycan))
+            funOut=lambda glycan: self.numeric.logical_fun(funOut_search(glycan))
         return(funOut)
+
 
 
 
