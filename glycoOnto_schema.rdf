@@ -3139,9 +3139,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#6-Sulfo_sLeX -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#6-Sulfo_sLeX">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#6-Sulfo_sLeX">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
         <obo:IAO_0000115 xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
@@ -3150,29 +3150,29 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Polymerization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Polymerization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Polymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates increase their degree of polymerization through successive additions of N-acetylgalactosamine and glucuronic acid.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Polymerization</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Sulfation -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Sulfation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#CS&amp;DS_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates undergo sulfation on the N-acetylgalactosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Sulfation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#Chondroitin&amp;Dermatan_Sulfate">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin or dermatan sulfates receive more N-acetylgalactosamine or glucuronic acid monosaccharides and sulfations, and glucuronic acid epimerizations to variable degrees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Extension</rdfs:label>
@@ -3180,9 +3180,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SdaAntigen_&amp;_GM2 -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen_&amp;_GM2 -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto#SdaAntigen_&amp;_GM2">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen_&amp;_GM2">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
         <obo:IAO_0000115 xml:lang="en">The process by which N-acetylgalactosamine is added to galactose in a b1-4 linkage by B4GALNT2.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">B4GALNT2 catalyzes N-acetylgalactosamine transfer to galactose on N- and O-linked glycan contexts onto Type II lactosamine structures, or onto the GM3 ganglioside.</rdfs:comment>
