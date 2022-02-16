@@ -283,7 +283,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CMP-Neu5Ac_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CMP-Neu5Ac_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports CMP-Neu5Ac from the cytoplasm into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">CMP-Neu5Ac Transporter</rdfs:label>
     </owl:Class>
@@ -384,7 +384,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Cofactor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Cofactor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
         <obo:IAO_0000115>A protein required for the proper function of another protein to carry out a glycosylation-related process.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">Cofactor</rdfs:label>
@@ -718,6 +718,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Enhancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Enhancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
+        <obo:IAO_0000115 xml:lang="en">Proteins which promote glycoyslation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Enhancer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Epimerase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Epimerase">
@@ -833,7 +843,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Fuc_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Fuc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports GDP-Fucose from the cytoplasm into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">GDP-Fuc Transporter</rdfs:label>
     </owl:Class>
@@ -863,7 +873,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Man_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Man_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports GDP-mannose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">GDP-Man Transporter</rdfs:label>
     </owl:Class>
@@ -1191,7 +1201,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glucose_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glucose_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Monosaccharide_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein which transports glucose into the cytoplasm of the cell.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Glucose Transporter</rdfs:label>
     </owl:Class>
@@ -1288,20 +1298,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Enhancer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Enhancer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator"/>
-        <obo:IAO_0000115 xml:lang="en">Proteins which promote glycoyslation.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Glycosylation Enhancer</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Inhibitor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Inhibitor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
         <obo:IAO_0000115 xml:lang="en">Proteins which prevent glycosylation from occurring.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Glycosylation Inhibitor</rdfs:label>
     </owl:Class>
@@ -1314,16 +1314,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Pathway"/>
         <obo:IAO_0000115 xml:lang="en">A process by which a protein either promotes or hinders glycosylation through interaction with other proteins.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Glycosylation Regulation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycogene"/>
-        <obo:IAO_0000115 xml:lang="en">Glycosylation Regulators are proteins which interact with glycans or proteins which perform glycosylation to modulate their function.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Glycosylation Regulator</rdfs:label>
     </owl:Class>
     
 
@@ -1345,6 +1335,17 @@
         <obo:IAO_0000115>An intracellular compartment which is responsible for the traffiking and modification to either be secreted, embedded into the cellular membrane, or placed into lysosomes.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label>Golgi Apparatus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Guanyltransferase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Guanyltransferase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Other_Transferases"/>
+        <obo:IAO_0000115>An enzyme which transfers a guanyl phosphate group onto another molecule.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Guanyltransferase</rdfs:label>
     </owl:Class>
     
 
@@ -1623,10 +1624,19 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Intracellular_Lectin -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Intracellular_Lectin">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Regulator"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
         <obo:IAO_0000115 xml:lang="en">Carbohydrate-binding proteins which bind to glycan structures within the cell.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">Intracellular Lectin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Isomerase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Isomerase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modifying_Enzyme"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
     </owl:Class>
     
 
@@ -1835,6 +1845,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Monosaccharide_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Monosaccharide_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <obo:IAO_0000115>A membrane-bound transporter which facilitates the transfer of monosaccharides in between cellular compartments.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Monosaccharide Transporter</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked">
@@ -1950,6 +1971,17 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Donor_Transport"/>
         <obo:IAO_0000115 xml:lang="en">A process by which sugar nucleotides synthesized in the cytoplasm are transported into the endoplasmic reticulum or Golgi to serve as substrates for glycosylation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Nucleotide Sugar Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <obo:IAO_0000115>A protein which facilitates the transfer of nucleotide sugars across cellular barriers.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Nucleotide Sugar Transporter</rdfs:label>
     </owl:Class>
     
 
@@ -2242,7 +2274,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#PAPS_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#PAPS_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports PAPS from the cytosol into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">PAPS Transporter</rdfs:label>
     </owl:Class>
@@ -2384,9 +2416,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Putative_or_Inactive_Glycogenes -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Putative_or_Inactive -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Putative_or_Inactive_Glycogenes">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Putative_or_Inactive">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycogene"/>
         <obo:IAO_0000115 xml:lang="en">This class describes enzymes that are predicted to be some sort of glycosylating enzyme, but does not have sufficient experimental evidence to support a classification into a group.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Putative or Inactive Glycogenes</rdfs:label>
@@ -2400,6 +2432,16 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Pathway"/>
         <obo:IAO_0000115 xml:lang="en">A class describing pathways still under investigation or postulated pathways which have no evidence for taking place due to lack of experimental evidence.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Putative or Unknown Pathways</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycogene"/>
+        <obo:IAO_0000115 xml:lang="en">Glycosylation Regulators are proteins which interact with glycans or proteins which perform glycosylation to modulate their function.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Regulator</rdfs:label>
     </owl:Class>
     
 
@@ -2613,7 +2655,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GalNAc_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GalNAc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-N-acetylgalactosamine from the cytoplasm into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-GalNAc</rdfs:label>
     </owl:Class>
@@ -2643,7 +2685,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Gal_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Gal_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-galactose from the cytoplasm into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-Gal Transporter</rdfs:label>
     </owl:Class>
@@ -2673,7 +2715,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GlcA_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GlcA_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-glucuronic acid from the cytoplasm into the Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-GlcA Transporter</rdfs:label>
     </owl:Class>
@@ -2703,7 +2745,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GlcNAc_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-GlcNAc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-N-acetylglucosamine from the cytoplasm into the endoplasmic reticulum and Golgi.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-GlcNAc Transporter</rdfs:label>
     </owl:Class>
@@ -2733,7 +2775,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Glc_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Glc_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-glucose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-Glc Transporter</rdfs:label>
     </owl:Class>
@@ -2763,7 +2805,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Xyl_Transporter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#UDP-Xyl_Transporter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Transporter"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nucleotide_Sugar_Transporter"/>
         <obo:IAO_0000115 xml:lang="en">A protein that transports UDP-xylose from the cytoplasm into the endoplasmic reticulum.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">UDP-Xyl Transporter</rdfs:label>
     </owl:Class>
