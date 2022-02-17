@@ -1732,6 +1732,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Polymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Polymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Keratan_Sulfate"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Keratan Sulfate Polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Sulfation">
