@@ -1517,6 +1517,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Initiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Initiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#O-Xyl"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Heparan Sulfate Initiation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Lysosome_Degradation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Lysosome_Degradation">
@@ -3300,6 +3310,16 @@
         <obo:IAO_0000115 xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">6-sulfated sialyl Lewis X</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Initiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Initiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#O-Xyl"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Chondroitin and Dermatan Sulfate Initiation</rdfs:label>
     </owl:Class>
     
 
