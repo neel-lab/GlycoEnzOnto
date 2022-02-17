@@ -2933,6 +2933,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi_network">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Golgi"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>cis-Golgi Network</rdfs:label>
     </owl:Class>
     
 
@@ -2974,6 +2975,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi_network"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>trans-Golgi</rdfs:label>
     </owl:Class>
     
 
