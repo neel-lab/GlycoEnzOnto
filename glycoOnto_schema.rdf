@@ -1835,13 +1835,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Mitochondrion -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Mitochondria -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Mitochondrion">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Mitochondria">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Compartment"/>
         <obo:IAO_0000115>The organelle responsible for facilitating oxydative phosphorylation, the main process by which cellular energy is produced in eukaryotic cells.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label>Mitochondrion</rdfs:label>
+        <rdfs:label>Mitochondria</rdfs:label>
     </owl:Class>
     
 
