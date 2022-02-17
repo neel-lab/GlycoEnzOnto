@@ -229,33 +229,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Branching -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Branching">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked"/>
-        <obo:IAO_0000115 xml:lang="en">The process by which N-linked glycans increase their degree of branching.  Firstly, MGAT1 and MGAT2 transfer N-acetylglucosamine residues onto the a1-3 and a1-6 mannose arms of glycan structures which emerge from the processing pathway, respectively, and via the MGAT4a/b/c and MGAT5 enzymes.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Branching</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#C-Man -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#C-Man">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CorePathways"/>
         <obo:IAO_0000115 xml:lang="en">The process by which mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin proteins.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">C-Mannosylation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CMP-Neu59Ac_Synthesis -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CMP-Neu59Ac_Synthesis">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CMP-Neu5Ac_Synthesis"/>
-        <obo:IAO_0000115 xml:lang="en">A metabolic process by which CMP-Neu5,9Ac is synthesized.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label xml:lang="en">Neu5,9Ac Synthesis</rdfs:label>
     </owl:Class>
     
 
@@ -677,13 +656,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ER -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ERGIC -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ER">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Compartment"/>
-        <obo:IAO_0000115>The cisternae surrounding the nucleus in a cell which is responsible for protein synthesis and modificaiton.</obo:IAO_0000115>
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ERGIC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label>Endoplasmic Reticulum</rdfs:label>
+        <rdfs:label>Endoplasmic Reticulum-Golgi Intermediate Compartment</rdfs:label>
     </owl:Class>
     
 
@@ -704,6 +682,27 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosidase"/>
         <obo:IAO_0000115 xml:lang="en">Endoglycosidases cleave glycosidic bonds of a pair of monosaccharides which does not contain a terminal monosaccharide.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Endoglycosidase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Compartment"/>
+        <obo:IAO_0000115>The cisternae surrounding the nucleus in a cell which is responsible for protein synthesis and modificaiton.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Endoplasmic Reticulum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum_Lumen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum_Lumen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endoplasmic_Reticulum"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Endoplasmic Reticulum Lumen</rdfs:label>
     </owl:Class>
     
 
@@ -891,6 +890,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycolipids"/>
+        <obo:IAO_0000115>A process by which a glycosphingolipid is initiated.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>GSL</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL_Cytosol_Degradation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL_Cytosol_Degradation">
@@ -975,7 +985,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GalCer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GalCer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycolipids"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL"/>
         <obo:IAO_0000115 xml:lang="en">The initiation of galactosylceramide via the action of UGT8.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">GalCer</rdfs:label>
     </owl:Class>
@@ -1087,7 +1097,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycolipids"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GSL"/>
         <obo:IAO_0000115 xml:lang="en">The initiation of glucosylceramides.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">GlcCer</rdfs:label>
     </owl:Class>
@@ -1743,6 +1753,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Late_Endosome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Late_Endosome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Endosome"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Late Endosome</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lysosomal_Targeting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lysosomal_Targeting">
@@ -1953,6 +1973,38 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer"/>
         <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B3GNT5, and a myriad of B4GALTs.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Neolactoside</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neu59Ac_Metabolism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neu59Ac_Metabolism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
+        <obo:IAO_0000115>The addition or removal of acetyl groups onto Neu5Ac to form or degrade Neu5,9Ac.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Neu5,9Ac Metabolism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nlinked_Branching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nlinked_Branching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which N-linked glycans increase their degree of branching.  Firstly, MGAT1 and MGAT2 transfer N-acetylglucosamine residues onto the a1-3 and a1-6 mannose arms of glycan structures which emerge from the processing pathway, respectively, and via the MGAT4a/b/c and MGAT5 enzymes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">N-linked Branching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nlinked_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Nlinked_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked"/>
+        <obo:IAO_0000115 xml:lang="en">A process by which the precursory N-linked glycan structure produced by the Dolichol Pathway is trimmed successively via glucosidases and mannosidases.</obo:IAO_0000115>
+        <rdfs:comment>The Processing pathways begins with the removal α(1-2)Glc by MOGS from the nonreducing terminal end of the α(1-3)Man branch to produce Glc2Man9GlcNAc2. During this trimming process, glycoproteins containing a single α(1-3)Glc residue are recognized by the ER lectin chaperones, calreticulin (CRT) and calnexin (CNX). These chaperones are complexed with protein disulfide isomerase isoforms, and this aids the folding and maturation of glycoproteins. Upon transient release from the lectin chaperones, α-Glucosidase II clips the remaining Glc and the protein moves to the next steps of processing, provided it is well folded.</rdfs:comment>
+        <rdfs:label xml:lang="en">N-linked Processing</rdfs:label>
     </owl:Class>
     
 
@@ -2364,17 +2416,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Processing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Processing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#N-linked"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which the precursory N-linked glycan structure produced by the Dolichol Pathway is trimmed successively via glucosidases and mannosidases.</obo:IAO_0000115>
-        <rdfs:comment>The Processing pathways begins with the removal α(1-2)Glc by MOGS from the nonreducing terminal end of the α(1-3)Man branch to produce Glc2Man9GlcNAc2. During this trimming process, glycoproteins containing a single α(1-3)Glc residue are recognized by the ER lectin chaperones, calreticulin (CRT) and calnexin (CNX). These chaperones are complexed with protein disulfide isomerase isoforms, and this aids the folding and maturation of glycoproteins. Upon transient release from the lectin chaperones, α-Glucosidase II clips the remaining Glc and the protein moves to the next steps of processing, provided it is well folded.</rdfs:comment>
-        <rdfs:label xml:lang="en">Processing</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_FucosylT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_FucosylT">
@@ -2454,17 +2495,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Other_Transferases"/>
         <obo:IAO_0000115>An enzyme which transfers ribitol onto another molecule.</obo:IAO_0000115>
         <rdfs:label>Ribitol Transferase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Secreted -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Secreted">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Compartment"/>
-        <obo:IAO_0000115>A protein is not located within the cell, on the cell membrane, or on the periphery of cells.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label>Secreted</rdfs:label>
     </owl:Class>
     
 
@@ -2836,6 +2866,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Vesicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Vesicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Compartment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Vesicle</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#W_ManT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#W_ManT">
@@ -2858,6 +2898,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi_network"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>cis-Golgi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#cisGolgi_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Golgi"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ethanolamine_phosphate_transferase -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ethanolamine_phosphate_transferase">
@@ -2869,6 +2928,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#medialGolgi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#medialGolgi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Golgi"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>medial-Golgi</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ppGalNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ppGalNAcT">
@@ -2876,6 +2945,25 @@
         <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylgalactosamine onto serine or threonine residues to initiate O-linked mucin type glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">ppGalNAcT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi_network"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi_network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#transGolgi_network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Golgi"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>trans-Golgi Network</rdfs:label>
     </owl:Class>
     
 
