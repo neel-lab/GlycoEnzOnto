@@ -1198,12 +1198,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Globoside -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Globo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Globoside">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Globo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer"/>
         <obo:IAO_0000115 xml:lang="en">The process by which the GalNAc(b1-3)Gal(a1-4)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, A4GALT, and B3GALNT1.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Globoside</rdfs:label>
+        <rdfs:label xml:lang="en">Globo-series</rdfs:label>
     </owl:Class>
     
 
@@ -1325,16 +1325,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Pathway"/>
         <obo:IAO_0000115 xml:lang="en">The synthesis of complex carbohydrates, known as glycans, via a series of metabolic reactions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Glycosylation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Inhibitor -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Glycosylation_Inhibitor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
-        <obo:IAO_0000115 xml:lang="en">Proteins which prevent glycosylation from occurring.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Glycosylation Inhibitor</rdfs:label>
     </owl:Class>
     
 
@@ -1662,6 +1652,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Inhibitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Inhibitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Regulator"/>
+        <obo:IAO_0000115 xml:lang="en">Proteins which prevent glycosylation from occurring.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">Inhibitor</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Intracellular_Lectin -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Intracellular_Lectin">
@@ -1783,12 +1783,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lactoside -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lacto -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lactoside">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Lacto">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer"/>
         <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B3GNT5, and B3GALNT1.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Lactoside</rdfs:label>
+        <rdfs:label xml:lang="en">Lacto-series</rdfs:label>
     </owl:Class>
     
 
@@ -2007,12 +2007,12 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neolactoside -->
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neolacto -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neolactoside">
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Neolacto">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GlcCer"/>
         <obo:IAO_0000115 xml:lang="en">The process by which the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure is synthesized through the successive action of B4GALT6, B3GNT5, and a myriad of B4GALTs.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Neolactoside</rdfs:label>
+        <rdfs:label xml:lang="en">Neolacto-series</rdfs:label>
     </owl:Class>
     
 
@@ -2535,6 +2535,17 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Other_Transferases"/>
         <obo:IAO_0000115>An enzyme which transfers ribitol onto another molecule.</obo:IAO_0000115>
         <rdfs:label>Ribitol Transferase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
+        <obo:IAO_0000115 xml:lang="en">The process by which N-acetylgalactosamine is added to galactose in a b1-4 linkage by B4GALNT2.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">B4GALNT2 catalyzes N-acetylgalactosamine transfer to galactose on N- and O-linked glycan contexts onto Type II lactosamine.</rdfs:comment>
+        <rdfs:label xml:lang="en">SdA Antigen</rdfs:label>
     </owl:Class>
     
 
@@ -3360,17 +3371,6 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin or dermatan sulfates receive more N-acetylgalactosamine or glucuronic acid monosaccharides and sulfations, and glucuronic acid epimerizations to variable degrees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Extension</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen_&amp;_GM2 -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#SdaAntigen_&amp;_GM2">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
-        <obo:IAO_0000115 xml:lang="en">The process by which N-acetylgalactosamine is added to galactose in a b1-4 linkage by B4GALNT2.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">B4GALNT2 catalyzes N-acetylgalactosamine transfer to galactose on N- and O-linked glycan contexts onto Type II lactosamine structures, or onto the GM3 ganglioside.</rdfs:comment>
-        <rdfs:label xml:lang="en">SdA Antigen and GM2 Synthesis</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
