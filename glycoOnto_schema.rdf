@@ -840,6 +840,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GAG_Polymerization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GAG_Polymerization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
+        <obo:IAO_0000115>Processes which increase polysaccharide chain lengths of chondroitin and dermatan sulfate, and heparan sulfate through the action of polymerases.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Glycosaminoglycan Polymerization</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Fuc_Synthesis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GDP-Fuc_Synthesis">
@@ -1539,7 +1550,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Polymerization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Polymerization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Heparan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GAG_Polymerization"/>
         <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates increase their degree of polymerization through successive additions of N-acetylglucosamine and glucuronic acid.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Heparan Sulfate Polymerization</rdfs:label>
     </owl:Class>
@@ -1549,19 +1560,9 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#HS_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Heparan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation"/>
         <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates undergo sulfation on the N-acetylglucosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Heparan Sulfate Sulfation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Heparan_Sulfate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Heparan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which heparan sulfates receive more N-acetylglucosamine or glucuronic acid monosaccharides and sulfations, in an unprescribed manner, thus increasing their degree of polymerization and extent of modification.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Heparan Sulfate Extension</rdfs:label>
     </owl:Class>
     
 
@@ -1735,7 +1736,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Polymerization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Polymerization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Keratan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GAG_Polymerization"/>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label>Keratan Sulfate Polymerization</rdfs:label>
     </owl:Class>
@@ -1745,20 +1746,10 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#KS_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Keratan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation"/>
         <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate receives sulfations on N-acetylglucosamine and galactose residues in LacNAc chains on either N-linked or O-linked glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">Keratan Sulfate Sulfation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Keratan_Sulfate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Keratan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which keratan sulfate is synthesized through the increased polymerization of Type II LacNAc and subsequent N-acetylglucosamine and galactose sulfation via the CHST sulfotransferases.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Keratan Sulfate Extension</rdfs:label>
     </owl:Class>
     
 
@@ -1872,6 +1863,17 @@
         <obo:IAO_0000115>The organelle responsible for facilitating oxydative phosphorylation, the main process by which cellular energy is produced in eukaryotic cells.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label>Mitochondria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Pathway"/>
+        <obo:IAO_0000115>A process whereby molecular substituents such as sulfate, phosphate and acetyl groups are covalently attached to proteins or monosaccharides pesent on glycans.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Modification</rdfs:label>
     </owl:Class>
     
 
@@ -2990,6 +2992,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification"/>
+        <obo:IAO_0000115>A process whereby monosaccharides part of glycans are modified by sulfate on molecules.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Monosaccharide Sulfation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ppGalNAcT -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#ppGalNAcT">
@@ -2997,6 +3010,17 @@
         <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylgalactosamine onto serine or threonine residues to initiate O-linked mucin type glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">ppGalNAcT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#protein_sulfation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#protein_sulfation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification"/>
+        <obo:IAO_0000115>A process whereby sulfate groups are transfered onto proteins as a post-translational modification.</obo:IAO_0000115>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
+        <rdfs:label>Protein Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -3348,7 +3372,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Polymerization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Polymerization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#GAG_Polymerization"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates increase their degree of polymerization through successive additions of N-acetylgalactosamine and glucuronic acid.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Polymerization</rdfs:label>
     </owl:Class>
@@ -3358,19 +3382,9 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#CS&amp;DS_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation"/>
         <obo:IAO_0000115 xml:lang="en">A process by which chondroitin and dermatan sulfates undergo sulfation on the N-acetylgalactosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Sulfation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Chondroitin&amp;Dermatan_Sulfate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which chondroitin or dermatan sulfates receive more N-acetylgalactosamine or glucuronic acid monosaccharides and sulfations, and glucuronic acid epimerizations to variable degrees.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">Chondroitin and Dermatan Sulfate Extension</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
