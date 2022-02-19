@@ -2468,24 +2468,13 @@
     
 
 
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_Modification -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_Modification">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Pathway"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which a protein is modified by a molecle that is not a monosaccharide.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label xml:lang="en">Protein Modification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Protein_Modification"/>
-        <obo:IAO_0000115 xml:lang="en">A process by which a protein&apos;s tyrosine residues are sulfated by TPST1 enzymes.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification"/>
+        <obo:IAO_0000115>A process whereby sulfate groups are transfered onto proteins as a post-translational modification.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label xml:lang="en">Protein Sulfation</rdfs:label>
+        <rdfs:label>Protein Sulfation</rdfs:label>
     </owl:Class>
     
 
@@ -3010,17 +2999,6 @@
         <obo:IAO_0000115 xml:lang="en">An enzyme which transfers N-acetylgalactosamine onto serine or threonine residues to initiate O-linked mucin type glycans.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">ppGalNAcT</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#protein_sulfation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#protein_sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Modification"/>
-        <obo:IAO_0000115>A process whereby sulfate groups are transfered onto proteins as a post-translational modification.</obo:IAO_0000115>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
-        <rdfs:label>Protein Sulfation</rdfs:label>
     </owl:Class>
     
 
