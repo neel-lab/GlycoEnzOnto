@@ -3,14 +3,12 @@ from tokenClasses_lex import *
 from ruleInterpreter import *
 import traceback
 
-#finisehdGlycogenes.tsv:
-finishedGlycogenes=pd.read_csv('../finishedGlycogenes.tsv',sep='\t',index_col=None)
 #Create glycogene objects:
 #  Methods:
 #    Forward and Reverse reaction inference methods
 #    ConstraintMethod
 
-class glycogene:
+class glycoenzyme:
 
     def __init__(self,name,ruleString,constraintString):
         '''
@@ -50,31 +48,33 @@ class glycogene:
             return(None)
 
 
+if __name__=='__main__':
 
+    ###########################
+    # Create Glycogene Objects:
+    ###########################
 
-###########################
-# Create Glycogene Objects:
-###########################
+    #finisehdGlycogenes.tsv:
+    finishedGlycogenes=pd.read_csv('../finishedGlycogenes.tsv',sep='\t',index_col=None)
+    #Keep track of unprocessed glycogenes:
+    # No reactions:
+    noRuleGlycogenes=[]
+    # Unprocessed:
+    notProcessed=[]
+    # Processed: 
+    processed=[]
 
-#Keep track of unprocessed glycogenes:
-# No reactions:
-noRuleGlycogenes=[]
-# Unprocessed:
-notProcessed=[]
-# Processed: 
-processed=[]
- 
-ggenes=dict()
-for i,r in finishedGlycogenes.iterrows():
-    ruleString=r['Rules']
-    constraintString=r['Constraints']
-    geneName=r['geneName']
-    if r['Rules']=='no reaction':
-        noRuleGlycogenes.append(geneName)
-        continue
-    try:
-        ggenes[geneName]=glycogene(geneName,ruleString,constraintString)
-        #ggene=glycogene(geneName,ruleString,constraintString)
-        processed.append(geneName)
-    except :
-        notProcessed.append(geneName)
+    ggenes=dict()
+    for i,r in finishedGlycogenes.iterrows():
+        ruleString=r['Rules']
+        constraintString=r['Constraints']
+        geneName=r['geneName']
+        if r['Rules']=='no reaction':
+            noRuleGlycogenes.append(geneName)
+            continue
+        try:
+            ggenes[geneName]=glycogene(geneName,ruleString,constraintString)
+            #ggene=glycogene(geneName,ruleString,constraintString)
+            processed.append(geneName)
+        except :
+            notProcessed.append(geneName)

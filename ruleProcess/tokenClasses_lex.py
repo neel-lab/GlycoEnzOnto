@@ -897,10 +897,11 @@ class monoToken(entityToken):
             #Generate All possible monosaccharide representations:
             #String Order:
             # Left Bracket, Monosaccharide, Compartment, Modification Permutations,Linkage Information, Right Bracket: 
-            if self.isextendbranch:
-                reactStrings=[''.join(x) for x in prod(*[[leftBracket],[compartment],modStrings,[linkage],[rightBracket]])]
-            else:
-                reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
+            reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
+            #if self.isextendbranch:
+            #    reactStrings=[''.join(x) for x in prod(*[[leftBracket],[compartment],modStrings,[linkage],[rightBracket]])]
+            #else:
+            #    reactStrings=[''.join(x) for x in prod(*[[leftBracket],[self.mono],[compartment],modStrings,[linkage],[rightBracket]])]
             return(reactStrings)
         return(_wrap)
 
