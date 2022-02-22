@@ -1767,7 +1767,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#LacDiNAc -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#LacDiNAc">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Elongation_and_Branching"/>
         <obo:IAO_0000115 xml:lang="en">A process by which N-acetylgalactosamine is transferred onto N-acetylglucosamine via B4GALNT3 or B4GALNT4.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">LacDiNAc</rdfs:label>
     </owl:Class>
@@ -2627,7 +2627,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Terminal_Gal_Sulfation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Terminal_Gal_Sulfation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation"/>
         <obo:IAO_0000115 xml:lang="en">The process by which a galactose residue in a galactosylceramide is sulfated by galactose sulfotransferases GAL3ST1-4.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">Terminal Galactose Sulfation</rdfs:label>
@@ -3329,7 +3329,7 @@
     <!-- http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#6-Sulfo_sLeX -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#6-Sulfo_sLeX">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#Capping"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto#mono_sulfation"/>
         <obo:IAO_0000115 xml:lang="en">A metabolic process by which the 6-sulfated sialyl Lewis X antigen is created.</obo:IAO_0000115>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ted Groth</dc:creator>
         <rdfs:label xml:lang="en">6-sulfated sialyl Lewis X</rdfs:label>
