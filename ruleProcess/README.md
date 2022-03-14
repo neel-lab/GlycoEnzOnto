@@ -56,8 +56,7 @@ Running this script results in the following list:
  A GlcNAc monosaccharide with a (b1-?) linkage,
  One or more monosaccharides,
  A Man monosaccharide with a (b1-4) linkage,
- A GlcNAc monosaccharide,
- An unknown entity: (b1-4,
+ A GlcNAc monosaccharide with a (b1-4) linkage,
  A GlcNAc monosaccharide with a (b1-?) linkage,
  The Asn aglycon]
 ```
