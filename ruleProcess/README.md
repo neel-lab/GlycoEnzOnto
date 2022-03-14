@@ -44,7 +44,7 @@ Running the rule parser requires sourcing the ```tokenClasses_lex.py``` file, wh
 ```
 from tokenClasses_lex import *
 
-ruleString="{Gal(b1-4)}GlcNAc(b1-?)...Man(b1-4)GlcNAc(b1-4GlcNAc(b1-?)Asn"
+ruleString="{Gal(b1-4)}GlcNAc(b1-?)...Man(b1-4)GlcNAc(b1-4)GlcNAc(b1-?)Asn"
 #Run the lexer function:
 lexer(ruleString)
 ```
