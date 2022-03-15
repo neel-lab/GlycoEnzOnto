@@ -1,4 +1,4 @@
-#GlycoEnzOnto
+# GlycoEnzOnto
 
 GlycoEnzOnto is an ontology which describes the molecular functions and metabolic pathway involvement of 386 glycosylation-related genes, called glycogenes.  There are four main kinds of glycosylation-related pathways modeled in modelled in GlycoEnzOnto:
 
