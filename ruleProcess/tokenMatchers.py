@@ -126,6 +126,10 @@ entityDict={
         'ProteinConstraints':['EGF','Cad','TSR']
 }
 
+############################
+# Matcher Classes:
+############################
+
 #Monosaccharide Matcher
 monoMatcher=LexMatcher(entityDict['monosaccharides'],
         entityDict['Compartments'],
@@ -141,7 +145,7 @@ aglyconMatcher=LexMatcher([x for x in entityDict['Aglyca']],front=True)
 #Compartment Matcher:
 compartmentMatcher=LexMatcher(entityDict['Compartments'],regex='\[%s\]',front=True)
 #Transport Matcher:
-transportMatcher=matcherClass('\-\>')
+transportMatcher=matcherClass('.+?\{\[.+?\]\-\>\[.+?\]\}')
 #Protein Constraints:
 proteinConstraintMatcher=LexMatcher(entityDict['ProteinConstraints'],regex="\[%s\]")
 #Substrate Matcher:
@@ -150,6 +154,7 @@ substrateMatcher=LexMatcher(entityDict['Substrates'])
 multiMatcher=matcherClass('\<.+?\>')
 #Wild Card Matcher:
 wildCardMatcher=matcherClass('\[?\.\.\.\]?')
+
 #######################
 # Constraint Detection:
 #######################
@@ -167,6 +172,7 @@ termSubtractionMatcher=matcherClass('\[\{(?=\!).*?\}')
 #innerReactionMatcher used to find reactions within
 # monosaccharide entities (for modification reactions)
 innerReactionMatcher=matcherClass('\{',front=False)
+
 ###################
 # Entity Detection:
 ###################
@@ -175,9 +181,11 @@ wildCardMatcher=matcherClass('\[?\.\.\.\]?')
 #Match general monosaccharide pattern
 # ensure no { } in front of the string:
 monoLinkMatcher=matcherClass('(?!\{)\[?([A-Za-z0-9\,\{\}]+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
+
 # Excludes any special characters assoicated
 # with reaction and constraint string (n,@,{},<>)
 #monoLinkMatcher=matcherClass('(?!n|\@|\{|\}|\<|\>)\[?(.+?)(\([ab\?][12\?]\-[\d\?]\))\]?')
+
 #######################
 # Constraint Detection:
 #######################
@@ -185,6 +193,7 @@ quantityStartMatcher=matcherClass('n')
 attachRuleMatcher=matcherClass('\@')
 negationRuleMatcher=matcherClass('\!')
 quantifierMatcher=matcherClass('(\=|\>\=|\<\=|\>|\<)(\d)')
+
 #######################
 # Separator Detection
 #######################

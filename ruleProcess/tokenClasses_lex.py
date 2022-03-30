@@ -1036,8 +1036,26 @@ class transportToken(entityToken):
         self.inputString=string
         self.product=self.substrate
 
+    def get_from_to_compartment(self):
+        '''
+        Uses regex to detect the "substrate", "from", and "to"
+        compartments.
+
+        Form of transport string:
+        UDP-GlcNAc{[From]->[To]}
+        ---------- ------  ----
+        substrate   from    to
+
+        '''
+        #Detect substrate, from and to compartments:
+        regex=r'(?P<substrate>.+?)\{(?P<from>\[.+?\])\-\>(?P<to>\[.+?\])\}'
+        substrate,frm,to=re.search(regex,self.inputString).groupdict().values()
+        return(substrate,frm,to)
+
     def __repr__(self):
-        return('Transports to')
+        substrate,frm,to=self.get_from_to_compartment()
+        msg="Transports %s from %s to %s" %(substrate,frm,to)
+        return(msg)
 
     def substrate(self):
         return([self.inputString])
