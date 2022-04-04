@@ -81,9 +81,6 @@
     
 
 
-    <!-- http://purl.uniprot.org/core/encodedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.uniprot.org/core/encodedBy"/>
     
 
 
@@ -95,6 +92,9 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <!-- http://purl.uniprot.org/core/encodedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.uniprot.org/core/encodedBy"/>
     
 
 
@@ -121,6 +121,7 @@
     <owl:ObjectProperty rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1000">
         <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdfs:range rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0257"/>
+        <rdfs:label xml:lang="en">has constraint</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,6 +131,7 @@
     <owl:ObjectProperty rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1002">
         <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
         <rdfs:range rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0262"/>
+        <rdfs:label xml:lang="en">has reaction rule</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2185,18 +2187,6 @@
         <obo:IAO_0000115>A series of metabolic reactions whereby sulfate molecules are covalently attached to monosaccharides which constitute glycosaminoglycans.</obo:IAO_0000115>
         <rdfs:label>glycosaminoglycan sulfation pathway</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo1000 -->
-
-    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1000"/>
-    
-
-
-    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo1002 -->
-
-    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1002"/>
     
 
 
