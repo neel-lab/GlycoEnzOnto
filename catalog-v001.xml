@@ -4,19 +4,19 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="http://purl.obolibrary.org/obo/ro/ro-base.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://purl.obolibrary.org/obo/go.owl" uri="GO_glycogene_BP.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://purl.obolibrary.org/obo/go.owl" uri="GO_glycogene_CC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycogene_glycoOnto_mf.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycogene_GO_MF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycoOnto_schema.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="test.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="GlycoEnzDB_BP_MF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="go_glycosylation_subOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="GlycoEnzDB_Core_orig.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="test2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="http://www.w3.org/2002/07/owl" uri="GO_glycogene_total.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1649422993832" name="shadowed:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="web-ontology_files/GlycoEnzDB_WebOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://purl.obolibrary.org/obo/go.owl" uri="GO_glycogene_BP.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://purl.obolibrary.org/obo/go.owl" uri="GO_glycogene_CC.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycogene_glycoOnto_mf.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycogene_GO_MF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="glycoOnto_schema.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="test.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="GlycoEnzDB_BP_MF.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="go_glycosylation_subOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="GlycoEnzDB_Core_orig.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="test2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="http://www.w3.org/2002/07/owl" uri="GO_glycogene_total.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649430234865" name="shadowed:http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="web-ontology_files/GlycoEnzDB_WebOntology.owl"/>
     </group>
 </catalog>
