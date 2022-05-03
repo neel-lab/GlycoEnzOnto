@@ -90,12 +90,6 @@
     
 
 
-    <!-- http://purl.uniprot.org/core/encodedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.uniprot.org/core/encodedBy"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -140,6 +134,20 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002413 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002413"/>
+    
+
+
+    <!-- http://purl.uniprot.org/core/encodedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.uniprot.org/core/encodedBy">
+        <owl:inverseOf rdf:resource="http://purl.uniprot.org/core/encodes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.uniprot.org/core/encodes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.uniprot.org/core/encodes"/>
     
 
 
