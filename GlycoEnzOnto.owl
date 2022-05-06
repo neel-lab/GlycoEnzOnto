@@ -154,8 +154,6 @@
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo1000 -->
 
     <owl:ObjectProperty rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1000">
-        <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
-        <rdfs:range rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0257"/>
         <rdfs:label xml:lang="en">has reaction rule</rdfs:label>
     </owl:ObjectProperty>
     
@@ -164,8 +162,6 @@
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo1002 -->
 
     <owl:ObjectProperty rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo1002">
-        <rdfs:domain rdf:resource="http://purl.jp/bio/12/glyco/glycan#enzyme"/>
-        <rdfs:range rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0262"/>
         <rdfs:label xml:lang="en">has constraint</rdfs:label>
     </owl:ObjectProperty>
     
@@ -14875,7 +14871,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3010"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3010"/>
         <rdfs:label>GXYLT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -14939,7 +14935,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3048"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3048"/>
         <rdfs:label>CRPPA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15078,7 +15074,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0132"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3103"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3103"/>
         <rdfs:label>HAS3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15142,7 +15138,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3247"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3247"/>
         <rdfs:label>MANBA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15236,7 +15232,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3029"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3029"/>
         <rdfs:label>PLOD2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15318,7 +15314,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3025"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3025"/>
         <rdfs:label>MFNG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15424,7 +15420,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3244"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3244"/>
         <rdfs:label>MAN2B1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15482,7 +15478,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3331"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3331"/>
         <rdfs:label>FPGT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15522,7 +15518,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3137"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3137"/>
         <rdfs:label>HS3ST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15790,7 +15786,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0182"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3098"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3098"/>
         <rdfs:label>OGT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15872,7 +15868,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3271"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3271"/>
         <rdfs:label>PMM2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15954,8 +15950,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5083"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3170"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5083"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3170"/>
         <rdfs:label>ST8SIA5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16061,7 +16057,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3168"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3168"/>
         <rdfs:label>ST8SIA3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16131,7 +16127,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0197"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3202"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3202"/>
         <rdfs:label>PAPSS1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16279,8 +16275,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5095"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3184"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5095"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3184"/>
         <rdfs:label>B4GALT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16380,7 +16376,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3061"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3061"/>
         <rdfs:label>GPAA1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16468,7 +16464,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3047"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3047"/>
         <rdfs:label>B4GAT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16568,7 +16564,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0123"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3197"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3197"/>
         <rdfs:label>CHST10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16821,8 +16817,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0231"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5087"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3175"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5087"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3175"/>
         <rdfs:label>B3GALT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16904,7 +16900,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3129"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3129"/>
         <rdfs:label>EXTL3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17010,7 +17006,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3188"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3188"/>
         <rdfs:label>CHST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17098,7 +17094,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3144"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3144"/>
         <rdfs:label>HS6ST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17204,7 +17200,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3306"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3306"/>
         <rdfs:label>MAN1A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17298,7 +17294,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0182"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3099"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3099"/>
         <rdfs:label>OGA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17491,8 +17487,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5092"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3182"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5092"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3182"/>
         <rdfs:label>B4GALT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17616,8 +17612,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5094"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3183"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5094"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3183"/>
         <rdfs:label>B4GALT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17699,7 +17695,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3256"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3256"/>
         <rdfs:label>GMDS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17883,7 +17879,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3030"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3030"/>
         <rdfs:label>PLOD3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18007,7 +18003,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3213"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3213"/>
         <rdfs:label>UGT1A9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18119,7 +18115,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0238"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3045"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3045"/>
         <rdfs:label>UGDH</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18330,7 +18326,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3274"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3274"/>
         <rdfs:label>DPM1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18466,8 +18462,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5091"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3181"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5091"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3181"/>
         <rdfs:label>B4GALT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18549,7 +18545,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3107"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3107"/>
         <rdfs:label>FAM20B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18673,7 +18669,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3039"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3039"/>
         <rdfs:label>FKTN</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18737,7 +18733,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3221"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3221"/>
         <rdfs:label>UGT2B11</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19047,7 +19043,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3301"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3301"/>
         <rdfs:label>ALG2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19117,7 +19113,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0101"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3075"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3075"/>
         <rdfs:label>B3GALNT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19187,7 +19183,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3216"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3216"/>
         <rdfs:label>UGT2B17</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19323,8 +19319,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5065"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3109"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5065"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3109"/>
         <rdfs:label>B3GAT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19541,7 +19537,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3189"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3189"/>
         <rdfs:label>GFPT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19617,7 +19613,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3135"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3135"/>
         <rdfs:label>GLCE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19699,7 +19695,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0197"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3203"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3203"/>
         <rdfs:label>PAPSS2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19805,7 +19801,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3167"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3167"/>
         <rdfs:label>PGM3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19935,8 +19931,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5068"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3122"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5068"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3122"/>
         <rdfs:label>GCNT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20000,7 +19996,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3054"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3054"/>
         <rdfs:label>PIGN</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20136,7 +20132,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3043"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3043"/>
         <rdfs:label>LARGE1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20320,7 +20316,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3229"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3229"/>
         <rdfs:label>SLC2A10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20402,7 +20398,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3132"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3132"/>
         <rdfs:label>NDST3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20490,8 +20486,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5088"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3176"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5088"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3176"/>
         <rdfs:label>B3GALT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20939,7 +20935,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0077"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3255"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3255"/>
         <rdfs:label>GBA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21039,7 +21035,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3237"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3237"/>
         <rdfs:label>FUCA1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21337,7 +21333,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3218"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3218"/>
         <rdfs:label>UGT2B4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21485,7 +21481,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0078"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3254"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3254"/>
         <rdfs:label>GLA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21735,7 +21731,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3112"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3112"/>
         <rdfs:label>GPI</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21883,7 +21879,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3242"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3242"/>
         <rdfs:label>HEXA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22139,7 +22135,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3243"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3243"/>
         <rdfs:label>HEXB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22227,7 +22223,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0235"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3023"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3023"/>
         <rdfs:label>GALT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22345,7 +22341,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3264"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3264"/>
         <rdfs:label>GUSB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22409,7 +22405,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3214"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3214"/>
         <rdfs:label>UGT2A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22455,7 +22451,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3219"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3219"/>
         <rdfs:label>UGT2A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22942,7 +22938,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3228"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3228"/>
         <rdfs:label>SLC2A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23060,7 +23056,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3231"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3231"/>
         <rdfs:label>SLC2A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23196,7 +23192,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3232"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3232"/>
         <rdfs:label>SLC2A3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23563,7 +23559,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3233"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3233"/>
         <rdfs:label>SLC2A4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23885,8 +23881,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5090"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3180"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5090"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3180"/>
         <rdfs:label>B4GALT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23986,7 +23982,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0144"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3265"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3265"/>
         <rdfs:label>GNS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24158,7 +24154,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0038"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3266"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3266"/>
         <rdfs:label>ARSB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24330,7 +24326,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3157"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3157"/>
         <rdfs:label>ST6GAL1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24532,7 +24528,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3241"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3241"/>
         <rdfs:label>GLB1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24638,7 +24634,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0021"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3074"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3074"/>
         <rdfs:label>ABO</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24714,7 +24710,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3225"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3225"/>
         <rdfs:label>UGT2B7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24907,7 +24903,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3209"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3209"/>
         <rdfs:label>UGT1A6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25145,7 +25141,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3223"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3223"/>
         <rdfs:label>HK1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25299,7 +25295,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3064"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3064"/>
         <rdfs:label>FUT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25375,7 +25371,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3239"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3239"/>
         <rdfs:label>AGA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25523,8 +25519,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5003"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3066"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5003"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3066"/>
         <rdfs:label>FUT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25702,8 +25698,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5004"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3068"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5004"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3068"/>
         <rdfs:label>FUT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25767,7 +25763,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3258"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3258"/>
         <rdfs:label>IDS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26005,7 +26001,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3204"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3204"/>
         <rdfs:label>UGT1A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26123,7 +26119,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3207"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3207"/>
         <rdfs:label>UGT1A4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26253,7 +26249,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3235"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3235"/>
         <rdfs:label>SLC2A5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26395,7 +26391,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3318"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3318"/>
         <rdfs:label>MGAT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27269,7 +27265,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3305"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3305"/>
         <rdfs:label>MAN1A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27351,7 +27347,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0144"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3268"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3268"/>
         <rdfs:label>GALNS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27415,7 +27411,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3123"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3123"/>
         <rdfs:label>MPI</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27503,7 +27499,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3259"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3259"/>
         <rdfs:label>IDUA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27627,7 +27623,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3206"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3206"/>
         <rdfs:label>UGT1A3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27673,7 +27669,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3208"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3208"/>
         <rdfs:label>UGT1A5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27851,7 +27847,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3245"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3245"/>
         <rdfs:label>GCK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -27999,7 +27995,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3067"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3067"/>
         <rdfs:label>G6PC1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28051,7 +28047,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3215"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3215"/>
         <rdfs:label>UGT2B10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28187,7 +28183,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3272"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3272"/>
         <rdfs:label>PGM1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28263,7 +28259,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3049"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3049"/>
         <rdfs:label>PIGA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28555,7 +28551,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3100"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3100"/>
         <rdfs:label>GNPDA1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28655,7 +28651,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3286"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3286"/>
         <rdfs:label>STT3A</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28743,8 +28739,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5060"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3311"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5060"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3311"/>
         <rdfs:label>MAN2A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28838,7 +28834,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0235"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3000"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3000"/>
         <rdfs:label>GALK1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -28938,7 +28934,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3134"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3134"/>
         <rdfs:label>RENBP</rdfs:label>
     </owl:NamedIndividual>
     
@@ -29014,7 +29010,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3260"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3260"/>
         <rdfs:label>SGSH</rdfs:label>
     </owl:NamedIndividual>
     
@@ -29156,8 +29152,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5055"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3070"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5055"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3070"/>
         <rdfs:label>FUT6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -29509,7 +29505,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3211"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3211"/>
         <rdfs:label>HK2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -29771,7 +29767,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3234"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3234"/>
         <rdfs:label>HK3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -29949,7 +29945,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
         <rdfs:label>NDST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30031,7 +30027,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3131"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3131"/>
         <rdfs:label>NDST2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30119,7 +30115,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3262"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3262"/>
         <rdfs:label>NAGLU</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30171,7 +30167,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0078"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3257"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3257"/>
         <rdfs:label>GALC</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30241,7 +30237,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3224"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3224"/>
         <rdfs:label>UGT2B15</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30392,7 +30388,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3171"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3171"/>
         <rdfs:label>ST8SIA6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30651,7 +30647,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0236"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3278"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3278"/>
         <rdfs:label>SLC35A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30751,7 +30747,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0175"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3284"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3284"/>
         <rdfs:label>SLC35A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30839,8 +30835,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5057"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3076"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5057"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3076"/>
         <rdfs:label>B4GALNT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30898,7 +30894,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0232"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3111"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3111"/>
         <rdfs:label>GALK2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30950,7 +30946,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3240"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3240"/>
         <rdfs:label>CTBS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31062,8 +31058,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5067"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3120"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5067"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3120"/>
         <rdfs:label>GCNT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31163,7 +31159,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3028"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3028"/>
         <rdfs:label>PLOD1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31251,7 +31247,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3178"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3178"/>
         <rdfs:label>GFPT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31408,8 +31404,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5093"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3321"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5093"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3321"/>
         <rdfs:label>MGAT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31515,8 +31511,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5101"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3325"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5101"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3325"/>
         <rdfs:label>MGAT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31610,8 +31606,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5082"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3319"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5082"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3319"/>
         <rdfs:label>MGAT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31735,7 +31731,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3337"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3337"/>
         <rdfs:label>GALNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31847,7 +31843,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3326"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3326"/>
         <rdfs:label>GALNT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31977,7 +31973,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3065"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3065"/>
         <rdfs:label>FUT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -32101,8 +32097,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5054"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3069"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5054"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3069"/>
         <rdfs:label>FUT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -32322,7 +32318,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3071"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3071"/>
         <rdfs:label>FUT7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -32476,8 +32472,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5074"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3150"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5074"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3150"/>
         <rdfs:label>ST3GAL1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -32589,7 +32585,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3152"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3152"/>
         <rdfs:label>ST3GAL3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -32755,7 +32751,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3153"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3153"/>
         <rdfs:label>ST3GAL4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33455,7 +33451,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3276"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3276"/>
         <rdfs:label>GFUS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33543,7 +33539,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3312"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3312"/>
         <rdfs:label>MOGS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33625,7 +33621,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3222"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3222"/>
         <rdfs:label>GALE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33749,7 +33745,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3338"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3338"/>
         <rdfs:label>GALNT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33924,7 +33920,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3313"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3313"/>
         <rdfs:label>GANAB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -33994,7 +33990,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3298"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3298"/>
         <rdfs:label>UAP1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -34604,8 +34600,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5070"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3125"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5070"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3125"/>
         <rdfs:label>EXT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -34777,8 +34773,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5000"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3310"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5000"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3310"/>
         <rdfs:label>MAN2A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -34902,7 +34898,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3073"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3073"/>
         <rdfs:label>UGCG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35044,7 +35040,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3151"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3151"/>
         <rdfs:label>ST3GAL2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35174,7 +35170,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3034"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3034"/>
         <rdfs:label>UGP2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35286,7 +35282,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3187"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3187"/>
         <rdfs:label>UGT8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35395,7 +35391,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0009"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3013"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3013"/>
         <rdfs:label>DPY19L1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35459,7 +35455,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3302"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3302"/>
         <rdfs:label>ALG11</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35562,7 +35558,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3227"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3227"/>
         <rdfs:label>UGT3A2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35644,7 +35640,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3303"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3303"/>
         <rdfs:label>GNPTAB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35726,8 +35722,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0202"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5001"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3041"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5001"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3041"/>
         <rdfs:label>MGAT5B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35866,7 +35862,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3335"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3335"/>
         <rdfs:label>GALNT17</rdfs:label>
     </owl:NamedIndividual>
     
@@ -35906,7 +35902,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3009"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3009"/>
         <rdfs:label>GXYLT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36000,7 +35996,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3062"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3062"/>
         <rdfs:label>MPPE1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36076,7 +36072,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3294"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3294"/>
         <rdfs:label>ALG10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36140,7 +36136,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3058"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3058"/>
         <rdfs:label>PIGG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36222,7 +36218,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3295"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3295"/>
         <rdfs:label>ALG10B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36274,7 +36270,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0049"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3005"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3005"/>
         <rdfs:label>EOGT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36326,7 +36322,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3316"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3316"/>
         <rdfs:label>MANEA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36408,7 +36404,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0223"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3020"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3020"/>
         <rdfs:label>TMTC4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36478,7 +36474,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3261"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3261"/>
         <rdfs:label>HGSNAT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36569,7 +36565,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0148"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3079"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3079"/>
         <rdfs:label>B4GALNT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36615,7 +36611,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3226"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3226"/>
         <rdfs:label>UGT3A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36667,7 +36663,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0009"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3014"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3014"/>
         <rdfs:label>DPY19L2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36872,7 +36868,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3336"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3336"/>
         <rdfs:label>GALNT18</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36912,7 +36908,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3220"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3220"/>
         <rdfs:label>UGT2A3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -36976,7 +36972,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3263"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3263"/>
         <rdfs:label>ARSK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37028,7 +37024,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3027"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3027"/>
         <rdfs:label>B3GLCT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37134,7 +37130,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3117"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3117"/>
         <rdfs:label>B3GNT6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37174,7 +37170,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0009"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3015"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3015"/>
         <rdfs:label>DPY19L3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37244,7 +37240,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0223"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3019"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3019"/>
         <rdfs:label>TMTC3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37320,8 +37316,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5058"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3081"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5058"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3081"/>
         <rdfs:label>CHSY3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37421,7 +37417,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0245"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3281"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3281"/>
         <rdfs:label>SLC35D2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37461,7 +37457,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0148"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3080"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3080"/>
         <rdfs:label>B4GALNT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37555,8 +37551,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0148"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5097"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3201"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5097"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3201"/>
         <rdfs:label>CHST9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37614,7 +37610,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3094"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3094"/>
         <rdfs:label>CHST15</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37684,7 +37680,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3136"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3136"/>
         <rdfs:label>HS2ST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37766,7 +37762,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3087"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3087"/>
         <rdfs:label>CHST3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37806,7 +37802,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0009"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3016"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3016"/>
         <rdfs:label>DPY19L4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37870,7 +37866,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3008"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3008"/>
         <rdfs:label>POGLUT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37922,7 +37918,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3333"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3333"/>
         <rdfs:label>GALNT15</rdfs:label>
     </owl:NamedIndividual>
     
@@ -37986,7 +37982,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3051"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3051"/>
         <rdfs:label>PIGW</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38068,7 +38064,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3119"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3119"/>
         <rdfs:label>B3GNT8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38132,7 +38128,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3340"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3340"/>
         <rdfs:label>GALNT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38214,7 +38210,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3002"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3002"/>
         <rdfs:label>GALNT7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38278,7 +38274,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3327"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3327"/>
         <rdfs:label>GALNT10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38336,7 +38332,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3059"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3059"/>
         <rdfs:label>PIGZ</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38466,8 +38462,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5059"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3082"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5059"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3082"/>
         <rdfs:label>CHSY1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38573,7 +38569,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3104"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3104"/>
         <rdfs:label>XYLT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38643,7 +38639,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3330"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3330"/>
         <rdfs:label>GALNT13</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38701,7 +38697,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0223"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3017"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3017"/>
         <rdfs:label>TMTC1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -38855,7 +38851,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0060"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3149"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3149"/>
         <rdfs:label>SULF2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39099,7 +39095,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0060"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3148"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3148"/>
         <rdfs:label>SULF1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39157,7 +39153,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3329"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3329"/>
         <rdfs:label>GALNT12</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39197,7 +39193,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3032"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3032"/>
         <rdfs:label>COLGALT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39285,8 +39281,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5061"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3083"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5061"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3083"/>
         <rdfs:label>CHPF</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39320,7 +39316,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3147"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3147"/>
         <rdfs:label>HS6ST3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39396,7 +39392,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3142"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3142"/>
         <rdfs:label>HS3ST5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39490,7 +39486,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3095"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3095"/>
         <rdfs:label>DSEL</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39620,7 +39616,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0134"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3121"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3121"/>
         <rdfs:label>GCNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39684,7 +39680,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3309"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3309"/>
         <rdfs:label>FCSK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39754,7 +39750,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0223"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3018"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3018"/>
         <rdfs:label>TMTC2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39842,7 +39838,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3044"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3044"/>
         <rdfs:label>LARGE2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39906,7 +39902,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3334"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3334"/>
         <rdfs:label>GALNT16</rdfs:label>
     </owl:NamedIndividual>
     
@@ -39988,7 +39984,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3339"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3339"/>
         <rdfs:label>GALNT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40187,8 +40183,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5063"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3085"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5063"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3085"/>
         <rdfs:label>CSGALNACT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40270,7 +40266,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3038"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3038"/>
         <rdfs:label>POMGNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40322,7 +40318,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3011"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3011"/>
         <rdfs:label>XXYLT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40368,7 +40364,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3031"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3031"/>
         <rdfs:label>COLGALT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40492,7 +40488,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3006"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3006"/>
         <rdfs:label>POGLUT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40580,7 +40576,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0247"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3056"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3056"/>
         <rdfs:label>UXS1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40698,7 +40694,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3198"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3198"/>
         <rdfs:label>CHST4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40768,7 +40764,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3093"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3093"/>
         <rdfs:label>CHST14</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40844,7 +40840,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3341"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3341"/>
         <rdfs:label>GALNT6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -40938,8 +40934,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5002"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3042"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5002"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3042"/>
         <rdfs:label>B3GALNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41039,7 +41035,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3328"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3328"/>
         <rdfs:label>GALNT11</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41151,8 +41147,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5075"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5075"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
         <rdfs:label>ST6GALNAC3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41282,7 +41278,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3024"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3024"/>
         <rdfs:label>LFNG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41352,7 +41348,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3092"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3092"/>
         <rdfs:label>CHST13</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41404,7 +41400,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0164"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3252"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3252"/>
         <rdfs:label>ENGASE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41492,7 +41488,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3118"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3118"/>
         <rdfs:label>B3GNT7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41556,7 +41552,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3320"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3320"/>
         <rdfs:label>CMAS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41644,7 +41640,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0215"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3077"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3077"/>
         <rdfs:label>B4GALNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41738,7 +41734,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0198"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3282"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3282"/>
         <rdfs:label>SLC35B2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41883,7 +41879,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3288"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3288"/>
         <rdfs:label>STT3B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -41941,7 +41937,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3230"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3230"/>
         <rdfs:label>SLC2A12</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42029,7 +42025,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3145"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3145"/>
         <rdfs:label>GNPDA2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42177,8 +42173,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5062"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3084"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5062"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3084"/>
         <rdfs:label>CSGALNACT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42224,7 +42220,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3057"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3057"/>
         <rdfs:label>PIGO</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42492,7 +42488,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3251"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3251"/>
         <rdfs:label>NEU4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42568,7 +42564,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0202"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3037"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3037"/>
         <rdfs:label>POMGNT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42662,8 +42658,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5079"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3165"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5079"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3165"/>
         <rdfs:label>ST8SIA1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42805,8 +42801,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5080"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5080"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
         <rdfs:label>ST8SIA2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42900,8 +42896,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5081"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3169"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5081"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3169"/>
         <rdfs:label>ST8SIA4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -42965,7 +42961,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3055"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3055"/>
         <rdfs:label>PIGB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43197,7 +43193,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3060"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3060"/>
         <rdfs:label>PIGK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43279,7 +43275,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3289"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3289"/>
         <rdfs:label>ALG3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43469,7 +43465,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0132"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3102"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3102"/>
         <rdfs:label>HAS2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43611,7 +43607,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0132"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3101"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3101"/>
         <rdfs:label>HAS1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43687,7 +43683,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3273"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3273"/>
         <rdfs:label>PMM1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -43763,8 +43759,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5073"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3127"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5073"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3127"/>
         <rdfs:label>EXTL1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44014,8 +44010,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5072"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3126"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5072"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3126"/>
         <rdfs:label>EXT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44190,7 +44186,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0248"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3285"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3285"/>
         <rdfs:label>SLC35B4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44302,8 +44298,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5078"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3164"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5078"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3164"/>
         <rdfs:label>ST6GALNAC6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44439,7 +44435,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0224"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3195"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3195"/>
         <rdfs:label>GAL3ST3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44521,7 +44517,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0175"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3277"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3277"/>
         <rdfs:label>SLC35C1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44615,7 +44611,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3078"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3078"/>
         <rdfs:label>GNPNAT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44760,7 +44756,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3299"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3299"/>
         <rdfs:label>ALG14</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44818,7 +44814,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3332"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3332"/>
         <rdfs:label>GALNT14</rdfs:label>
     </owl:NamedIndividual>
     
@@ -44966,7 +44962,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3156"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3156"/>
         <rdfs:label>PGM2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45018,7 +45014,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3001"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3001"/>
         <rdfs:label>GMPPA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45088,7 +45084,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3158"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3158"/>
         <rdfs:label>ST6GAL2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45212,7 +45208,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3108"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3108"/>
         <rdfs:label>B3GALT6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45264,7 +45260,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3146"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3146"/>
         <rdfs:label>HS6ST2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45298,7 +45294,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0171"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3269"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3269"/>
         <rdfs:label>CASD1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45344,7 +45340,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3143"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3143"/>
         <rdfs:label>HS3ST6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45474,7 +45470,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0224"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3196"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3196"/>
         <rdfs:label>GAL3ST4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45667,7 +45663,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3248"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3248"/>
         <rdfs:label>NEU1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45773,7 +45769,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0224"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3193"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3193"/>
         <rdfs:label>GAL3ST1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45876,7 +45872,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3063"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3063"/>
         <rdfs:label>PGAP4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -45958,7 +45954,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3300"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3300"/>
         <rdfs:label>ALG1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46058,7 +46054,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3238"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3238"/>
         <rdfs:label>FUCA2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46152,7 +46148,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3291"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3291"/>
         <rdfs:label>ALG12</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46345,8 +46341,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5077"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5077"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
         <rdfs:label>ST6GALNAC5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46422,7 +46418,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3293"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3293"/>
         <rdfs:label>ALG8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46492,7 +46488,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3217"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3217"/>
         <rdfs:label>UGT2B28</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46682,8 +46678,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5071"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3317"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5071"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3317"/>
         <rdfs:label>FUT8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46771,7 +46767,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3116"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3116"/>
         <rdfs:label>B3GNT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -46934,7 +46930,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3115"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3115"/>
         <rdfs:label>B3GNT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47040,7 +47036,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3191"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3191"/>
         <rdfs:label>CHST5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47134,7 +47130,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3192"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3192"/>
         <rdfs:label>CHST6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47228,7 +47224,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3105"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3105"/>
         <rdfs:label>XYLT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47286,7 +47282,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0198"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3283"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3283"/>
         <rdfs:label>SLC35B3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47368,8 +47364,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0148"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5096"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3199"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5096"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3199"/>
         <rdfs:label>CHST8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47487,7 +47483,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3296"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3296"/>
         <rdfs:label>DPAGT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47587,7 +47583,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0224"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3194"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3194"/>
         <rdfs:label>GAL3ST2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47657,7 +47653,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3133"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3133"/>
         <rdfs:label>NDST4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47715,7 +47711,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3052"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3052"/>
         <rdfs:label>PIGM</rdfs:label>
     </owl:NamedIndividual>
     
@@ -47839,7 +47835,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3021"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3021"/>
         <rdfs:label>POFUT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48002,8 +47998,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5076"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3162"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5076"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3162"/>
         <rdfs:label>ST6GALNAC4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48109,7 +48105,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3033"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3033"/>
         <rdfs:label>POMK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48185,7 +48181,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3290"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3290"/>
         <rdfs:label>ALG9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48297,7 +48293,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3040"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3040"/>
         <rdfs:label>FKRP</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48361,7 +48357,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0171"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3270"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3270"/>
         <rdfs:label>SIAE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48515,7 +48511,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3210"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3210"/>
         <rdfs:label>UGT1A7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48633,7 +48629,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3205"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3205"/>
         <rdfs:label>UGT1A10</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48793,7 +48789,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3212"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3212"/>
         <rdfs:label>UGT1A8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48857,7 +48853,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3004"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3004"/>
         <rdfs:label>GALNT9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48933,7 +48929,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3007"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3007"/>
         <rdfs:label>POGLUT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -48979,7 +48975,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3297"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3297"/>
         <rdfs:label>ALG13</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49079,7 +49075,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3179"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3179"/>
         <rdfs:label>A4GALT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49227,7 +49223,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3090"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3090"/>
         <rdfs:label>CHST11</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49297,8 +49293,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0123"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5085"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3173"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5085"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3173"/>
         <rdfs:label>B3GAT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49386,7 +49382,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3308"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3308"/>
         <rdfs:label>MAN1C1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49462,7 +49458,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3267"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3267"/>
         <rdfs:label>NANS</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49538,7 +49534,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3091"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3091"/>
         <rdfs:label>CHST12</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49626,7 +49622,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0229"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3186"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3186"/>
         <rdfs:label>C1GALT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49696,7 +49692,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3088"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3088"/>
         <rdfs:label>CHST7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49754,7 +49750,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
         <rdfs:label>ST6GALNAC1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49812,7 +49808,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0164"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3253"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3253"/>
         <rdfs:label>MAN2C1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49888,7 +49884,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0239"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3279"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3279"/>
         <rdfs:label>SLC35D1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -49958,7 +49954,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3053"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3053"/>
         <rdfs:label>PIGV</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50016,7 +50012,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3003"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3003"/>
         <rdfs:label>GALNT8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50146,7 +50142,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3236"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3236"/>
         <rdfs:label>SLC2A8</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50252,7 +50248,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3113"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3113"/>
         <rdfs:label>B3GNT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50340,7 +50336,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3315"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3315"/>
         <rdfs:label>UGGT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50440,7 +50436,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3314"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3314"/>
         <rdfs:label>UGGT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50540,8 +50536,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5069"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3124"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5069"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3124"/>
         <rdfs:label>GCNT4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50617,8 +50613,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5064"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3086"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5064"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3086"/>
         <rdfs:label>CHPF2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50712,8 +50708,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0123"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5084"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3172"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5084"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3172"/>
         <rdfs:label>B3GAT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -50918,8 +50914,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5100"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3324"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5100"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3324"/>
         <rdfs:label>MGAT4C</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51031,7 +51027,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3128"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3128"/>
         <rdfs:label>EXTL2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51167,7 +51163,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3106"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3106"/>
         <rdfs:label>B4GALT7</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51291,7 +51287,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3185"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3185"/>
         <rdfs:label>B4GALT6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51448,7 +51444,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3160"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3160"/>
         <rdfs:label>ST6GALNAC2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51530,7 +51526,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3200"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3200"/>
         <rdfs:label>NAGK</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51675,7 +51671,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3304"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3304"/>
         <rdfs:label>NAGPA</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51829,7 +51825,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3307"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3307"/>
         <rdfs:label>MAN1B1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -51923,7 +51919,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3036"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3036"/>
         <rdfs:label>POMT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52017,7 +52013,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3096"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3096"/>
         <rdfs:label>DSE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52117,8 +52113,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5098"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3322"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5098"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3322"/>
         <rdfs:label>MGAT4A</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52200,8 +52196,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5066"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3110"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5066"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3110"/>
         <rdfs:label>A4GNT</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52289,7 +52285,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3154"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3154"/>
         <rdfs:label>ST3GAL5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52449,7 +52445,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3250"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3250"/>
         <rdfs:label>NEU3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52543,8 +52539,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5099"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3323"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5099"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3323"/>
         <rdfs:label>MGAT4B</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52638,7 +52634,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3089"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3089"/>
         <rdfs:label>GNE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -52792,8 +52788,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5056"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3072"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5056"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3072"/>
         <rdfs:label>FUT9</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53160,7 +53156,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3155"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3155"/>
         <rdfs:label>ST3GAL6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53212,7 +53208,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3138"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3138"/>
         <rdfs:label>HS3ST2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53300,7 +53296,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3114"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3114"/>
         <rdfs:label>B3GNT3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53364,7 +53360,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3046"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3046"/>
         <rdfs:label>RXYLT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53422,7 +53418,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3050"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3050"/>
         <rdfs:label>PIGL</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53480,7 +53476,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3097"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3097"/>
         <rdfs:label>UST</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53580,8 +53576,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5089"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3177"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5089"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3177"/>
         <rdfs:label>B3GALT5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53657,7 +53653,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0242"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3280"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3280"/>
         <rdfs:label>SLC35A3</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53721,7 +53717,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3246"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3246"/>
         <rdfs:label>MAN2B2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53797,7 +53793,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3022"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3022"/>
         <rdfs:label>POFUT2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -53879,7 +53875,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3012"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3012"/>
         <rdfs:label>AMDHD2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54003,7 +53999,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0186"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3249"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3249"/>
         <rdfs:label>NEU2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54172,7 +54168,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3190"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3190"/>
         <rdfs:label>CHST2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54236,7 +54232,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3287"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3287"/>
         <rdfs:label>GMPPB</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54324,8 +54320,8 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0231"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5086"/>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3174"/>
+        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5086"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3174"/>
         <rdfs:label>B3GALT1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54413,7 +54409,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3026"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3026"/>
         <rdfs:label>RFNG</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54453,7 +54449,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3141"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3141"/>
         <rdfs:label>HS3ST4</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54517,7 +54513,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3140"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3140"/>
         <rdfs:label>HS3ST3B1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54569,7 +54565,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3139"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3139"/>
         <rdfs:label>HS3ST3A1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54657,7 +54653,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3292"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3292"/>
         <rdfs:label>ALG6</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54733,7 +54729,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3275"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3275"/>
         <rdfs:label>ALG5</rdfs:label>
     </owl:NamedIndividual>
     
@@ -54845,7 +54841,7 @@
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
             </owl:Restriction>
         </rdf:type>
-        <genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3035"/>
+        <genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3035"/>
         <rdfs:label>POMT1</rdfs:label>
     </owl:NamedIndividual>
     
