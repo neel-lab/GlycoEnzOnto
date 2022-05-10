@@ -11,7 +11,6 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="ro_subset.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/releases/2022-03-22/go-base.owl" uri="genzo_go_module_MIREOT.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="http://purl.obolibrary.org/obo/ro/ro-base.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="file:/home/tgroth/GlycoOntology/genzo_go_module.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/releases/2022-03-22/go-base.owl" uri="http://purl.obolibrary.org/obo/go/go-base.owl"/>
