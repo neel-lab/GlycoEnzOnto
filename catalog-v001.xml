@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/go/releases/2022-03-22/go-base.owl" uri="genzo_go_module.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-04-25/ro-base.owl" uri="ro_subset.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-04-25/ro.owl" uri="ro_subset.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="ro_subset.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="ro_subset.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="ro_subset.owl"/>
@@ -19,51 +20,16 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ro/releases/2022-02-07/ro-base.owl" uri="http://purl.obolibrary.org/obo/ro/ro-base.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/go.owl" uri="genzo_refactor/GO_glycogene_hierarchy.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/go/extensions/go-plus.owl" uri="genzo_separate/genzo_go_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/ro.owl" uri="genzo_separate/ro_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://purl.obolibrary.org/obo/ro/ro-base_subset.owl" uri="genzo_separate/ro_subset_ontofox.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_genzoClasses.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled_GO_enhanced.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled_goodRelations_noIsA.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/genzo_bp_merge.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/genzo_BPrels_test.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled_goodRelations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled_GO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/GlycoEnzOnto_relabeled_GOrelations.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.semanticweb.org/tgroth/ontologies/2021/2/GlycoEnzOnto" uri="genzo_refactor/genzo_bp_rels.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="http://www.semanticweb.org/tgroth/ontologies/2021/2/glycoOnto" uri="GlycoOnto_forOBO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.w3.org/2002/07/owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.w3.org/2002/07/owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_MF.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.w3.org/2002/07/owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_merge.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.w3.org/2002/07/owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_CC.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:http://www.w3.org/2002/07/owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_BP.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto_newAxioms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto_reasoned.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto_old.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="GlycoEnzOnto.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go.owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_MF_terms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go.owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_CC_terms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go.owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_terms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go.owl" uri="genzo_refactor/ggene_go_parse/GO_glycogene_BP_terms.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_reason/genzo_go_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_separate/genzo_go_module_MIREOT.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="genzo_reason/ro_subset.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:http://www.w3.org/2002/07/owl" uri="genzo_separate/genzo_merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="pathwayLists/GlycoEnzOnto_reasoned.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_reason/GlycoEnzOnto_reasoned.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_reason/GlycoEnzOnto_reasoned_hermit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_reason/GlycoEnzOnto_materialized.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_reason/GlycoEnzOnto.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_new/GlycoEnzOnto_new.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_new/GlycoEnzOnto_new_pathways.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_separate/genzo_edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_separate/genzo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_separate/genzo_separated.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1652105509348" name="shadowed:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_separate/genzo_working.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="http://purl.obolibrary.org/obo/go/extensions/go-plus.owl" uri="genzo_go_module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="http://purl.obolibrary.org/obo/go/go-base.owl" uri="genzo_go_module_MIREOT.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro_subset_transitive.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro_subset.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="http://purl.obolibrary.org/obo/ro/ro-base_subset.owl" uri="ro_subset_ontofox.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="http://www.w3.org/2002/07/owl" uri="genzo_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_edit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_separated.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="duplicate:https://purl.obolibrary.org/obo/genzo.owl" uri="genzo_working.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1652972202748" name="https://purl.obolibrary.org/obo/genzo.owl/" uri="genzo_axiomedit.owl"/>
     </group>
 </catalog>
