@@ -22,7 +22,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.obolibrary.org/obo/genzo.owl">
         <owl:versionIRI rdf:resource="https://purl.obolibrary.org/obo/idspace/2022-05-11/genzo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/neel-lab/GlycoEnzOnto/main/genzo_go_module.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/neel-lab/GlycoEnzOnto/main/ro_subset.owl"/>
         <dc:creator>Alexander Diehl</dc:creator>
