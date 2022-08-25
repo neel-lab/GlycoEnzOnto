@@ -22,8 +22,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://purl.obolibrary.org/obo/genzo.owl">
         <owl:versionIRI rdf:resource="https://purl.obolibrary.org/obo/idspace/2022-05-11/genzo.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/neel-lab/GlycoEnzOnto/main/genzo_go_module.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/neel-lab/GlycoEnzOnto/main/genzo_go_module.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/neel-lab/GlycoEnzOnto/main/ro_subset.owl"/>
         <dc:creator>Alexander Diehl</dc:creator>
         <dc:creator>Sriram Neelamegham</dc:creator>
@@ -11313,6 +11313,2609 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     
 
 
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100000 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100000">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0205"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosylation-related pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100001 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100001">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0114"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan biosynthesis regulation participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100002 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0151"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan-mediated lysosomal targeting participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100003 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0113"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100004 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0021"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan capping structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100005 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0123"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human natural killer 1 epitope biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100006 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0171"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-acetylneuraminic acid acetylation and deacetylation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100007 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0215"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sda antigen biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100008 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal fucosylation biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100009 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100009">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abo blood group biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100010 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100010">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100011 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100011">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0031"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100012 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100012">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0009"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c-linked mannose biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100013 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycolipid core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100014 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100014">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0075"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosphingolipid core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100015 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100015">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0082"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactosylceramide biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100016 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100016">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucosylceramide biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100017 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100017">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ganglioside core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100018 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100018">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0101"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">globo-series core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100019 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100019">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacto-series core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100020 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neolacto-series core structure biosynthetic pathway particiant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100021 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0074"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosylphosphatidylinositol anchor biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100022 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100022">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan core structure biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100023 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100023">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0132"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyaluronan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100024 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100024">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked xylose glycosaminoglycan core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100025 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100025">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin and dermatan sulfate core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100027 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100027">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-linked glycan core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100028 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100028">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0045"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dolichol precursor biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100029 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100029">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dolichol precursor post-processing pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100030 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100030">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-linked glycan branching biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100031 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100031">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0185"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100032 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100032">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0025"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collagen glycosylation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100033 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100033">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-fucosylation type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100034 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100034">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0200"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POFUT1-type o-linked fucose biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100036 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100036">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0181"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glucose biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100037 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100037">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0204"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POMT-type o-mannose glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100038 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100038">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0202"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POMGNT1-type o-mannose glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100039 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100039">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0203"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POMGNT2-type o-mannose glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100040 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100040">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0048"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">α-Dystroglycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100041 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100041">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0223"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMTC-type o-mannosylation of proteins participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100042 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100042">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100043 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100043">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0027"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core 1 type o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100044 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100044">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0028"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core 2 type o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100045 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100045">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core 3 type o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100046 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100046">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core 4 type o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100047 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100047">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0182"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-Nacetylglucosamine protein glycosylation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100048 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100048">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan elongation and branching biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100049 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100049">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan polymerization pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100050 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100050">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin and dermatan sulfate polymerization pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100051 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100051">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate polymerization pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100052 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100052">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0145"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate polymerization pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100053 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100053">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0134"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I branching biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100054 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100054">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lactoamine biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100055 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100055">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type i lactosamine biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100056 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100056">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0231"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type ii lactosamine biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100057 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100057">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0229"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type iii lactosamine biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100058 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100058">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0148"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-N&apos;-diacetyllactose diamine biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100059 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100059">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0108"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100060 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100060">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0034"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytoplasmic glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100061 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100061">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin sulfate cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100062 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100062">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0035"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatan sulfate cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100063 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100063">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0076"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosphingolipid cytosolic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100064 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100064">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0124"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100065 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100065">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0119"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyaluronic acid cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100066 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100066">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0142"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate ctyoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100067 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100067">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0164"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-linked glycan cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100068 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100068">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0186"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan cytoplasmic degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100069 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100069">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0060"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extracellular glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100070 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100070">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0036"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatan sulfate extracellular degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100071 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100071">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0125"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate extracellular degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100072 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100072">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0120"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyaluronic acid extracellular degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100073 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100073">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0065"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100074 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100074">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0018"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin sulfate degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100075 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100075">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0037"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatan sulfate degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100076 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100076">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0066"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100077 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100077">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0126"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100078 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100078">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0121"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyaluronic acid degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100079 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100079">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0143"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100080 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100080">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0077"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosphingolipid degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100081 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100081">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0153"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lysosomal glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100082 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100082">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0066"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100083 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100083">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin sulfate lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100084 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100084">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermatan sulfate lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100085 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100085">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0122"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hyaluronic acid lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100086 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100086">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0144"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100087 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100087">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0078"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosphingolipid lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100088 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100088">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0128"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate lysosome degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100089 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100089">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0166"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-linked glycan lysosomal degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100090 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100090">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0188"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan lysosomal degradation pathwa participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100091 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100091">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0165"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-linked glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100092 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100092">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0187"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100093 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100093">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0191"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">other complex carbohydrate degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100094 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100094">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0301"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collagen degradation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100095 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100095">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0109"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycogen catabolic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100096 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100096">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0046"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan molecular donor synthesis pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100097 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100097">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0159"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monosaccharide-modifying substituent synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100098 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100098">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0197"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphoadenosine phosphosulfate synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100099 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100099">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleotide sugar biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100100 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100100">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytidine-5&apos;-monophosphate n-acetylneuraminic acid synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100101 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100101">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0068"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guanosine-5&apos;-diphosphate fucose synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100102 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100102">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0071"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guanosine-5&apos;-diphosphate mannose synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100103 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100103">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0235"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate galactose synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100104 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100104">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0244"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate glucose synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100105 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100105">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0238"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate glucuronic acid synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100106 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100106">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0241"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate n-acetylglucosamine synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100107 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100107">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0232"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate n-acetylgalactosamine synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100108 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100108">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0247"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate xylose synthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100109 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100109">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0158"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan monosaccharide modification pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100110 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100110">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0260"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan monosaccharide sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100111 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100111">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-sulfated sialyl lewis x biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100112 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100112">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosaminoglycan sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100113 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100113">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chondroitin and dermatan sulfate sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100114 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100114">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0130"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100115 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100115">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0167"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate amine sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100116 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100116">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0146"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100117 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100117">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0224"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal galactose sulfation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100118 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100118">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0209"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein sulfation process participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100119 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100119">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0227"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan substrate transport pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100120 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100120">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0047"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycan donor transport pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100121 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100121">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0160"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monosaccharide modification transport pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100122 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100122">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0198"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphoadenosine phosphosulfate transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100123 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100123">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0175"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleotide sugar transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100124 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100124">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0015782"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMP-N-acetylneuraminate transmembrane transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100125 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100125">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0036085"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDP-fucose import into Golgi lumen participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100126 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100126">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0072"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guanosine-5&apos;-diphosphate mannose transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100127 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100127">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0072334"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate galactose transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100128 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100128">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_1990569"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate n-acetylglucosamine transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100129 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100129">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0015790"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate xylose acid transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100130 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100130">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0245"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate glucose transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100131 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100131">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0239"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate glucuronic acid transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100132 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100132">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0233"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5&apos;-diphosphate n-acetylgalactosamine transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100133 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100133">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0178"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monosaccharide transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100134 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100134">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0046323"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucose import participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100135 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100135">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0044381"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucose importer in response to insulin stimulus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100136 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100136">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0103"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucose transport participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100137 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100137">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0212"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">putative or unknown glycosylation pathway member</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100138 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100138">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0107"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xenobiotic glucuronidation pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway">
@@ -16064,6 +18667,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3170"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5083"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/29906</oboInOwl:hasDbXref>
@@ -16170,6 +18779,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
@@ -25520,6 +28135,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3157"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/6480</oboInOwl:hasDbXref>
         <rdfs:label>ST6GAL1</rdfs:label>
@@ -31787,6 +34408,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3171"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/338596</oboInOwl:hasDbXref>
         <rdfs:label>ST8SIA6</rdfs:label>
@@ -33874,6 +36501,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3150"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5074"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/6482</oboInOwl:hasDbXref>
@@ -33986,6 +36619,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3152"/>
@@ -34153,6 +36792,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3153"/>
@@ -36704,6 +39349,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3151"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/6483</oboInOwl:hasDbXref>
         <rdfs:label>ST3GAL2</rdfs:label>
@@ -36981,12 +39632,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002327"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030246"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0004653"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -43132,6 +45777,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5075"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/256435</oboInOwl:hasDbXref>
@@ -44734,6 +47385,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3165"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5079"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/6489</oboInOwl:hasDbXref>
@@ -44872,6 +47529,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5080"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/8128</oboInOwl:hasDbXref>
@@ -44960,6 +47623,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
@@ -46385,6 +49054,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5078"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/30815</oboInOwl:hasDbXref>
@@ -47297,6 +49972,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3158"/>
@@ -48581,6 +51262,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
@@ -50370,6 +53057,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
@@ -52281,6 +54974,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/55808</oboInOwl:hasDbXref>
         <rdfs:label>ST6GALNAC1</rdfs:label>
@@ -54190,6 +56889,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/10610</oboInOwl:hasDbXref>
         <rdfs:label>ST6GALNAC2</rdfs:label>
@@ -55034,6 +57739,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3154"/>
@@ -55906,6 +58617,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3155"/>
