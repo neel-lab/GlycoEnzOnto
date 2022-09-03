@@ -9581,19 +9581,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0013 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0013">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030206"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030208"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
         <obo:IAO_0000115>A series of metabolic reactions which synthesize the core structures of both chondroitin and dermatan sulfate glycosaminoglycans.  Involves the addition of n-acetylgalactosamine onto the core o-xylose glycosaminoglycan structure.</obo:IAO_0000115>
         <rdfs:label>chondroitin and dermatan sulfate core structure biosynthetic pathway</rdfs:label>
     </owl:Class>
@@ -9604,16 +9592,15 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0014">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030206"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030208"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0050653"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
         <obo:IAO_0000115>A series of metabolic reactions whereby heparan sulfates receive N-acetylgalactosamine and glucuronic acid in an alternating fashion, which results in greater heparan sulfate degree of polymerization.</obo:IAO_0000115>
@@ -9625,6 +9612,17 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0015 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0015">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
         <obo:IAO_0000115>A a series of metabolic reactions where chondroitin and dermatan sulfates undergo sulfation on the N-acetylgalactosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
         <rdfs:label>chondroitin and dermatan sulfate sulfation pathway</rdfs:label>
@@ -10395,7 +10393,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0127 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0127">
-        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
         <obo:IAO_0000115>A series of metabolic reactions which synthesize the core structures of heparan sulfate glycosaminoglycans.  Involves the addition of n-acetylglucosamine onto the core o-xylose glycosaminoglycan structure.</obo:IAO_0000115>
         <rdfs:label>heparan sulfate core structure biosynthetic pathway</rdfs:label>
     </owl:Class>
@@ -10427,10 +10425,15 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0129">
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030210"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0015014"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
         <obo:IAO_0000115>A series of metabolic reactions whereby heparan sulfates receive N-acetylglucosamine and glucuronic acid in an alternating fashion, which results in greater heparan sulfate degree of polymerization.</obo:IAO_0000115>
@@ -10442,6 +10445,17 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0130 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0130">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
         <obo:IAO_0000115>A series of metabolic reactions where heparan sulfates undergo sulfation on the N-acetylglucosamine, glucuronic acid, or iduronic acid residues to variable degrees.</obo:IAO_0000115>
         <rdfs:label>heparan sulfate sulfation pathway</rdfs:label>
@@ -10491,7 +10505,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A sequence of catabolic reactions whereby keratan sulfate is degraded in the cytoplasm.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">keratan sulfate ctyoplasmic degradation pathway</rdfs:label>
+        <rdfs:label xml:lang="en">keratan sulfate cytoplasmic degradation pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10546,6 +10560,17 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0146 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0146">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002092"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0145"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0341"/>
         <obo:IAO_0000115>A series of metabolic reactions where keratan sulfate receives sulfations on N-acetylglucosamine and galactose residues in LacNAc chains on either N-linked or O-linked glycans.</obo:IAO_0000115>
         <rdfs:label>keratan sulfate sulfation pathway</rdfs:label>
@@ -10557,7 +10582,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0148">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
-        <obo:IAO_0000115 xml:lang="en">A series of metabolic reactions whereby N-acetylgalactosamine is transferred onto N-acetylglucosamine via B4GALNT3 or B4GALNT4.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A series of metabolic reactions whereby N-acetylgalactosamine is transferred onto N-acetylglucosamine.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">N-N&apos;-diacetyllactose diamine biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10717,7 +10742,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0170">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
         <obo:IAO_0000115>A series of metabolic reactions which synthesizes the Gal(b1-3)GlcNAc(b1-3)Gal(b1-4)GlcCer structure through the successive action of B4GALT6, B3GNT5, and a myriad of B4GALTs.</obo:IAO_0000115>
-        <rdfs:label>neolacto-series core structure biosynthetic process</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neolacto-series core structure biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10767,7 +10792,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
         <obo:IAO_0000115>A series of metabolic reactions whereby the dolichol precursor structure is trimmed successively via glucosidases and mannosidases.</obo:IAO_0000115>
         <rdfs:comment>The Processing pathways begins with the removal α(1-2)Glc by MOGS from the nonreducing terminal end of the α(1-3)Man branch to produce Glc2Man9GlcNAc2. During this trimming process, glycoproteins containing a single α(1-3)Glc residue are recognized by the ER lectin chaperones, calreticulin (CRT) and calnexin (CNX). These chaperones are complexed with protein disulfide isomerase isoforms, and this aids the folding and maturation of glycoproteins. Upon transient release from the lectin chaperones, α-Glucosidase II clips the remaining Glc and the protein moves to the next steps of processing, provided it is well folded.</rdfs:comment>
-        <rdfs:label>dolichol precursor post-processing pathway</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-glycan trimming pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10813,7 +10838,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0185"/>
         <obo:IAO_0000115>A series of metabolic reactions which attach fucose to serine or threonine residues in EGF-like repeats ( CXXXX(S/T)C ), and subsequently attach N-acetylglucosamine via the action of lunatic, maniac, or radical fringe (LFNG, MFNG, or RFNG).</obo:IAO_0000115>
-        <rdfs:label>o-fucosylation type glycan biosynthetic pathway event</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-fucosylation type glycan biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10874,6 +10899,18 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0184 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0184">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
         <obo:IAO_0000115>A series of metabolic reactions whereby chondroitin, dermatan, and heparan sulfates are initiated.  Involves the initial linkage of xylose onto a serine residue, followed by succesive galactose transfer by B4GALT7 and B3GALT6, and glucuronic acid transfer by B3GAT3.  Chondroitin and dermatan sulfates are initiated by adding N-acetylgalactosamine onto the terminal glucuronic acid, whereas heparan sulfates receive N-acetylglucosamine.</obo:IAO_0000115>
         <rdfs:label>o-linked xylose glycosaminoglycan core structure biosynthetic pathway</rdfs:label>
@@ -11045,6 +11082,37 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     
 
 
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0206 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0206">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of the addition of sialic acid onto the non-reducing ends of o-linked fucose-type glycans.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of o-linked fucose glycans biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0208 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0208">
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0260"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby sulfate molecules are covalently attached to monosaccharides which constitute some o-linked glycan.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan sulfation biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0209 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0209">
@@ -11104,6 +11172,17 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0224 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0224">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0158"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0082"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0260"/>
         <obo:IAO_0000115 xml:lang="en">The process by which a galactose residue in a galactosylceramide is sulfated by galactose sulfotransferases GAL3ST1-4.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">terminal galactose sulfation pathway</rdfs:label>
@@ -11124,7 +11203,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0229 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0229">
-        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway"/>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/genzo0250"/>
         <obo:IAO_0000115 xml:lang="en">A metabolic pathway whereby the disaccharide  [Gal(β1-3)GalNAc] is synthesized on glycans.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">type iii lactosamine biosynthetic pathway</rdfs:label>
     </owl:Class>
@@ -11134,9 +11213,9 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0230 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0230">
-        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway"/>
-        <obo:IAO_0000115>A metabolic pathway whereby the disaccharide  [Gal(β1-3)GlcNAc] is synthesized on glycans.</obo:IAO_0000115>
-        <rdfs:label>type i lactosamine biosynthetic pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/genzo0250"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process by which the disaccharide  [Gal(β1-4)GlcNAc] is synthesized on glycans.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type ii lactosamine biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -11144,9 +11223,9 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0231 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0231">
-        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway"/>
-        <obo:IAO_0000115>A process by which the disaccharide  [Gal(β1-4)GlcNAc] is synthesized on glycans.</obo:IAO_0000115>
-        <rdfs:label>type ii lactosamine biosynthetic pathway</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/genzo0250"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A metabolic pathway whereby the disaccharide  [Gal(β1-3)GlcNAc] is synthesized on glycans.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type i lactosamine biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -11244,6 +11323,79 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     
 
 
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0251 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0251">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of the addition of sialic acid onto the non-reducing ends of o-linked glycan structures.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of o-linked glycans biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0252 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0252">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0172"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of the addition of sialic acid onto the non-reducing ends of n-linked glycan structures.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of n-linked glycans biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0253 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0253">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of the addition of sialic acid onto the non-reducing ends of gangliosides.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of gangliosides biosynthetic pathway</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo0257 -->
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0257">
@@ -11261,7 +11413,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0260">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0158"/>
-        <obo:IAO_0000115>A series of metabolic reactions whereby monosaccharides part of glycans are modified by sulfate on molecules.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby monosaccharides that are part of glycans receive a sulfate molecule</obo:IAO_0000115>
         <rdfs:label>glycan monosaccharide sulfation pathway</rdfs:label>
     </owl:Class>
     
@@ -11859,7 +12011,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dolichol precursor post-processing pathway participant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n-glycan trimming pathway participant</rdfs:label>
     </owl:Class>
     
 
@@ -12310,7 +12462,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                     <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl/genzo0250"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12543,7 +12695,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate ctyoplasmic degradation pathway participant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keratan sulfate cytoplasmic degradation pathway participant</rdfs:label>
     </owl:Class>
     
 
@@ -13916,9 +14068,143 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     
 
 
-    <!-- https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway -->
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100145 -->
 
-    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl/lactoamine_biosynthetic_pathway">
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100145">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of o-linked glycans biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100146 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100146">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of n-linked glycans biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100147 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100147">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of gangliosides biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100148 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100148">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0206"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal sialylation of o-linked fucose glycans biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100149 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100149">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-linked glycan sulfation biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100150 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100150">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0201"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">POFUT2-Type o-linked fucose biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl#genzo100168 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo100168">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.uniprot.org/core/Gene"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.uniprot.org/core/Gene"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heparan sulfate core structure biosynthetic pathway participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.obolibrary.org/obo/genzo.owl/genzo0250 -->
+
+    <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl/genzo0250">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002012"/>
@@ -13928,6 +14214,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
         <dc:creator rdf:resource="http://orcid.org/0000-0001-9990-8331"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-18T19:58:52Z</dc:date>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lactosamine biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -17164,6 +17451,15 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
     
 
 
+    <!-- http://purl.uniprot.org/uniprot/Q9UBS4 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.uniprot.org/uniprot/Q9UBS4">
+        <rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
+        <core:encodedBy rdf:resource="http://purl.uniprot.org/uniprot/Q9UBS4#gene-MD58FF0F05CCDC20DF25CB57437C9B2C22F"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.uniprot.org/uniprot/Q9UBV2 -->
 
     <owl:NamedIndividual rdf:about="http://purl.uniprot.org/uniprot/Q9UBV2">
@@ -18031,6 +18327,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0200"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3024"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/4242</oboInOwl:hasDbXref>
         <rdfs:label>MFNG</rdfs:label>
@@ -18664,13 +18966,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3170"/>
@@ -18772,19 +19074,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
@@ -19641,6 +19943,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
             </owl:Restriction>
         </rdf:type>
@@ -19748,7 +20056,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3188"/>
@@ -21292,7 +21600,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -22071,7 +22391,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -22372,12 +22704,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0129"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3135"/>
@@ -23164,12 +23490,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0167"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
@@ -28120,25 +28440,25 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0206"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3157"/>
@@ -28443,6 +28763,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030259"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0002"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -33935,12 +34261,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0167"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
-            </owl:Restriction>
-        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/3340</oboInOwl:hasDbXref>
         <rdfs:label>NDST1</rdfs:label>
@@ -34016,12 +34336,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0167"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
@@ -34405,13 +34719,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3171"/>
@@ -36498,13 +36812,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3150"/>
@@ -36612,19 +36926,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3152"/>
@@ -36785,19 +37099,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3153"/>
@@ -39346,13 +39660,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3151"/>
@@ -41486,6 +41800,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0201"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3027"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/145173</oboInOwl:hasDbXref>
         <rdfs:label>B3GLCT</rdfs:label>
@@ -41774,12 +42094,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3081"/>
@@ -42926,12 +43240,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
-            </owl:Restriction>
-        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3081"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5058"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/22856</oboInOwl:hasDbXref>
@@ -43031,7 +43339,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -43881,12 +44201,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3081"/>
@@ -44787,6 +45101,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
             </owl:Restriction>
         </rdf:type>
@@ -45310,13 +45630,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0028"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3198"/>
@@ -45768,19 +46082,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
@@ -45913,6 +46227,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0200"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3024"/>
@@ -46818,6 +47138,18 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0014"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
             </owl:Restriction>
         </rdf:type>
@@ -47382,13 +47714,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3165"/>
@@ -47520,19 +47852,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
@@ -47616,19 +47948,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3166"/>
@@ -49051,13 +49383,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
@@ -49177,19 +49509,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -49959,25 +50279,25 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0206"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3158"/>
@@ -50091,18 +50411,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0030206"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3108"/>
@@ -50362,7 +50670,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -51261,13 +51569,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3163"/>
@@ -51688,6 +51996,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3116"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/84002</oboInOwl:hasDbXref>
         <rdfs:label>B3GNT5</rdfs:label>
@@ -51945,19 +52259,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0028"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0146"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3191"/>
@@ -52040,19 +52348,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0028"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0146"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3191"/>
@@ -52141,7 +52443,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -52611,19 +52925,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0173"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -52695,12 +52997,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0167"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3130"/>
@@ -52889,6 +53185,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0200"/>
+            </owl:Restriction>
+        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3021"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/23509</oboInOwl:hasDbXref>
         <rdfs:label>POFUT1</rdfs:label>
@@ -53050,19 +53352,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3161"/>
@@ -54285,18 +54587,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
-            </owl:Restriction>
-        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3179"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/53947</oboInOwl:hasDbXref>
         <rdfs:label>A4GALT</rdfs:label>
@@ -54971,13 +55261,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
@@ -55847,12 +56137,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0184"/>
-            </owl:Restriction>
-        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3086"/>
         <genzo:genzo1002 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo5058"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/54480</oboInOwl:hasDbXref>
@@ -56596,7 +56880,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0013"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0127"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -56716,6 +57012,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0101"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -56886,13 +57188,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3159"/>
@@ -57738,13 +58040,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0253"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3154"/>
@@ -58610,19 +58912,19 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0218"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0251"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0252"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3155"/>
@@ -59036,12 +59338,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0101"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
             </owl:Restriction>
         </rdf:type>
@@ -59263,6 +59559,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0201"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3022"/>
@@ -59629,19 +59931,13 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0028"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0146"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0180"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3190"/>
@@ -60017,6 +60313,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0200"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3024"/>
@@ -60549,15 +60851,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         </rdf:type>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/127550</oboInOwl:hasDbXref>
         <rdfs:label>A3GALT2</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.uniprot.org/uniprotkb/Q9UBS4 -->
-
-    <owl:NamedIndividual rdf:about="http://www.uniprot.org/uniprotkb/Q9UBS4">
-        <rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
-        <core:encodedBy rdf:resource="http://purl.uniprot.org/uniprot/Q9UBS4#gene-MD58FF0F05CCDC20DF25CB57437C9B2C22F"/>
     </owl:NamedIndividual>
     
 
