@@ -9540,7 +9540,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0002">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0063"/>
-        <obo:IAO_0000115 xml:lang="en">A metabolic pathway whereby fucosylation of blood group A (GalNAc(a1-3)Gal(b1-3)b-GlcNAc), B ( Gal(a1-3)Gal(b1-3)b-GlcNAc ), or O ( Gal(b1-3)b-GlcNAc ) is facilitated via FUT1 or FUT2.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A metabolic pathway whereby fucosylation of blood group A (GalNAc(a1-3)Gal(b1-3)b-GlcNAc), B ( Gal(a1-3)Gal(b1-3)b-GlcNAc ), or O ( Gal(b1-3)b-GlcNAc ) is facilitated.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">abo blood group biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -9556,7 +9556,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0031"/>
-        <obo:IAO_0000115 xml:lang="en">A series of reactions whereby mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin proteins.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A series of reactions whereby mannose is transferred to the 2 carbon of tryptophan in W-X-X-W motifs on cadherin and similar proteins.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">c-linked mannose biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -9603,7 +9603,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0067"/>
-        <obo:IAO_0000115>A series of metabolic reactions whereby heparan sulfates receive N-acetylgalactosamine and glucuronic acid in an alternating fashion, which results in greater heparan sulfate degree of polymerization.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby heparan sulfates receive N-acetylgalactosamine and glucuronic acid in an alternating fashion, which results in greater degree of polymerization.</obo:IAO_0000115>
         <rdfs:label>chondroitin and dermatan sulfate polymerization pathway</rdfs:label>
     </owl:Class>
     
@@ -9687,7 +9687,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0021">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0113"/>
-        <obo:IAO_0000115 xml:lang="en">A sequence of reactions involving the transfer of monosaccharides to the non-reducing ends of glycans which, upon tranfer, precludes any other monosaccharides from being attached.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A sequence of reactions involving the transfer of monosaccharides to the non-reducing ends of glycans which, upon transfer, precludes any other monosaccharides from being attached.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">glycan capping structure biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -9868,7 +9868,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-        <obo:IAO_0000115>A metabolic process by which the N-linked glycan precursory structure is synthesized onto dolichol diphosphate in the endoplasmic reticulum.</obo:IAO_0000115>
+        <obo:IAO_0000115>A metabolic process by which the N-linked glycan precursor structure is synthesized onto dolichol diphosphate in the endoplasmic reticulum.</obo:IAO_0000115>
         <rdfs:comment>N-glycan synthesis begins on the outer ER membrane, where the human enzyme DPAGT1 first transfers a GlcNAc-1-P  from  UDP-GlcNAc  to  Dol-P.  This  is  followed  by  the  addition  of  a  second  GlcNAc  (by  ALG13/14 heterodimer)  followed  by  five  additional  Man  by  ALG1,  ALG2  and  ALG11. This Man5GlcNAc2-P-P-Dol precursor  is  then  translocated from  the  cytoplasm  intothe  ER lumen.  The remaining  steps  of  the biosynthetic pathways proceed within the ER. Here,four more Man residues are first added by ALG3, ALG9 and  ALG12,  all  from  Dol-P-Man  donors. Following  this, three  glucose  monosaccharides are  added by ALG6,  ALG8  and  ALG10,using Dol-P-Glc as donor. Together  these  steps  result  in  the  formation  ofthe Glc3-Man9-GlcNAc2β1-PP-Dol precursor.</rdfs:comment>
         <rdfs:label>dolichol precursor biosynthetic pathway</rdfs:label>
     </owl:Class>
@@ -10163,7 +10163,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0075"/>
-        <obo:IAO_0000115>The series of metaboic reactions which add glucose onto ceramide and creates glucosylceramide core structures.</obo:IAO_0000115>
+        <obo:IAO_0000115>The series of metabolic reactions which add glucose onto ceramide and creates glucosylceramide core structures.</obo:IAO_0000115>
         <rdfs:label>glucosylceramide biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10203,7 +10203,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0108">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0205"/>
-        <obo:IAO_0000115 xml:lang="en">A sequence of reactions whereby glycan structures are broken down through hydrolyitic reactions cleaving glycosidic bonds or through the removal of modifying substituents.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A sequence of reactions whereby glycan structures are broken down through hydrolytic reactions cleaving glycosidic bonds or through the removal of modifying substituents.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">glycan degradation pathway</rdfs:label>
     </owl:Class>
     
@@ -10332,7 +10332,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0123">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0021"/>
-        <obo:IAO_0000115 xml:lang="en">The series of metabolic reactions which synthesis the human natural killer 1 epitope. Glucuronyltransferases B3GAT1/2 transfer glucuronic acid to terminal galactose and the subsequent sulfation of the glucuronic acid via CHST10.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A series of metabolic reactions which synthesis the human natural killer 1 epitope.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">human natural killer 1 epitope biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10483,7 +10483,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0134">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
-        <obo:IAO_0000115 xml:lang="en">A metbolic pathway whereby type I LacNAc structures receive an N-acetylglucosamine residue in a β1-6 linkage via GCNT2 or GCNT3.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A metabolic pathway whereby type I LacNAc structures receive an N-acetylglucosamine residue in a β1-6 linkage via GCNT2 or GCNT3.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">I branching biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10633,7 +10633,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0158">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0205"/>
-        <obo:IAO_0000115>A series of metabolic reactions whereby molecular substituents such as sulfate, phosphate and acetyl groups are covalently attached to proteins or monosaccharides pesent on glycans.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby molecular substituents such as sulfate, phosphate and acetyl groups are covalently attached to proteins or monosaccharides present on glycans.</obo:IAO_0000115>
         <rdfs:label>glycan monosaccharide modification pathway</rdfs:label>
     </owl:Class>
     
@@ -10669,7 +10669,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0031"/>
-        <obo:IAO_0000115>N-linked glycosylation occurs on proteins asparagine residues within an N-X-S/T motif.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the Dolichol Pathway, Processing, and optionally, Branching.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-linked glycosylation occurs on protein asparagine residues within an N-X-S/T sequon.  N-linked glycans are characterized by having GlcNAc residues attached onto asparagine at the root of the glycan.  N-linked glycans are synthesized in 3 stages: the dolichol pathway, processing, and optionally, branching.</obo:IAO_0000115>
         <rdfs:label>n-linked glycan core structure biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10837,7 +10837,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0185"/>
-        <obo:IAO_0000115>A series of metabolic reactions which attach fucose to serine or threonine residues in EGF-like repeats ( CXXXX(S/T)C ), and subsequently attach N-acetylglucosamine via the action of lunatic, maniac, or radical fringe (LFNG, MFNG, or RFNG).</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions which attach fucose to serine or threonine residues in EGF-like repeats ( CXXXX(S/T)C ), and subsequently extend them.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-fucosylation type glycan biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -10847,8 +10847,8 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0180">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0185"/>
-        <obo:IAO_0000115 xml:lang="en">A series of metabolic reaction which attach N-acetylgalactosamine onto serine or threonine residues of amino acids and create the core o-linked glycan structures.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">o-N-acetylgalactosamine type glycan biosynthetic pathway</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A series of metabolic reactions which attach N-acetylgalactosamine onto serine or threonine residues of amino acids and create the core o-linked glycan structures.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">o-n-acetylgalactosamine type glycan biosynthetic pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10873,9 +10873,9 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0185"/>
-        <obo:IAO_0000115 xml:lang="en">A metabolic process by which N-acetylglucosamine is attached to serine or threonine residues on proteins.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A metabolic process by which N-acetylglucosamine is attached to serine or threonine residues on nuclear cytoplasmic proteins.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EOGT-type o-linked glycan biosynthetic pathway</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">o-Nacetylglucosamine protein glycosylation pathway</rdfs:label>
+        <rdfs:label xml:lang="en">o-n-acetylglucosamine protein glycosylation pathway</rdfs:label>
     </owl:Class>
     
 
@@ -10912,7 +10912,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0064"/>
-        <obo:IAO_0000115>A series of metabolic reactions whereby chondroitin, dermatan, and heparan sulfates are initiated.  Involves the initial linkage of xylose onto a serine residue, followed by succesive galactose transfer by B4GALT7 and B3GALT6, and glucuronic acid transfer by B3GAT3.  Chondroitin and dermatan sulfates are initiated by adding N-acetylgalactosamine onto the terminal glucuronic acid, whereas heparan sulfates receive N-acetylglucosamine.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby chondroitin, dermatan, and heparan sulfates are initiated.</obo:IAO_0000115>
         <rdfs:label>o-linked xylose glycosaminoglycan core structure biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -11026,7 +11026,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0200">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
-        <obo:IAO_0000115 xml:lang="en">The metabolic process whereby galactose is added by B4GALT1 onto the terminal N-acetylglucosamine present of O-linked fucose residues which were attached by POFUT1 glycoenzyme.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The series of metabolic reactions which add monosaccharides to o-linked fucose structure which was initiated by the POFUT1 glycoenzyme.@en</obo:IAO_0000115>
         <rdfs:label xml:lang="en">POFUT1-type o-linked fucose biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -11036,7 +11036,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0201">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0179"/>
-        <obo:IAO_0000115 xml:lang="en">The series of metabolic reactions which add monosaccharides onto the terminal N-acetylglucosamine of an o-linked fucose structure which was initiated by the POFUT2 glycoenzyme.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The series of metabolic reactions which add monosaccharides to o-linked fucose structure which was initiated by the POFUT2 glycoenzyme.@en</obo:IAO_0000115>
         <rdfs:label xml:lang="en">POFUT2-Type o-linked fucose biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -11046,7 +11046,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0202">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0204"/>
-        <obo:IAO_0000115>A series of metabolic reactionss whereby mannose is attached to serine or threonine residues in proteins by POMT1 or POMT2, the receives an N-acetylglucosamine residues from POMGNT1 and potentially the MGAT5b enzyme, forming either Core M1 or Core M2 O-mannose structures, respectively.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A series of metabolic reactions whereby mannose is attached to serine or threonine residues in proteins, followed by N-acetylglucosamine residues which results in the formation ofCore M1 or Core M2 O-mannose structures.</obo:IAO_0000115>
         <rdfs:label>POMGNT1-type o-mannose glycan biosynthetic pathway</rdfs:label>
     </owl:Class>
     
@@ -11184,7 +11184,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0260"/>
-        <obo:IAO_0000115 xml:lang="en">The process by which a galactose residue in a galactosylceramide is sulfated by galactose sulfotransferases GAL3ST1-4.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The process by which galactose residues present in galactosylceramides are sulfated.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">terminal galactose sulfation pathway</rdfs:label>
     </owl:Class>
     
@@ -11438,7 +11438,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
 
     <owl:Class rdf:about="https://purl.obolibrary.org/obo/genzo.owl#genzo0301">
         <rdfs:subClassOf rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0191"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process by which galactose residues from collagen are successively removed by glycoenzymes.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A process by which galactose residues from collagen are removed.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collagen degradation pathway</rdfs:label>
     </owl:Class>
     
@@ -12239,7 +12239,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-N-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-n-acetylgalactosamine type glycan biosynthetic pathway participant</rdfs:label>
     </owl:Class>
     
 
@@ -12334,7 +12334,7 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-Nacetylglucosamine protein glycosylation pathway participant</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">o-n-acetylglucosamine protein glycosylation pathway participant</rdfs:label>
     </owl:Class>
     
 
@@ -39517,7 +39517,31 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0101"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0149"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0170"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3073"/>
@@ -46444,6 +46468,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0145"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0230"/>
             </owl:Restriction>
         </rdf:type>
@@ -49497,18 +49527,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
@@ -50658,18 +50676,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
@@ -50966,18 +50972,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0046486"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0082"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -52913,18 +52907,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0111"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0208"/>
             </owl:Restriction>
         </rdf:type>
@@ -54566,12 +54548,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0093"/>
             </owl:Restriction>
         </rdf:type>
@@ -55766,6 +55742,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0051"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0145"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
@@ -57006,6 +56988,12 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0070085"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0089"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
