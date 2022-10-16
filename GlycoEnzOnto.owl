@@ -40573,12 +40573,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0151"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/Q3T906#gene-MD58821E507F933941BA501EDDF2A5DDD41"/>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/Q9UJJ9#gene-MD588EF8F6E55BAB0A1D8A770DB3170CCD0"/>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3303"/>
@@ -57565,12 +57559,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0151"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
-            </owl:Restriction>
-        </rdf:type>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/Q9UJJ9#gene-MD588EF8F6E55BAB0A1D8A770DB3170CCD0"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/84572</oboInOwl:hasDbXref>
         <rdfs:label>GNPTG</rdfs:label>
@@ -57640,12 +57628,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0151"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0163"/>
             </owl:Restriction>
         </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3304"/>
