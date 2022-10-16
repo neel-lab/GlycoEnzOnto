@@ -18139,12 +18139,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
-            </owl:Restriction>
-        </rdf:type>
         <genzo:genzo1000 rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo3048"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.ncbi.nlm.nih.gov/gene/729920</oboInOwl:hasDbXref>
         <rdfs:label>CRPPA</rdfs:label>
@@ -21569,12 +21563,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
             </owl:Restriction>
         </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
-            </owl:Restriction>
-        </rdf:type>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/O60762#gene-MD5FEFB13E79FD144152A3CE6071C4A546E"/>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/O94777#gene-MD563C49D6DBBC9EE2C240F4EBCBD478887"/>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/Q9P2X0#gene-MD5FF6C612D2317CC0F03735D7206EEE423"/>
@@ -22726,12 +22714,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
             </owl:Restriction>
         </rdf:type>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/O60762#gene-MD5FEFB13E79FD144152A3CE6071C4A546E"/>
@@ -56613,12 +56595,6 @@ The mechanistic functions of each enzyme are encoded as a single string in the f
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
                 <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0174"/>
-            </owl:Restriction>
-        </rdf:type>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/genzo.owl#genzo0183"/>
             </owl:Restriction>
         </rdf:type>
         <obo:RO_0002434 rdf:resource="http://purl.uniprot.org/uniprot/O60762#gene-MD5FEFB13E79FD144152A3CE6071C4A546E"/>
