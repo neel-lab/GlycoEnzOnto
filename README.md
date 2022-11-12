@@ -19,6 +19,10 @@ GlycoEnzOnto is an ontology which describes the molecular functions and metaboli
 
 Auxilliary processes which serve to modulate the glycosylation process or substrates for glycosylation are also modeled in GlycoEnzOnto.  The mechanistic functions of each enzyme are encoded as a single string in the form of "reaction rules" and "reaction constraints".  Included alongside our glycoenzyme pathway classification are biological process (BP), molecular function (MF), and cellular component (CC) annotations from the Gene Ontology (GO). This incusion aims to provide interoperability in function classification, as well to provide cross-references to other resources.  GlycoEnzOnto pathways which were deemed to be encompassed by a GO biological process term were related with the "occurrent part of" relationship in the Relation Ontology (RO).
 
+## Enrichment Analysis Tutorial:
+
+Instructions on how to perform GSEA analysis using `GlycoEnzOnto.gmt` are provided [here](https://github.com/neel-lab/GlycoEnzOnto/enrichment_analysis).
+
 ## Suggesting Additions and Changes to GlycoEnzOnto:
 
 If you would like to contribute to GlycoEnzOnto, such as adding new glycosylation pathway terms, suggesting new glycoenzyme membership to pathways, or any other changes, please submit an Issue on this Github page.  Please describe your suggested changes in the Issue you create, and we will contact you to discuss these new additions.
