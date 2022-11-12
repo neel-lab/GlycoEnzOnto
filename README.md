@@ -1,5 +1,7 @@
 # GlycoEnzOnto
 
+**Citation**: Theodore Groth, Alexander D Diehl, Rudiyanto Gunawan and Sriram Neelamegham, "GlycoEnzOnto: A GlycoEnzyme Pathway and Molecular Function Ontology", Bioinformatics. 2022 Oct 25;btac704. ([doi: 10.1093/bioinformatics/btac704](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac704/6772808))
+
 GlycoEnzOnto is an ontology which describes the molecular functions and metabolic pathway involvement of 403 glycosylation-related genes or "glycogenes". These genes are involved in regulating four different processes, each of which are modeled in GlycoEnzOnto:
 
 1. Glycosylation donor substrate biosynthesis: These metabolic reactions regulate the biosynthsis of "donors". Here, donors are any molecule that provide compounds for glycan biosynthesis.  These donors include:
