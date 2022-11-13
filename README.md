@@ -21,7 +21,7 @@ Auxilliary processes which serve to modulate the glycosylation process or substr
 
 ## Enrichment Analysis Tutorial:
 
-Instructions on how to perform GSEA analysis using `GlycoEnzOnto.gmt` are provided [here](https://github.com/neel-lab/GlycoEnzOnto/enrichment_analysis).
+Instructions on how to perform GSEA analysis using `GlycoEnzOnto.gmt` are provided [here](https://github.com/neel-lab/GlycoEnzOnto/tree/main/enrichment_analysis).
 
 ## Suggesting Additions and Changes to GlycoEnzOnto:
 
